@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New Tayuman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signdownstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="javascript" href="sds.js">
+</head>
+<body>
+
+    <!-- login start-->
+    <div class="loginbox">
+        <img class="logo" src="./images/TNTlogo.png">
+        <img class="avatar" src="./images/login.png">
+            <h1>SIGN UP FOR FREE!</h1>
+            <form>
+                <p>Full Name:</p>
+                <input type="text" name="" placeholder=" Enter Fullname">
+
+                <p>Username:</p>
+                <input type="text" name="" placeholder=" Enter Username">
+
+                <p>Address:</p>
+                <input type="text" name="" placeholder=" Enter Address">
+
+                <p>Email:</p>
+                <input type="text" name="" placeholder=" Enter Email">
+
+                <p>Birthdate:</p>
+                <input type="date" name="" placeholder=" DD-MM-YYYY">
+
+                <p>Contact Number:</p>
+                <input type="text" name="" placeholder=" Enter Contact No.">
+
+                <p>Password:</p>
+                <input type="text" name="password" placeholder=" Enter Password">
+
+                <p>Confirm Password:</p>
+                <input type="text" name="confirmpassword" placeholder=" Confirm Password">
+
+                <p>Gender:</p>
+                <input type="checkbox" id="Gender" name="Gender"value="Male"/>Male
+                <input type="checkbox" id="Gender" name="Gender"value="Female"/>Female
+                <input type="checkbox" id="Gender" name="Gender"value="Other"/>Other
+        
+                <input type="file" id="real-file" hidden="hidden" />
+                <button type="button" id="custom-button">CHOOSE A FILE</button>
+                <span id="custom-text">UPLOAD VERIFICATION</span>
+
+                <script>
+                    const realFileBtn = document.getElementById("real-file");
+                    const customBtn = document.getElementById("custom-button");
+                    const customTxt = document.getElementById("custom-text");
+
+                    customBtn.addEventListener("click", function() {
+                        realFileBtn.click();
+                    });
+
+                    realFileBtn.addEventListener("change", function() {
+                        if (realFileBtn.value) {
+                            customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                        }else {
+                            customTxt.innerHTML = "No file chosen, yet.";
+                        }
+                    });
+
+                </script>
+                <a href="homepage.html"><i class="fas fa-chevron-circle-right"></i></a>
+                
+                <h5>Already have an account?</h5>
+                <a href="login.html">Sign in</a>
+
+            </form>
+    </div>
+    <!-- login end-->
+
+</body>
+</html>
