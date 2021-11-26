@@ -25,8 +25,10 @@ class Users extends CI_Controller {
 
 	public function register() 
 	{
-        echo 'REGISTER ITO';
-        exit;
+
+        //echo 'REGISTER ITO';
+		$this->load->view('Users/User_Register');
+        //exit;
     }
 
 }
