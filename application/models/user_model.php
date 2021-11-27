@@ -3,7 +3,7 @@
 
 class user_model extends CI_Model {
 
-    private $table = "user";
+    private $table = "users";
 
     public function __construct()
     {
@@ -11,14 +11,33 @@ class user_model extends CI_Model {
     }
 
     public function createUser($data){
-        $data['status'] = "Active";
-        $data['dataCreated'] = time();
 
-        $this -> db -> insert("users", $data);
+        if(!$this -> checkUsernameIfExists($data['user_username'])){
+            $data['user_password'] = md5($data['user_password']);
+            // $data['user_acc.status'] = "Active";
+            // $data['user_acc.createddate'] = time();
+     
+             $this -> db -> insert($this -> table, $data);
 
-        echo $this->db->last_query();
+        }
 
         return;
+    }
+
+    public function checkUsernameIfExists($user_username){
+        if(isset($user_username) && $user_username != null){
+            $this->db->where('user_username', $user_username);
+        }
+
+        $query = $this -> db -> get($this -> table); 
+        $return = $query -> result_array();
+
+        print_r($return);
+
+        if(count($return) > 0 )
+            return true;
+
+        return false;
     }
 
 

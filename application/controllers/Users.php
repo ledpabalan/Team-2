@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Users extends CI_Controller {
 	public function index()
@@ -20,5 +20,10 @@ class Users extends CI_Controller {
 
 		$this->load->view('users/AddUser');
     }
+
+	public function login(){
+		$this->load->view('users/login');
+
+	}
 
 }
