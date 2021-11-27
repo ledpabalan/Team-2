@@ -14,7 +14,7 @@ class user_model extends CI_Model {
         $data['status'] = "Active";
         $data['dataCreated'] = time();
 
-        $this -> db -> insert("user", $data);
+        $this -> db -> insert("users", $data);
 
         echo $this->db->last_query();
 
