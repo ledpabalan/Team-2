@@ -21,9 +21,20 @@ class Users extends CI_Controller {
 		$this->load->view('users/AddUser');
     }
 
-	public function login(){
+	public function login() {
+		$data = array();
+		$data = $this->input->post();
 		$this->load->view('users/login');
-
-	}
-
+		 if(isset($data) && $data != null) {
+			$this->load->model('user_model');
+			$return = $this->user_model->login($data['user_username'], $data['user_password']);
+			if(is_bool($return)) {
+			   echo "login error";
+			 } 
+			 else {
+			   print_r($return);
+			 }
+		
+			}
+}
 }

@@ -1,4 +1,5 @@
 <?=isset($message) ? $message : "";?>
+
 <form method='POST'>
 
                 <p>Full Name:</p>
@@ -37,5 +38,11 @@
                 <br>
                 <input type="submit" value="Create User">
 </form> 
-                <h5>Already have an account?</h5>
+               <!-- <h5>Already have an account?</h5> -->
                <!-- <a href="application/login.html">Sign in</a> -->
+
+               </div>
+    <!-- login end-->
+
+</body>
+</html>
