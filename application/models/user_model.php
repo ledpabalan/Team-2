@@ -14,8 +14,8 @@ class user_model extends CI_Model {
 
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']);
-            // $data['user_acc.status'] = "Active";
-            // $data['user_acc.createddate'] = time();
+             $data['user_acc_status'] = "Active";
+             $data['user_acc_createddate'] = time();
      
              $this -> db -> insert($this -> table, $data);
 
