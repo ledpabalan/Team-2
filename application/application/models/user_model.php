@@ -12,14 +12,14 @@ class user_model extends CI_Model {
 
     public function createUser($data){
 
-        $this -> checkUsernameIfExists($data['user_username']);
-        $data['user_password'] = md5($data['user_password']);
-       // $data['user_acc.status'] = "Active";
-       // $data['user_acc.createddate'] = time();
+        if(!$this -> checkUsernameIfExists($data['user_username'])){
+            $data['user_password'] = md5($data['user_password']);
+             $data['user_acc_status'] = "Active";
+             $data['user_acc_createddate'] = time();
+     
+             $this -> db -> insert($this -> table, $data);
 
-        $this -> db -> insert("users", $data);
-
-        echo $this->db->last_query();
+        }
 
         return;
     }
@@ -30,18 +30,14 @@ class user_model extends CI_Model {
         }
 
         $query = $this -> db -> get($this -> table); 
+        $return = $query -> result_array();
 
-       // $this->db->select(*)
-         //           ->from($this->table)
-          //          ->where('username', $username);
+        print_r($return);
 
-        //$this->db->get();
+        if(count($return) > 0 )
+            return true;
 
-        echo $this->db->last_query();
-        exit;
-
-
-        return $query -> result_array();
+        return false;
     }
 
 
