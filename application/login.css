@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+    background-color: white;
+    font-family: 'Poppins',sans-serif;
+}
+/*login start*/
+.loginbox{
+    width: 450px;
+    height: 450px;
+    background: #f6cfb2;
+    color: #3D0C02;
+    top: 15%;
+    left: 30%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10%;
+    box-shadow: 15px 15px;
+}
+.logo{
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    border-radius: 25%;
+}
+.avatar{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: calc(52.5% - 50px);
+}
+h1{
+    margin: 0;
+    margin-top: 80px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.loginbox input{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 75%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    margin-left: 12.5%;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #E64A4A;
+    color: #000;
+}
+.loginbox a{
+    font-size: 12px;
+    line-height: 20px;
+    color: #34282C;
+    margin-left: 45%;
+}
+.loginbox h5{
+    font-size: 12px;
+    line-height: 20px;
+    color: #34282C;
+    margin-left: 32.5%;
+}
+.loginbox a:hover{
+    cursor: pointer;
+    background: #E64A4A;
+    color: #000;
+}
+i{
+    color: #E64A4A;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 4em;
+    margin-left: -2.5%;
+    margin-bottom: 20px;
+}
+/*login ends*/
