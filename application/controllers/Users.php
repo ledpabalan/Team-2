@@ -4,7 +4,7 @@
 class Users extends CI_Controller {
 	public function index()
 	{
-      $this->load->view('welcome_message');
+      $this->load->view('index');
 	}
 
 	public function register() 
@@ -24,6 +24,7 @@ class Users extends CI_Controller {
 	public function login() {
 		$data = array();
 		$data = $this->input->post();
+		print_r ($data);
 		$this->load->view('users/login');
 		 if(isset($data) && $data != null) {
 			$this->load->model('user_model');
@@ -32,9 +33,17 @@ class Users extends CI_Controller {
 			   echo "login error";
 			 } 
 			 else {
-			   print_r($return);
+				$_SESSION['user_id'] = $return[0]['user_id'];
+                $_SESSION['user_username'] = $return[0]['user_username'];
+                redirect(base_url());
 			 }
 		
 			}
+}
+	public function logout(){
+		session_unset('user_id');
+		session_unset('user_uid');
+		session_destroy();
+		redirect(base_url());
 }
 }
