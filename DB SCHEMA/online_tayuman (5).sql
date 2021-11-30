@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2021 at 02:32 PM
+-- Generation Time: Nov 27, 2021 at 08:55 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -197,25 +197,33 @@ CREATE TABLE `transaction history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `user_type` bit(1) NOT NULL,
+  `user_name` varchar(100) NOT NULL,
   `user_email` varchar(200) NOT NULL,
   `user_address` varchar(200) NOT NULL,
   `user_contact.no` varchar(50) NOT NULL,
   `user_birthday` date NOT NULL,
-  `user_gender` set('Male','Female','Other') NOT NULL,
+  `user_gender` enum('male','female','other') NOT NULL,
   `user_age` int(3) NOT NULL,
-  `user_profpic.URL` varchar(255) NOT NULL,
-  `user_acc.createddate` date NOT NULL,
+  `user_profpic_URL` varchar(255) NOT NULL,
+  `user_acc_createddate` int(11) NOT NULL,
   `user_username` varchar(15) NOT NULL,
   `user_password` varchar(255) NOT NULL,
   `user_previouslog` date NOT NULL,
-  `user_acc.status` bit(1) NOT NULL
+  `user_acc_status` enum('Active','Inactive') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `user_type`, `user_name`, `user_email`, `user_address`, `user_contact.no`, `user_birthday`, `user_gender`, `user_age`, `user_profpic_URL`, `user_acc_createddate`, `user_username`, `user_password`, `user_previouslog`, `user_acc_status`) VALUES
+(14, b'0', 'John Edward Complido', '0311516846', 'bulacan', '', '0000-00-00', 'male', 0, '', 0, 'Drawde', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'Active');
 
 --
 -- Indexes for dumped tables
@@ -294,9 +302,9 @@ ALTER TABLE `transaction history`
   ADD PRIMARY KEY (`transactionhistory_id`);
 
 --
--- Indexes for table `user`
+-- Indexes for table `users`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
 --
@@ -304,10 +312,10 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
