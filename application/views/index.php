@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" type = "text/css" 
+         href = "<?php echo base_url(); ?>asset/style.css">
+    
 
 </head>
 <body>
@@ -33,7 +35,8 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="login.html"><i class="fas fa-user" id="login-btn"></i></a>
+        <a href='<?php echo base_url()."index.php/users/login"?>'><i class="fas fa-user" id="login-btn"></i></a>
+        
     </div>
 
     <form action="" class="search-form">

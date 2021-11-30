@@ -12,13 +12,16 @@ class user_model extends CI_Model {
 
     public function createUser($data){
 
-        if(!$this -> checkUsernameIfExists($data['user_username'])){
-            $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
-             $data['user_acc_status'] = "Active";
-             $data['user_acc_createddate'] = time();
-     
-             $this -> db -> insert($this -> table, $data);
+        if($this -> checkUsernameIfExists($data['user_username'])){
+            echo "existing";
 
+        }
+        else {
+            $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
+            $data['user_acc_status'] = "Active";
+            $data['user_acc_createddate'] = time();
+    
+            $this -> db -> insert($this -> table, $data);
         }
 
         return;
