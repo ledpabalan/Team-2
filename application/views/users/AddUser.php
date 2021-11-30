@@ -1,25 +1,5 @@
-<!--<?=isset($message) ? $message : "";?>
-<form method="POST">
-
-
-                <p>Username:</p>
-                <input type="text" name="username" placeholder=" Enter Username">
-
-                <p>Password:</p>
-                <input type="password" name="password" placeholder=" Enter Password">
-
-                <p>Firstname Name:</p>
-                <input type="text" name="firstname" placeholder=" Enter Firstname">
-
-                <p>Lastname Name:</p>
-                <input type="text" name="lastname" placeholder=" Enter Lastname">
-
-                <input type="submit"  value="Create User">
-
-</form> 
-                <a href="/users">Back to list of user</a>
--->
 <?=isset($message) ? $message : "";?>
+
 <form method='POST'>
 
                 <p>Full Name:</p>
@@ -32,7 +12,7 @@
                 <input type="text" name="user_address" placeholder=" Enter Address">
 
                 <p>Contact Number:</p>
-                <input type="text" name="user_contact.no" placeholder=" Enter Contact No.">
+                <input type="text" name="user_contact_no" placeholder=" Enter Contact No.">
 
                 <p>Birthdate:</p>
                 <input type="date" name="user_birthday" placeholder=" DD-MM-YYYY">
@@ -56,8 +36,13 @@
 -->
                 <br>
                 <br>
-                <input type="submit" name="submit" value="Create User">
+                <input type="submit" value="Create User">
 </form> 
-                <h5>Already have an account?</h5>
+               <!-- <h5>Already have an account?</h5> -->
                <!-- <a href="application/login.html">Sign in</a> -->
 
+               </div>
+    <!-- login end-->
+
+</body>
+</html>

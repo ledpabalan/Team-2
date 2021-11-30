@@ -1,24 +1,7 @@
-<<<<<<< Updated upstream
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Users extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function index()
 	{
       $this->load->view('welcome_message');
@@ -26,10 +9,33 @@ class Users extends CI_Controller {
 
 	public function register() 
 	{
+		$data = array();
+		$data = $this -> input ->  post();
+		if(isset($data) && $data != null){
+			$this->load->model('user_model');
 
-        //echo 'REGISTER ITO';
-		$this->load->view('Users/User_Register');
-        //exit;
+			$this->user_model->createUser($data);
+
+		}
+
+		$this->load->view('users/AddUser');
     }
 
+	public function login() {
+		$data = array();
+		$data = $this->input->post();
+		$this->load->view('users/login');
+		 if(isset($data) && $data != null) {
+			$this->load->model('user_model');
+			$return = $this->user_model->login($data['user_username'], $data['user_password']);
+			if(is_bool($return)) {
+			   echo "login error";
+			 } 
+			 else {
+			   print_r($return);
+			 }
+		
+			}
 }
+}
+
