@@ -13,7 +13,7 @@
 
     <!-- custom css file link  -->
     <link rel = "stylesheet" type = "text/css" 
-         href = "<?php echo base_url(); ?>asset/style.css">
+         href = "<?php echo base_url(); ?>assets/style.css">
     
 
 </head>
@@ -35,7 +35,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href='<?php echo base_url()."index.php/users/login"?>'><i class="fas fa-user" id="login-btn"></i></a>
+        <a href='<?php echo base_url()."users/login"?>'><i class="fas fa-user" id="login-btn"></i></a>
         
     </div>
 
@@ -71,21 +71,21 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="images/fea food 1.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/fea food 1.jpg" alt="">
             <h3>Tayuman Classics</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
-            <img src="images/fea motor 2" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/fea motor 2" alt="">
             <h3>free delivery</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
-            <img src="images/fea payment 3.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/fea payment 3.png" alt="">
             <h3>easy payments</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
@@ -108,7 +108,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -122,7 +122,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -136,7 +136,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -150,7 +150,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -172,7 +172,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -186,7 +186,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -200,7 +200,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -214,7 +214,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -245,35 +245,35 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>top foods</h3>
             <p>upto 45% off</p>
             <a href="#" class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>classics</h3>
             <p>upto 45% off</p>
             <a href="#" class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>budget meal</h3>
             <p>upto 45% off</p>
             <a href="#" class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>refreshers</h3>
             <p>upto 45% off</p>
             <a href="#" class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>sweets & dessert</h3>
             <p>upto 45% off</p>
             <a href="#" class="btn">shop now</a>

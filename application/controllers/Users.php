@@ -12,14 +12,32 @@ class Users extends CI_Controller {
 		$data = array();
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
-			$this->load->model('user_model');
-
-			$this->user_model->createUser($data);
-
+			redirect('/users/register2/'.$data['user_type']); //passing data into another function
+			
 		}
 
-		$this->load->view('users/AddUser');
+		$this->load->view('users/signup');
     }
+
+	public function register2 ($user_type) 
+	{
+		$data = $this -> input ->  post();
+		if(isset($data) && $data != null){
+			$this->load->model('user_model');
+			$this->user_model->createUser($data);
+		}
+
+		echo $user_type;
+
+		$this->load->view('users/signdown');
+		//redirect(base_url());
+    }
+
+
+
+
+
+
 
 	public function login() {
 		$data = array();

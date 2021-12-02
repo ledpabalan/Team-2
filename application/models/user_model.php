@@ -20,7 +20,7 @@ class user_model extends CI_Model {
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
             $data['user_acc_status'] = "Active";
             $data['user_acc_createddate'] = time();
-    
+            unset($data['user_pwdRepeat']);
             $this -> db -> insert($this -> table, $data);
         }
 
@@ -47,7 +47,6 @@ class user_model extends CI_Model {
         $this->db->where( 'user_username', $user_username);
         $this->db->where( 'user_password', md5($user_password));
         $query = $this->db->get ($this->table);
-        echo $this->db->last_query(). '<br>';
         $return = $query->result_array();
         if(count($return) > 0)
             return $return;

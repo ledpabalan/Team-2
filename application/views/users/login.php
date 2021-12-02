@@ -9,25 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
+    <link rel = "stylesheet" type = "text/css" 
+         href = "<?php echo base_url(); ?>assets/login.css">
 </head>
 <body>
 
     <!-- login start-->
     <div class="loginbox">
-        <img class="logo" src="./images/TNTlogo.png">
-        <img class="avatar" src="./images/login.png">
+        <img class="logo" src="<?php echo base_url(); ?>assets/images/tntlogo.png">
+        <img class="avatar" src="<?php echo base_url(); ?>assets/images/login.png">
             <h1>LOG IN</h1>
             <form method= "POST">
-                <input type="text" name="user_username" placeholder=" Username/Email">
+                <input type="text" name="user_username" placeholder=" Username/Email"required>
 
-                <input type="text" name="user_password" placeholder=" Password">
+                <input type="text" name="user_password" placeholder=" Password"required>
                 <button type="submit">Submit</button>
                 
                 <h5>Don't have any account?</h5>
-                <a href="signup.html">Sign up</a>
+                <a href="<?php echo base_url(); ?>users/register">Sign up</a>
 
             </form>
     </div>
