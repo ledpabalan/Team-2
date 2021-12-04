@@ -4,7 +4,7 @@
 class Users extends CI_Controller {
 	public function index()
 	{
-      $this->load->view('welcome_message');
+      $this->load->view('index');
 	}
 
 	public function register() 
@@ -12,14 +12,32 @@ class Users extends CI_Controller {
 		$data = array();
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
-			$this->load->model('user_model');
-
-			$this->user_model->createUser($data);
-
+			redirect('/users/register2/'.$data['user_type']); //passing data into another function
+			
 		}
 
-		$this->load->view('users/AddUser');
+		$this->load->view('users/signup');
     }
+
+	public function register2 ($user_type) 
+	{
+		$data = $this -> input ->  post();
+		if(isset($data) && $data != null){
+			$this->load->model('user_model');
+			$this->user_model->createUser($data);
+		}
+
+		echo $user_type;
+
+		$this->load->view('users/signdown'); //AddUser
+		//redirect(base_url());
+    }
+
+
+
+
+
+
 
 	public function login() {
 		$data = array();
@@ -32,7 +50,11 @@ class Users extends CI_Controller {
 			   echo "login error";
 			 } 
 			 else {
-			   print_r($return);
+				$_SESSION['user_id'] = $return[0]['user_id'];
+                $_SESSION['user_username'] = $return[0]['user_username'];
+              
+				redirect(base_url()); //UserLoggedIn Interface
+				//$this->load->view('index');//UserLoggedIn Interface
 			 }
 		
 			}
@@ -58,5 +80,13 @@ class Users extends CI_Controller {
 			exit;
 			}
 	}
+
 }
+	//public function logout(){
+	//	session_unset('user_id');
+	//	session_unset('user_uid');
+	//	session_destroy();				tinanggal ko muna to di ko alam pano mafifix hahaha para din maka usad ako sa ginaagawa ko :)))
+	//	redirect(base_url());
+//}
+
 

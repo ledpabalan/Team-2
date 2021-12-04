@@ -12,14 +12,23 @@ class user_model extends CI_Model {
 
     public function createUser($data){
 
+
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
+           // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
              $data['user_acc_createddate'] = date("F j, Y, g:i a");  
              $data['user_profpic_URL'] = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg";
      
              $this -> db -> insert($this -> table, $data);
 
+        }
+        else {
+            $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
+            $data['user_acc_status'] = "Active";
+            $data['user_acc_createddate'] = time();
+            unset($data['user_pwdRepeat']);
+            $this -> db -> insert($this -> table, $data);
         }
 
         return;
@@ -32,13 +41,16 @@ class user_model extends CI_Model {
 
         $query = $this -> db -> get($this -> table); 
         $return = $query -> result_array();
+        echo"Registered Failed!";
 
         print_r($return);
 
         if(count($return) > 0 )
             return true;
+            echo"Registered Successfully!";
 
         return false;
+        
     }
 
     public function login($user_username, $user_password) {
