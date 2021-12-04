@@ -58,11 +58,35 @@ class Users extends CI_Controller {
 			 }
 		
 			}
+	}
+
+	public function viewUser($user_id = null){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($user_id);
+
+		$output['user'] = $user[0];
+
+		$this->load->view('users/viewUser', $output);
+	}
+
+	public function updateUser(){
+		$data = array();
+		$data = $this->input->post();
+		 if(isset($data) && $data != null) {
+			$this->load->model('user_model');
+
+			print_r($data);
+			exit;
+			}
+	}
+
 }
-	public function logout(){
-		session_unset('user_id');
-		session_unset('user_uid');
-		session_destroy();
-		redirect(base_url());
-}
-}
+	//public function logout(){
+	//	session_unset('user_id');
+	//	session_unset('user_uid');
+	//	session_destroy();				tinanggal ko muna to di ko alam pano mafifix hahaha para din maka usad ako sa ginaagawa ko :)))
+	//	redirect(base_url());
+//}
+
+

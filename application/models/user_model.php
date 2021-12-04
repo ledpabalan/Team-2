@@ -57,6 +57,7 @@ class user_model extends CI_Model {
         $this->db->where( 'user_username', $user_username);
         $this->db->where( 'user_password', md5($user_password));
         $query = $this->db->get ($this->table);
+
         $return = $query->result_array();
         if(count($return) > 0)
             return $return;
@@ -64,13 +65,12 @@ class user_model extends CI_Model {
     }
 
 
-    public function getUsers($id = null){
-        if(isset($id) && $id != null){
-            $this->db->where('id', $id);
+    public function getUsers($user_id = null){
+        if(isset($user_id) && $user_id != null){
+            $this->db->where('user_id', $user_id);
         }
 
         $query = $this -> db -> get($this -> table); 
-
         return $query -> result_array();
     }
 
