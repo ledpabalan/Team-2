@@ -8,27 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="signupstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
+    <link rel = "stylesheet" type = "text/css" 
+         href = "<?php echo base_url(); ?>assets/login.css">
 </head>
 <body>
 
     <!-- login start-->
     <div class="loginbox">
-        <img class="logo" src="./images/TNTlogo.png">
-        <img class="avatar" src="./images/login.png">
+        <img class="logo" src="<?php echo base_url(); ?>assets/images/tntlogo.png">
+        <img class="avatar" src="<?php echo base_url(); ?>assets/images/login.png">
             <h1>ACCOUNT TYPE:</h1>
-            <form>
+            <form method= "POST">
 
-                <input type="radio" id="Account Type" name="Account Type"value="Customer"/>Customer
+                <input type="radio" id="Account Type" name="user_type"value="Customer"/>Customer
                 
-                <input type="radio" id="Account Type" name="Account Type"value="Vendor"/>Vendor
+                <input type="radio" id="Account Type" name="user_type"value="Vendor"/>Vendor
 
-                <a href="signdown.html"><i class="fas fa-chevron-circle-right"></i></a>
+                
+            <!-- <a href="users/register2" type="submit"><i class="fas fa-chevron-circle-right"></i></a> -->
+             <button type="submit" value="submit" >submit</button>
+
+               
+
                
                 <h5>Already have an account?</h5>
-                <a href="login.html">Sign in</a>
+                <a href="<?php echo base_url(); ?>users/login">Sign in</a>
 
             </form>
     </div>
