@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2021 at 04:53 AM
+-- Generation Time: Nov 17, 2021 at 04:24 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -197,25 +197,24 @@ CREATE TABLE `transaction history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `user`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
-  `user_type` bit(1) NOT NULL,
+  `user_type` enum('Buyer','Seller') NOT NULL,
   `user_name` varchar(100) NOT NULL,
-  `user_email` varchar(200) NOT NULL,
   `user_address` varchar(200) NOT NULL,
   `user_contact.no` varchar(50) NOT NULL,
   `user_birthday` date NOT NULL,
-  `user_gender` enum('male','female','other') NOT NULL,
+  `user_gender` enum('Male','Female','Others') NOT NULL,
   `user_age` int(3) NOT NULL,
   `user_profpic.URL` varchar(255) NOT NULL,
-  `user_acc.createddate` int(11) NOT NULL,
+  `user_acc.createddate` date NOT NULL,
   `user_username` varchar(15) NOT NULL,
   `user_password` varchar(255) NOT NULL,
   `user_previouslog` date NOT NULL,
-  `user_acc.status` enum('Active','Inactive') NOT NULL
+  `user_acc.status` bit(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -295,9 +294,9 @@ ALTER TABLE `transaction history`
   ADD PRIMARY KEY (`transactionhistory_id`);
 
 --
--- Indexes for table `users`
+-- Indexes for table `user`
 --
-ALTER TABLE `users`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
@@ -305,9 +304,9 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `user`
 --
-ALTER TABLE `users`
+ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 

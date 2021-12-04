@@ -1,49 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The New Tayuman</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <?php include 'head.php'; ?>
 
 </head>
 <body>
     
-<!-- header section starts  -->
-
-<header class="header">
-
-    <a href="#" class="logo"> <i class="fas fa-utensils"></i> TheNewTayuman </a>
-
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#shops">Shops</a>
-        <a href="#categories">Categories</a>
-    </nav>
-
-    <div class="icons">
-        <div class="fas fa-bars" id="menu-btn"></div>
-        <div class="fas fa-search" id="search-btn"></div>
-        <a href="login.html"><i class="fas fa-user" id="login-btn"></i></a>
-    </div>
-
-    <form action="" class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </form>
-
-</header>
-
-<!-- header section ends -->
+    <?php include 'header1.php'; ?>
 
 <!-- home section starts  -->
 
@@ -52,7 +16,7 @@
     <div class="content">
         <h3>fresh and <span>classic</span> products for you</h3>
         <p>brought to you by The New Tayuman</p>
-        <a href="#" class="btn">shop now</a>
+        <a href="#shops" class="btn">shop now</a>
     </div>
 
 </section>
@@ -82,7 +46,7 @@
         </div>
 
         <div class="box">
-            <img src="images/fea payment 3.png" alt="">
+            <img src="images/fea payment 3.png " alt="">
             <h3>easy payments</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
@@ -179,7 +143,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a href="#" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -193,7 +157,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a href="#" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -207,7 +171,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a href="#" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -221,7 +185,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a href="#" class="btn">Check now</a>
             </div>
 
         </div>
@@ -243,7 +207,7 @@
 
         <div class="box">
             <img src="images/categories.jpg" alt="">
-            <h3>top foods</h3>
+            <h3>top food</h3>
             <p>upto 45% off</p>
             <a href="#" class="btn">shop now</a>
         </div>
@@ -282,47 +246,116 @@
 
 <!-- categories section ends -->
 
+<!-- developers section starts  -->
 
-<!-- footer section starts  -->
+<section class="developers" id="developers">
 
-<section class="footer">
+    <h1 class="heading"> the <span>developers</span> </h1>
 
-    <div class="box-container">
+    <div class="swiper review-slider">
 
-        <div class="box">
-            <h3><i class="fas fa-utensils"></i> TheNewTayuman </h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>Louise D. Pabalan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-        </div>
 
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +6399-9999-9999 </a>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +6399-9999-9999 </a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> tuptayuman@gmail.com </a>
-            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Manila, Philippines </a>
-        </div>
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>Carlo M. Salva</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> features </a>
-            <a href="#shops" class="links"> <i class="fas fa-arrow-right"></i> shops </a>
-            <a href="#categories" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>Foehn R. Dela Cruz</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>jheanne r. aguilar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>jairus ivan iscala</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>levi tuya</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john edward complido</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
         </div>
 
     </div>
 
-    <div class="credit"> &copy;2021 <span> TheNewTayuman </span> | all rights reserved </div>
-    
 </section>
 
-<!-- footer section ends -->
+<!-- developers section ends -->
+
+    <?php include 'footer.php'; ?>  
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 

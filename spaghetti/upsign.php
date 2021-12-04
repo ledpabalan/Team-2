@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The New Tayuman</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="signdownstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="javascript" href="sds.js">
+
+    <?php include 'headlog.php'; ?>
+
 </head>
 <body>
 
-    <!-- login start-->
-    <div class="loginbox">
+<!-- upsign start-->
+<div class="upsignbox">
         <img class="logo" src="./images/TNTlogo.png">
         <img class="avatar" src="./images/login.png">
             <h1>SIGN UP FOR FREE!</h1>
@@ -71,14 +64,15 @@
                     });
 
                 </script>
-                <a href="homepage.html"><i class="fas fa-chevron-circle-right"></i></a>
+                <a href="homesec.php"><i class="fas fa-chevron-circle-right"></i></a>
                 
                 <h5>Already have an account?</h5>
-                <a href="login.html">Sign in</a>
+                <a href="login.php">Sign in</a>
 
             </form>
     </div>
-    <!-- login end-->
+    <!-- upsign end-->
+
 
 </body>
 </html>
