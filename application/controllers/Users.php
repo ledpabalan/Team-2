@@ -36,6 +36,27 @@ class Users extends CI_Controller {
 			 }
 		
 			}
-}
+	}
+
+	public function viewUser($user_id = null){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($user_id);
+
+		$output['user'] = $user[0];
+
+		$this->load->view('users/viewUser', $output);
+	}
+
+	public function updateUser(){
+		$data = array();
+		$data = $this->input->post();
+		 if(isset($data) && $data != null) {
+			$this->load->model('user_model');
+
+			print_r($data);
+			exit;
+			}
+	}
 }
 
