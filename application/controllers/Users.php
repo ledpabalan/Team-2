@@ -29,7 +29,7 @@ class Users extends CI_Controller {
 
 		echo $user_type;
 
-		$this->load->view('users/signdown');
+		$this->load->view('users/signdown'); //AddUser
 		//redirect(base_url());
     }
 
@@ -52,7 +52,9 @@ class Users extends CI_Controller {
 			 else {
 				$_SESSION['user_id'] = $return[0]['user_id'];
                 $_SESSION['user_username'] = $return[0]['user_username'];
-                redirect(base_url());
+              
+				redirect(base_url()); //UserLoggedIn Interface
+				//$this->load->view('index');//UserLoggedIn Interface
 			 }
 		
 			}

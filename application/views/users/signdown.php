@@ -27,32 +27,30 @@
                 <p>Full Name:</p>
                 <input type="text" name="user_name" placeholder=" Enter Fullname"required>
 
+                <p>Email:</p>
+                <input type="text" name="user_email" placeholder=" Enter Email"required>
+
                 <p>Username:</p>
                 <input type="text" name="user_username" placeholder=" Enter Username"required>
 
-                <p>Address:</p>
-                <input type="text" name="user_address" placeholder=" Enter Address"required>
-
-                <p>Email:</p>
-                <input type="text" name="user_email" placeholder=" Enter Email"required>
+                <p>Contact Number:</p>
+                <input type="text" name="user_contact_no" placeholder=" Enter Contact No."required>
 
                 <p>Birthdate:</p>
                 <input type="date" name="user_birthday" placeholder=" DD-MM-YYYY"required>
 
-                <p>Contact Number:</p>
-                <input type="text" name="user_contact_no" placeholder=" Enter Contact No."required>
+                <p>Gender:</p>
+                <input type="radio" id="Gender" name="user_gender" value="Male"/>Male
+                <input type="radio" id="Gender" name="user_gender" value="Female"/>Female
+                <input type="radio" id="Gender" name="user_gender"value="Other"/>Other
 
                 <p>Password:</p>
                 <input type="text" name="user_password" placeholder=" Enter Password"required>
 
                 <p>Confirm Password:</p>
                 <input type="text" name="user_pwdRepeat" placeholder=" Confirm Password"required>
-
-                <p>Gender:</p>
-                <input type="checkbox" id="Gender" name="user_gender"value="Male"/>Male
-                <input type="checkbox" id="Gender" name="user_gender"value="Female"/>Female
-                <input type="checkbox" id="Gender" name="user_gender"value="Other"/>Other
         
+                <p>Verification:</p>
                 <input type="file" id="real-file" hidden="hidden" />
                 <button type="button" id="custom-button">CHOOSE A FILE</button>
                 <span id="custom-text">UPLOAD VERIFICATION</span>

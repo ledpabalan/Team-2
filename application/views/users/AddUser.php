@@ -19,7 +19,6 @@
                 <input type="radio" id="Gender" name="user_gender" value="Female"/>Female
                 <input type="radio" id="Gender" name="user_gender"value="Other"/>Other
                 
-
                 <p>Username:</p>
                 <input type="text" name="user_username" placeholder=" Enter Username">
 
