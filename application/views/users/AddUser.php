@@ -13,6 +13,12 @@
 
                 <p>Birthdate:</p>
                 <input type="date" name="user_birthday" placeholder=" DD-MM-YYYY">
+                
+                <p>Gender:</p>
+                <input type="radio" id="Gender" name="user_gender" value="Male"/>Male
+                <input type="radio" id="Gender" name="user_gender" value="Female"/>Female
+                <input type="radio" id="Gender" name="user_gender"value="Other"/>Other
+                
 
                 <p>Username:</p>
                 <input type="text" name="user_username" placeholder=" Enter Username">
@@ -24,19 +30,8 @@
                 <input type="radio" id="Gender" name="user_type" value="Buyer"/>Buyer
                 <input type="radio" id="Gender" name="user_type" value="Seller"/>Seller
                 
-                <!--
-                <p>Address:</p>
-                <input type="text" name="user_address" placeholder=" Enter Address">
-                
-                <p>Gender:</p>
-                <input type="radio" id="Gender" name="user_gender" value="Male"/>Male
-                <input type="radio" id="Gender" name="user_gender" value="Female"/>Female
-                <input type="radio" id="Gender" name="user_gender"value="Other"/>Other
-                
-
-                <p>Age:</p>
-                <input type="text" name="user_age" placeholder="Age ">
-                -->
+        
+    
                 <!-- <p>Confirm Password:</p>
                 <input type="text" name="confirmpassword" placeholder=" Confirm Password">
 -->
@@ -52,3 +47,4 @@
 
 </body>
 </html>
+

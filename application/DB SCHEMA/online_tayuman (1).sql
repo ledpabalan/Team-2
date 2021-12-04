@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2021 at 04:53 AM
+-- Generation Time: Dec 04, 2021 at 08:50 AM
 -- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -202,21 +202,32 @@ CREATE TABLE `transaction history` (
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `user_type` bit(1) NOT NULL,
+  `user_type` enum('Buyer','Seller') NOT NULL,
   `user_name` varchar(100) NOT NULL,
   `user_email` varchar(200) NOT NULL,
   `user_address` varchar(200) NOT NULL,
-  `user_contact.no` varchar(50) NOT NULL,
+  `user_contact_no` varchar(50) NOT NULL,
   `user_birthday` date NOT NULL,
   `user_gender` enum('male','female','other') NOT NULL,
   `user_age` int(3) NOT NULL,
-  `user_profpic.URL` varchar(255) NOT NULL,
-  `user_acc.createddate` int(11) NOT NULL,
+  `user_profpic_URL` varchar(255) NOT NULL,
+  `user_acc_createddate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `user_username` varchar(15) NOT NULL,
   `user_password` varchar(255) NOT NULL,
   `user_previouslog` date NOT NULL,
-  `user_acc.status` enum('Active','Inactive') NOT NULL
+  `user_acc_status` enum('Active','Inactive') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `user_type`, `user_name`, `user_email`, `user_address`, `user_contact_no`, `user_birthday`, `user_gender`, `user_age`, `user_profpic_URL`, `user_acc_createddate`, `user_username`, `user_password`, `user_previouslog`, `user_acc_status`) VALUES
+(1, 'Buyer', 'chichi', 'ccccccc', '', 'cccccccccccc', '2021-12-07', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2021-12-04 07:46:22', 'ccccccccccccccc', '93c9597045e88366796c4af96ddd9b73', '0000-00-00', 'Active'),
+(2, 'Seller', 'trtrttr', 'trtrtr', '', 'trtrt', '2021-12-02', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2021-12-04 07:46:22', 'trtrt', '8098ab4af3b1af7d11da03db2a3efe82', '0000-00-00', 'Active'),
+(3, 'Buyer', 'bnbnbn', 'nbnbb', '', 'bnbn', '2021-12-01', 'female', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2021-12-04 07:46:22', 'nbnbnb', '4984aa7eeb8c7fa0709832e364e03989', '0000-00-00', 'Active'),
+(4, 'Seller', 'jujujuj', 'jujuuj', '', 'juuj', '2021-12-01', 'other', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'jujujuj', '843b776102262a1250f7d41b1b5472e0', '0000-00-00', 'Active'),
+(5, 'Buyer', 'tytytytytytyt', 'ytytyty', '', 'ytytytyty', '2021-12-10', 'female', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'tytytyt', 'f15541c3f3b9c84f16e405bca85b781b', '0000-00-00', 'Active');
 
 --
 -- Indexes for dumped tables
@@ -308,7 +319,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

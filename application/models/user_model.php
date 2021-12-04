@@ -15,7 +15,7 @@ class user_model extends CI_Model {
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
-             $data['user_acc_createddate'] = date('d-m-y h:i:s');
+             $data['user_acc_createddate'] = date("F j, Y, g:i a");  
              $data['user_profpic_URL'] = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg";
      
              $this -> db -> insert($this -> table, $data);
