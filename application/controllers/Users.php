@@ -75,9 +75,7 @@ class Users extends CI_Controller {
 		$data = $this->input->post();
 		 if(isset($data) && $data != null) {
 			$this->load->model('user_model');
-
-			print_r($data);
-			exit;
+			$this -> user_model -> updateUser($data);
 			}
 	}
 
