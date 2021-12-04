@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <?php
  defined('BASEPATH') OR exit('No direct script access allowed');
@@ -55,6 +56,8 @@ class user_model extends CI_Model {
 
 }
 =======
+=======
+>>>>>>> develop
 <?php
  defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -69,8 +72,15 @@ class user_model extends CI_Model {
 
     public function createUser($data){
 
+<<<<<<< HEAD
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
+=======
+
+        if(!$this -> checkUsernameIfExists($data['user_username'])){
+            $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
+           // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
+>>>>>>> develop
              $data['user_acc_status'] = "Active";
              $data['user_acc_createddate'] = date("F j, Y, g:i a");  
              $data['user_profpic_URL'] = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg";
@@ -78,6 +88,16 @@ class user_model extends CI_Model {
              $this -> db -> insert($this -> table, $data);
 
         }
+<<<<<<< HEAD
+=======
+        else {
+            $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
+            $data['user_acc_status'] = "Active";
+            $data['user_acc_createddate'] = time();
+            unset($data['user_pwdRepeat']);
+            $this -> db -> insert($this -> table, $data);
+        }
+>>>>>>> develop
 
         return;
     }
@@ -89,13 +109,24 @@ class user_model extends CI_Model {
 
         $query = $this -> db -> get($this -> table); 
         $return = $query -> result_array();
+<<<<<<< HEAD
+=======
+        echo"Registered Failed!";
+>>>>>>> develop
 
         print_r($return);
 
         if(count($return) > 0 )
             return true;
+<<<<<<< HEAD
 
         return false;
+=======
+            echo"Registered Successfully!";
+
+        return false;
+        
+>>>>>>> develop
     }
 
     public function login($user_username, $user_password) {
@@ -110,6 +141,7 @@ class user_model extends CI_Model {
     }
 
 
+<<<<<<< HEAD
     public function getUsers($id = null){
         if(isset($id) && $id != null){
             $this->db->where('id', $id);
@@ -117,9 +149,20 @@ class user_model extends CI_Model {
 
         $query = $this -> db -> get($this -> table); 
 
+=======
+    public function getUsers($user_id = null){
+        if(isset($user_id) && $user_id != null){
+            $this->db->where('user_id', $user_id);
+        }
+
+        $query = $this -> db -> get($this -> table); 
+>>>>>>> develop
         return $query -> result_array();
     }
 
 
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> develop
