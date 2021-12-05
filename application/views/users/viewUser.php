@@ -5,31 +5,28 @@
 
 
                 <p>Full Name:</p>
-                <input type="text" name="" value ="<?php echo $user['user_name']?>">
+                <input type="text" name="user_name" value ="<?php echo $user['user_name']?>">
 
                 <p>Username:</p>
-                <input type="text" name="" value ="<?php echo $user['user_username']?>">
+                <input type="text" name="user_username" value ="<?php echo $user['user_username']?>">
 
                 <p>Address:</p>
-                <input type="text" name="" value ="<?php echo $user['user_address']?>">
+                <input type="text" name="user_address" value ="<?php echo $user['user_address']?>">
 
                 <p>Email:</p>
-                <input type="text" name="" value ="<?php echo $user['user_email']?>">
+                <input type="text" name="user_email" value ="<?php echo $user['user_email']?>">
 
                 <p>Birthdate:</p>
-                <input type="date" name="" value ="<?php echo $user['user_birthday']?>">
+                <input type="date" name="user_birthday" value ="<?php echo $user['user_birthday']?>">
 
                 <p>Contact Number:</p>
-                <input type="text" name="" value ="<?php echo $user['user_contact_no']?>">
+                <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>">
 
                 <p>Password:</p>
-                <input type="text" name="password" value ="<?php echo $user['user_password']?>">
+                <input type="text" name="user_password" value ="<?php echo $user['user_password']?>">
 
-
-                <p>Gender:</p>
-                <input type="radio" id="Gender" name="Gender"value="<?php echo $user['user_gender']?>"/>Male
-                <input type="radio" id="Gender" name="Gender"value="<?php echo $user['user_gender']?>"/>Female
-                <input type="radio" id="Gender" name="Gender"value="<?php echo $user['user_gender']?>"/>Other
+                <p>Confirm Password: </p>
+                <input type="text" name="user_pwdRepeat" value ="<?php echo $user['user_pwdRepeat']?>">
 
                 <br>
                 <br>

@@ -67,9 +67,13 @@ class user_model extends CI_Model {
     }
 
 
-    public function getUsers($user_id = null){
+    public function getUsers($user_id = null, $user_acc_status = null){
         if(isset($user_id) && $user_id != null){
             $this->db->where('user_id', $user_id);
+        }
+
+        if (isset($user_acc_status) && $user_acc_status != null){
+            $this -> db -> where ('user_acc_status', $user_acc_status);
         }
 
         $query = $this -> db -> get($this -> table); 
@@ -81,8 +85,19 @@ class user_model extends CI_Model {
         unset($data['user_id']);
 
         $this->db->update($this->table, $data);     //di ko mafigure out yung sa gender so sila sila lang muna pwera sa gender yung pwede maupdate
-        echo $this -> db -> last_query();
-        exit;
+        return;          // may konting problem lang rin sa password so siguro gagawa tayo bagong tab na nakahiwalay don ganon 
+
+    }
+
+    
+    public function updateUserStatus($user_id, $user_acc_status){
+        $this->db->where('user_id', $user_id);
+        
+        $data ['user_acc_status'] = $user_acc_status;
+
+        $this->db->update($this->table, $data);    
+        return;
 
     }
 }
+

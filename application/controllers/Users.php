@@ -4,7 +4,24 @@
 class Users extends CI_Controller {
 	public function index()
 	{
-      $this->load->view('index');
+	  $this->load->model('user_model');
+
+	  $users = $this->user_model->getUsers(null, "Active");
+
+	  $output['users'] = $users;
+
+      $this->load->view('users/getUser', $output);
+	}
+
+	public function ViewInactive()
+	{
+	  $this->load->model('user_model');
+
+	  $users = $this->user_model->getUsers(null, "Inactive");
+
+	  $output['users'] = $users;
+
+      $this->load->view('users/getUser', $output);
 	}
 
 	public function register() 
@@ -71,11 +88,17 @@ class Users extends CI_Controller {
 		$data = $this->input->post();
 		 if(isset($data) && $data != null) {
 			$this->load->model('user_model');
-
-			//print_r($data);
-			//exit;
-			$this->user_model->updateUser($data);
+			$this -> user_model -> updateUser($data);
 			}
+			redirect('/users');
+	}
+
+	public function updatestatus ($user_id, $user_acc_status){
+		$this -> load -> model('user_model');
+
+		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
+
+		redirect('/users');
 	}
 
 }
