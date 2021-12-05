@@ -79,7 +79,7 @@ class user_model extends CI_Model {
         unset($data['user_id']);
 
         $this->db->update($this->table, $data);     //di ko mafigure out yung sa gender so sila sila lang muna pwera sa gender yung pwede maupdate
-        echo $this -> db -> last_query();
+        echo $this -> db -> last_query();           // may konting problem lang rin sa password so siguro gagawa tayo bagong tab na nakahiwalay don ganon 
         exit;
 
     }
