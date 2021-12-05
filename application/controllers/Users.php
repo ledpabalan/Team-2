@@ -4,7 +4,13 @@
 class Users extends CI_Controller {
 	public function index()
 	{
-      $this->load->view('index');
+	  $this->load->model('user_model');
+
+	  $usersv = $this->user_model->getUsers();
+
+	  print_r($usersv);
+
+      $this->load->view('/Team-2/index.php/users/getUser/');
 	}
 
 	public function register() 
