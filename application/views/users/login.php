@@ -33,4 +33,4 @@
     </div>
     <!-- login end-->
 
-                <a href="/users">Back to list of user</a>
+                <a href="/Team-2/index.php/users">Back to list of user</a>

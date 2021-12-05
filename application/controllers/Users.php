@@ -6,11 +6,22 @@ class Users extends CI_Controller {
 	{
 	  $this->load->model('user_model');
 
-	  $usersv = $this->user_model->getUsers();
+	  $users = $this->user_model->getUsers(null, "Active");
 
-	  print_r($usersv);
+	  $output['users'] = $users;
 
-      $this->load->view('/Team-2/index.php/users/getUser/');
+      $this->load->view('users/getUser', $output);
+	}
+
+	public function ViewInactive()
+	{
+	  $this->load->model('user_model');
+
+	  $users = $this->user_model->getUsers(null, "Inactive");
+
+	  $output['users'] = $users;
+
+      $this->load->view('users/getUser', $output);
 	}
 
 	public function register() 
@@ -83,6 +94,15 @@ class Users extends CI_Controller {
 			$this->load->model('user_model');
 			$this -> user_model -> updateUser($data);
 			}
+			redirect('/users');
+	}
+
+	public function updatestatus ($user_id, $user_acc_status){
+		$this -> load -> model('user_model');
+
+		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
+
+		redirect('/users');
 	}
 
 }
