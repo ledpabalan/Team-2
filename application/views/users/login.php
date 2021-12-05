@@ -33,4 +33,4 @@
     </div>
     <!-- login end-->
 
-                <a href="/users">Back to list of user</a>
+              <!--  <a href="/users">Back to list of user</a> -->

@@ -13,7 +13,7 @@ class Users extends CI_Controller {
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
 			redirect('/users/register2/'.$data['user_type']); //passing data into another function
-			
+			echo " 1.) data = ".print_r($data, true);//
 		}
 
 		$this->load->view('users/signup');
@@ -27,16 +27,11 @@ class Users extends CI_Controller {
 			$this->user_model->createUser($data);
 		}
 
-		echo $user_type;
+		// echo $user_type;
 
 		$this->load->view('users/signdown'); //AddUser
 		//redirect(base_url());
     }
-
-
-
-
-
 
 
 	public function login() {
@@ -47,7 +42,8 @@ class Users extends CI_Controller {
 			$this->load->model('user_model');
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
 			if(is_bool($return)) {
-			   echo "login error";
+			   echo "<br/>-----[ login error ]----- <br/><br/>";
+			   echo "Incorrect Username and/or Password "; 
 			 } 
 			 else {
 				$_SESSION['user_id'] = $return[0]['user_id'];
@@ -76,8 +72,9 @@ class Users extends CI_Controller {
 		 if(isset($data) && $data != null) {
 			$this->load->model('user_model');
 
-			print_r($data);
-			exit;
+			//print_r($data);
+			//exit;
+			$this->user_model->updateUser($data);
 			}
 	}
 

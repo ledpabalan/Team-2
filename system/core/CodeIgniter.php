@@ -107,7 +107,7 @@ if ( ! is_php('5.4'))
 			'application_folder',
 			'view_folder',
 			'_protected',
-			'_registered'
+			'_'
 		);
 
 		$_registered = ini_get('variables_order');

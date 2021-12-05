@@ -17,18 +17,16 @@ class user_model extends CI_Model {
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
            // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
-             $data['user_acc_createddate'] = date("F j, Y, g:i a");  
+             $data['user_acc_createddate'] = date('Y-m-d H:i:s');
              $data['user_profpic_URL'] = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg";
      
              $this -> db -> insert($this -> table, $data);
+             echo " data = ".print_r($data, true); //Prints data array
 
         }
         else {
-            $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
-            $data['user_acc_status'] = "Active";
-            $data['user_acc_createddate'] = time();
-            unset($data['user_pwdRepeat']);
-            $this -> db -> insert($this -> table, $data);
+           echo"Registration Failed <br/>";
+           echo "UserName already taken";
         }
 
         return;
@@ -41,15 +39,18 @@ class user_model extends CI_Model {
 
         $query = $this -> db -> get($this -> table); 
         $return = $query -> result_array();
-        echo"Registered Failed!";
+       
+        //print_r($return);
 
-        print_r($return);
-
-        if(count($return) > 0 )
+        if(count($return) > 0 ){
             return true;
-            echo"Registered Successfully!";
+        }
+        else{
+            echo"Registered Successfully!<br/><br/>";
 
-        return false;
+          //  print_r($return);
+            return false;
+        }
         
     }
 
@@ -59,8 +60,9 @@ class user_model extends CI_Model {
         $query = $this->db->get ($this->table);
 
         $return = $query->result_array();
-        if(count($return) > 0)
+        if(count($return) > 0){
             return $return;
+        }
         return false;
     }
 
