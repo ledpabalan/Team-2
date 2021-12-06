@@ -3,11 +3,12 @@
 <br>
 <p> <a href ="/Team-2/index.php/users/register/"> Add User </a> </p>
 <p> <a href ="/Team-2/index.php/users/admin"> View Active </a> </p>
-<p> <a href ="/Team-2/index.php/users/Viewinactive/"> View Inactive </a> </p>
+<p> <a href ="/Team-2/index.php/users/Viewinactive/"> View Inactive </a> </p> 
+<p> <a href ="/Team-2/index.php/users"> Home page </a> </p> 
 <br>
 <table>
     <head>
-        <td> User Id    </td>
+        <td> User Id   </td>
         <td> Fullname    </td>
         <td> Username   </td>
         <td> Email    </td>
