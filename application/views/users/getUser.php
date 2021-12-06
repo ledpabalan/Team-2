@@ -2,7 +2,7 @@
 <?=isset($message) ? $message :""; ?>
 <br>
 <p> <a href ="/Team-2/index.php/users/register/"> Add User </a> </p>
-<p> <a href ="/Team-2/index.php/users"> View Active </a> </p>
+<p> <a href ="/Team-2/index.php/users/admin"> View Active </a> </p>
 <p> <a href ="/Team-2/index.php/users/Viewinactive/"> View Inactive </a> </p>
 <br>
 <table>
