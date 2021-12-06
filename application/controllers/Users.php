@@ -108,7 +108,7 @@ class Users extends CI_Controller {
 
 		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
 
-		redirect('/users');
+		redirect('/users/admin');
 	}
 
 }
