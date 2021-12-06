@@ -8,7 +8,7 @@
 <body>
 <?php include 'header2.php'; ?>  
 
-<!-- profile section starts  -->
+<!-- change password section starts  -->
 
     <div class="profile">   
             <h5>Settings</h5>
@@ -36,7 +36,7 @@
 
     </div>
 
-<!-- profile section ends  -->
+<!-- change password section ends  -->
 
 <?php include 'footer.php'; ?>  
 
