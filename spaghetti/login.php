@@ -9,8 +9,9 @@
 
     <!-- login start-->
     <div class="loginbox">
-        <img class="logo" src="../images/TNTlogo.png">
-        <img class="avatar" src="../images/login.png">
+        <img class="logo" src="./images/TNTlogo.png">
+        <hr>
+        <img class="avatar" src="./images/login.png">
             <h1>LOG IN</h1>
             <form>
                 <input type="text" name="" placeholder=" Username/Email">
@@ -20,7 +21,7 @@
                 <a href="homesec.php"><i class="fas fa-chevron-circle-right"></i></a>
                 
                 <h5>Don't have any account?</h5>
-                <a href="signup.php">Sign up</a>
+                <a id="SignUp" href="signup.php">Sign up</a>
 
             </form>
     </div>

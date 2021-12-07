@@ -10,8 +10,10 @@
 <!-- upsign start-->
 <div class="upsignbox">
         <img class="logo" src="./images/TNTlogo.png">
+        <hr>
         <img class="avatar" src="./images/login.png">
             <h1>SIGN UP FOR FREE!</h1>
+            
             <form>
                 <p>Full Name:</p>
                 <input type="text" name="" placeholder=" Enter Fullname">
@@ -67,7 +69,7 @@
                 <a href="homesec.php"><i class="fas fa-chevron-circle-right"></i></a>
                 
                 <h5>Already have an account?</h5>
-                <a href="login.php">Sign in</a>
+                <a id="SignUp" href="login.php">Sign in</a>
 
             </form>
     </div>
