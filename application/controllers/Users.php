@@ -2,7 +2,13 @@
  defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Users extends CI_Controller {
+
 	public function index()
+	{
+      $this->load->view('index');
+	}
+
+	public function admin()
 	{
 	  $this->load->model('user_model');
 
@@ -98,7 +104,7 @@ class Users extends CI_Controller {
 
 		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
 
-		redirect('/users');
+		redirect('/users/admin');
 	}
 
 }
