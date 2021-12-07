@@ -12,25 +12,26 @@ class user_model extends CI_Model {
 
     public function createUser($data){
 
-
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
-           // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
+            // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
              $data['user_acc_createddate'] = date('Y-m-d H:i:s');
              $data['user_profpic_URL'] = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg";
      
              $this -> db -> insert($this -> table, $data);
-             echo " data = ".print_r($data, true); //Prints data array
+             echo "<br/><br/> [  Successfully Registered!  ] <br/> ";
+             echo " data = ".print_r($data, true); //Prints data array, to reflect lang for a while kung ano nainput sa database after magregister
 
         }
         else {
-           echo"Registration Failed <br/>";
+           echo"<br/> Registration Failed <br/>"; 
            echo "UserName already taken";
         }
 
         return;
     }
+////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function checkUsernameIfExists($user_username){
         if(isset($user_username) && $user_username != null){
@@ -42,17 +43,19 @@ class user_model extends CI_Model {
        
         //print_r($return);
 
-        if(count($return) > 0 ){
+        if(count($return) > 0 ){  
             return true;
         }
         else{
-            echo"Registered Successfully!<br/><br/>";
+            echo"<br/><br/> [  Registered Successfully! ]<br/><br/>";
 
           //  print_r($return);
             return false;
         }
         
     }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function login($user_username, $user_password) {
         $this->db->where( 'user_username', $user_username);
@@ -65,6 +68,7 @@ class user_model extends CI_Model {
         return false;
     }
 
+ ////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function getUsers($user_id = null, $user_acc_status = null){
         if(isset($user_id) && $user_id != null){
@@ -79,6 +83,8 @@ class user_model extends CI_Model {
         return $query -> result_array();
     }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
     public function updateUser($data){
         $this->db->where('user_id', $data['user_id']);
         unset($data['user_id']);
@@ -91,6 +97,7 @@ class user_model extends CI_Model {
 
     }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
     
     public function updateUserStatus($user_id, $user_acc_status){
         $this->db->where('user_id', $user_id);
