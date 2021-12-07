@@ -8,21 +8,21 @@
 <br>
 <table>
     <head>
-        <td> User Id   </td>
-        <td> Fullname    </td>
-        <td> Username   </td>
-        <td> Email    </td>
-        <td> Status    </td>
-        <td> Action    </td>
+        <td>  User Id  </td>
+        <td>  Fullname  </td>
+        <td>  Username </td>
+        <td>  Email  </td>
+        <td>  Status  </td>
+        <td>  Action  </td>
     </head>
     <body>
-        <?php   foreach($users as $user) { ?>
+        <?php  foreach($users as $user) { ?>
         <tr>
-        <td> <?php echo $user['user_id']?> </td>
-        <td> <?php echo $user['user_name']?></td>
-        <td> <?php echo $user['user_username']?>   </td>
-        <td> <?php echo $user['user_email']?>    </td>
-        <td> <?php echo $user['user_acc_status']?>   </td>
+        <td><?php echo $user['user_id']?>  </td>
+        <td><?php echo $user['user_name']?> </td>
+        <td><?php echo $user['user_username']?> </td>
+        <td><?php echo $user['user_email']?> </td>
+        <td><?php echo $user['user_acc_status']?> </td>
 
         <td> 
             <a href ="/Team-2/index.php/users/Viewuser/<?php echo $user['user_id'];?>">View </a>
