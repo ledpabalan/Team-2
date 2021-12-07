@@ -45,10 +45,10 @@
                 <input type="radio" id="Gender" name="user_gender"value="Other"/>Other
 
                 <p>Password:</p>
-                <input type="text" name="user_password" placeholder=" Enter Password"required>
+                <input type="password" name="user_password" placeholder=" Enter Password"required>
 
                 <p>Confirm Password:</p>
-                <input type="text" name="user_pwdRepeat" placeholder=" Confirm Password"required>
+                <input type="password" name="user_pwdRepeat" placeholder=" Confirm Password"required>
         
                 <p>Verification:</p>
                 <input type="file" id="real-file" hidden="hidden" />
