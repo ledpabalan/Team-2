@@ -40,21 +40,17 @@ class user_model extends CI_Model {
 
         $query = $this -> db -> get($this -> table); 
         $return = $query -> result_array();
-       
-        //print_r($return);
+        echo"Registered Failed!";
 
-        if(count($return) > 0 ){  
+        print_r($return);
+
+        if(count($return) > 0 )
             return true;
-        }
-        else{
-            echo"<br/><br/> [  Registered Successfully! ]<br/><br/>";
+            echo"Registered Successfully!";
 
-          //  print_r($return);
-            return false;
-        }
+        return false;
         
     }
-
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function login($user_username, $user_password) {
