@@ -71,7 +71,7 @@ class Users extends CI_Controller {
 			$this->load->model('user_model');
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
 			if(is_bool($return)) {
-			   echo "<br/>-----[ login error ]----- <br/><br/>";
+			   echo "<br/>[    login error   ] <br/><br/>";
 			   echo "Incorrect Username and/or Password "; 
 			 } 
 			 else {

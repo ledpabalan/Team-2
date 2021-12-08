@@ -25,8 +25,8 @@ class user_model extends CI_Model {
 
         }
         else {
-           echo"<br/> Registration Failed <br/>"; 
-           echo "UserName already taken";
+           echo"<br/> [  Registration Failed!  ] <br/>"; 
+           echo    "[          UserName already taken           ]";
         }
 
         return;
@@ -40,13 +40,12 @@ class user_model extends CI_Model {
 
         $query = $this -> db -> get($this -> table); 
         $return = $query -> result_array();
-        echo"Registered Failed!";
 
-        print_r($return);
+        //print_r($return);
 
         if(count($return) > 0 )
             return true;
-            echo"Registered Successfully!";
+            echo"(Registered Successfully!)-Not Neccessary Note, To Prompt lang";
 
         return false;
         
@@ -60,7 +59,7 @@ class user_model extends CI_Model {
         $return = $query->result_array();
         if(count($return) > 0 && $return[0]['user_acc_status'] == 'Active')
             return $return;
-        }
+        
         return false;
     }
 
@@ -86,7 +85,7 @@ class user_model extends CI_Model {
         unset($data['user_id']);
         unset($data['user_pwdRepeat']);
 
-        $data['user_password'] = md5($data['user_password']);
+        $data['user_password'] = md5($data['user_password']); //md5
 
         $this->db->update($this->table, $data);                                //di ko mafigure out yung sa gender so sila sila lang muna pwera sa gender yung pwede maupdate
         return;                                                              // may konting problem lang rin sa password so siguro gagawa tayo bagong tab na nakahiwalay don ganon 
