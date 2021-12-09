@@ -11,25 +11,22 @@ class user_model extends CI_Model {
     }
 
     public function createUser($data){
-
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
             // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
-             $data['user_acc_createddate'] = date('Y-m-d H:i:s');
-             $data['user_profpic_URL'] = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg";
-     
-             $this -> db -> insert($this -> table, $data);
-             echo "<br/><br/> [  Successfully Registered!  ] <br/> ";
-             echo " data = ".print_r($data, true); //Prints data array, to reflect lang for a while kung ano nainput sa database after magregister
+             
+            
+            $this -> db -> insert($this -> table, $data);
 
-        }
-        else {
-           echo"<br/> [  Registration Failed!  ] <br/>"; 
-           echo    "[          UserName already taken           ]";
-        }
+            $id = $this->db->insert_id();
 
-        return;
+            if (isset($id) && $id != null)
+                return $id;
+            
+        }
+            
+        return false;
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45,7 +42,7 @@ class user_model extends CI_Model {
 
         if(count($return) > 0 )
             return true;
-            echo"(Registered Successfully!)-Not Neccessary Note, To Prompt lang";
+           
 
         return false;
         
@@ -87,8 +84,8 @@ class user_model extends CI_Model {
 
         $data['user_password'] = md5($data['user_password']); //md5
 
-        $this->db->update($this->table, $data);                                //di ko mafigure out yung sa gender so sila sila lang muna pwera sa gender yung pwede maupdate
-        return;                                                              // may konting problem lang rin sa password so siguro gagawa tayo bagong tab na nakahiwalay don ganon 
+        $this->db->update($this->table, $data);                     
+        return;                                                              
 
     }
 
