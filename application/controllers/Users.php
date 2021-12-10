@@ -3,11 +3,8 @@
 
 class Users extends CI_Controller {
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////
-	public function index()
-	{
-      $this->load->view('index');
-	}
+
+
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function admin()
@@ -52,37 +49,57 @@ class Users extends CI_Controller {
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
 			$this->load->model('user_model');
-			$this->user_model->createUser($data);
+			$id = $this->user_model->createUser($data);
+
+			if (!is_bool($id)) {
+				$data['user_id'] = $id;
+
+				$this->session->set_userdata($data);
+
+				redirect('/Homepage');
+			} else{ 
+				redirect('/users/login');
+			}		
 		}
 
 		// echo $user_type;
 
 		$this->load->view('users/signdown'); //AddUser
-		//redirect(base_url());
     }
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function login() {
+
+		$id = $this->session->userdata('user_id');
+
+        if(isset($id) && $id != null) {
+            redirect('/Homepage');
+        }
+
 		$data = array();
 		$data = $this->input->post();
-		$this->load->view('users/login');
+		
 		 if(isset($data) && $data != null) {
 			$this->load->model('user_model');
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
+
 			if(is_bool($return)) {
 			   echo "<br/>[    login error   ] <br/><br/>";
 			   echo "Incorrect Username and/or Password "; 
 			 } 
 			 else {
-				$_SESSION['user_id'] = $return[0]['user_id'];
-                $_SESSION['user_username'] = $return[0]['user_username'];
+				// var_dump($return[0]);
+				// exit;
+				$this->session->set_userdata($return[0]);
               
-				redirect(base_url()); //UserLoggedIn Interface
+				redirect('/Homepage'); //UserLoggedIn Interface
 				//$this->load->view('index');//UserLoggedIn Interface
 			 }
 		
 			}
+
+		$this->load->view('users/login');
 	}
     
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -119,12 +136,11 @@ class Users extends CI_Controller {
 		redirect('/users/admin');
 	}
 
-}
-	//public function logout(){
-	//	session_unset('user_id');
-	//	session_unset('user_uid');
-	//	session_destroy();				tinanggal ko muna to di ko alam pano mafifix hahaha para din maka usad ako sa ginaagawa ko :)))
-	//	redirect(base_url());
-//}
 
+	public function logout(){
+		$this->session->sess_destroy();				
+		redirect('/login');
+	}
+
+}
 

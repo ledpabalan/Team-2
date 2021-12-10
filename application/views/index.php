@@ -18,7 +18,7 @@
 
 </head>
 <body>
-    
+    <?php echo $this->session->userdata('user_name'); ?>
 <!-- header section starts  -->
 
 <header class="header">
@@ -30,6 +30,7 @@
         <a href="#features">Features</a>
         <a href="#shops">Shops</a>
         <a href="#categories">Categories</a>
+
     </nav>
 
     <div class="icons">
