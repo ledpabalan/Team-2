@@ -45,6 +45,8 @@
         <label for="search-box" class="fas fa-search"></label>
     </form>
 
+    <a href='<?php echo base_url()."users/logout"?>'> log out<i  id="logout"></i></a>
+
 </header>
 
 <!-- header section ends -->

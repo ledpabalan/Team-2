@@ -84,8 +84,8 @@ class user_model extends CI_Model {
 
         $data['user_password'] = md5($data['user_password']); //md5
 
-        $this->db->update($this->table, $data);                                //di ko mafigure out yung sa gender so sila sila lang muna pwera sa gender yung pwede maupdate
-        return;                                                              // may konting problem lang rin sa password so siguro gagawa tayo bagong tab na nakahiwalay don ganon 
+        $this->db->update($this->table, $data);                     
+        return;                                                              
 
     }
 
