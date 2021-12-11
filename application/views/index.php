@@ -70,8 +70,9 @@
 
             <h4>Username: ___________________________________ </h4> 
             
-            <h4>Full Name: ____________________________________</h4>
-            
+            <h4>Full Name: ____________________________________</h4>              
+              <!-- nilapag ko lang muna to dito para sana pansamantala dito ko mapasok yung data kaso ewan ko ba -->
+                
             <h4>Address:   ____________________________________</h4>
             
             <h4>Birthdate: __/__/____     Age: _____</h4>
