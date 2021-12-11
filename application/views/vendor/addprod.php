@@ -14,7 +14,7 @@
 </textarea>
 
                 <p>Price:</p>
-                <input type="number" name="product_price" step="0.01" placeholder="P 0.00">
+                <input type="text" name="product_price" placeholder="P 0.00">
 
             
                 <br>
