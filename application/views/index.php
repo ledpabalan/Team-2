@@ -1,3 +1,5 @@
+<?=isset($message) ? $message : "";?>
+<form method="POST" action="/Team-2/homepage/"> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +38,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href='<?php echo base_url()."users/login"?>'><i class="fas fa-user" id="login-btn"></i></a>
+        <a href='#'><i class="fas fa-user" id="login-btn"></i></a>
         
     </div>
 
@@ -47,9 +49,47 @@
 
     <a href='<?php echo base_url()."users/logout"?>'> log out<i  id="logout"></i></a>
 
+
 </header>
 
 <!-- header section ends -->
+
+<section>
+<form action="" class="profile">
+        <nav class="profile- nav">
+            <h5>My Account</h5>
+            <a href="#">Profile</a> <br>
+            <a href="#">Purchases</a> <br>
+            <a href="#">Change<br>Password</a>
+
+            <input type="submit" value="LOG OUT" class="lobtn">
+        </nav>
+        
+        <div class="profilebox">
+            <h3>My Profile</h3>
+
+            <h4>Username: ___________________________________ </h4> 
+            
+            <h4>Full Name: ____________________________________</h4>
+            
+            <h4>Address:   ____________________________________</h4>
+            
+            <h4>Birthdate: __/__/____     Age: _____</h4>
+            
+            <h4>Gender: _________  Contact No.: _______________</h4>
+           
+            <img class="avatar" src="./images/profilepic.png">
+            <h6>"LETS GO TAYUMAN"</h6>
+            
+            <input type="submit" value="SAVE" class="btn">
+
+            <input type="submit" value="DEACTIVATE" class="btn">
+        </div>
+
+
+    </form>
+
+</section>
 
 <!-- home section starts  -->
 
@@ -337,3 +377,4 @@
 
 </body>
 </html>
+</form>   

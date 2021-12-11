@@ -123,7 +123,7 @@ class Users extends CI_Controller {
 			$this->load->model('user_model');
 			$this -> user_model -> updateUser($data);
 			}
-			redirect('/users');
+			redirect('/users/admin');
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
