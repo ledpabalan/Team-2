@@ -18,24 +18,27 @@
 
 </head>
 <body>
-    <?php echo $this->session->userdata('user_name'); ?>
+    <?php echo $this->session->userdata('user_name'); ?> 
 <!-- header section starts  -->
 
 <header class="header">
 
     <a href="#" class="logo"> <i class="fas fa-utensils"></i> TheNewTayuman </a>
-
     <nav class="navbar">
+       
         <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#shops">Shops</a>
         <a href="#categories">Categories</a>
+        <a href='<?php echo base_url()."/logout"?>'>Logout</a>
+      
 
     </nav>
 
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
+        
         <a href='<?php echo base_url()."users/login"?>'><i class="fas fa-user" id="login-btn"></i></a>
         
     </div>
