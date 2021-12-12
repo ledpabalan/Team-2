@@ -79,9 +79,10 @@ class user_model extends CI_Model {
 
     public function updateUser($data){
         $this->db->where('user_id', $data['user_id']);
+
         unset($data['user_id']);
         unset($data['user_pwdRepeat']);
-        
+
         $data['user_password'] = md5($data['user_password']); //md5
 
         $this->db->update($this->table, $data);                     
