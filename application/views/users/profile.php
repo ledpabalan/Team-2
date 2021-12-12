@@ -33,11 +33,17 @@
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
-            <p> <input type="submit" value="Update User"> </p>
+            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to update your profile?')"> </p>
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
 
-            <p> <input type="submit" value="Deactivate" class="lobtn"> </p>
+            <?php
+                    if($user['user_acc_status'] == "Active") {
+            ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Inactive" onclick="alert('Are you sure you want to Deactivate your profile?')">Deactivate</a>
+            <?php   } 
+                    else {
+            ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Active" onclick="alert('Are you sure you want to Activate your profile?')">Activate</a>
+            <?php } ?>
 
             <h6>"LETS GO TAYUMAN"</h6>
             

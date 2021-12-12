@@ -85,8 +85,7 @@ class Users extends CI_Controller {
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
 
 			if(is_bool($return)) {
-			   echo "<br/>[    login error   ] <br/><br/>";
-			   echo "Incorrect Username and/or Password "; 
+			   echo '<script>alert("Please type correct username or password")</script>';
 			 } 
 			 else {
 				// var_dump($return[0]);
@@ -143,7 +142,7 @@ class Users extends CI_Controller {
 
 		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
 
-		redirect('/users/admin');
+		redirect('/users/logout');
 	}
 
 	public function logout(){
