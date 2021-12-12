@@ -14,6 +14,9 @@
             <h5>My Account</h5>
         <div class="profilebox">
             <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+
+            <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
+
             <h4>Username: <input type="text" name="user_username" value ="<?php echo $user['user_username']?>"></h4>
             
             <h4>Full Name: <input type="text" name="user_name" value ="<?php echo $user['user_name']?>"></h4>
@@ -30,11 +33,11 @@
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
-            <input type="submit" value="Update User"> <br>
-            <a class="active "href="profile.php">Profile</a> <br>
-            <a href="allpurchases.php">Purchases</a> <br>
+            <p> <input type="submit" value="Update User"> </p>
+            <!-- <a class="active "href="profile.php">Profile</a> <br>
+            <a href="allpurchases.php">Purchases</a> <br> -->
 
-            <input type="submit" value="LOG OUT" class="lobtn"> <br>
+            <p> <input type="submit" value="Deactivate" class="lobtn"> </p>
 
             <h6>"LETS GO TAYUMAN"</h6>
             
@@ -57,4 +60,4 @@
 
 </form>     
 
-    <a href="/users">Back to list of user</a>
+    <a href="/Team-2/Homepage">Back to the Homepage</a>
