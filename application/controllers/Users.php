@@ -111,8 +111,18 @@ class Users extends CI_Controller {
 
 		$output['user'] = $user[0];
 
-		$this->load->view('users/viewUser', $output);
+		$data = array();
+		$data = $this->input->post();
+
+		if(isset($data) && $data != null) {
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+		}
+
+		$this->load->view('users/profile', $output);
 	}
+
+
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -123,7 +133,7 @@ class Users extends CI_Controller {
 			$this->load->model('user_model');
 			$this -> user_model -> updateUser($data);
 			}
-			redirect('/users/admin');
+			redirect('/Homepage');
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -135,7 +145,6 @@ class Users extends CI_Controller {
 
 		redirect('/users/admin');
 	}
-
 
 	public function logout(){
 		$this->session->sess_destroy();				
