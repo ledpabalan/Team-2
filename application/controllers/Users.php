@@ -106,7 +106,7 @@ class Users extends CI_Controller {
 	public function viewUser($user_id = null){
 		$this-> load -> model ('user_model');
 
-		$user = $this -> user_model ->getUsers($user_id);
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
 
 		$output['user'] = $user[0];
 
