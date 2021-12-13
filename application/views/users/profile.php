@@ -28,8 +28,8 @@
             <h4>Gender:  <input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>"> </h4>
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>"></h4>
 
-            <h4>Password: <input type="text" name="user_password" value ="<?php echo $user['user_password']?>"></h4>
-            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="<?php echo $user['user_pwdRepeat']?>"></h4>
+            <h4>Password: <input type="text" name="user_password" value =""></h4>
+            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value =""></h4>
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
