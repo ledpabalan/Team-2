@@ -119,7 +119,7 @@ class Users extends CI_Controller {
 		}
 
 		$this->load->view('users/profile', $output);
-		redirect('/Homepage');
+		//redirect('/Homepage');
 	}
 
 
