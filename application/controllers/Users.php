@@ -86,7 +86,7 @@ class Users extends CI_Controller {
 
 			if(is_bool($return)) {
 			   echo "<br/>[    login error   ] <br/><br/>";
-			   echo "Incorrect Username and/or Password "; 
+			   echo "Incorrect Username and/or Password<br/><br/>"; 
 			 } 
 			 else {
 				// var_dump($return[0]);

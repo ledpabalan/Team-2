@@ -8,7 +8,7 @@
 <body>
 <?php include 'header2.php'; ?>  
 
-<!-- profile section starts  -->
+<!-- all purchases section starts  -->
 
     <div class="profile">   
             <h5>My Account</h5>
@@ -89,7 +89,7 @@
 
     </div>
 
-<!-- profile section ends  -->
+<!-- all purchases section ends  -->
 
 <?php include 'footer.php'; ?>  
 
