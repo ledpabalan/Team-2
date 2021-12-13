@@ -15,6 +15,9 @@
             <h5>My Account</h5>
         <div class="profilebox">
             <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+
+            <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
+
             <h4>Username: <input type="text" name="user_username" value ="<?php echo $user['user_username']?>"></h4>
             
             <h4>Full Name: <input type="text" name="user_name" value ="<?php echo $user['user_name']?>"></h4>
@@ -26,16 +29,22 @@
             <h4>Gender:  <input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>"> </h4>
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>"></h4>
 
-            <h4>Password: <input type="text" name="user_password" value ="<?php echo $user['user_password']?>"></h4>
-            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="<?php echo $user['user_pwdRepeat']?>"></h4>
+            <h4>Password: <input type="text" name="user_password" value =""></h4>
+            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value =""></h4>
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
-            <input type="submit" value="Update User"> <br>
-            <a class="active "href="profile.php">Profile</a> <br>
-            <a href="allpurchases.php">Purchases</a> <br>
+            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to update your profile?')"> </p>
+            <!-- <a class="active "href="profile.php">Profile</a> <br>
+            <a href="allpurchases.php">Purchases</a> <br> -->
 
-            <input type="submit" value="LOG OUT" class="lobtn"> <br>
+            <?php
+                    if($user['user_acc_status'] == "Active") {
+            ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Inactive" onclick="alert('Are you sure you want to Deactivate your profile?')">Deactivate</a>
+            <?php   } 
+                    else {
+            ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Active" onclick="alert('Are you sure you want to Activate your profile?')">Activate</a>
+            <?php } ?>
 
             <h6>"LETS GO TAYUMAN"</h6>
             
@@ -58,4 +67,4 @@
 
 </form>     
 
-    <a href="/users">Back to list of user</a>
+    <a href="/Team-2/Homepage">Back to the Homepage</a>

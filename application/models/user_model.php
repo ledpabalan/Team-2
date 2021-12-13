@@ -52,6 +52,7 @@ class user_model extends CI_Model {
     public function login($user_username, $user_password) {
         $this->db->where( 'user_username', $user_username);
         $this->db->where( 'user_password', md5($user_password));
+        
         $query = $this->db->get ($this->table);
         $return = $query->result_array();
         if(count($return) > 0 && $return[0]['user_acc_status'] == 'Active')
@@ -84,6 +85,7 @@ class user_model extends CI_Model {
         unset($data['user_pwdRepeat']);
 
         $data['user_password'] = md5($data['user_password']); //md5
+    
 
         $this->db->update($this->table, $data);                     
         return;                                                              
