@@ -14,20 +14,18 @@
     <div class="profile">   
             <h5>My Account</h5>
         <div class="profilebox">
-            <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
-            <h4>Username: <?php echo $user['user_username']?> </h4>
-            
-            <h4>Full Name: <?php echo $user['user_name']?></h4>
-            
-            <h4>Address: <?php echo $user['user_address']?></h4>
-    
-            <h4>Birthdate: <?php echo $user['user_birthday']?></h4>
-            
-            <h4>Gender:<?php echo $user['user_gender']?></h4>
-            <h4>Contact No.: <?php echo $user['user_contact_no']?></h4>
+            <h4>Password: <input type="text" name="user_password" value ="" required></h4>
+            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4>
+
+            <!-- <img class="avatar" src="./images/profilepic.png"> -->
+
+            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
+            <!-- <a class="active "href="profile.php">Profile</a> <br>
+            <a href="allpurchases.php">Purchases</a> <br> -->
 
             <h6>"LETS GO TAYUMAN"</h6>
             
@@ -49,7 +47,5 @@
 </html>
 
 </form>     
-
-    <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
-    <a href="/Team-2/users/changepassword">Change Password</a> </br> </br> 
+    <a href="/Team-2/users/viewuser">Back to the View Profile</a> </br>  </br> 
     <a href="/Team-2/Homepage">Back to the Homepage</a>
