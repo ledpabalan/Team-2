@@ -47,15 +47,20 @@
     </form>
 
     <a href='<?php echo base_url()."users/logout"?>'> log out<i  id="logout"></i></a>
+    <a href='<?php echo base_url()."AddProduct/index"?>'>[ Add Product ]<i  id="addprod"></i></a>
 
 
 </header>
+
+
 
 <!-- header section ends -->
 
 <!-- home section starts  -->
 
 <section class="home" id="home">
+
+
 
     <div class="content">
         <h3>fresh and <span>classic</span> products for you</h3>

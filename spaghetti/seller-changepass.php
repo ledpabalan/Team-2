@@ -6,15 +6,15 @@
 
 </head>
 <body>
-<?php include 'header2.php'; ?>  
+<?php include 'header3.php'; ?>  
 
-<!-- change password section starts  -->
+<!-- profile section starts  -->
 
     <div class="profile">   
             <h5>Settings</h5>
-            <a href="settings.php">Edit Profile</a> <br>
-            <a class="active"href="changepass.php">Change<br>Password</a><br>
-            <a href="delprofile.php">Delete Profile</a> <br>
+            <a href="seller-setting.php">Edit Profile</a> <br>
+            <a class="active"href="seller-changepass.php">Change<br>Password</a><br>
+            <a href="seller-deactivate.php">Delete Profile</a> <br>
 
             <input type="submit" value="LOG OUT" class="lobtn">
 
@@ -36,9 +36,9 @@
 
     </div>
 
-<!-- change password section ends  -->
+<!-- profile section ends  -->
 
-<?php include 'footer.php'; ?>  
+<?php include 'seller-footer.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
