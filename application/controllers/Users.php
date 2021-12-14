@@ -85,8 +85,7 @@ class Users extends CI_Controller {
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
 
 			if(is_bool($return)) {
-			   echo "<br/>[    login error   ] <br/><br/>";
-			   echo "Incorrect Username and/or Password "; 
+			   echo '<script>alert("Please type correct username or password")</script>';
 			 } 
 			 else {
 				// var_dump($return[0]);
@@ -102,28 +101,59 @@ class Users extends CI_Controller {
 		$this->load->view('users/login');
 	}
     
-	///////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////////////////////UPDATEUSER
 
-	public function viewUser($user_id = null){
+	public function viewUser(){
 		$this-> load -> model ('user_model');
 
-		$user = $this -> user_model ->getUsers($user_id);
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
 
 		$output['user'] = $user[0];
 
-		$this->load->view('users/viewUser', $output);
+		$data = array();
+		$data = $this->input->post();
+		//$data['user_id'] = $_SESSION['user_id'];
+		if(isset($data) && $data != null) {
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+		}
+
+		$this->load->view('users/profile', $output);
+		//redirect('/Homepage');
 	}
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////
+	public function editUser(){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		//$data['user_id'] = $_SESSION['user_id'];
+		if(isset($data) && $data != null) {
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+			redirect('/users/viewuser');
+		}
+
+		$this->load->view('users/edituser', $output);
+		
+	}
+
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////OPTIONAL
 
 	public function updateUser(){
 		$data = array();
+
 		$data = $this->input->post();
 		 if(isset($data) && $data != null) {
 			$this->load->model('user_model');
 			$this -> user_model -> updateUser($data);
 			}
-			redirect('/users');
+			redirect('/Homepage');
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -133,14 +163,14 @@ class Users extends CI_Controller {
 
 		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
 
-		redirect('/users/admin');
+		redirect('/users/logout');
 	}
-
 
 	public function logout(){
 		$this->session->sess_destroy();				
 		redirect('/login');
 	}
 
+	
 }
 

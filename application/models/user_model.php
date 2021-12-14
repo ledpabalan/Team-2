@@ -52,6 +52,7 @@ class user_model extends CI_Model {
     public function login($user_username, $user_password) {
         $this->db->where( 'user_username', $user_username);
         $this->db->where( 'user_password', md5($user_password));
+        
         $query = $this->db->get ($this->table);
         $return = $query->result_array();
         if(count($return) > 0 && $return[0]['user_acc_status'] == 'Active')
@@ -79,13 +80,15 @@ class user_model extends CI_Model {
 
     public function updateUser($data){
         $this->db->where('user_id', $data['user_id']);
+
         unset($data['user_id']);
         unset($data['user_pwdRepeat']);
 
         $data['user_password'] = md5($data['user_password']); //md5
+    
 
-        $this->db->update($this->table, $data);                                //di ko mafigure out yung sa gender so sila sila lang muna pwera sa gender yung pwede maupdate
-        return;                                                              // may konting problem lang rin sa password so siguro gagawa tayo bagong tab na nakahiwalay don ganon 
+        $this->db->update($this->table, $data);                     
+        return;                                                              
 
     }
 

@@ -1,3 +1,4 @@
+<form method="POST" action="/Team-2/homepage"> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +16,10 @@
     <link rel = "stylesheet" type = "text/css" 
          href = "<?php echo base_url(); ?>assets/style.css">
     
-
 </head>
 <body>
-    <?php echo $this->session->userdata('user_name'); ?> 
+    <?php echo $this->session->userdata('user_name'); ?>
+    
 <!-- header section starts  -->
 
 <header class="header">
@@ -38,8 +39,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        
-        <a href='<?php echo base_url()."users/login"?>'><i class="fas fa-user" id="login-btn"></i></a>
+        <a href='<?php echo base_url()."users/viewuser"?>'><i class="fas fa-user" id="login-btn"></i></a>
         
     </div>
 
@@ -48,6 +48,11 @@
         <label for="search-box" class="fas fa-search"></label>
     </form>
 
+    <a href='<?php echo base_url()."users/logout"?>'> log out<i  id="logout"></i></a>
+    <a href='<?php echo base_url()."AddProduct/index"?>'>[ Add Product ]<i  id="addprod"></i></a>
+    <a href='<?php echo base_url()."AddProduct/viewprod"?>'>[ View Product ]<i  id="viewprod"></i></a>
+
+
 </header>
 
 <!-- header section ends -->
@@ -55,6 +60,8 @@
 <!-- home section starts  -->
 
 <section class="home" id="home">
+
+
 
     <div class="content">
         <h3>fresh and <span>classic</span> products for you</h3>
@@ -334,7 +341,8 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 </body>
 </html>
+</form>   
