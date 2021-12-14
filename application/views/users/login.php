@@ -24,7 +24,7 @@
                 <input type="text" name="user_username" placeholder=" Username/Email"required>
 
                 <input type="text" name="user_password" placeholder=" Password"required>
-                <button type="submit">Submit</button>
+                <button type="submit">></button>
                 
                 <h5>Don't have any account?</h5>
                 <a href="<?php echo base_url(); ?>users/register">Sign up</a>

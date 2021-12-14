@@ -16,10 +16,10 @@
     <link rel = "stylesheet" type = "text/css" 
          href = "<?php echo base_url(); ?>assets/style.css">
     
-
 </head>
 <body>
     <?php echo $this->session->userdata('user_name'); ?>
+    
 <!-- header section starts  -->
 
 <header class="header">
@@ -52,8 +52,6 @@
 
 
 </header>
-
-
 
 <!-- header section ends -->
 
@@ -341,7 +339,7 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 </body>
 </html>

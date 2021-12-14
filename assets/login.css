@@ -71,20 +71,22 @@ h1{
     font-size: 18px;
     margin-left: 12.5%;
 }
-.loginbox input[type="submit"]{
+.loginbox button[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
-    background: white;
+    background: #E64A4A;
     color: black;
-    font-size: 18px;
-    margin-left: 30%;
-    width: 40%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 15%;
 }
 
-.loginbox input[type="submit"]:hover{
+.loginbox button[type="submit"]:hover{
     cursor: pointer;
-    background: #E64A4A;
+    background: white;
     color: #000;
 }
 .loginbox a{
@@ -93,13 +95,11 @@ h1{
     color: #34282C;
     margin-left: 46%;
 }
-.loginbox #SignUp{
-    font-size: 12px;
-    line-height: 20px;
-    color: #34282C;
-    margin-left: 44%;
+.loginbox a:hover{
+    cursor: pointer;
+    background: #E64A4A;
+    color: #000;
 }
-
 
 .loginbox h5{
     font-size: 12px;
@@ -176,20 +176,22 @@ i{
     font-size: 18px;
     margin-left: 12.5%;
 }
-.signupbox input[type="submit"]{
+.signupbox button[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
-    background: white;
+    background: #E64A4A;
     color: black;
-    font-size: 18px;
-    margin-left: 35%;
-    width: 35%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 15%;
 }
 
-.signupbox input[type="submit"]:hover{
+.signupbox button[type="submit"]:hover{
     cursor: pointer;
-    background: #E64A4A;
+    background: white;
     color: #000;
 }
 .signupbox input[type="radio"]{
@@ -209,23 +211,19 @@ i{
     color: #34282C;
     margin-left: 45%;
 }
-.signupbox #SignUp {
-    font-size: 12px;
-    line-height: 20px;
-    color: #34282C;
-    margin-left: 44%;
+.signupbox a:hover{
+    cursor: pointer;
+    background: #E64A4A;
+    color: #000;
 }
+
 .signupbox h5{
     font-size: 12px;
     line-height: 20px;
     color: #34282C;
     text-align:center;
 }
-.signupbox #SignUp:hover{
-    cursor: pointer;
-    background: #E64A4A;
-    color: #000;
-}
+
 /*signup ends*/
 
 /*confirm button*/
@@ -241,33 +239,32 @@ i{
 /*confirm button*/
 
 /* upsign start */
-.upsignbox{
-    width: 600px;
-    height: 1145px;
+.signdownbox{
+    width: 500px;
+    height: 1000px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 10%;
-    left: 25%;
+    left: 30%;
     position: absolute;
     box-sizing: border-box;
     padding: 70px 30px;
     border-radius: 10%;
     box-shadow: 15px 15px;
     border:2px solid black;
-    
 }
-.upsignbox .logo{
+.signdownbox .logo{
     margin-left:0;
 }
-.upsignbox p{
+.signdownbox p{
     margin-left: 18.5%;
     font-size: 18px;
 }
-.upsignbox input{
+.signdownbox input{
     width: 70%;
     margin-bottom: 20px;
 }
-.upsignbox input[type="text"]{
+.signdownbox input[type="text"]{
     border: none;
     outline: none;
     height: 40px;
@@ -276,7 +273,7 @@ i{
     font-size: 18px;
     margin-left: 15%;
 }
-.upsignbox input[type="date"]{
+.signdownbox input[type="password"]{
     border: none;
     outline: none;
     height: 40px;
@@ -285,49 +282,60 @@ i{
     font-size: 18px;
     margin-left: 15%;
 }
-.upsignbox input[type="checkbox"]{
+.signdownbox input[type="date"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    margin-left: 15%;
+}
+.signdownbox input[type="checkbox"]{
     border: none;
     outline: none;
     font-size: 14px;
     width: 20%;
     margin-left: 0%;
 }
-.upsignbox input[type="submit"]{
+.signdownbox button[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
-    background: white;
-    color: black;
-    font-size: 18px;
-    margin-left: 30%;
-    width: 35%;
-}
-.upsignbox input[type="submit"]:hover{
-    cursor: pointer;
     background: #E64A4A;
-    color: #000;
-}
-.upsignbox a{
-    font-size: 12px;
-    line-height: 20px;
-    color: #34282C;
-    margin-left: 50%;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 15%;
 }
 
-.upsignbox h5{
+.signdownbox button[type="submit"]:hover{
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+.signdownbox a{
     font-size: 12px;
     line-height: 20px;
     color: #34282C;
-    margin-left: 38%;
+    margin-left: 46%;
 }
-.upsignbox #SignUp{
-    margin-left:48%;
-}
-.upsignbox #SignUp:hover{
+.signdownbox a:hover{
     cursor: pointer;
     background: #E64A4A;
     color: #000;
 }
+
+.signdownbox h5{
+    font-size: 12px;
+    line-height: 20px;
+    color: #34282C;
+    margin-left: 32%;
+}
+
+
 
 /* file upload */
 #custom-button {
@@ -352,7 +360,7 @@ i{
   }
   /*file upload*/
 
-.upsign i{
+.signdown i{
     color: #E64A4A;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 4em;

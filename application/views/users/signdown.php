@@ -13,13 +13,11 @@
     <link rel = "stylesheet" type = "text/css" 
          href = "<?php echo base_url(); ?>assets/login.css">
     
-    
-         
 </head>
 <body>
 
     <!-- login start-->
-    <div class="loginbox">
+    <div class="signdownbox">
         <img class="logo" src="<?php echo base_url(); ?>assets/images/TNTlogo.png">
         <img class="avatar" src="<?php echo base_url(); ?>assets/images/login.png">
             <h1>SIGN UP FOR FREE!</h1>
@@ -41,7 +39,7 @@
 
                 </script>
                 <!-- <a href="<?php echo base_url(); ?>"type= "submit"><i class="fas fa-chevron-circle-right"></i></a> -->
-                <button type="submit" value="submit" >submit</button>
+                <button type="submit" value="submit" >></button>
                 
                 <h5>Already have an account?</h5>
                 <a href="<?php echo base_url(); ?>users/login">Sign in</a>
