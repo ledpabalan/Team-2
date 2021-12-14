@@ -1,3 +1,4 @@
+<form method="POST" action="/Team-2/homepage"> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +37,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href='<?php echo base_url()."users/login"?>'><i class="fas fa-user" id="login-btn"></i></a>
+        <a href='<?php echo base_url()."users/viewuser"?>'><i class="fas fa-user" id="login-btn"></i></a>
         
     </div>
 
@@ -48,6 +49,7 @@
     <a href='<?php echo base_url()."users/logout"?>'> log out<i  id="logout"></i></a>
     <a href='<?php echo base_url()."AddProduct/index"?>'>[ Add Product ]<i  id="addprod"></i></a>
     <a href='<?php echo base_url()."AddProduct/viewprod"?>'>[ View Product ]<i  id="viewprod"></i></a>
+
 
 </header>
 
@@ -343,3 +345,4 @@
 
 </body>
 </html>
+</form>   

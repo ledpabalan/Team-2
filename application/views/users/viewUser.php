@@ -23,10 +23,10 @@
                 <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>">
 
                 <p>Password:</p>
-                <input type="text" name="user_password" value ="<?php echo $user['user_password']?>">
+                <input type="password" name="user_password" value ="">
 
                 <p>Confirm Password: </p>
-                <input type="text" name="user_pwdRepeat" value ="<?php echo $user['user_pwdRepeat']?>">
+                <input type="password" name="user_pwdRepeat" value ="">
 
                 <br>
                 <br>
