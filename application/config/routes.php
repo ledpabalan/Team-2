@@ -49,6 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'users/register';  //users (default) changed into users // dapat users lang to kaso di macall yung function ng registration
+$route['default_controller'] = 'users';  //users (default) changed into users // dapat users lang to kaso di macall yung function ng registration
+
+$route['logout'] = 'users/logout';
+$route['login'] = 'users/login';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
