@@ -1,4 +1,4 @@
-<form method="POST" action="/Team-2/users/profile"> 
+<form method="POST" action="/Team-2/homepage"> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
