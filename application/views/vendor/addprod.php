@@ -16,7 +16,7 @@
 </textarea>
 
                 <p>Price:</p>
-                <input type="text" name="product_price" placeholder="P 0.00" require>
+                <input type="number" name="product_price" placeholder="P 0.00" require>
 
             
                 <br>
