@@ -18,8 +18,8 @@ public function addprod2()
 	{
 		   
 			$data = array(
-			'product_name'     => $this->input->post('product_name'),
-			'product_description'     => $this->input->post('product_description'),
+			'product_name'   => $this->input->post('product_name'),
+			'product_description'   => $this->input->post('product_description'),
 			'product_price'     => $this->input->post('product_name'),
 		    );
 			$this->load->model('vendor_model');
