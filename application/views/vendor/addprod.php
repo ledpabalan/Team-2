@@ -23,6 +23,7 @@
                 <br>
         
                 <input type="submit" name ="add product" value="Add Product" require>
+                <a href="/Team-2/Homepage">Back to the Homepage</a>
 </form> 
 
                </div>

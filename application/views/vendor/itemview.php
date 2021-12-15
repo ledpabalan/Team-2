@@ -16,8 +16,10 @@
            <?php echo $row->product_price;?> 
             </tr> <br>
 
-            <a href='<?php echo base_url()."/Homepage"?>'>go back</a>
+            
          <?php }  
+         
          ?>  
+         <a href='<?php echo base_url()."/Homepage"?>'>go back</a>
 </body>
 </html>
