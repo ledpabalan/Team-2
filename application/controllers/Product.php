@@ -1,15 +1,22 @@
 <?php
  defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AddProduct extends CI_Controller {
+class Product extends CI_Controller {
 	public function index()  
     {  
-        $this->load->view("vendor/addprod");  
+        $this->load->view("vendor/vendoritem");  
     }  
-	
-public function addprod() 
-	{
 
+	public function addprod1() 
+	{
+		$this->load->view("vendor/addprod");  
+
+		
+	}
+	
+public function addprod2() 
+	{
+		   
 			$data = array(
 			'product_name'     => $this->input->post('product_name'),
 			'product_description'     => $this->input->post('product_description'),
@@ -17,7 +24,7 @@ public function addprod()
 		    );
 			$this->load->model('vendor_model');
 			$this->vendor_model->addproduct($data);
-		    redirect("AddProduct/index");
+		    redirect("Product/viewprod");
 
 		
 	}
@@ -34,10 +41,19 @@ public function viewprod()
          //return the data in view  
          $this->load->view('vendor/itemview', $data);  
 
-
-
 	}
 
+	// public function updateprod() 
+	// {
+		 
+    //      $this->load->database();  
+    //      $this->load->model('vendor_model');  
+    //      $data['i']=$this->vendor_model->select();   
+    //      $this->load->view('vendor/editprod', $data);  
+
+	// }
+
+   
 }
 
 

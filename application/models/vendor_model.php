@@ -15,14 +15,17 @@ class vendor_model extends CI_Model {
             $this -> db -> insert($this -> table, $data);
             return true;
 
-           // $id = $this->db->insert_id();
     }
 
 	public function select()  
 	{  
-	   //data is retrive from this query  
+	   //data retrieve sa query  
 	   $query = $this->db->get('product');  
 	   return $query;  
 	}  
+
+
+
+
 
 }
