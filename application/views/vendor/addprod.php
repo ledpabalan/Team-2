@@ -2,7 +2,7 @@
 
 <a href='<?php echo base_url()."Product/index"?>'>[ Back to ITEMS ]<i  id="addprod"></i></a><br><br>
 
-<form method='POST'action="<?php echo site_url('AddProduct/addprod2'); ?>">  
+<form method='POST'action="<?php echo site_url('Product/addprod2'); ?>">  
 
                 <p>ADD PRODUCT</p><br><br>
                 <p>Add Product:</p>

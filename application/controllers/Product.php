@@ -43,15 +43,34 @@ public function viewprod()
 
 	}
 
-	// public function updateprod() 
-	// {
+	public function updateprod() 
+	{
 		 
-    //      $this->load->database();  
-    //      $this->load->model('vendor_model');  
-    //      $data['i']=$this->vendor_model->select();   
-    //      $this->load->view('vendor/editprod', $data);  
+         $this->load->database();  
+         $this->load->model('vendor_model');  
+         $data['i']=$this->vendor_model->select();   
+         $this->load->view('vendor/editprod', $data);  
 
-	// }
+	}
+
+	public function updateprod1() 
+	{
+		// $item=array();
+		// $item=$this->input->post();
+		// if(isset($item) && $item != null) {
+		// 	$this->load->model('vendor_model');
+		// 	print_r($item);
+		// 	$this->vendor_model->updateitem($item);
+		//  }
+		 
+       
+         $this->load->model('vendor_model');  
+		 $item=$this->vendor_model->Getitem(34); //dito ipapasa yung target ite
+		 print_r($item);
+		 $this->load->view('vendor/editprod1',$item);
+
+	}
+
 
    
 }
