@@ -47,8 +47,7 @@
     </form>
 
     <a href='<?php echo base_url()."users/logout"?>'> log out<i  id="logout"></i></a>
-    <a href='<?php echo base_url()."AddProduct/index"?>'>[ Add Product ]<i  id="addprod"></i></a>
-    <a href='<?php echo base_url()."AddProduct/viewprod"?>'>[ View Product ]<i  id="viewprod"></i></a>
+    <a href='<?php echo base_url()."Product/index"?>'>[  Products ]<i  id="vendoritem"></i></a>
 
 
 </header>
