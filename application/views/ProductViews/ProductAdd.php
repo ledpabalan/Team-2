@@ -10,9 +10,10 @@
 	<h1 class="page-header text-center">Product Add- Seller Side Interface</h1>
 	<div class="row">
 		<div class="col-sm-4 col-sm-offset-4">
-			<h3>Add Form
+			<h3>Add Form</h3>
+			<h4>
 				<span class="pull-right"><a href="<?php echo site_url('ProductController/index'); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
-			</h3>
+		   </h4>
 			<hr>
 			<form method="POST" action="<?php echo base_url(); ?>ProductController/insert">
 				<div class="form-group">
