@@ -15,8 +15,33 @@ class vendor_model extends CI_Model {
             $this -> db -> insert($this -> table, $data);
             return true;
 
-           // $id = $this->db->insert_id();
     }
+
+	public function select()  
+	{  
+	   //data retrieve sa query  
+	   $query = $this->db->get('product');  
+	   return $query;  
+	}  
+   
+    public function Getitem($itemid = null) {
+        if(isset($itemid) && $itemid != null) {
+           $this->db->where('product_id',$itemid);
+        }
+       $query = $this->db->get($this->table);
+       return $query->result_array();
+    }
+
+    public function updateitem($item = null){
+        $this->db->where('product_id',$item['product_id']);
+        unset($item['product_id']);
+        $this->db->update($this->table,$item);
+        echo $this->db->last_query();
+       // exit;
+    }
+
+
+
 
 
 }
