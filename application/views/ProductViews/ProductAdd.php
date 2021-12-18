@@ -17,17 +17,18 @@
 			<hr>
 			<form method="POST" action="<?php echo base_url(); ?>ProductController/insert">
 				<div class="form-group">
-					<label>Product Name:</label>
-					<input type="text" class="form-control" name="product_name">
+				<br><label>Product Name:</label><br>
+					<input type="text" class="form-control" name="product_name" required>
 				</div>
 				<div class="form-group">
-					<label>Product Description:</label>
-					<input type="text" class="form-control" name="product_description">
+				<br><label>Product Description:</label><br>
+					<textarea rows="4" cols="30" name="product_description" placeholder="Enter Description Here..." required></textarea>
 				</div>
 				<div class="form-group">
-					<label>Product Price:</label>
-					<input type="text" class="form-control" name="product_price">
+				<br><label>Product Price:</label><br>
+					<input type="text" class="form-control" name="product_price" required>
 				</div>
+				<br><br>
 				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 			</form>
 		</div>

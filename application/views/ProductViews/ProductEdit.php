@@ -7,14 +7,16 @@
 </head>
 <body>
 <div class="container">
-	<h1 class="page-header text-center">CodeIgniter Simple CRUD Tutorial</h1>
+	<h1 class="page-header text-center">PRODUCT EDIT</h1>
 	<div class="row">
 		<div class="col-sm-4 col-sm-offset-4">
 			<h3>Edit Form
-				<span class="pull-right"><a href="<?php echo base_url(); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
 			</h3>
+			<h4>
+				<span class="pull-right"><a href="<?php echo site_url('ProductController/index'); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+		   </h4>
 			<hr>
-			<?php extract($product_a); ?>
+			<?php extract($product); ?>
 			<form method="POST" action="<?php echo base_url(); ?>ProductController/update<?php echo $product_id; ?>">
 				
 				<div class="form-group">

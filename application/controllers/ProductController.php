@@ -25,10 +25,11 @@ class ProductController extends CI_Controller {
 		$product['product_price'] = $this->input->post('product_price');
  
 		$query = $this->ProductModel->InsertProduct($product);
- 
-		if($query){
-			header('location:'.base_url().$this->index());
-		}
+        redirect("ProductController/index");
+		// if($query){
+		// 	header('location:'.base_url().$this->index());
+		// }
+
  
 	}
  
