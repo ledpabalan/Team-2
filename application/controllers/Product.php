@@ -65,7 +65,7 @@ public function viewprod()
 		 
        
          $this->load->model('vendor_model');  
-		 $item=$this->vendor_model->Getitem(34); //dito ipapasa yung target ite
+		 $item=$this->vendor_model->Getitem(14); //dito ipapasa yung target ite
 		 print_r($item);
 		 $this->load->view('vendor/editprod1',$item);
 
