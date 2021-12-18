@@ -17,7 +17,7 @@
 		   </h4>
 			<hr>
 			<?php extract($product); ?>
-			<form method="POST" action="<?php echo base_url(); ?>ProductController/update<?php echo $product_id; ?>">
+			<form method="POST" action="<?php echo base_url(); ?>ProductController/update/<?php echo $product_id; ?>">
 				
 				<div class="form-group">
 					<label>Product Name:</label>

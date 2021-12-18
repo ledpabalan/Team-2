@@ -44,18 +44,18 @@ class ProductController extends CI_Controller {
 		$product['product_price'] = $this->input->post('product_price');
  
 		$query = $this->ProductModel->UpdateProduct($product, $product_id);
- 
-		if($query){
-			header('location:'.base_url().$this->index());
-		}
+        redirect("ProductController/index");
+		// if($query){
+		// 	header('location:'.base_url().$this->index());
+		// }
 	}
  
 	public function delete($product_id){
 		$query = $this->ProductModel->DeleteProduct($product_id);
- 
-		if($query){
-			header('location:'.base_url().$this->index());
-		}
+		redirect("ProductController/index");
+		// if($query){
+		// 	header('location:'.base_url().$this->index());
+		// }
 	}
 }
  
