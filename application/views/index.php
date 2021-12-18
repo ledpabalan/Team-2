@@ -1,4 +1,3 @@
-<?=isset($message) ? $message : "";?>
 <form method="POST" action="/Team-2/homepage/"> 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +37,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href='#'><i class="fas fa-user" id="login-btn"></i></a>
+        <a href='<?php echo base_url()."users/viewuser"?>'><i class="fas fa-user" id="login-btn"></i></a>
         
     </div>
 
