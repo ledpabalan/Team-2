@@ -10,8 +10,9 @@
 </head>
 <body>
     <?php include 'assets/header2.php'; ?>  
-<!-- profile section starts  -->
 
+<!-- profile section starts  -->
+    
     <div class="profile">   
             <h5>My Account</h5>
         <div class="profilebox">
@@ -37,8 +38,8 @@
     </div>
     </form>     
 
-<a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
-<a href="/Team-2/Homepage">Back to the Homepage</a>
+        <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
+        <a href="/Team-2/Homepage">Back to the Homepage</a>
 
 <!-- profile section ends  -->
 

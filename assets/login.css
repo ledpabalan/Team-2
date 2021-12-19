@@ -18,7 +18,7 @@ body{
     background: #f6cfb2;
     color: #3D0C02;
     top: 15%;
-    left: 30%;
+    margin-left: 32.5%;
     position: absolute;
     box-sizing: border-box;
     padding: 70px 30px;
@@ -128,7 +128,7 @@ i{
     background: #f6cfb2;
     color: #3D0C02;
     top: 15%;
-    left: 30%;
+    margin-left: 32.5%;
     position: absolute;
     box-sizing: border-box;
     padding: 70px 30px;
@@ -200,8 +200,8 @@ i{
     width: 10%;
     margin-left: 30%;
     left:20px;
-
 }
+
 .signupbox label{
     margin-left:-10%;;
 }
@@ -240,12 +240,12 @@ i{
 
 /* upsign start */
 .signdownbox{
-    width: 500px;
+    width: 600px;
     height: 1000px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 10%;
-    left: 30%;
+    left: 25%;
     position: absolute;
     box-sizing: border-box;
     padding: 70px 30px;
@@ -257,7 +257,7 @@ i{
     margin-left:0;
 }
 .signdownbox p{
-    margin-left: 18.5%;
+    margin-left: 12%;
     font-size: 18px;
 }
 .signdownbox input{
@@ -268,36 +268,23 @@ i{
     border: none;
     outline: none;
     height: 40px;
+    width: 85%;
     background: white;
     color: black;
     font-size: 18px;
-    margin-left: 15%;
+    margin-left: 8%;
 }
 .signdownbox input[type="password"]{
     border: none;
     outline: none;
     height: 40px;
+    width: 85%;
     background: white;
     color: black;
     font-size: 18px;
-    margin-left: 15%;
+    margin-left: 8%;
 }
-.signdownbox input[type="date"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: white;
-    color: black;
-    font-size: 18px;
-    margin-left: 15%;
-}
-.signdownbox input[type="checkbox"]{
-    border: none;
-    outline: none;
-    font-size: 14px;
-    width: 20%;
-    margin-left: 0%;
-}
+
 .signdownbox button[type="submit"]{
     border: none;
     outline: none;
@@ -306,8 +293,9 @@ i{
     color: black;
     font-weight: bold;
     font-size: 30px;
-    margin-left: 40%;
-    width: 20%;
+    margin-top: 20px;
+    margin-left: 42.5%;
+    width: 15%;
     border-radius: 15%;
 }
 
@@ -332,7 +320,7 @@ i{
     font-size: 12px;
     line-height: 20px;
     color: #34282C;
-    margin-left: 32%;
+    margin-left: 35%;
 }
 
 
