@@ -14,7 +14,7 @@
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
-						<th>ID</th>
+						<!-- <th>ID</th> -->
 						<th>Product Name</th>
 						<th>Product Description</th>
 						<th>Product Price</th>
@@ -26,7 +26,7 @@
 					foreach($product as $product_a){
 						?>
 						<tr>
-							<td><?php echo $product_a->product_id; ?></td>
+							<!-- <td><?php echo $product_a->product_id; ?></td> -->
 							<td><?php echo $product_a->product_name; ?></td>
 							<td><?php echo $product_a->product_description; ?></td>
 							<td><?php echo $product_a->product_price; ?></td>
