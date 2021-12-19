@@ -72,5 +72,3 @@
 </html>
 
 </form>     
-    <a href="/Team-2/users/viewuser">Back to the View Profile</a> </br>  </br> 
-    <a href="/Team-2/Homepage">Back to the Homepage</a>
