@@ -35,6 +35,10 @@
         </div>
 
     </div>
+    </form>     
+
+<a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
+<a href="/Team-2/Homepage">Back to the Homepage</a>
 
 <!-- profile section ends  -->
 
@@ -49,7 +53,3 @@
 </body>
 </html>
 
-</form>     
-
-    <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
-    <a href="/Team-2/Homepage">Back to the Homepage</a>
