@@ -10,7 +10,8 @@ class ProductController extends CI_Controller {
 	}
  
 	public function index(){
-		$data['product'] = $this->ProductModel-> GetAllProduct();
+		$data['product'] = $this->ProductModel->GetAllProduct_a("Active");
+		// $data['product'] = $this->ProductModel-> GetAllProduct();
 		$this->load->view('ProductViews/ProductList.php', $data);
 	}
  
