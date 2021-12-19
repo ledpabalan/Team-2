@@ -5,10 +5,10 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <?php include 'assets/head.php'; ?>
 </head>
 <body>
-
+    <?php include 'assets/header2.php'; ?>
 <!-- profile section starts  -->
 
     <div class="profile">   
@@ -54,13 +54,13 @@
 
 <!-- profile section ends  -->
 
-<!-- <?php include 'footer.php'; ?>  
+<!-- <?php include 'assets/footer.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 </body>
 </html>
