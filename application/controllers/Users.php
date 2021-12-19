@@ -151,17 +151,16 @@ class Users extends CI_Controller {
 
 		$data = array();
 		$data = $this->input->post();
-		//$data['user_id'] = $_SESSION['user_id'];
-		if(isset($data) && $data != null) {
+		//$data['user_id'] = $_SESSION['user_id'];                       	edit user controller
+		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
-			redirect('/users/viewuser');
+			redirect('users/viewuser');
 		}
 
 		$this->load->view('users/changepass', $output);
 		
 	}
-
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////OPTIONAL
 
