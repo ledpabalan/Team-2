@@ -1,3 +1,7 @@
+<?=isset($message) ? $message : "";?>
+<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
+
+<form method="POST" >       
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,7 @@
     <div class="profile">   
             <h5>Settings</h5>
             <a href="/Team-2/users/edituser">Edit Profile</a> <br>
-            <a class="active" href="/Team-2/users/changepass">Change<br>Password</a><br>
+            <a class="active" href="/users/changepass">Change<br>Password</a><br>
             <a href="delprofile.php">Delete Profile</a> <br>
 
             <input type="submit" value="LOG OUT" class="lobtn">

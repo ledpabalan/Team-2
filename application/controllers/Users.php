@@ -142,6 +142,26 @@ class Users extends CI_Controller {
 		
 	}
 
+	public function changepass(){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		//$data['user_id'] = $_SESSION['user_id'];
+		if(isset($data) && $data != null) {
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+			redirect('/users/viewuser');
+		}
+
+		$this->load->view('users/changepass', $output);
+		
+	}
+
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////OPTIONAL
 
