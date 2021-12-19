@@ -1,7 +1,7 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
-<form method="POST" >               
+<form method="POST" action="/users/EditUser/">               
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,15 +29,14 @@
             <h4>Gender:<input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
 
-            <!-- <h4>Password: <input type="text" name="user_password" value ="" required></h4>
-            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4> -->         
-            <!-- tinanggal ko na to sa edit user bali nasa change pass na sya -->
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
             <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to update your profile?')"> </p>
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
+
+            <a href ="/Team-2/users/viewuser/" onclick="alert('Are you sure you want to Edit your Profile?')">Submit</a>
 
             <?php
                     if($user['user_acc_status'] == "Active") {
