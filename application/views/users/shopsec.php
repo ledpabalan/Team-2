@@ -29,7 +29,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">

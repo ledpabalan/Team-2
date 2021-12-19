@@ -219,6 +219,11 @@ class Users extends CI_Controller {
       $this->load->view('users/devsec');
 	}
 
+	public function usershop()
+	{
+      $this->load->view('users/usershop');
+	}
+
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
