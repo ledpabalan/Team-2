@@ -1,3 +1,13 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <?php include 'head.php'; ?>
+
+</head>
+<body>
+<?php include 'header2.php'; ?>  
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
@@ -29,7 +39,7 @@
             <h4>Gender:<?php echo $user['user_gender']?></h4>
             <h4>Contact No.: <?php echo $user['user_contact_no']?></h4>
 
-            <h6>"LETS GO TAYUMAN"</h6>
+   
             
         </div>
 
@@ -51,5 +61,5 @@
 </form>     
 
     <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
-    <a href="/Team-2/users/changepassword">Change Password</a> </br> </br> 
+    <a href="/Team-2/users/changepassword">Change Password</a> </br>
     <a href="/Team-2/Homepage">Back to the Homepage</a>
