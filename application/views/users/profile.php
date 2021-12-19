@@ -17,9 +17,9 @@
             <h5>My Account</h5>
 
             <a class="active "href='<?php echo base_url()."users/viewUser"?>'>Profile</a> <br>
-            <a href="allpurchases.php">Purchases</a> <br>
+            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchases</a> <br>
 
-            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>Logout</a>
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
         <div class="profilebox">
             <h3>My Profile <a href="/Team-2/users/edituser"><i class="fas fa-edit"></a></i></h3> 
