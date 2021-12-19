@@ -47,9 +47,10 @@
         <input type="search" id="search-box" placeholder="search here...">
         <label for="search-box" class="fas fa-search"></label>
     </form>
-    
-    <a href='<?php echo base_url()."AddProduct/index"?>'>[ Add Product ]<i  id="addprod"></i></a>
-    <a href='<?php echo base_url()."AddProduct/viewprod"?>'>[ View Product ]<i  id="viewprod"></i></a>
+
+
+    <a href='<?php echo base_url()."Product/index"?>'>[  Products ]<i  id="vendoritem"></i></a>
+    <a href='<?php echo base_url()."ProductController/index"?>'>[  Products ]<i  id="product"></i></a>
 
 
 </header>
