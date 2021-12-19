@@ -1,7 +1,5 @@
 <?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
-
-<form method="POST">       
+<!-- <?php $id = $this->session->userdata('user_id'); ?> -->    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,13 +24,19 @@
             <input type="submit" value="LOG OUT" class="lobtn">
 
         <div class="cpassbox">
+        <form method="POST">   
             <h3>Change Password</h3>
             <h6>For your account's security, do not share your password with anyone else</h6>
 
-            <h4>Password: <input type="text" name="user_password" value ="<?php echo $user['user_password']?>" required></h4>
-            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="<?php echo $user['user_pwdRepeat']?>" required></h4>
+            <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
-            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
+            <h4>Password: <input type="text" name="user_password" value ="" required></h4>
+            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4>
+
+            <!-- <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
+        -->
+
+        <input type="submit" value="Change Password">
         </div>
 
     </div>
