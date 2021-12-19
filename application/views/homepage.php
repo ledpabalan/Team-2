@@ -15,6 +15,8 @@
     <div class="content">
         <h3>fresh and <span>classic</span> products for you</h3>
         <p>brought to you by The New Tayuman</p>
+        <a href='<?php echo base_url()."Product/index"?>'>[  Products ]<i  id="vendoritem"></i></a>
+         <a href='<?php echo base_url()."ProductController/index"?>'>[  Products ]<i  id="product"></i></a>
         <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
     </div>
 
