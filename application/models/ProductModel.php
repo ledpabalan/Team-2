@@ -26,7 +26,9 @@
  
 		public function DeleteProduct($product_id){
 			$this->db->where('product_id', $product_id);
-			return $this->db->delete('product');
+			$product['product_status'] = "Inactive";
+			return $this->db->update('product', $product);
+			// return $this->db->delete('product');
 		}
  
 	}
