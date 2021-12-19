@@ -5,7 +5,7 @@
     <a href="/Homepage" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
     <nav class="/navbar">
-        <a href="/homesec">home</a>
+        <a href="/Homepage">home</a>
         <a href="/featuresec">features</a>
         <a href="/shopsec">shops</a>
         <a href="/catsec">categories</a>

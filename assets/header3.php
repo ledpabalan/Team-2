@@ -2,7 +2,7 @@
 
 <header class="header">
 
-    <a href="homesec.php" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
+    <a href="Homepage" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
     <nav class="navbar">
         <a href="seller-homesec.php">home</a>
