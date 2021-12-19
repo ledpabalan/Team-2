@@ -5,7 +5,7 @@
     <a href="views/homesec.php" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
     <nav class="navbar">
-        <a href='<?php echo base_url()."users/homesec.php"?>'>Home</a>
+        <a href='<?php echo base_url()."users/homesec"?>'>Home</a>
         <a href="featuresec.php">features</a>
         <a href="shopsec.php">shops</a>
         <a href="catsec.php">categories</a>
