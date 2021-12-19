@@ -1,7 +1,7 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
-<form method="POST" action="/Team-2/users/updateUser/">               
+<form method="POST" action="/users/EditUser/">               
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +42,8 @@
             <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to update your profile?')"> </p>
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
+
+            <a href ="/Team-2/users/viewuser/" onclick="alert('Are you sure you want to Edit your Profile?')">Submit</a>
 
             <?php
                     if($user['user_acc_status'] == "Active") {

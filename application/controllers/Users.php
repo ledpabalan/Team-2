@@ -140,6 +140,7 @@ class Users extends CI_Controller {
 
 		$this->load->view('users/edituser', $output);
 		
+		
 	}
 
 	public function changepass(){
@@ -155,7 +156,7 @@ class Users extends CI_Controller {
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
-			redirect('users/viewuser');
+			redirect('/profile');
 		}
 
 		$this->load->view('users/changepass', $output);
