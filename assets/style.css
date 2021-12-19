@@ -445,7 +445,7 @@ section{
 /*all products starts*/
 .all-products{
     margin-bottom: 2%;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 .all-products .box-container{
     display: grid;

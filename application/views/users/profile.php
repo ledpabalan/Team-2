@@ -43,7 +43,6 @@
     </div>
     </form>     
 
-        <a href="/Team-2/Homepage">Back to the Homepage</a>
 
 <!-- profile section ends  -->
 
