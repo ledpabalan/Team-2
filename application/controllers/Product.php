@@ -55,8 +55,8 @@ public function viewprod()
 
 	public function updateprod1() 
 	{
-		$item=array();
-		$item=$this->input->post();
+		 $item=array();
+		// $item=$this->input->post();
 		// if(isset($item) && $item != null) {
 		// 	$this->load->model('vendor_model');
 		// 	print_r($item);

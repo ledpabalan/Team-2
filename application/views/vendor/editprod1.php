@@ -3,7 +3,7 @@
 
 <form method='POST'action="<?php echo site_url('Product/updateprod1'); ?>">  
                 <input type="hidden" name="product_id" value ="<?php echo $item['product_id']?>"> 
-
+                    <!--^^^^ Dito nagkakaproblema eh, di niya nakukuha data sa database ~chy-->
                 <p>EDIT PRODUCT</p><br><br>
                 <p>Product:</p>
                 <input type="text" name="product_name" value='<?php echo $item['product_name']?>' placeholder="Product Name" required>
