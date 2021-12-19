@@ -1,18 +1,25 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
-<form method="POST" >               
+<form method="POST" action="/Team-2/users/updateUser/">               
  <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <?php include 'assets/head.php'; ?>
 </head>
 <body>
-
+    <?php include 'assets/header2.php'; ?>
 <!-- profile section starts  -->
 
     <div class="profile">   
             <h5>My Account</h5>
+            
+            <a class="active" href="/Team-2/users/edituser">Edit Profile</a> <br>
+            <a href="/Team-2/users/changepass">Change<br>Password</a><br>
+            <a href="delprofile.php">Delete Profile</a> <br>
+
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
+
         <div class="profilebox">
             <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
 
@@ -29,9 +36,13 @@
             <h4>Gender:<input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
 
+<<<<<<< HEAD
             <!-- <h4>Password: <input type="text" name="user_password" value ="" required></h4>
             <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4> -->         
             <!-- tinanggal ko na to sa edit user bali nasa change pass na sya -->
+=======
+
+>>>>>>> develop
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
@@ -47,7 +58,6 @@
             ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Active" onclick="alert('Are you sure you want to Activate your profile?')">Activate</a>
             <?php } ?>
 
-            <h6>"LETS GO TAYUMAN"</h6>
             
         </div>
 
@@ -55,13 +65,13 @@
 
 <!-- profile section ends  -->
 
-<!-- <?php include 'footer.php'; ?>  
+<!-- <?php include 'assets/footer.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 </body>
 </html>

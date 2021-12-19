@@ -15,7 +15,7 @@
 <body>
 
     <!-- login start-->
-    <div class="loginbox">
+    <div class="signupbox">
         <img class="logo" src="<?php echo base_url(); ?>assets/images/tntlogo.png">
         <img class="avatar" src="<?php echo base_url(); ?>assets/images/login.png">
             <h1>ACCOUNT TYPE:</h1>
@@ -27,9 +27,7 @@
 
                 
             <!-- <a href="users/register2" type="submit"><i class="fas fa-chevron-circle-right"></i></a> -->
-             <button type="submit" value="submit" >submit</button>
-
-               
+             <button type="submit" value="submit" >></button>
 
                
                 <h5>Already have an account?</h5>

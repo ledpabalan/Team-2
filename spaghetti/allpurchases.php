@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<?php include 'header2.php'; ?>  
+    <?php include 'header2.php'; ?>  
 
 <!-- all purchases section starts  -->
 

@@ -16,8 +16,15 @@
            <?php echo $row->product_description;?>
            <?php echo $row->product_price;?> 
             </tr> <br>
-         <?php }  
-         ?>  
 
+            
+         <?php }  
+         
+         ?>  
+<<<<<<< HEAD
+
+=======
+         <a href='<?php echo base_url()."/Homepage"?>'>go back</a>
+>>>>>>> develop
 </body>
 </html>

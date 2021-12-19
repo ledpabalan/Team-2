@@ -16,21 +16,23 @@
     <link rel = "stylesheet" type = "text/css" 
          href = "<?php echo base_url(); ?>assets/style.css">
     
-
 </head>
 <body>
     <?php echo $this->session->userdata('user_name'); ?>
+    
 <!-- header section starts  -->
 
 <header class="header">
 
     <a href="#" class="logo"> <i class="fas fa-utensils"></i> TheNewTayuman </a>
-
     <nav class="navbar">
+       
         <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#shops">Shops</a>
         <a href="#categories">Categories</a>
+        <a href='<?php echo base_url()."/logout"?>'>Logout</a>
+      
 
     </nav>
 
@@ -45,14 +47,17 @@
         <input type="search" id="search-box" placeholder="search here...">
         <label for="search-box" class="fas fa-search"></label>
     </form>
+<<<<<<< HEAD
 
     <a href='<?php echo base_url()."users/logout"?>'> log out<i  id="logout"></i></a>
     <a href='<?php echo base_url()."Product/index"?>'>[  Products ]<i  id="vendoritem"></i></a>
+=======
+    <a href='<?php echo base_url()."AddProduct/index"?>'>[ Add Product ]<i  id="addprod"></i></a>
+    <a href='<?php echo base_url()."AddProduct/viewprod"?>'>[ View Product ]<i  id="viewprod"></i></a>
+>>>>>>> develop
 
 
 </header>
-
-
 
 <!-- header section ends -->
 
@@ -340,7 +345,7 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 </body>
 </html>
