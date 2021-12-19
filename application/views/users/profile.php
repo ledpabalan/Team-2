@@ -57,11 +57,3 @@
 </body>
 </html>
 
-<<<<<<< HEAD
-</form>     
-
-    <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
-    <a href="/Team-2/users/changepassword">Change Password</a> </br> </br> 
-    <a href="/Team-2/Homepage">Back to the Homepage</a>
-=======
->>>>>>> develop
