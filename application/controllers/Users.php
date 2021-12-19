@@ -157,10 +157,10 @@ class Users extends CI_Controller {
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
 			redirect('/profile');
-			$this->load->view('users/changepass', $output);
+		
 		}
 
-		// $this->load->view('users/changepass', $output);
+		$this->load->view('users/changepass', $output);
 		
 	}
 
@@ -196,11 +196,6 @@ class Users extends CI_Controller {
 
 	// HEADER THINGS // 
 
-	public function homesec()
-	{
-      $this->load->view('users/homesec');
-	}
-	
 	public function featuresec()
 	{
       $this->load->view('users/featuresec');

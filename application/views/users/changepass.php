@@ -6,17 +6,14 @@
 <html lang="en">
 <head>
 
-    <!-- <?php include 'assets/head.php'; ?> -->
+    <?php include 'assets/head.php'; ?>
 
-        <!-- custom css file link  -->
-        <link rel = "stylesheet" type = "text/css" 
-         href = "<?php echo base_url(); ?>assets/head.php">
+
 
 </head>
 <body>
-<!-- <?php include 'assets/header2.php'; ?>   -->
-        <link rel = "stylesheet" type = "text/css" 
-         href = "<?php echo base_url(); ?>assets/header2.php">
+<?php include 'assets/header2.php'; ?>  
+
 
 <!-- change password section starts  -->
 
@@ -42,8 +39,7 @@
 
 <!-- change password section ends  -->
 
-<link rel = "stylesheet" type = "text/css" 
-         href = "<?php echo base_url(); ?>assets/footer.php">
+<?php include 'assets/footer.php'; ?>
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
