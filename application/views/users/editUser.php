@@ -16,7 +16,7 @@
             
             <a class="active" href="/Team-2/users/edituser">Edit Profile</a> <br>
             <a href="/Team-2/users/changepass">Change<br>Password</a><br>
-            <a href="delprofile.php">Delete Profile</a> <br>
+            <a href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 

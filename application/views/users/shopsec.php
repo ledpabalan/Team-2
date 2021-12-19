@@ -29,7 +29,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -43,7 +43,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -57,7 +57,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -71,7 +71,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
         </div>
@@ -93,7 +93,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -107,7 +107,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -121,7 +121,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -135,7 +135,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
         </div>
@@ -154,7 +154,7 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 </body>
 </html>

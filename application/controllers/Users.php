@@ -210,6 +210,11 @@ class Users extends CI_Controller {
       $this->load->view('users/shopsec');
 	}
 
+	public function productsec()
+	{
+      $this->load->view('users/productsec');
+	}
+
 	public function catsec()
 	{
       $this->load->view('users/catsec');
@@ -218,6 +223,33 @@ class Users extends CI_Controller {
 	public function devsec()
 	{
       $this->load->view('users/devsec');
+	}
+	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
+	public function userdelprofile()
+	{
+      $this->load->view('users/userdelprofile');
+	}
+	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
+	public function usershop()
+	{
+      $this->load->view('users/usershop');
+	}
+	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
+	public function allpurchases()
+	{
+      $this->load->view('users/allpurchases');
+	}
+	public function recpurchases()
+	{
+      $this->load->view('users/recpurchases');
+	}
+	public function compurchases()
+	{
+      $this->load->view('users/compurchases');
+	}
+	public function trpurchases()
+	{
+      $this->load->view('users/trpurchases');
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
