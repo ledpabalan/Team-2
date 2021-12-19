@@ -59,7 +59,7 @@
 
             <a href='<?php echo base_url()."users/viewUser"?>'>Profile</a>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
-            <a href='<?php echo base_url()."users/settings"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."users/edituser"?>'>Settings</a><br>
             <a href='<?php echo base_url()."users/devsec"?>'>Developers</a>
 
     </form>

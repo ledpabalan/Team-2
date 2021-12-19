@@ -15,8 +15,14 @@
     
     <div class="profile">   
             <h5>My Account</h5>
+
+            <a class="active "href='<?php echo base_url()."users/viewUser"?>'>Profile</a> <br>
+            <a href="allpurchases.php">Purchases</a> <br>
+
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>Logout</a>
+
         <div class="profilebox">
-            <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+            <h3>My Profile <a href="/Team-2/users/edituser"><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
@@ -31,14 +37,12 @@
             <h4>Gender:<?php echo $user['user_gender']?></h4>
             <h4>Contact No.: <?php echo $user['user_contact_no']?></h4>
 
-            <h6>"LETS GO TAYUMAN"</h6>
             
         </div>
 
     </div>
     </form>     
 
-        <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
         <a href="/Team-2/Homepage">Back to the Homepage</a>
 
 <!-- profile section ends  -->

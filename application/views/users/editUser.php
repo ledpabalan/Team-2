@@ -13,6 +13,13 @@
 
     <div class="profile">   
             <h5>My Account</h5>
+            
+            <a class="active" href="/Team-2/users/edituser">Edit Profile</a> <br>
+            <a href="/Team-2/users/changepass">Change<br>Password</a><br>
+            <a href="delprofile.php">Delete Profile</a> <br>
+
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
+
         <div class="profilebox">
             <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
 
@@ -29,8 +36,7 @@
             <h4>Gender:<input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
 
-            <h4>Password: <input type="text" name="user_password" value ="" required></h4>
-            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4>
+
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
@@ -46,7 +52,6 @@
             ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Active" onclick="alert('Are you sure you want to Activate your profile?')">Activate</a>
             <?php } ?>
 
-            <h6>"LETS GO TAYUMAN"</h6>
             
         </div>
 
