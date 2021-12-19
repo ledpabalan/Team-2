@@ -2,13 +2,13 @@
 
 <header class="header">
 
-    <a href="homesec.php" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
+    <a href="/Homepage" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
-    <nav class="navbar">
-        <a href="homesec.php">home</a>
-        <a href="featuresec.php">features</a>
-        <a href="shopsec.php">shops</a>
-        <a href="catsec.php">categories</a>
+    <nav class="/navbar">
+        <a href="/homesec">home</a>
+        <a href="/featuresec">features</a>
+        <a href="/shopsec">shops</a>
+        <a href="/catsec">categories</a>
     </nav>
 
     <div class="icons">

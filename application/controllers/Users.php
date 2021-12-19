@@ -171,6 +171,35 @@ class Users extends CI_Controller {
 		redirect('/login');
 	}
 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// HEADER THINGS // 
+
+	public function homesec()
+	{
+      $this->load->view('users/homesec');
+	}
 	
+	public function featuresec()
+	{
+      $this->load->view('users/featuresec');
+	}
+
+	public function shopsec()
+	{
+      $this->load->view('users/shopsec');
+	}
+
+	public function catsec()
+	{
+      $this->load->view('users/catsec');
+	}
+
+	public function devsec()
+	{
+      $this->load->view('users/devsec');
+	}
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 

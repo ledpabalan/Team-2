@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 
-    <?php include 'head.php'; ?>
+<?php include 'assets/head.php'; ?>
 
 </head>
 <body>
-    <?php include 'header2.php'; ?>  
+<?php include 'assets/header2.php'; ?>  
 <!-- categories section starts  -->
 
 <section class="categories" id="categories">
@@ -56,7 +56,7 @@
 
 <!-- categories section ends -->
 
-<?php include 'footer.php'; ?>  
+<?php include 'assets/footer.php'; ?>  
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
