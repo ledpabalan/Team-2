@@ -69,7 +69,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div id="container">
 	<h1>Welcome to CodeIgniter!</h1>
-
+	<h1>TEAM-2</h1>
+	<p> &emsp;[ Aguilar, Complido, DelaCruz, Iscala, Pabalan, Salva, Tuya ]</p>
 	<div id="body">
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
