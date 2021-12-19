@@ -131,8 +131,8 @@ class Users extends CI_Controller {
 
 		$data = array();
 		$data = $this->input->post();
-		//$data['user_id'] = $_SESSION['user_id'];
-		if(isset($data) && $data != null) {
+		//$data['user_id'] = $_SESSION['user_id'];                       	edit user controller
+		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
 			redirect('/users/viewuser');
@@ -142,7 +142,7 @@ class Users extends CI_Controller {
 		
 	}
 
-	public function changepass(){
+	public function changepassword(){
 		$this-> load -> model ('user_model');
 
 		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
@@ -155,12 +155,13 @@ class Users extends CI_Controller {
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
-			redirect('users/viewuser');
+			redirect('/users/viewuser');
 		}
 
 		$this->load->view('users/changepass', $output);
 		
 	}
+
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////OPTIONAL
 
@@ -190,40 +191,6 @@ class Users extends CI_Controller {
 		redirect('/login');
 	}
 
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	// HEADER THINGS // 
-
-	public function homesec()
-	{
-      $this->load->view('users/homesec');
-	}
 	
-	public function featuresec()
-	{
-      $this->load->view('users/featuresec');
-	}
-
-	public function shopsec()
-	{
-      $this->load->view('users/shopsec');
-	}
-
-	public function catsec()
-	{
-      $this->load->view('users/catsec');
-	}
-
-	public function devsec()
-	{
-      $this->load->view('users/devsec');
-	}
-
-	public function usershop()
-	{
-      $this->load->view('users/usershop');
-	}
-
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 

@@ -5,6 +5,7 @@
 </head>
 <body>
 <p>ITEM VIEW</p>
+<a href='<?php echo base_url()."Product/index"?>'>[ Back to ITEMS ]<i  id="addprod"></i></a><br><br>
 <?php  
          foreach ($h->result() as $row)  
          {  
@@ -15,11 +16,8 @@
            <?php echo $row->product_description;?>
            <?php echo $row->product_price;?> 
             </tr> <br>
-
-            
          <?php }  
-         
          ?>  
-         <a href='<?php echo base_url()."/Homepage"?>'>go back</a>
+
 </body>
 </html>
