@@ -61,7 +61,11 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
+<<<<<<< Updated upstream
 <script src="assets/script.js"></script>
+=======
+<script src="script.js"></script>
+>>>>>>> Stashed changes
 
 </body>
 </html>

@@ -29,7 +29,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+<<<<<<< Updated upstream
                 <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+=======
+                <a href="#" class="btn">Check now</a>
+>>>>>>> Stashed changes
             </div>
 
             <div class="swiper-slide box">
@@ -154,7 +158,11 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
+<<<<<<< Updated upstream
 <script src="assets/script.js"></script>
+=======
+<script src="script.js"></script>
+>>>>>>> Stashed changes
 
 </body>
 </html>
