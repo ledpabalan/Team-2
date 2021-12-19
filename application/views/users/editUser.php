@@ -1,7 +1,7 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
-<form method="POST" >               
+<form method="POST" action="/Team-2/users/updateUser/">               
  <!DOCTYPE html>
 <html lang="en">
 <head>

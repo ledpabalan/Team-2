@@ -1,7 +1,7 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
-<form method="POST" >       
+<form method="POST">       
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +17,7 @@
     <div class="profile">   
             <h5>Settings</h5>
             <a href="/Team-2/users/edituser">Edit Profile</a> <br>
-            <a class="active" href="users/changepass">Change<br>Password</a><br>
+            <a class="active" href="/Team-2/users/changepass">Change<br>Password</a><br>
             <a href="delprofile">Delete Profile</a> <br>
 
             <input type="submit" value="LOG OUT" class="lobtn">
@@ -29,8 +29,7 @@
             <h4>Password: <input type="text" name="user_password" value ="" required></h4>
             <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4>
 
-            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to update your profile?')"> </p>
-
+            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
         </div>
 
     </div>
