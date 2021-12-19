@@ -36,13 +36,6 @@
             <h4>Gender:<input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
 
-<<<<<<< HEAD
-            <!-- <h4>Password: <input type="text" name="user_password" value ="" required></h4>
-            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4> -->         
-            <!-- tinanggal ko na to sa edit user bali nasa change pass na sya -->
-=======
-
->>>>>>> develop
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 

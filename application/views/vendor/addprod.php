@@ -16,22 +16,14 @@
 </textarea>
 
                 <p>Price:</p>
-<<<<<<< HEAD
-                <input type="text" name="product_price" placeholder="P 0.00" required>
-=======
                 <input type="number" name="product_price" placeholder="P 0.00" require>
->>>>>>> develop
 
             
                 <br>
                 <br>
         
-<<<<<<< HEAD
-                <input type="submit" name ="add product" value="Add Product" required>
-=======
                 <input type="submit" name ="add product" value="Add Product" require>
                 <a href="/Team-2/Homepage">Back to the Homepage</a>
->>>>>>> develop
 </form> 
 
                </div>

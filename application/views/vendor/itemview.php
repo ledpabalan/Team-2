@@ -21,10 +21,6 @@
          <?php }  
          
          ?>  
-<<<<<<< HEAD
-
-=======
          <a href='<?php echo base_url()."/Homepage"?>'>go back</a>
->>>>>>> develop
 </body>
 </html>

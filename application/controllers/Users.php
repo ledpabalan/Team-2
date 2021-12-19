@@ -142,11 +142,7 @@ class Users extends CI_Controller {
 		
 	}
 
-<<<<<<< HEAD
-	public function changepassword(){
-=======
 	public function changepass(){
->>>>>>> develop
 		$this-> load -> model ('user_model');
 
 		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
@@ -159,20 +155,12 @@ class Users extends CI_Controller {
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
-<<<<<<< HEAD
-			redirect('/users/viewuser');
-=======
 			redirect('users/viewuser');
->>>>>>> develop
 		}
 
 		$this->load->view('users/changepass', $output);
 		
 	}
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////OPTIONAL
 
