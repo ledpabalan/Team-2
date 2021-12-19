@@ -209,6 +209,11 @@ class Users extends CI_Controller {
       $this->load->view('users/shopsec');
 	}
 
+	public function productsec()
+	{
+      $this->load->view('users/productsec');
+	}
+
 	public function catsec()
 	{
       $this->load->view('users/catsec');

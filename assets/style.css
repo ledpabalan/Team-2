@@ -442,7 +442,168 @@ section{
     color:var(--orange);
     padding:.5rem 0;
 }
+/*all products starts*/
+.all-products{
+    margin-bottom: 2%;
+    margin-top: 15%;
+}
+.all-products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
 
+.all-products .box-container .box{
+    padding:3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.all-products .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.all-products .box-container .box img{
+    margin:1rem 0;
+    height: 15rem;
+}
+
+.all-products .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color:var(--black);
+}
+
+.all-products .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    width: 80rem;
+    height: 40rem;
+    margin-top: 12.5rem;
+    margin-left: 25rem;
+    background: #f6cfb2;
+    border: 3px solid #3D0C02;
+    border-radius: 5px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 38rem;
+    font-size: 2rem;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: var(--orange);
+}
+.popup .content {
+    background-color: #f6cfb2;
+}
+.popup .content img{
+    position: absolute;
+    margin-left: 20px;
+    border: 3px solid #3D0C02;
+    width: 25rem;
+    height: 30rem;
+}
+.popup .content h3{
+    font-size: 3rem;
+    margin-left: 30rem;
+}
+.popup .content h1{
+    font-size: 1.5rem;
+    margin-left: 30rem;
+}
+.popup .content h4{
+    margin-top: 5%;
+    font-size: 2rem;
+    margin-left: 34.5rem;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+}
+.quantity button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 1rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.quantity input {
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    margin-top: 2%;
+    width: 5%;
+    height: 5%;
+    font-size: 20px;
+    color: #000;
+    
+}
+.atc-btn{
+    position: absolute;
+    margin-top: -4.5rem;
+    margin-left: 55rem;
+    display: inline-block;
+    padding:.8rem 1rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    background-color: transparent;
+}
+
+.atc-btn:hover{
+    background: var(--orange);
+}
+/*all products end*/
 .categories{
     margin-top: 5%;
     margin-bottom: 2%;
