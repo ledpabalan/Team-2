@@ -166,5 +166,55 @@ window.onscroll = () =>{
 }
 
 </script>
+
+<script>
+    /*script for add quantity */
+    document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+var valueCount
+document.querySelector(".plus-btn").addEventListener("click", function() {
+    valueCount = document.getElementById("quantity").value;
+
+    valueCount++;
+
+    document.getElementById("quantity").value = valueCount;
+
+    if (valueCount >= 0) {
+        document.querySelector(".minus-btn").removeAttribute("disabled");
+        document.querySelector(".minus-btn").classList.remove("disabled")
+    }
+})
+document.querySelector(".minus-btn").addEventListener("click", function() {
+
+    valueCount = document.getElementById("quantity").value;
+
+    valueCount--;
+
+    document.getElementById("quantity").value = valueCount
+
+    if (valueCount == 0) {
+        document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+    }
+})
+
+</script>
+
+<script>
+    /*script for show more in user shop */
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Show more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Show less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
 </body>
 </html>
