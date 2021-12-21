@@ -36,7 +36,7 @@
             <!-- <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
         -->
 
-        <input type="submit" value="Change Password">
+        <input type="submit" value="Change Password" class="dbtn">
         </div>
 
     </div>

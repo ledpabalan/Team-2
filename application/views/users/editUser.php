@@ -38,11 +38,11 @@
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
 
 
-            <!-- <img class="avatar" src="./images/profilepic.png"> -->
+           <img class="avatar" src="./images/profilepic.png">
 
            
             
-            <input type="submit" value="Update Profile">
+            <input type="submit" value="Update Profile" class="dbtn">
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
 
@@ -63,7 +63,7 @@
 
 <!-- profile section ends  -->
 
-<!-- <?php include 'assets/footer.php'; ?>  
+ <?php include 'assets/footer.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
