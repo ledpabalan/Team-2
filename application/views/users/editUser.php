@@ -20,7 +20,7 @@
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
-        <div class="editprofilebox">
+        <div class="profilebox">
         <form method= "POST">
             <h3>My Profile <a href="/Team-2/users/viewUser"><i class="fas fa-edit"></a></i></h3> 
 
