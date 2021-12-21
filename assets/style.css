@@ -832,6 +832,7 @@ section{
     font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--black);
+    margin-left: 10%;
 }
 
 .profile .profilebox h4{

@@ -1,4 +1,5 @@
 <?=isset($message) ? $message : "";?>
+
 <form method="POST" action="/Team-2/users/updateUser/"> 
 
                 <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">

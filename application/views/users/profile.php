@@ -1,5 +1,6 @@
 <?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->           
+<!-- <?php $id = $this->session->userdata('user_id'); ?> -->      
+     
 <!DOCTYPE html>
 <html lang="en">
 <head>
