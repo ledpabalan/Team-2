@@ -2,6 +2,7 @@
 
 <header class="header">
 
+<<<<<<< Updated upstream:application/views/users/header2.php
     <a href="homesec.php" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
     <nav class="navbar">
@@ -64,6 +65,9 @@
 
     </form>
 
+=======
+    <a href="Homepage" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
+>>>>>>> Stashed changes:assets/header3.php
 </header>
 
 <!-- header section ends -->
