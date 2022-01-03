@@ -19,7 +19,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -33,7 +33,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -47,7 +47,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -61,7 +61,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -83,7 +83,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -97,7 +97,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -111,7 +111,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -125,7 +125,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -151,10 +151,10 @@
 
 <?php include 'assets/footer.php'; ?>  
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>  https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="assets/script.js"></script>
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
 
 </body>
 </html>

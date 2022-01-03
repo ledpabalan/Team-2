@@ -17,35 +17,35 @@
 <div class="box-container">
 
     <div class="box">
-        <img src="./images/foodlogo.png" alt="">
+        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
         <h3>Product Name</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
         <a href="#popup1" class="rbtn">read more</a>
     </div>
 
     <div class="box">
-        <img src="./images/foodlogo.png" alt="">
+        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
         <h3>Product Name</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
         <a href="#popup1" class="rbtn">read more</a>
     </div>
 
     <div class="box">
-        <img src="./images/foodlogo.png" alt="">
+        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
         <h3>Product Name</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
         <a href="#popup1" class="rbtn">read more</a>
     </div>
 
     <div class="box">
-        <img src="./images/foodlogo.png" alt="">
+        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
         <h3>Product Name</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
         <a href="#popup1" class="rbtn">read more</a>
     </div>
 
     <div class="box">
-        <img src="./images/foodlogo.png" alt="">
+        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
         <h3>Product Name</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
         <a href="#popup1" class="rbtn">read more</a>
@@ -57,7 +57,7 @@
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
-                <img src="./images/foodlogo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
                 <h2>ITEM NAME</h2>
                 <h3>₱ 00.00</h3>
                 <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
@@ -78,10 +78,10 @@
 
 <?php include 'assets/footer.php'; ?>  
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="assets/script.js"></script>
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
 
 </body>
 </html>

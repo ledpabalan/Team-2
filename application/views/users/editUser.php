@@ -1,28 +1,20 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
-          
+<form method="POST" >               
  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'assets/head.php'; ?>
+
 </head>
 <body>
-    <?php include 'assets/header2.php'; ?>
+
 <!-- profile section starts  -->
 
     <div class="profile">   
             <h5>My Account</h5>
-            
-            <a class="active" href="/Team-2/users/edituser">Edit Profile</a> <br>
-            <a href="/Team-2/users/changepass">Change<br>Password</a><br>
-            <a href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
-
-            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
-
         <div class="profilebox">
-        <form method= "POST">
-            <h3>My Profile <a href="/Team-2/users/viewUser"><i class="fas fa-edit"></a></i></h3> 
+            <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
@@ -37,16 +29,15 @@
             <h4>Gender:<input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
             <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
 
+            <!-- <h4>Password: <input type="text" name="user_password" value ="" required></h4>
+            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4> -->         
+            <!-- tinanggal ko na to sa edit user bali nasa change pass na sya -->
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
-           
-            
-            <input type="submit" value="Update Profile">
+            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to update your profile?')"> </p>
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
-
-            <!-- TINRY KO LANG NAMAN <a href ="/Team-2/users/viewuser/" onclick="alert('Are you sure you want to Edit your Profile?')">Submit</a> -->
 
             <?php
                     if($user['user_acc_status'] == "Active") {
@@ -56,6 +47,7 @@
             ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Active" onclick="alert('Are you sure you want to Activate your profile?')">Activate</a>
             <?php } ?>
 
+            <h6>"LETS GO TAYUMAN"</h6>
             
         </div>
 
@@ -63,15 +55,21 @@
 
 <!-- profile section ends  -->
 
-<!-- <?php include 'assets/footer.php'; ?>  
+<!-- <?php include 'footer.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
 <!-- custom js file link  -->
-<script src="assets/script.js"></script>
+<<<<<<< Updated upstream
+<script src="script.js"></script>
+=======
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
+>>>>>>> Stashed changes
 
 </body>
 </html>
 
 </form>     
+    <a href="/Team-2/users/viewuser">Back to the View Profile</a> </br>  </br> 
+    <a href="/Team-2/Homepage">Back to the Homepage</a>

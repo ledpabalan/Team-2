@@ -1,25 +1,30 @@
-<?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->           
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'assets/head.php'; ?>
+
+    <?php include 'head.php'; ?>
+
 </head>
 <body>
-    <?php include 'assets/header2.php'; ?>  
+<?php include 'header2.php'; ?>  
+<?=isset($message) ? $message : "";?>
+<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
+
+<form method="POST" >               
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
 
 <!-- profile section starts  -->
-    
+
     <div class="profile">   
             <h5>My Account</h5>
-            <a class="active "href='<?php echo base_url()."users/viewUser"?>'>Profile</a> <br>
-            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchases</a> <br>
-
-            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
-
         <div class="profilebox">
-            
-            <h3>My Profile <a href="/Team-2/users/edituser"><i class="fas fa-edit"></a></i></h3> 
+            <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
@@ -34,23 +39,31 @@
             <h4>Gender:<?php echo $user['user_gender']?></h4>
             <h4>Contact No.: <?php echo $user['user_contact_no']?></h4>
 
+   
             
         </div>
 
     </div>
-    </form>     
-
 
 <!-- profile section ends  -->
 
-<!-- <?php include 'assets/footer.php'; ?>  
+<!-- <?php include 'footer.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
 <!-- custom js file link  -->
-<script src="assets/script.js"></script>
+<<<<<<< Updated upstream
+<script src="script.js"></script>
+=======
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
+>>>>>>> Stashed changes
 
 </body>
 </html>
 
+</form>     
+
+    <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
+    <a href="/Team-2/users/changepassword">Change Password</a> </br>
+    <a href="/Team-2/Homepage">Back to the Homepage</a>
