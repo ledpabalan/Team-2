@@ -19,3 +19,4 @@ class Homepage extends CI_Controller {
 	{
       $this->load->view('homepage');
 	}
+}
