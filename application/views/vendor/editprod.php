@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php include 'assets/head.php'; ?>
 	<title>EDIT VIEW</title>
 </head>
 <body>

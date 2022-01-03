@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 
-    <?php include 'head.php'; ?>
+    <?php include 'assets/head.php'; ?>
 
 </head>
 <body>
-<?php include 'header3.php'; ?>  
+<?php include 'assets/header3.php'; ?>  
 
 <!-- profile section starts  -->
 
