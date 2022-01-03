@@ -19,6 +19,12 @@ class Homepage extends CI_Controller {
 	{
       $this->load->view('index');
 	}
+	public function featuresec() 
+	{
+		$this->load->view("users/featuresec");  
+
+		
+	}
 
 <<<<<<< Updated upstream
 =======
