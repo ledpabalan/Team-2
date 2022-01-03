@@ -20,4 +20,10 @@ class Homepage extends CI_Controller {
       $this->load->view('index');
 	}
 
+<<<<<<< Updated upstream
+=======
+
+    
+    
+>>>>>>> Stashed changes
 }

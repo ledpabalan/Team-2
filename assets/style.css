@@ -442,6 +442,218 @@ section{
     color:var(--orange);
     padding:.5rem 0;
 }
+<<<<<<< Updated upstream
+=======
+/*all products starts*/
+.all-products{
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+.all-products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.all-products .box-container .box{
+    padding:3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.all-products .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.all-products .box-container .box img{
+    margin:1rem 0;
+    height: 15rem;
+}
+
+.all-products .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color:var(--black);
+}
+
+.all-products .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    width: 80rem;
+    height: 40rem;
+    margin-top: 12.5rem;
+    margin-left: 25rem;
+    background: #f6cfb2;
+    border: 3px solid #3D0C02;
+    border-radius: 5px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2 {
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 38rem;
+    font-size: 2rem;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup1 {
+    width: 60rem;
+    height: 40rem;
+    margin-top: 12.5rem;
+    margin-left: 40rem;
+    background: #f6cfb2;
+    border: 3px solid #3D0C02;
+    border-radius: 5px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup1 h3{
+    font-size: 2rem;
+    text-transform:uppercase;
+    color:var(--black);
+    margin-left:30px;
+    margin-top:35px;
+    }
+.popup1 input[type="text"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 20px;
+    width: 40rem;
+    background: #f6cfb2;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 8%;
+}
+.popup1 textarea{
+    margin-left:8%;
+    width:40rem;
+    margin-bottom:-15px;
+}
+.popup1 input[type="submit"]{
+    margin-left:30px;
+    font-size: 1.5rem;
+    
+}
+.popup1 .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup1 .close:hover {
+    color: var(--orange);
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: var(--orange);
+}
+.popup .content {
+    background-color: #f6cfb2;
+}
+.popup .content img{
+    position: absolute;
+    margin-left: 20px;
+    border: 3px solid #3D0C02;
+    width: 25rem;
+    height: 30rem;
+}
+.popup .content h3{
+    font-size: 3rem;
+    margin-left: 30rem;
+}
+.popup .content h1{
+    font-size: 1.5rem;
+    margin-left: 30rem;
+}
+.popup .content h4{
+    margin-top: 5%;
+    font-size: 2rem;
+    margin-left: 34.5rem;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+}
+.quantity button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 1rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.quantity input {
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    margin-top: 2%;
+    width: 5%;
+    height: 5%;
+    font-size: 20px;
+    color: #000;
+    
+}
+.atc-btn{
+    position: absolute;
+    margin-top: -4.5rem;
+    margin-left: 55rem;
+    display: inline-block;
+    padding:.8rem 1rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    background-color: transparent;
+}
+>>>>>>> Stashed changes
 
 .categories{
     margin-top: 5%;
@@ -651,7 +863,11 @@ section{
 .profilebox{
     margin-top: 7%;
     width: 820px;
+<<<<<<< Updated upstream
     height: 420px;
+=======
+    height: 450px;
+>>>>>>> Stashed changes
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
@@ -755,6 +971,9 @@ section{
     font-size: 1.5rem;
     margin-left: 2%;
 }
+.profilebox textarea{
+    margin-left:20px;
+}
 /*profile yes?*/
 /*edit profile box starts*/
 .editprofilebox{
@@ -770,7 +989,11 @@ section{
     padding: 30px;
     border-radius: 2%;
     box-shadow: 15px 15px;
+<<<<<<< Updated upstream
     border:2px solid black;
+=======
+    
+>>>>>>> Stashed changes
 }
 
 .editprofile a{
@@ -850,17 +1073,18 @@ section{
 /*cpass start*/
 .cpassbox{
     margin-top: 7%;
-    width: 950px;
+    width: 820px;
     height: 450px;
     background: #f6cfb2;
     color: #3D0C02;
-    top: 10px;
-    left: 20%;
+    top: 20px;
+    left: 25%;
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
     border-radius: 2%;
     box-shadow: 15px 15px;
+    border:2px solid black;
 }
  
 .profile .cpassbox h3{
@@ -868,6 +1092,7 @@ section{
     text-transform: uppercase;
     color: var(--black);
     margin-left: 5rem;
+    margin-top:7%;
 }
 
 .profile .cpassbox h4{
@@ -875,7 +1100,7 @@ section{
     color: var(--black);
     text-align: left;
     padding: 10px;
-    margin-left: 20rem;
+    margin-left: 15rem;
 }
 
 .profile .cpassbox h6{
@@ -884,6 +1109,16 @@ section{
     text-align: left;
     padding: 10px;
     margin-left: 5rem;
+}
+.cpassbox input[type="text1"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 40px;
+    background: #f6cfb2;
+    color: black;
+    font-size: 2rem;
+    margin-left: 20%;
 }
 .cpassbox input[type="text"]{
     border-bottom: 3px solid #3D0C02;
@@ -894,6 +1129,10 @@ section{
     color: black;
     font-size: 2rem;
     margin-left: 5%;
+}
+.cpassbox input[type="submit"]{
+    margin-left: 7%;
+    font-size:1.5rem;
 }
 .profile .cpassbox .box{
     width: 35%;
@@ -1263,7 +1502,15 @@ section{
     padding: 30px;
     border-radius: 2%;
     box-shadow: 15px 15px;
+<<<<<<< Updated upstream
     border:2px solid black;
+=======
+    overflow-y: scroll;
+    border:2px solid black;
+}
+.seller-itembox::-webkit-scrollbar{
+    display: none;
+>>>>>>> Stashed changes
 }
 
 .seller-profilebox .section a{
@@ -1446,11 +1693,16 @@ section{
     padding: 30px;
     border-radius: 2%;
     box-shadow: 15px 15px;
+<<<<<<< Updated upstream
     overflow-y: scroll;
     border:2px solid black;
 }
 .seller-itembox::-webkit-scrollbar{
         display: none;
+=======
+    overflow: scroll;
+    border:2px solid black;
+>>>>>>> Stashed changes
 }
 .seller-itembox p{
     font-size: 1.5rem;
@@ -1499,6 +1751,7 @@ section{
     text-align: center;
 }
 
+<<<<<<< Updated upstream
 .items-items .box-container .box .ibtn2{
     font-size: 10px;
     position: absolute;
@@ -1507,6 +1760,22 @@ section{
     width: 80px;
     margin-left: 650px;
     
+=======
+.abtn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 3rem !important;
+    border-radius: 1rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    text-align: center;
+}
+.ibtn:hover{
+    background-color: var(--orange);
+    color:#fff !important;
+>>>>>>> Stashed changes
 }
 .items-items .box-container .box .ibtn{
     font-size: 10px;
@@ -1516,6 +1785,18 @@ section{
     width: 80px;
     margin-left: 650px;
     
+}
+.abtn:hover{
+    background: var(--orange);
+    color:#fff !important;
+}
+.items-items .box-container .box .abtn{
+    font-size: 10px;
+    position: absolute;
+    margin-top: 6rem;
+    height: 50px;
+    width: 50px;
+    margin-left: 420px;
 }
 .items-items .box-container .box input[type="delete"]{
     position: absolute;
@@ -1552,6 +1833,7 @@ section{
     position: absolute;
 }
 .items-items .box-container .box h2{
+<<<<<<< Updated upstream
     margin-left: 2%;
     margin-top:6px;
     margin-bottom:-6px;
@@ -1561,6 +1843,15 @@ section{
     margin-top: 1%;
     margin-bottom:-.5%;
     font-size: 1.5rem;  
+=======
+    margin-left: 40%;
+    margin-top:1%;
+}
+.items-items .box-container .box h3{
+    margin-top: 10px;
+    margin-left: 40%;
+    font-size: 1.3rem;
+>>>>>>> Stashed changes
 }
 .items-items .box-container .box p{
     text-align: right;
@@ -1831,24 +2122,25 @@ section{
 /*cpass start*/
 .deactbox{
     margin-top: 7%;
-    width: 950px;
+    width: 820px;
     height: 450px;
     background: #f6cfb2;
     color: #3D0C02;
-    top: 10px;
-    left: 20%;
+    top: 20px;
+    left: 25%;
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
     border-radius: 2%;
     box-shadow: 15px 15px;
+    border:2px solid black;
 }
  
 .profile .deactbox h3{
     font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--black);
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 
 .profile .deactbox h4{
@@ -1856,7 +2148,7 @@ section{
     color: var(--black);
     text-align: left;
     padding: 10px;
-    margin-left: 20rem;
+    margin-left: 8rem;
 }
 
 .profile .deactbox h6{
@@ -1881,6 +2173,9 @@ section{
     background-color: #f8f9fa;
     color: black;
     margin-left: 5%;
+}
+.deactbox input[type="submit"]{
+    margin-left:35%;
 }
 
 .profile .deactbox .box{

@@ -18,7 +18,7 @@
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
-            <h4>Password: <input type="text" name="user_password" value ="" required></h4>
+            <h4>Password: <input type="text1" name="user_password" value ="" required></h4>
             <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4>
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
@@ -38,10 +38,17 @@
 <!-- <?php include 'footer.php'; ?>  
 
 
+<<<<<<< Updated upstream
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
 <!-- custom js file link  -->
 <script src="script.js"></script>
+=======
+<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
+>>>>>>> Stashed changes
 
 </body>
 </html>
