@@ -39,7 +39,6 @@ class Users extends CI_Controller {
 			redirect('/users/register2/'.$data['user_type']); //passing data into another function
 			echo " 1.) data = ".print_r($data, true);//
 		}
-
 		$this->load->view('users/signup');
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -121,6 +120,8 @@ class Users extends CI_Controller {
 		$this->load->view('users/profile', $output);
 		//redirect('/Homepage');
 	}
+  
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function editUser(){
 		$this-> load -> model ('user_model');

@@ -19,19 +19,11 @@
            
            <?php echo $row->product_name;?> 
            <?php echo $row->product_description;?>
-           <?php echo $row->product_price;?> 
-
-         
+           <?php echo $row->product_price;?>          
             </tr> 
-           
-           
-
             <br>
-         
          <?php 
          } 
-
          ?>  
-
 </body>
 </html>
