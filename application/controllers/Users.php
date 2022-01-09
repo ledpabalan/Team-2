@@ -49,13 +49,16 @@ class Users extends CI_Controller {
 		if(isset($data) && $data != null){
 			$this->load->model('user_model');
 			$id = $this->user_model->createUser($data);
+			
 
 			if (!is_bool($id)) {
 				$data['user_id'] = $id;
 
 				$this->session->set_userdata($data);
+				
 
-				redirect('/Homepage');
+
+				redirect('/users/sent');
 			} else{ 
 				redirect('/users/login');
 			}		
@@ -220,7 +223,16 @@ class Users extends CI_Controller {
 	{
       $this->load->view('users/productsec');
 	}
-
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function sent()
+	{
+		$this -> load -> model('user_model');
+
+		$this -> user_model -> send_validation_email ();
+
+      $this->load->view('EmailVer/sent');
+	}
+
 }
 
