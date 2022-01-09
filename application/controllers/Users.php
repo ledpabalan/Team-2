@@ -68,9 +68,34 @@ class Users extends CI_Controller {
     }
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
+	public function checkloginrole() {
+
+		$data = array();
+		$data = $this->input->post();
+		
+		 if(isset($data) && $data != null) {
+			$this->load->model('user_model');
+			$return = $this->user_model->checkrole($data['user_type']);
+
+			if(is_bool($return)) {
+			   redirect('/Homepage'); //User(buyer) Logged In Interface
+			 } 
+			 else {
+				echo 'SELLER SIDE INTERFACE';
+			   redirect('/Homepage');
+				
+			 }
+		
+			}
+
+		$this->load->view('users/login');
+	}
+    
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function login() {
 
+		
 		$id = $this->session->userdata('user_id');
 
         if(isset($id) && $id != null) {
@@ -88,12 +113,17 @@ class Users extends CI_Controller {
 			   echo '<script>alert("Please type correct username or password")</script>';
 			 } 
 			 else {
-				// var_dump($return[0]);
-				// exit;
+				 if($return[0]['user_type'] == 'Buyer'){
 				$this->session->set_userdata($return[0]);
               
-				redirect('/Homepage'); //UserLoggedIn Interface
+				redirect('/Homepage'); //User Buyer LoggedIn Interface
 				//$this->load->view('index');//UserLoggedIn Interface
+				 }
+				else{
+
+					$this->session->set_userdata($return[0]);
+					redirect('/Homepage/sellerside');
+				}
 			 }
 		
 			}

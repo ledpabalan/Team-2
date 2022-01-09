@@ -24,7 +24,7 @@ class ProductController extends CI_Controller {
 		$product['product_name'] = $this->input->post('product_name');
 		$product['product_description'] = $this->input->post('product_description');
 		$product['product_price'] = $this->input->post('product_price');
- 
+		
 		$query = $this->ProductModel->InsertProduct($product);
         redirect("ProductController/index");
 		// if($query){

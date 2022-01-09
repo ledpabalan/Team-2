@@ -29,6 +29,22 @@ class user_model extends CI_Model {
         return false;
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////
+public function checkrole($user_type){
+    
+    $query = $this -> db -> get($this -> table); 
+    $return = $query -> result_array();
+    
+    if($return[0]['user_user_type'] == 'Seller')
+    return $return;
+    print_r($return);
+
+
+    return $return;
+
+    
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function checkUsernameIfExists($user_username){
         if(isset($user_username) && $user_username != null){
