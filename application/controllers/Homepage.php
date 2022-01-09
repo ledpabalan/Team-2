@@ -17,6 +17,13 @@ class Homepage extends CI_Controller {
 
 	public function index()
 	{
-      $this->load->view('homepage');
+      $this->load->view('homepage_buyer');
 	}
+
+    public function sellerside()
+	{
+      $this->load->view('homepage_seller');
+	}
+
+
 }

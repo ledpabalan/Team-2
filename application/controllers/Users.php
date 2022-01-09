@@ -92,7 +92,7 @@ class Users extends CI_Controller {
 				// exit;
 				$this->session->set_userdata($return[0]);
               
-				redirect('/Homepage'); //UserLoggedIn Interface
+				redirect('/Homepage/sellerside'); //UserLoggedIn Interface
 				//$this->load->view('index');//UserLoggedIn Interface
 			 }
 		
