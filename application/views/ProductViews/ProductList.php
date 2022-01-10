@@ -10,7 +10,7 @@
 	<h1 class="page-header text-center">PRODUCT LIST</h1>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
-		<a href="/Team-2/Homepage">Back to the Homepage</a><br><br>
+		<a href="/Team-2/Homepage/sellerside">Back to the Homepage</a><br><br>
 			<a href="<?php echo base_url(); ?>ProductController/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New</a><br><br>
 			<table class="table table-bordered table-striped">
 				<thead>
