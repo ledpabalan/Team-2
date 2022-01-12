@@ -15,42 +15,32 @@
 <h1 class="heading">all<span>products</span> </h1>
 <h1 class="heading">Buyer-Side </h1>
 
+<!-- -->
+
+					
 <div class="box-container">
+<?php
+					foreach($product as $product_a){
+						?>
 
-    <div class="box">
-        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
-        <h3>Product Name</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-        <a href="#popup1" class="rbtn">read more</a>
-    </div>
+						<tr>
 
-    <div class="box">
-        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
-        <h3>Product Name</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-        <a href="#popup1" class="rbtn">read more</a>
-    </div>
+<div class="box">
+    <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
+    <h3><?php echo $product_a->product_name; ?></h3>
+    <p><?php echo $product_a->product_description; ?></p>
+    <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
 
-    <div class="box">
-        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
-        <h3>Product Name</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-        <a href="#popup1" class="rbtn">read more</a>
-    </div>
+    <br>
+    <a href="#popup1" class="rbtn">read more</a>
+</div>
 
-    <div class="box">
-        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
-        <h3>Product Name</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-        <a href="#popup1" class="rbtn">read more</a>
-    </div>
+						</tr>
+						<?php
+					}
+					?>
 
-    <div class="box">
-        <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
-        <h3>Product Name</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-        <a href="#popup1" class="rbtn">read more</a>
-    </div>
+<!-- -->
 
 </section>
     

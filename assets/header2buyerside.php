@@ -8,7 +8,7 @@
         <a href='<?php echo base_url()."usersbuyerside/homepage"?>'>Home</a>       
         <a href='<?php echo base_url()."usersbuyerside/featuresec"?>'>features</a>
         <a href='<?php echo base_url()."usersbuyerside/shopsec"?>'>shops</a>
-        <a href='<?php echo base_url()."usersbuyerside/productsec"?>'>products</a>
+        <a href='<?php echo base_url()."ProductControllerBuyer/index"?>'>products</a>
         <a href='<?php echo base_url()."usersbuyerside/catsec"?>'>categories</a>
     </nav>
 
