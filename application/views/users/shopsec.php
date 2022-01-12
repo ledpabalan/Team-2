@@ -19,7 +19,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -29,15 +29,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-<<<<<<< Updated upstream
                 <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
-=======
-                <a href="#" class="btn">Check now</a>
->>>>>>> Stashed changes
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -47,11 +43,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -61,11 +57,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -75,7 +71,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
         </div>
@@ -87,7 +83,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -97,11 +93,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -111,11 +107,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -125,11 +121,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/shop logo.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
                 <div class="stars">
@@ -139,7 +135,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
         </div>
@@ -155,14 +151,10 @@
 
 <?php include 'assets/footer.php'; ?>  
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>  https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<<<<<<< Updated upstream
-<script src="assets/script.js"></script>
-=======
-<script src="script.js"></script>
->>>>>>> Stashed changes
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
 
 </body>
 </html>

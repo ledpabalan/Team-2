@@ -1,7 +1,7 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
-<form method="POST" action="/users/EditUser/">               
+          
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +13,16 @@
 
     <div class="profile">   
             <h5>My Account</h5>
+            
+            <a class="active" href="/Team-2/users/edituser">Edit Profile</a> <br>
+            <a href="/Team-2/users/changepass">Change<br>Password</a><br>
+            <a href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
+
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
+
         <div class="profilebox">
-            <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+        <form method= "POST">
+            <h3>My Profile <a href="/Team-2/users/viewUser"><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
@@ -32,11 +40,13 @@
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
-            <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to update your profile?')"> </p>
+           
+            
+            <input type="submit" value="Update Profile">
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
 
-            <a href ="/Team-2/users/viewuser/" onclick="alert('Are you sure you want to Edit your Profile?')">Submit</a>
+            <!-- TINRY KO LANG NAMAN <a href ="/Team-2/users/viewuser/" onclick="alert('Are you sure you want to Edit your Profile?')">Submit</a> -->
 
             <?php
                     if($user['user_acc_status'] == "Active") {
@@ -60,11 +70,9 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
 
 </body>
 </html>
 
 </form>     
-    <a href="/Team-2/users/viewuser">Back to the View Profile</a> </br>  </br> 
-    <a href="/Team-2/Homepage">Back to the Homepage</a>

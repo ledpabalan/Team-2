@@ -4,6 +4,7 @@
 
 <?php include 'assets/head.php'; ?>
 
+
 </head>
 <body>
 <?php include 'assets/header2.php'; ?>  
@@ -17,21 +18,21 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="images/fea food 1.jpg" alt="">
+            <img  src="<?php echo base_url(); ?>assets/images/fea food 1.jpg">
             <h3>Tayuman Classics</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
-            <img src="images/fea motor 2" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/fea motor 2.jpg" alt="">
             <h3>free delivery</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
-            <img src="images/fea payment 3.png " alt="">
+            <img src="<?php echo base_url(); ?>assets/images/fea payment 3.png " alt="">
             <h3>easy payments</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
@@ -47,14 +48,12 @@
 
 <?php include 'assets/footer.php'; ?>  
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<<<<<<< Updated upstream
-<script src="assets/script.js"></script>
-=======
-<script src="script.js"></script>
->>>>>>> Stashed changes
+<script src="<?php echo base_url(); ?>/assets/script.js"></script>
+
+
 
 </body>
 </html>

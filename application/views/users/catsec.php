@@ -16,38 +16,38 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>top food</h3>
             <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
+            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>classics</h3>
             <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
+            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>budget meal</h3>
             <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
+            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>refreshers</h3>
             <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
+            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
-            <img src="images/categories.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>sweets & dessert</h3>
             <p>upto 45% off</p>
-            <a href="#" class="btn">shop now</a>
+            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
         </div>
 
     </div>
@@ -58,14 +58,10 @@
 
 <?php include 'assets/footer.php'; ?>  
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<<<<<<< Updated upstream
-<script src="assets/script.js"></script>
-=======
-<script src="script.js"></script>
->>>>>>> Stashed changes
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
 
 </body>
 </html>

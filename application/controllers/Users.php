@@ -152,11 +152,11 @@ class Users extends CI_Controller {
 
 		$data = array();
 		$data = $this->input->post();
-		//$data['user_id'] = $_SESSION['user_id'];                       	edit user controller
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
-			redirect('/profile');
+			redirect('Homepage');
+		
 		}
 
 		$this->load->view('users/changepass', $output);
@@ -192,6 +192,64 @@ class Users extends CI_Controller {
 		redirect('/login');
 	}
 
-	
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// HEADER THINGS // 
+
+	public function featuresec()
+	{
+      $this->load->view('users/featuresec');
+	}
+
+	public function shopsec()
+	{
+      $this->load->view('users/shopsec');
+	}
+
+	public function productsec()
+	{
+      $this->load->view('users/productsec');
+	}
+
+	public function catsec()
+	{
+      $this->load->view('users/catsec');
+	}
+
+	public function devsec()
+	{
+      $this->load->view('users/devsec');
+	}
+	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
+	public function userdelprofile()
+	{
+      $this->load->view('users/userdelprofile');
+	}
+	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
+	public function usershop()
+	{
+      $this->load->view('users/usershop');
+	}
+	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
+	public function allpurchases()
+	{
+      $this->load->view('users/allpurchases');
+	}
+	public function recpurchases()
+	{
+      $this->load->view('users/recpurchases');
+	}
+	public function compurchases()
+	{
+      $this->load->view('users/compurchases');
+	}
+	public function trpurchases()
+	{
+      $this->load->view('users/trpurchases');
+	}
+
+
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 

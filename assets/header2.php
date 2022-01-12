@@ -8,6 +8,7 @@
         <a href='<?php echo base_url()."Homepage"?>'>Home</a>
         <a href='<?php echo base_url()."users/featuresec"?>'>features</a>
         <a href='<?php echo base_url()."users/shopsec"?>'>shops</a>
+        <a href='<?php echo base_url()."users/productsec"?>'>products</a>
         <a href='<?php echo base_url()."users/catsec"?>'>categories</a>
     </nav>
 
@@ -26,7 +27,7 @@
     <div class="shopping-cart">
         <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="./images/coffeebryant.png" alt="">
+            <img src="<?php echo base_url(); ?>assets//images/coffeebryant.png" alt="">
             <div class="content">
                 <h3>Coffee Bryant</h3>
                 <span class="price">₱20.00/-</span>
@@ -35,7 +36,7 @@
         </div>
         <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="./images/carbonara.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets//images/carbonara.jpg" alt="">
             <div class="content">
                 <h3>Carbonara</h3>
                 <span class="price">₱20.00/-</span>
@@ -44,7 +45,7 @@
         </div>
         <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="./images/cheesebread.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets//images/cheesebread.jpg" alt="">
             <div class="content">
                 <h3>Cheese Bread</h3>
                 <span class="price">₱10.00/-</span>
