@@ -7,46 +7,66 @@
     <title>The New Tayuman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="javascript" href="<?php echo base_url(); ?>assets/sds.js">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel = "stylesheet" type = "text/css" 
-         href = "<?php echo base_url(); ?>assets/login.css">
+         href = "<?php echo base_url(); ?>assets/css/signdown.css">
     
 </head>
-<body>
-
-    <!-- login start-->
-    <div class="signdownbox">
-        <img class="logo" src="<?php echo base_url(); ?>assets/images/TNTlogo.png">
-        <img class="avatar" src="<?php echo base_url(); ?>assets/images/login.png">
-            <h1>SIGN UP FOR FREE!</h1>
-            <form method= "POST">
-                <p>Full Name:</p>
-                <input type="text" name="user_name" placeholder=" Enter Fullname"required>
-
-                <p>Email:</p>
-                <input type="text" name="user_email" placeholder=" Enter Email"required>
-
-                <p>Username:</p>
-                <input type="text" name="user_username" placeholder=" Enter Username"required>
-
-                <p>Password:</p>
-                <input type="password" name="user_password" placeholder=" Enter Password"required>
-
-                <p>Confirm Password:</p>
-                <input type="password" name="user_pwdRepeat" placeholder=" Confirm Password"required>
-
-                </script>
-                <!-- <a href="<?php echo base_url(); ?>"type= "submit"><i class="fas fa-chevron-circle-right"></i></a> -->
-                <button type="submit" value="submit" >></button>
-                
-                <h5>Already have an account?</h5>
-                <a href="<?php echo base_url(); ?>users/login">Sign in</a>
-
-            </form>
-    </div>
-    <!-- login end-->
-
-</body>
+    <body>
+        <div class="signupbox">
+            <img class="wave" src="<?php echo base_url(); ?>assets/images/loginbg.png">    
+            <div class="img">
+                <img src="<?php echo base_url(); ?>assets/images/loginpic1.png"> 
+            </div>
+            <div class="signup-content">
+                <form method= "POST">
+                    <h2 class="signup-title">Sign up</h2>
+                    <div class="sign-up-input name">
+                        <div class="sign-up-icons">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="div">
+                            <input type="text" name="user_name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="sign-up-input email">
+                        <div class="sign-up-icons">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="div">
+                            <input type="text" name="user_email" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="sign-up-input username">
+                        <div class="sign-up-icons">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <input type="text" name="user_username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="sign-up-input password">
+                        <div class="sign-up-icons">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <input type="password" name="user_password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="sign-up-input pwdrepeat">
+                        <div class="sign-up-icons">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <input type="password" name="user_pwdRepeat" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <h5>Already have an account?</h5>
+                    <a href="<?php echo base_url(); ?>users/login">Sign In</a>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
