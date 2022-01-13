@@ -49,14 +49,27 @@ class Users extends CI_Controller {
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
 			$this->load->model('user_model');
-			$id = $this->user_model->createUser($data);
+			$id = $this->user_model->createUser($data,$user_type);
 
 			if (!is_bool($id)) {
 				$data['user_id'] = $id;
+				$this->load->model('user_model');
+			    $return = $this->user_model->login($data['user_username'], $data['user_password']);
 
 				$this->session->set_userdata($data);
+///
 
-				redirect('/Homepage');
+if($return[0]['user_type'] == 'Buyer'){
+	$this->session->set_userdata($return[0]);
+	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
+	 }
+	else{
+
+		$this->session->set_userdata($return[0]);
+		redirect('/Homepage/sellerside');
+	}
+
+///
 			} else{ 
 				redirect('/users/login');
 			}		
@@ -80,7 +93,7 @@ class Users extends CI_Controller {
 		$data = array();
 		$data = $this->input->post();
 		
-		 if(isset($data) && $data != null) {
+		if(isset($data) && $data != null) {
 			$this->load->model('user_model');
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
 
@@ -88,16 +101,20 @@ class Users extends CI_Controller {
 			   echo '<script>alert("Please type correct username or password")</script>';
 			 } 
 			 else {
-				// var_dump($return[0]);
-				// exit;
+				 if($return[0]['user_type'] == 'Buyer'){
 				$this->session->set_userdata($return[0]);
               
-				redirect('/Homepage'); //UserLoggedIn Interface
+				redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
 				//$this->load->view('index');//UserLoggedIn Interface
+				 }
+				else{
+
+					$this->session->set_userdata($return[0]);
+					redirect('/Homepage/sellerside');
+				}
 			 }
 		
 			}
-
 		$this->load->view('users/login');
 	}
     

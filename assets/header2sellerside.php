@@ -2,14 +2,14 @@
 
 <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman- Seller Side </a>
 
     <nav class="navbar">
-        <a href='<?php echo base_url()."Homepage"?>'>Home</a>       
-        <a href='<?php echo base_url()."users/featuresec"?>'>features</a>
-        <a href='<?php echo base_url()."users/shopsec"?>'>shops</a>
-        <a href='<?php echo base_url()."users/productsec"?>'>products</a>
-        <a href='<?php echo base_url()."users/catsec"?>'>categories</a>
+        <a href='<?php echo base_url()."userssellerside/homepage"?>'>Home</a>       
+        <a href='<?php echo base_url()."userssellerside/featuresec"?>'>features</a>
+        <a href='<?php echo base_url()."userssellerside/shopsec"?>'>shops</a>
+        <a href='<?php echo base_url()."ProductControllerSeller/index"?>'>products</a>
+        <a href='<?php echo base_url()."userssellerside/catsec"?>'>categories</a>
     </nav>
 
     <div class="icons">

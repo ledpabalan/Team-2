@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
 
-    <?php include 'assets/head.php'; ?>
+    <?php include 'assets/headbuyerside.php'; ?>
 
 </head>
 <body>
-    <?php include 'assets/header2.php'; ?>  
+    <?php include 'assets/header2buyerside.php'; ?>  
     
 <!-- home section starts  -->
 
 <section class="home" id="home">
 
     <div class="content">
+       <h3><span>BUYER</span></h3>
         <h3>fresh and <span>classic</span> products for you</h3>
         <p>brought to you by The New Tayuman</p>
         <!-- <a href='<?php echo base_url()."Product/index"?>'>[  Products ]<i  id="vendoritem"></i></a> -->
-         <a href='<?php echo base_url()."ProductController/index"?>'>[  Products ]<i  id="product"></i></a>
         <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
     </div>
 

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class ProductController extends CI_Controller {
+class ProductControllerBuyer extends CI_Controller {
  
 	function __construct(){
 		parent::__construct();
@@ -11,7 +11,7 @@ class ProductController extends CI_Controller {
  
 	public function index(){
 		$data['product'] = $this->ProductModel->GetAllProduct_a("Active");
-		$this->load->view('users/sellerside/productsec.php', $data);
+		$this->load->view('users/buyerside/productsec.php', $data);
 	}
  
 	public function addnew(){

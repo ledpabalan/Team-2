@@ -10,11 +10,12 @@
 	<h1 class="page-header text-center">PRODUCT LIST</h1>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
+		<a href="/Team-2/Homepage/sellerside">Back to the Homepage</a><br><br>
 			<a href="<?php echo base_url(); ?>ProductController/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New</a><br><br>
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
-						<th>ID</th>
+					
 						<th>Product Name</th>
 						<th>Product Description</th>
 						<th>Product Price</th>
@@ -26,7 +27,7 @@
 					foreach($product as $product_a){
 						?>
 						<tr>
-							<td><?php echo $product_a->product_id; ?></td>
+							
 							<td><?php echo $product_a->product_name; ?></td>
 							<td><?php echo $product_a->product_description; ?></td>
 							<td><?php echo $product_a->product_price; ?></td>

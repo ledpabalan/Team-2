@@ -20,7 +20,7 @@
 			return $this->db->insert('product', $product);
 		}
  
-		public function GetProduct($product_id, $product_status){
+		public function GetProduct($product_id){
 			$query = $this->db->get_where('product',array('product_id'=>$product_id));
 			return $query->row_array();
 		}
