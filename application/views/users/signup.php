@@ -24,8 +24,8 @@
                 <h2 class="title">SIGN UP</h2>
                 <h5 class="create">Create an account for free!</h5>
                 <div class="box">
-                    <input type="radio" id="Account-Type1" name="user_type" value="Customer">
-                    <input type="radio" id="Account-Type2" name="user_type" value="Vendor">
+                    <input type="radio" id="Account-Type1" name="user_type" value="Buyer">
+                    <input type="radio" id="Account-Type2" name="user_type" value="Seller">
                     <label for="Account-Type1" class="Account-Type1">
                         <div class="dot"></div>
                         <div class="text">Customer</div>
