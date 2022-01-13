@@ -27,22 +27,14 @@ body {
 }
 
 .img {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-left: 5rem;
-}
-
-.signup-content {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	text-align: center;
-	margin-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 5rem;
 }
 
 .img img {
-	width: 380px;
+  width: 380px;
 }
 
 form {
@@ -54,6 +46,7 @@ form {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  margin-left: 1rem;
 }
 
 .signup-container .title {
