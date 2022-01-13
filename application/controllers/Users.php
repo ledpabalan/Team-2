@@ -53,10 +53,23 @@ class Users extends CI_Controller {
 
 			if (!is_bool($id)) {
 				$data['user_id'] = $id;
+				$this->load->model('user_model');
+			    $return = $this->user_model->login($data['user_username'], $data['user_password']);
 
 				$this->session->set_userdata($data);
+///
 
-				redirect('/Homepage');
+if($return[0]['user_type'] == 'Buyer'){
+	$this->session->set_userdata($return[0]);
+	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
+	 }
+	else{
+
+		$this->session->set_userdata($return[0]);
+		redirect('/Homepage/sellerside');
+	}
+
+///
 			} else{ 
 				redirect('/users/login');
 			}		
