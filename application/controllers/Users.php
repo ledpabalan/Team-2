@@ -49,7 +49,7 @@ class Users extends CI_Controller {
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
 			$this->load->model('user_model');
-			$id = $this->user_model->createUser($data);
+			$id = $this->user_model->createUser($data,$user_type);
 
 			if (!is_bool($id)) {
 				$data['user_id'] = $id;

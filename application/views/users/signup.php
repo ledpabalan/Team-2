@@ -21,9 +21,9 @@
             <h1>ACCOUNT TYPE:</h1>
             <form method= "POST">
 
-                <input type="radio" id="Account Type" name="user_type"value="Customer"/>Customer
+                <input type="radio" id="Account Type" name="user_type"value="Buyer"/>Customer
                 
-                <input type="radio" id="Account Type" name="user_type"value="Vendor"/>Vendor
+                <input type="radio" id="Account Type" name="user_type"value="Seller"/>Vendor
 
                 
             <!-- <a href="users/register2" type="submit"><i class="fas fa-chevron-circle-right"></i></a> -->
