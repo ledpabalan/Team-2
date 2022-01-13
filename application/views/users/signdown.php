@@ -22,7 +22,8 @@
         </div>
         <div class="signup-content">
             <form method="POST">
-                <h2 class="signup-title">Sign up</h2>
+                <h2 class="signup-title">Sign up</h2>      
+                <h5 class="create">Create an account for free!</h5>
                 <div class="sign-up-input name">
                     <div class="sign-up-icons">
                         <i class="fas fa-id-card"></i>

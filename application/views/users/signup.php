@@ -22,6 +22,7 @@
         <div class="signup-container">
             <form method="POST">
                 <h2 class="title">SIGN UP</h2>
+                <h5 class="create">Create an account for free!</h5>
                 <div class="box">
                     <input type="radio" id="Account-Type1" name="user_type" value="Customer">
                     <input type="radio" id="Account-Type2" name="user_type" value="Vendor">

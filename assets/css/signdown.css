@@ -54,11 +54,14 @@ form {
 }
 
 .signup-content h2 {
-	margin: 15px 0;
 	color: #333;
 	text-transform: uppercase;
-	font-size: 2.0rem;
+	font-size: 2.3rem;
 }
+
+.signup-content .create {
+	margin-bottom: 25px;
+  }
 
 .signup-content .sign-up-input {
 	position: relative;
