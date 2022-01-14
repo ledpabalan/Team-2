@@ -13,3 +13,5 @@
 
 </body>
 </html>
+<br>
+<a href="/Team-2/Homepage">Back to the Homepage</a>

@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/Team-2/';
+//$config['base_url1'] = 'http://localhost/Team-2/Homepage';
 
 /*
 |--------------------------------------------------------------------------
