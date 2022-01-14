@@ -45,12 +45,49 @@
         <input type="search" id="search-box" placeholder="search here...">
         <label for="search-box" class="fas fa-search"></label>
     </form>
-
 </header>
 
 
 
 <!-- header section ends -->
+
+<section>
+<form action="" class="profile">
+        <nav class="profile- nav">
+            <h5>My Account</h5>
+            <a href="#">Profile</a> <br>
+            <a href="#">Purchases</a> <br>
+            <a href="#">Change<br>Password</a>
+
+            <input type="submit" value="LOG OUT" class="lobtn">
+        </nav>
+        
+        <div class="profilebox">
+            <h3>My Profile</h3>
+
+            <h4>Username: ___________________________________ </h4> 
+            
+            <h4>Full Name: ____________________________________</h4>              
+              <!-- nilapag ko lang muna to dito para sana pansamantala dito ko mapasok yung data kaso ewan ko ba -->
+                
+            <h4>Address:   ____________________________________</h4>
+            
+            <h4>Birthdate: __/__/____     Age: _____</h4>
+            
+            <h4>Gender: _________  Contact No.: _______________</h4>
+           
+            <img class="avatar" src="./images/profilepic.png">
+            <h6>"LETS GO TAYUMAN"</h6>
+            
+            <input type="submit" value="SAVE" class="btn">
+
+            <input type="submit" value="DEACTIVATE" class="btn">
+        </div>
+
+
+    </form>
+
+</section>
 
 <!-- home section starts  -->
 

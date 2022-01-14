@@ -20,7 +20,7 @@ public function addprod2()
 			$data = array(
 			'product_name'   => $this->input->post('product_name'),
 			'product_description'   => $this->input->post('product_description'),
-			'product_price'     => $this->input->post('product_name'),
+			'product_price'     => $this->input->post('product_price'),
 		    );
 			$this->load->model('vendor_model');
 			$this->vendor_model->addproduct($data);
@@ -55,21 +55,23 @@ public function viewprod()
 
 	public function updateprod1() 
 	{
-		// $item=array();
-		// $item=$this->input->post();
+		$item=array();
+		$item=$this->input->post();
 		// if(isset($item) && $item != null) {
 		// 	$this->load->model('vendor_model');
 		// 	print_r($item);
 		// 	$this->vendor_model->updateitem($item);
 		//  }
-		 
-       
-         $this->load->model('vendor_model');  
-		 $item=$this->vendor_model->Getitem(14); //dito ipapasa yung target ite
-		 print_r($item);
-		 $this->load->view('vendor/editprod1',$item);
 
+         $this->load->model('vendor_model');  
+
+		 $item=$this->vendor_model->Getitem(14); //dito ipapasa yung target ite
+
+		 print_r($item);
+		 $this->load->view('vendor/editprod1', $item);
+		 }
 	}
 }
+
 
 

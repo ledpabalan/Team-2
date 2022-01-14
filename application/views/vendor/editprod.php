@@ -15,7 +15,8 @@
             ?><tr>  
            <br>
            <a href="Product/viewprod/ <?php echo $row->product_id;?>">view</a>
-           <a href='<?php echo base_url()."Product/updateprod"?>'>|  Edit Product  |<i  id="editprod"></i></a>
+           <a href='<?php echo base_url()."Product/updateprod1"?>'>|  Edit Product  |<i  id="editprod"></i></a> 
+                              <!-- Inilipat ko to ah ^^^ papunta dun sa editprod1.php ~ chy -->
            <a href='<?php echo base_url()."Product/viewprod"?>'>|  Delete Product  |<i  id="deleteprod"></i></a>
            
            <?php echo $row->product_name;?> 
