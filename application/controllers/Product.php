@@ -64,7 +64,6 @@ public function viewprod()
 		//  }
 
          $this->load->model('vendor_model');  
-<<<<<<< HEAD
 		 $item=$this->vendor_model->Getitem(14); //dito ipapasa yung target item
 =======
 
