@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,38 @@
     <title>The New Tayuman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel = "stylesheet" type = "text/css" 
-         href = "<?php echo base_url(); ?>assets/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/signup.css">
 </head>
+
 <body>
-
-    <!-- login start-->
-    <div class="loginbox">
-        <img class="logo" src="<?php echo base_url(); ?>assets/images/tntlogo.png">
-        <img class="avatar" src="<?php echo base_url(); ?>assets/images/login.png">
-            <h1>ACCOUNT TYPE:</h1>
-            <form method= "POST">
-
-                <input type="radio" id="Account Type" name="user_type"value="Customer"/>Customer
-                
-                <input type="radio" id="Account Type" name="user_type"value="Vendor"/>Vendor
-
-                
-            <!-- <a href="users/register2" type="submit"><i class="fas fa-chevron-circle-right"></i></a> -->
-             <button type="submit" value="submit" >submit</button>
-
-               
-
-               
-                <h5>Already have an account?</h5>
-                <a href="<?php echo base_url(); ?>users/login">Sign in</a>
-
+    <div class="signupbox">
+        <img class="wave" src="<?php echo base_url(); ?>assets/images/loginbg.png">
+        <div class="img">
+            <img src="<?php echo base_url(); ?>assets/images/loginpic.png">
+        </div>
+        <div class="signup-container">
+            <form method="POST">
+                <h2 class="title">SIGN UP</h2>
+                <h5 class="create">Create an account for free!</h5>
+                <div class="box">
+                    <input type="radio" id="Account-Type1" name="user_type" value="Buyer">
+                    <input type="radio" id="Account-Type2" name="user_type" value="Seller">
+                    <label for="Account-Type1" class="Account-Type1">
+                        <div class="dot"></div>
+                        <div class="text">Customer</div>
+                    </label>
+                    <label for="Account-Type2" class="Account-Type2">
+                        <div class="dot"></div>
+                        <div class="text">Vendor</div>
+                    </label>
+                    <button type="submit" value="submit">Next</button>
+                    <h5>Already have an account?</h5>
+                    <a href="<?php echo base_url(); ?>users/login">Sign In</a>
             </form>
-    </div>
-    <!-- login end-->
+        </div>
 
 </body>
+
 </html>

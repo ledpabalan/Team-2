@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
@@ -254,4 +254,4 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
         document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
     }
 })
->>>>>>> Stashed changes
+
