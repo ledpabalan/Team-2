@@ -68,7 +68,7 @@ if($return[0]['user_type'] == 'Buyer'){
 		$this->session->set_userdata($return[0]);
 		redirect('/Homepage/sellerside');
 	}
-
+		
 ///
 			} else{ 
 				redirect('/users/login');
@@ -81,6 +81,8 @@ if($return[0]['user_type'] == 'Buyer'){
     }
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
 
 	public function login() {
 

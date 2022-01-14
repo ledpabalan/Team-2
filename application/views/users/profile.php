@@ -87,8 +87,9 @@
     
             <h4>Birthdate: <?php echo $user['user_birthday']?></h4>
             
-            <h4>Gender:<?php echo $user['user_gender']?></h4>
-            <h4>Contact No.: <?php echo $user['user_contact_no']?></h4>
+            <h4>Gender: <?php echo $user['user_gender']?></h4>
+
+            <h4>Contact No: <?php echo $user['user_contact_no']?></h4>
 
             
         </div>
