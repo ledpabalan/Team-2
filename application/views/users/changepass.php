@@ -25,8 +25,9 @@
 
     <div class="profile">   
             <h5>My Account</h5>
-        <div class="profilebox">
-            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+        <!-- <div class="profilebox">
+            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3>  --> 
+            <!-- tinanggal ko muna to para umayos yung sa change pass -->
 
         <div class="cpassbox">
         <form method="POST">   
