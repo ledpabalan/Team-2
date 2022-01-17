@@ -160,7 +160,7 @@ if($return[0]['user_type'] == 'Buyer'){
 		
 	}
 
-	public function changepass(){
+	public function changepassword(){
 		$this-> load -> model ('user_model');
 
 		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
