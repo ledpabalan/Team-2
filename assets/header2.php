@@ -45,7 +45,7 @@
         </div>
         <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="<?php echo base_url(); ?>assets//images/cheesebread.jpg" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/cheesebread.jpg" alt="">
             <div class="content">
                 <h3>Cheese Bread</h3>
                 <span class="price">₱10.00/-</span>

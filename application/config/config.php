@@ -24,7 +24,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 $config['base_url'] = 'http://localhost/Team-2/';
+=======
+$config['base_url'] = 'http://localhost:8080/Team-2/';
+//$config['base_url1'] = 'http://localhost:8080/Team-2/Homepage';
+>>>>>>> Stashed changes
 =======
 $config['base_url'] = 'http://localhost:8080/Team-2/';
 //$config['base_url1'] = 'http://localhost:8080/Team-2/Homepage';
