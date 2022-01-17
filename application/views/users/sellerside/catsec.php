@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 
-<?php include 'assets/head.php'; ?>
+<?php include 'assets/headsellerside.php'; ?>
 
 </head>
 <body>
-<?php include 'assets/header2.php'; ?>  
+<?php include 'assets/header2sellerside.php'; ?>  
 <!-- categories section starts  -->
 
 <section class="categories" id="categories">
 
     <h1 class="heading"> product <span>categories</span> </h1>
+    <h1 class="heading"> Seller-Side</h1>
 
     <div class="box-container">
 

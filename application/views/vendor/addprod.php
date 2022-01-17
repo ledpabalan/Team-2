@@ -1,30 +1,9 @@
-<<<<<<< Updated upstream
-
-=======
 <form method="POST" >  
->>>>>>> Stashed changes
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-<<<<<<< Updated upstream
-    <?php include 'head.php'; ?>
-
-</head>
-<body>
-<?php include 'header3.php'; ?>  
-<?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
-
-<form method="POST" >               
- <!DOCTYPE html>
-<html lang="en">
-<head>
-
-</head>
-<body>
-=======
     <?php include 'assets/head.php'; ?>
 
 </head>
@@ -33,7 +12,6 @@
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
->>>>>>> Stashed changes
 
 <!-- profile section starts  -->
 

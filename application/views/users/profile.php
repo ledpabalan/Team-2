@@ -1,47 +1,8 @@
-
+<?=isset($message) ? $message : "";?>
+<!-- <?php $id = $this->session->userdata('user_id'); ?> -->           
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< Updated upstream
-
-    <?php include 'head.php'; ?>
-
-</head>
-<body>
-<?php include 'header2.php'; ?>  
-<?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
-
-<form method="POST" >               
- <!DOCTYPE html>
-<html lang="en">
-<head>
-
-</head>
-<body>
-
-<!-- profile section starts  -->
-
-    <div class="profile">   
-            <h5>My Account</h5>
-        <div class="profilebox">
-            <h3>My Profile <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
-
-            <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
-
-            <h4>Username: <?php echo $user['user_username']?> </h4>
-            
-            <h4>Full Name: <?php echo $user['user_name']?></h4>
-            
-            <h4>Address: <?php echo $user['user_address']?></h4>
-    
-            <h4>Birthdate: <?php echo $user['user_birthday']?></h4>
-            
-            <h4>Gender:<?php echo $user['user_gender']?></h4>
-            <h4>Contact No.: <?php echo $user['user_contact_no']?></h4>
-
-   
-=======
     <?php include 'assets/head.php'; ?>
 </head>
 <body>
@@ -75,20 +36,10 @@
             <h4>Contact No: <span class="indent4"><?php echo $user['user_contact_no']?></h4>
             <img class="avatar"  src="<?php echo base_url(); ?>assets/images/profilepic.jpg">
 
->>>>>>> Stashed changes
             
         </div>
 
     </div>
-<<<<<<< Updated upstream
-
-<!-- profile section ends  -->
-
-<!-- <?php include 'footer.php'; ?>  
-
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
-=======
     </form>     
 
 
@@ -98,16 +49,9 @@
 
 
 <script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
->>>>>>> Stashed changes
 
 <!-- custom js file link  -->
-<<<<<<< Updated upstream
-<script src="script.js"></script>
-=======
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 <script>
     /*script for nav bar */
     let searchForm = document.querySelector('.search-form');
@@ -154,13 +98,7 @@ window.onscroll = () =>{
 }
 
 </script>
->>>>>>> Stashed changes
 
 </body>
 </html>
 
-</form>     
-
-    <a href="/Team-2/users/edituser">Edit Profile</a> </br> </br> 
-    <a href="/Team-2/users/changepassword">Change Password</a> </br>
-    <a href="/Team-2/Homepage">Back to the Homepage</a>

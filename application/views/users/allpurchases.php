@@ -44,7 +44,7 @@
                     <img src="<?php echo base_url(); ?>assets/images/coffeebryant.png" alt="">
                     <h1>Completed</h1>
                     <input type="submit" value="BUY AGAIN" class="pbtn">
-                    <input type="submit" value="DETAILS" class="pbtn">
+                    <input type="submit" value="DETAILS" class="pbtn1">
                     <h3>Coffee Bryant</h3>
                     <p>Price : ₱ 20.00</p>
                      <p>Quantity : x1</p>
@@ -56,7 +56,7 @@
                      <img src="<?php echo base_url(); ?>assets/images/cheesebread.jpg" alt="">
                      <h1>To Rate</h1>
                      <input type="submit" value="BUY AGAIN" class="pbtn">
-                     <input type="submit" value="DETAILS" class="pbtn">
+                     <input type="submit" value="DETAILS" class="pbtn1">
                      <h3>Cheese Bread</h3>
                      <p>Price : ₱ 10.00</p>
                      <p>Quantity : x1</p>
@@ -69,7 +69,7 @@
                     
                      <h1>To Rate</h1>
                      <input type="submit" value="BUY AGAIN" class="pbtn">
-                     <input type="submit" value="DETAILS" class="pbtn">
+                     <input type="submit" value="DETAILS" class="pbtn1">
                      <h3>Cheese Bread</h3>
                      <p>Price : ₱ 30.00</p>
                      <p>Quantity : x3</p>
@@ -81,7 +81,7 @@
                      <img src="<?php echo base_url(); ?>images/cheesebread.jpg" alt="">
                      <h1>To Rate</h1>
                      <input type="submit" value="BUY AGAIN" class="pbtn">
-                     <input type="submit" value="DETAILS" class="pbtn">
+                     <input type="submit" value="DETAILS" class="pbtn1">
                      <h3>Cheese Bread</h3>
                      <p>Price : ₱ 30.00</p>
                      <p>Quantity : x3</p>

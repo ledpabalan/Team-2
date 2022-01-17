@@ -15,21 +15,21 @@ class Homepage extends CI_Controller {
         }
     }
 
-	public function index()
+    public function index()
 	{
-      $this->load->view('index');
-	}
-	public function featuresec() 
-	{
-		$this->load->view("users/featuresec");  
-
-		
+      $this->load->view('homepage_index');
 	}
 
-<<<<<<< Updated upstream
-=======
 
-    
-    
->>>>>>> Stashed changes
+	public function buyerside()
+	{
+      $this->load->view('homepage_buyer');
+	}
+
+    public function sellerside()
+	{
+      $this->load->view('homepage_seller');
+	}
+
+
 }

@@ -2,14 +2,14 @@
 
 <header class="header">
 
-<<<<<<< Updated upstream:application/views/users/header2.php
-    <a href="homesec.php" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
     <nav class="navbar">
-        <a href="homesec.php">home</a>
-        <a href="featuresec.php">features</a>
-        <a href="shopsec.php">shops</a>
-        <a href="catsec.php">categories</a>
+        <a href='<?php echo base_url()."Homepage"?>'>Home</a>
+        <a href='<?php echo base_url()."users/featuresec"?>'>features</a>
+        <a href='<?php echo base_url()."users/shopsec"?>'>shops</a>
+        <a href='<?php echo base_url()."users/productsec"?>'>products</a>
+        <a href='<?php echo base_url()."users/catsec"?>'>categories</a>
     </nav>
 
     <div class="icons">
@@ -56,18 +56,15 @@
         <a href="#" class="btn">checkout</a>
     </div>
 
-    <form action="assets/" class="login-form">
+    <form action="" class="login-form">
 
-            <a href="profile.php">Profile</a><br>
-            <a href="index.php">Log out</a><br>
-            <a href="settings.php">Settings</a><br>
-            <a href="devsec.php">Developers</a>
+            <a href='<?php echo base_url()."users/viewUser"?>'>Profile</a>
+            <a href='<?php echo base_url()."/logout"?>'>Logout</a>
+            <a href='<?php echo base_url()."users/edituser"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."users/devsec"?>'>Developers</a>
 
     </form>
 
-=======
-    <a href="Homepage" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
->>>>>>> Stashed changes:assets/header3.php
 </header>
 
 <!-- header section ends -->

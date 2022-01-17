@@ -36,12 +36,6 @@
            <a href='<?php echo base_url()."Product/updateprod"?>'class="ibtn">Edit<i  id="addprod"></i></a>
             <input type="delete" value="DELETE" class="ibtn">
             </tr> <br>
-<<<<<<< Updated upstream
-         <?php }  
-         ?>  
-
-</body>
-=======
          <?php }?>  
          </div><br>
          <div class="box">
@@ -86,5 +80,4 @@
 <script src="assets/script.js"></script>
 
       </body>
->>>>>>> Stashed changes
 </html>
