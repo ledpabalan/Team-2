@@ -64,7 +64,6 @@ if($return[0]['user_type'] == 'Buyer'){
 	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
 	 }
 	else{
-
 		$this->session->set_userdata($return[0]);
 		redirect('/Homepage/sellerside');
 	}
