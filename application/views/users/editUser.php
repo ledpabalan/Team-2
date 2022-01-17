@@ -6,11 +6,9 @@
 <html lang="en">
 <head>
 
-    <?php include 'assets/head.php'; ?>
-
 </head>
 <body>
-<?php include 'assets/header2.php'; ?>  
+
 <!-- profile section starts  -->
 
     <div class="profile">   
@@ -28,16 +26,16 @@
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
-            <h4>Username: <input type="textedit" name="user_username" value ="<?php echo $user['user_username']?>"required > </h4>
+            <h4>Username: <input type="text" name="user_username" value ="<?php echo $user['user_username']?>"required > </h4>
             
-            <h4>Full Name:  <input type="textedit" name="user_name" value ="<?php echo $user['user_name']?>"required ></h4>
+            <h4>Full Name:  <input type="text" name="user_name" value ="<?php echo $user['user_name']?>"required ></h4>
             
-            <h4>Address:  <input type="textedit1" name="user_address" value ="<?php echo $user['user_address']?>" required ></h4>
+            <h4>Address:  <input type="text" name="user_address" value ="<?php echo $user['user_address']?>" required ></h4>
     
             <h4>Birthdate:  <input type="date" name="user_birthday" value ="<?php echo $user['user_birthday']?>" required ></h4>
             
-            <h4>Gender:<input type="textedit2" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
-            <h4>Contact No: <input type="textedit3" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
+            <h4>Gender:<input type="text" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
+            <h4>Contact No.: <input type="text" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
 
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
@@ -48,7 +46,15 @@
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
 
-           
+            <!-- TINRY KO LANG NAMAN <a href ="/Team-2/users/viewuser/" onclick="alert('Are you sure you want to Edit your Profile?')">Submit</a> -->
+
+            <?php
+                    if($user['user_acc_status'] == "Active") {
+            ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Inactive" onclick="alert('Are you sure you want to Deactivate your profile?')">Deactivate</a>
+            <?php   } 
+                    else {
+            ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Active" onclick="alert('Are you sure you want to Activate your profile?')">Activate</a>
+            <?php } ?>
 
             <h6>"LETS GO TAYUMAN"</h6>
             

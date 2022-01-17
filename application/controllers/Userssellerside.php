@@ -43,10 +43,6 @@ class Userssellerside extends CI_Controller {
 	{
       $this->load->view('users/usershop');
 	}
-	public function userprofile()
-	{
-      $this->load->view('users/usershop');
-	}
 	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
 	public function allpurchases()
 	{
