@@ -3,8 +3,6 @@
 
 class Users extends CI_Controller {
 
-
-
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function admin()
@@ -48,17 +46,26 @@ class Users extends CI_Controller {
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
 			$this->load->model('user_model');
-			$id = $this->user_model->createUser($data);
-			
+			$id = $this->user_model->createUser($data,$user_type);
 
 			if (!is_bool($id)) {
 				$data['user_id'] = $id;
+				$this->load->model('user_model');
+			    $return = $this->user_model->login($data['user_username'], $data['user_password']);
 
 				$this->session->set_userdata($data);
-				
+///
 
+if($return[0]['user_type'] == 'Buyer'){
+	$this->session->set_userdata($return[0]);
+	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
+	 }
+	else{
+		$this->session->set_userdata($return[0]);
+		redirect('/Homepage/sellerside');
+	}
 
-				redirect('/users/sent');
+///
 			} else{ 
 				redirect('/users/login');
 			}		
@@ -82,7 +89,7 @@ class Users extends CI_Controller {
 		$data = array();
 		$data = $this->input->post();
 		
-		 if(isset($data) && $data != null) {
+		if(isset($data) && $data != null) {
 			$this->load->model('user_model');
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
 
@@ -90,16 +97,20 @@ class Users extends CI_Controller {
 			   echo '<script>alert("Please type correct username or password")</script>';
 			 } 
 			 else {
-				// var_dump($return[0]);
-				// exit;
+				 if($return[0]['user_type'] == 'Buyer'){
 				$this->session->set_userdata($return[0]);
               
-				redirect('/Homepage'); //UserLoggedIn Interface
+				redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
 				//$this->load->view('index');//UserLoggedIn Interface
+				 }
+				else{
+
+					$this->session->set_userdata($return[0]);
+					redirect('/Homepage/sellerside');
+				}
 			 }
 		
 			}
-
 		$this->load->view('users/login');
 	}
     
@@ -167,6 +178,7 @@ class Users extends CI_Controller {
 		
 	}
 
+
 	///////////////////////////////////////////////////////////////////////////////////////////////////////OPTIONAL
 
 	public function updateUser(){
@@ -209,6 +221,11 @@ class Users extends CI_Controller {
       $this->load->view('users/shopsec');
 	}
 
+	public function productsec()
+	{
+      $this->load->view('users/productsec');
+	}
+
 	public function catsec()
 	{
       $this->load->view('users/catsec');
@@ -218,11 +235,36 @@ class Users extends CI_Controller {
 	{
       $this->load->view('users/devsec');
 	}
-
-	public function productsec()
+	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
+	public function userdelprofile()
 	{
-      $this->load->view('users/productsec');
+      $this->load->view('users/userdelprofile');
 	}
+	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
+	public function usershop()
+	{
+      $this->load->view('users/usershop');
+	}
+	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
+	public function allpurchases()
+	{
+      $this->load->view('users/allpurchases');
+	}
+	public function recpurchases()
+	{
+      $this->load->view('users/recpurchases');
+	}
+	public function compurchases()
+	{
+      $this->load->view('users/compurchases');
+	}
+	public function trpurchases()
+	{
+      $this->load->view('users/trpurchases');
+	}
+
+
+
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function sent()

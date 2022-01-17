@@ -10,13 +10,12 @@ class user_model extends CI_Model {
         parent::__construct();
     }
 
-    private $email_code;
-
-    public function createUser($data){
+    public function createUser($data,$user_type){
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
             // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
+             $data['user_type'] = $user_type;
              
             
             $this -> db -> insert($this -> table, $data);
@@ -109,30 +108,6 @@ class user_model extends CI_Model {
     }
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public function send_validation_email(){
-
-        $this -> load -> library('email');
-        $email = $this -> session -> data('email');
-        $email_code = $this -> email_code;
-
-        $this -> email -> set_mailtype('html');
-        $this -> email -> from($this -> config -> item('bot_email'), 'The New Tayuman');
-        $this -> email -> to('johnedward1436@gmail.com'); // email ko muna to test it out so kung gusto nyo itry palitan nyo muna ng inyo tong bandang to hehez
-        $this -> email -> subject('Please Activate your Account at The New Tayuman');
-
-        $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        </head><body>';
-        $message .= '<p> Dear'. $this -> session -> data('user_name') . ', </p>';
-        $message .= '<p> Thanks for registering on The New Tayuman! Please <strong><a href="' . base_url() .'/users/sent' . $email . '/'.
-        $email_code. '">CLICK HERE! </a></strong> to activate your account. After you activated your account, you will now able to log in into The New Tayuman and Start using our website!</p>';
-        $message .= '<p> Thank you! </p>';
-        $message .= '<p> The Team of The New Tayuman </p>';
-        $message .= '</body> </html>';
-
-        $this->email->message($message);
-        $this->email->send();
-    }
+ 
 }
 

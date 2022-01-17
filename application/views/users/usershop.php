@@ -94,6 +94,7 @@
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
+                <img  src="<?php echo base_url(); ?>assets/images/foodlogo.png">
                 <img src="./images/foodlogo.png" alt="">
                 <h2>ITEM NAME</h2>
                 <h3>₱ 00.00</h3>

@@ -16,23 +16,21 @@
     <link rel = "stylesheet" type = "text/css" 
          href = "<?php echo base_url(); ?>assets/style.css">
     
+
 </head>
 <body>
     <?php echo $this->session->userdata('user_name'); ?>
-    
 <!-- header section starts  -->
 
 <header class="header">
 
     <a href="#" class="logo"> <i class="fas fa-utensils"></i> TheNewTayuman </a>
+
     <nav class="navbar">
-       
         <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#shops">Shops</a>
         <a href="#categories">Categories</a>
-        <a href='<?php echo base_url()."/logout"?>'>Logout</a>
-      
 
     </nav>
 
@@ -47,10 +45,49 @@
         <input type="search" id="search-box" placeholder="search here...">
         <label for="search-box" class="fas fa-search"></label>
     </form>
-
 </header>
 
+
+
 <!-- header section ends -->
+
+<section>
+<form action="" class="profile">
+        <nav class="profile- nav">
+            <h5>My Account</h5>
+            <a href="#">Profile</a> <br>
+            <a href="#">Purchases</a> <br>
+            <a href="#">Change<br>Password</a>
+
+            <input type="submit" value="LOG OUT" class="lobtn">
+        </nav>
+        
+        <div class="profilebox">
+            <h3>My Profile</h3>
+
+            <h4>Username: ___________________________________ </h4> 
+            
+            <h4>Full Name: ____________________________________</h4>              
+              <!-- nilapag ko lang muna to dito para sana pansamantala dito ko mapasok yung data kaso ewan ko ba -->
+                
+            <h4>Address:   ____________________________________</h4>
+            
+            <h4>Birthdate: __/__/____     Age: _____</h4>
+            
+            <h4>Gender: _________  Contact No.: _______________</h4>
+           
+            <img class="avatar" src="./images/profilepic.png">
+            <h6>"LETS GO TAYUMAN"</h6>
+            
+            <input type="submit" value="SAVE" class="btn">
+
+            <input type="submit" value="DEACTIVATE" class="btn">
+        </div>
+
+
+    </form>
+
+</section>
 
 <!-- home section starts  -->
 
@@ -336,7 +373,7 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="assets/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

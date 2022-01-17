@@ -3,7 +3,6 @@
 
                 <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
-
                 <p>Full Name:</p>
                 <input type="text" name="user_name" value ="<?php echo $user['user_name']?>">
 

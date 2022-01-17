@@ -11,8 +11,7 @@ class ProductController extends CI_Controller {
  
 	public function index(){
 		$data['product'] = $this->ProductModel->GetAllProduct_a("Active");
-		// $data['product'] = $this->ProductModel-> GetAllProduct();
-		$this->load->view('ProductViews/ProductList.php', $data);
+		$this->load->view('users/sellerside/productsec.php', $data);
 	}
  
 	public function addnew(){
@@ -27,10 +26,7 @@ class ProductController extends CI_Controller {
  
 		$query = $this->ProductModel->InsertProduct($product);
         redirect("ProductController/index");
-		// if($query){
-		// 	header('location:'.base_url().$this->index());
-		// }
-
+		
  
 	}
  

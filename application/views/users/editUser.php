@@ -5,10 +5,12 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'assets/head.php'; ?>
+<?php include 'head.php'; ?>
 </head>
 <body>
-    <?php include 'assets/header2.php'; ?>
+<?php include 'header2.php'; ?>  
+<?=isset($message) ? $message : "";?>
+<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 <!-- profile section starts  -->
 
     <div class="profile">   
@@ -56,6 +58,7 @@
             ?>            <a href ="/Team-2/index.php/users/updateStatus/<?php echo $user['user_id'];?>/Active" onclick="alert('Are you sure you want to Activate your profile?')">Activate</a>
             <?php } ?>
 
+            <h6>"LETS GO TAYUMAN"</h6>
             
         </div>
 
@@ -63,13 +66,13 @@
 
 <!-- profile section ends  -->
 
-<!-- <?php include 'assets/footer.php'; ?>  
+<?php include 'assets/footer.php'; ?>
 
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="assets/script.js"></script>
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
 
 </body>
 </html>
