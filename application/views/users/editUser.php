@@ -5,12 +5,10 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'head.php'; ?>
+
 </head>
 <body>
-<?php include 'header2.php'; ?>  
-<?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
+
 <!-- profile section starts  -->
 
     <div class="profile">   
@@ -66,10 +64,10 @@
 
 <!-- profile section ends  -->
 
-<?php include 'assets/footer.php'; ?>
+<!-- <?php include 'footer.php'; ?>  
 
 
-<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
