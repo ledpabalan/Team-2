@@ -268,5 +268,50 @@ if($return[0]['user_type'] == 'Buyer'){
 
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function emailverification()
+	{
+		// $key = $this->session->userdata('verification_Key');
+		// $name = $this->session->userdata('userName');
+		$key = '7493902';
+		$name ='Chyna';
+		$subject = "Verify your email";
+		$message = "
+		Dear ".$name."!
+		
+			Welcome and thank you for joining The New Tayuman! This code below is to verify your account! 
+			If this wasn't you, please ignore this email!
+		
+		".$key."
+
+		";
+		// $to = $this->input->post('customer_email');
+
+		$to = 'lxedpabalan@gmail.com';
+
+		$config = array(
+			'protocol'  => 'smtp',
+			'smtp_host' => 'smtp.googlemail.com',
+			'smtp_crypto' => 'tls',
+			'smtp_port' =>  587,
+			'smtp_user' => 'theNewTayuman@gmail.com',
+			'smtp_pass' => 'ymtqysxbxeanfrnn',
+			'mailtype'  => 'html', 
+			'charset'   => 'iso-8859-1'
+		);
+		
+		$this->load->library('email');
+		$this->email->initialize($config);
+		$this->email->set_newline("\r\n");
+		$this->email->from('theNewTayuman@gmail.com', 'The New Tayuman');
+		$this->email->to($to);
+		$this->email->subject($subject);
+		$this->email->message($message);
+		$send = $this->email->send();
+
+		
+	}
+
 }
+
 
