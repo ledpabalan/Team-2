@@ -36,7 +36,7 @@ class Userssellerside extends CI_Controller {
 	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
 	public function userdelprofile()
 	{
-      $this->load->view('users/userdelprofile');
+      $this->load->view('users/sellerside/userdelprofile');
 	}
 	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 	public function usershop()
@@ -61,7 +61,24 @@ class Userssellerside extends CI_Controller {
       $this->load->view('users/trpurchases');
 	}
 
+	public function viewUser(){
+		$this-> load -> model ('user_model');
 
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		//$data['user_id'] = $_SESSION['user_id'];
+		if(isset($data) && $data != null) {
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+		}
+
+		$this->load->view('users/sellerside/profile', $output);
+		//redirect('/Homepage');
+	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
