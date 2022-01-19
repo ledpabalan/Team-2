@@ -60,8 +60,8 @@
 
             <a href='<?php echo base_url()."Userssellerside/viewUser"?>'>Profile</a>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
-            <a href='<?php echo base_url()."users/edituser"?>'>Settings</a><br>
-            <a href='<?php echo base_url()."users/devsec"?>'>Developers</a>
+            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."Userssellerside/devsec"?>'>Developers</a>
 
     </form>
 

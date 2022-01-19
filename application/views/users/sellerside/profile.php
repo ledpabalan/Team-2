@@ -13,7 +13,7 @@
     <div class="profile">   
             <h5>My Account </h5>
             <a class="active "href='<?php echo base_url()."Userssellerside/viewUser"?>'>Profile</a> <br>
-            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchases</a> <br>
+          
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
@@ -69,7 +69,7 @@
     <div class="profile">   
             <h5>My Account</h5>
             <a class="active "href='<?php echo base_url()."users/viewUser"?>'>Profile</a> <br>
-            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchases</a> <br>
+            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchase</a> <br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 

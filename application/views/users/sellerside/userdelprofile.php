@@ -13,11 +13,11 @@
     <div class="profile">   
             <h5>Settings</h5>
             
-            <a href="/Team-2/users/edituser">Edit Profile llll</a> <br>
-            <a href="/Team-2/users/changepass">Change<br>Password</a><br>
-            <a class="active" href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
+            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Edit Profile </a> <br>
+            <a href='<?php echo base_url()."Userssellerside/changepassword"?>'>Change<br>Password</a><br>
+            <a class="active"href='<?php echo base_url()."Userssellerside/userdelprofile"?>'>Delete Profile</a> <br>
 
-            <input type="submit" value="LOG OUT" class="lobtn">
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
         <div class="deactbox">
             <h3>Deactivate Account?</h3>

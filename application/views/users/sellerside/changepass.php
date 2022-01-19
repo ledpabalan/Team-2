@@ -4,13 +4,13 @@
 <html lang="en">
 <head>
 
-    <?php include 'head.php'; ?>
+<?php include 'assets/headsellerside.php'; ?>
 
 
 
 </head>
 <body>
-<?php include 'header2.php'; ?>  
+<?php include 'assets/header2sellerside.php'; ?>  
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 

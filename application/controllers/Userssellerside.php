@@ -31,7 +31,7 @@ class Userssellerside extends CI_Controller {
 
 	public function devsec()
 	{
-      $this->load->view('users/devsec');
+      $this->load->view('users/sellerside/devsec');
 	}
 	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
 	public function userdelprofile()
@@ -78,6 +78,47 @@ class Userssellerside extends CI_Controller {
 
 		$this->load->view('users/sellerside/profile', $output);
 		//redirect('/Homepage');
+	}
+
+	public function editUser(){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		//$data['user_id'] = $_SESSION['user_id'];                       	edit user controller
+		if(isset($data) && $data != null) {											
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+			redirect('/userssellerside/viewUser');
+		}
+
+		$this->load->view('users/sellerside/editUser', $output);
+		
+		
+	}
+
+	public function changepassword(){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		if(isset($data) && $data != null) {											
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+			redirect('/logout'); //dapat dito is destroy session or logout
+		
+		}
+
+		$this->load->view('users/sellerside/changepass', $output);
+		
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
