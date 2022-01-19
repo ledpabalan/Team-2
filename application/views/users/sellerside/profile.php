@@ -19,7 +19,7 @@
 
         <div class="profilebox">
             
-            <h3>My Profile <a href="/Team-2/users/edituser"><i class="fas fa-edit"></a></i></h3> 
+            <h3>My Profile <a href='<?php echo base_url()."Userssellerside/edituser"?>'><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
@@ -75,7 +75,7 @@
 
         <div class="profilebox">
             
-            <h3>My Profile <a href="/Team-2/users/edituser"><i class="fas fa-edit"></a></i></h3> 
+            <h3>My Profile <a href='<?php echo base_url()."Userssellerside/edituser"?>'><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
