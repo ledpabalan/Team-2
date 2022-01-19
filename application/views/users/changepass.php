@@ -23,10 +23,10 @@
             <a href='<?php echo base_url()."Userssellerside/changepassword"?>'>Change<br>Password</a><br>
             <a class="active"href='<?php echo base_url()."Userssellerside/userdelprofile"?>'>Delete Profile</a> <br>
 
-    <div class="profile">   
+    <!-- <div class="profile">   
             <h5>My Account</h5>
         <div class="profilebox">
-            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3>  -->
 
         <div class="cpassbox">
         <form method="POST">   
