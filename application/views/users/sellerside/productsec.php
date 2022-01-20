@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<script src="<?php echo base_url('/assets/jquery-3.6.0.min.js'); ?>"></script>
     <?php include 'assets/headsellerside.php'; ?>
 
 </head>
@@ -34,7 +34,7 @@
 
     <td><a href="<?php echo base_url();?>ProductController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductController/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
-    <a href="#popup1" class="rbtn">read more</a>
+    <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>
 
 						</tr>
@@ -51,9 +51,10 @@
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
-                <h2>ITEM NAME</h2>
-                <h3>₱ 00.00</h3>
-                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
+                <input type="hidden" name="" value="0">
+                <h2 class= 'itemName'>ITEM NAME</h2>
+                <h3 class= 'itemPrice'>₱ 00.00</h3>
+                <h1 class= 'itemDescription'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
                 <h4>QUANTITY :</h4>
                 <div class="quantity">
                     <button class="btn minus-btn disabled" type="button">-</button>
@@ -61,7 +62,7 @@
                     <button class="btn plus-btn" type="button">+</button>
                 </div> 
                 <div class="atc-btn">
-                    <div class="fas fa-shopping-cart"> Add To Cart</div>
+                    <div class="fas fa-shopping-cart addToCart"> Add To Cart</div>
                 </div>
             </div>
         </div>
@@ -71,7 +72,34 @@
 
 <?php include 'assets/footer.php'; ?>  
 
-<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+     var products = <?php echo json_encode($product); ?>;
+
+    $(document).ready( function() {
+        $('.readMore').click( function(event) {
+       
+            var productId = event.target.id;
+            for(var i = 0; i < products.length; i++) {
+               if(products[i].product_id == productId) {
+                $('.itemName').text(products[i].product_name);
+                $('.itemPrice').text('₱ '+products[i].product_price);
+                $('.itemDescription').text(products[i].product_description);
+               }
+            }
+         }
+        );
+
+        $('.addToCart').click( function () {
+
+        });
+
+    });
+   
+    
+    </script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
