@@ -37,7 +37,7 @@ class Users extends CI_Controller {
 		$data = $this -> input ->  post();
 		if(isset($data) && $data != null){
 			redirect('/users/register2/'.$data['user_type']); //passing data into another function
-			echo " 1.) data = ".print_r($data, true);//
+			
 		}
 
 		$this->load->view('users/signup');

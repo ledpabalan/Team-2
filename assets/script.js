@@ -126,7 +126,7 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
         document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
     }
 })
-=======
+
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
