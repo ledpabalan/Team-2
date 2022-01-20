@@ -31,7 +31,7 @@ class Usersbuyerside extends CI_Controller {
 
 	public function devsec()
 	{
-      $this->load->view('users/devsec');
+      $this->load->view('users/buyerside/devsec');
 	}
 	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
 	public function userdelprofile()
