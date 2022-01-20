@@ -36,7 +36,7 @@ class Usersbuyerside extends CI_Controller {
 	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
 	public function userdelprofile()
 	{
-      $this->load->view('users/userdelprofile');
+      $this->load->view('users/buyerside/userdelprofile');
 	}
 	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 	public function usershop()
@@ -61,6 +61,65 @@ class Usersbuyerside extends CI_Controller {
       $this->load->view('users/trpurchases');
 	}
 
+	public function viewUser(){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		//$data['user_id'] = $_SESSION['user_id'];
+		if(isset($data) && $data != null) {
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+		}
+
+		$this->load->view('users/buyerside/profile', $output);
+		//redirect('/Homepage');
+	}
+
+	public function editUser(){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		//$data['user_id'] = $_SESSION['user_id'];                       	edit user controller
+		if(isset($data) && $data != null) {											
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+			redirect('/usersbuyerside/viewUser');
+		}
+
+		$this->load->view('users/buyerside/editUser', $output);
+		
+		
+	}
+
+	public function changepassword(){
+		$this-> load -> model ('user_model');
+
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+
+		$output['user'] = $user[0];
+
+		$data = array();
+		$data = $this->input->post();
+		if(isset($data) && $data != null) {											
+			$this -> load -> model('user_model');
+			$this -> user_model->updateUser($data);
+			redirect('/logout'); //dapat dito is destroy session or logout
+		
+		}
+
+		$this->load->view('users/buyerside/changepass', $output);
+		
+	}
 
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
