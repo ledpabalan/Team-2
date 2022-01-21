@@ -32,29 +32,29 @@ class Users extends CI_Controller {
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function register() 
-	{
-		$data = array();
-		$data = $this -> input ->  post();
-		if(isset($data) && $data != null){
-			if($data['user_type'] == "Buyer")
-            {
-                redirect('/Registration/signdown/'.$data['user_type']); //passing data into another function
-            }
+    {
 
-            else
-            {
-                redirect('/registration/sellersignup/'.$data['user_type']); //passing data into another function
-            }
-		}
+        $data = array();
+        $data = $this -> input ->  post();
+        if(isset($data) && $data != null){
+            redirect('/users/register2/'.$data['user_type']); //passing data into another function
+            echo " 1.) data = ".print_r($data, true);//
+        }
 
 		$this->load->view('users/Registration/signup');
+
+
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function register2 ($user_type) 
 	{
 		$data = $this -> input ->  post();
+		
 		if(isset($data) && $data != null){
+
+
+
 			$this->load->model('user_model');
 			$id = $this->user_model->createUser($data,$user_type);
 
@@ -66,15 +66,15 @@ class Users extends CI_Controller {
 				$this->session->set_userdata($data);
 ///
 
-if($return[0]['user_type'] == 'Buyer'){
-	$this->session->set_userdata($return[0]);
-	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
-	 }
-	else{
+			if($return[0]['user_type'] == 'Buyer'){
+				$this->session->set_userdata($return[0]);
+				redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
+	 			}
+			else{
 
-		$this->session->set_userdata($return[0]);
-		redirect('/Homepage/sellerside');
-	}
+				$this->session->set_userdata($return[0]);
+				redirect('/Homepage/sellerside');
+				}
 
 ///
 			} else{ 
@@ -82,9 +82,16 @@ if($return[0]['user_type'] == 'Buyer'){
 			}		
 		}
 
-		// echo $user_type;
-
-		$this->load->view('users/Registration/signdown'); //AddUser
+		//echo $user_type;
+		
+		//$this->load->view('users/Registration/signdown'); //AddUser
+		
+		if($user_type == "Buyer"){
+			$this->load->view('users/Registration/signdown');
+		}
+		else{
+			$this->load->view('users/Registration/sellersignup');
+		}
     }
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
