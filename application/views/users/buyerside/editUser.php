@@ -43,7 +43,7 @@
 
            
             
-            <input type="submit" value="Update Profile">
+            <input type="submit" value="Update Profile" class="pbtn">
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
 
