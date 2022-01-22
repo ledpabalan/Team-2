@@ -17,9 +17,8 @@ class Homepage extends CI_Controller {
 
     public function index()
 	{
-
-
-      $this->load->view('homepage_index');
+        redirect('/logout');
+    // $this->load->view('homepage_index');
 	}
 
 

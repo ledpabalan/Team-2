@@ -4,13 +4,13 @@
 <html lang="en">
 <head>
 
-    <?php include 'head.php'; ?>
+<?php include 'assets/headbuyerside.php'; ?>
 
 
 
 </head>
 <body>
-<?php include 'header2.php'; ?>  
+<?php include 'assets/header2buyerside.php'; ?>  
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
@@ -19,9 +19,9 @@
 
     <div class="profile">   
             <h5>Settings</h5>
-            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Edit Profile </a> <br>
-            <a href='<?php echo base_url()."Userssellerside/changepassword"?>'>Change<br>Password</a><br>
-            <a class="active"href='<?php echo base_url()."Userssellerside/userdelprofile"?>'>Delete Profile</a> <br>
+            <a href='<?php echo base_url()."Usersbuyerside/edituser"?>'>Edit Profile </a> <br>
+            <a href='<?php echo base_url()."Usersbuyerside/changepassword"?>'>Change<br>Password</a><br>
+            <a class="active"href='<?php echo base_url()."Usersbuyerside/userdelprofile"?>'>Delete Profile</a> <br>
 
     <!-- <div class="profile">   
             <h5>My Account</h5>
@@ -35,8 +35,8 @@
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
-            <h4>Password: <input type="password" name="user_password" value ="" required></h4>
-            <h4>Confirm Password: <input type="password" name="user_pwdRepeat" value ="" required></h4>
+            <h4>Password: <input type="text1" name="user_password" value ="" required></h4>
+            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4>
 
             <!-- <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
         -->
