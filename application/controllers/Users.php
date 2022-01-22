@@ -174,7 +174,7 @@ class Users extends CI_Controller {
 		
 	}
 
-	public function changepassword(){
+	public function changepass(){
 		$this-> load -> model ('user_model');
 
 		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
