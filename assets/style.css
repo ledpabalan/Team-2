@@ -72,17 +72,16 @@ section{
     display: inline-block;
     padding:.8rem 3rem;
     font-size: 1.7rem;
-    border-radius: 2.5rem;
-    border:.1rem solid var(--black);
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
     color:var(--black);
     cursor: pointer;
-    background-image: linear-gradient(to right, #f7c7a2, #fac69e, #fabd8e);
+    background: none;
 }
 
 .lobtn:hover{
-    background: var(--orange)!important;
-    color:#fff!important;
-    
+    background: var(--orange);
+    color:#fff;
 }
 .pbtn{
     margin-top: 1rem;
@@ -331,7 +330,7 @@ section{
     padding-top: 17rem;
     padding-bottom: 10rem;
     margin-top: 9%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .home .content{
@@ -355,7 +354,7 @@ section{
     line-height: 1.8;
 }
 .features{
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 .features .box-container{
@@ -423,25 +422,65 @@ section{
     outline: var(--outline-hover);
 }
 
-.shops .shop-slider .box img{
+.shops .box img{
     height:20rem;
+    margin-top:-5rem;
 }
 
-.shops .shop-slider .box h3{
+.shops .box h3{
     font-size: 2.5rem;
     color:var(--black);
+    margin-top:-2rem;
 }
 
-.shops .shop-slider .box .price{
-    font-size: 2rem;
+.shops .box .price{
+    font-size: 1.5rem;
     color:var(--light-color);
     padding:.5rem 0;
 }
 
-.shops .shop-slider .box .stars i{
+.shops .box .stars i{
     font-size: 1.7rem;
     color:var(--orange);
     padding:.5rem 0;
+}
+.shops .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap:1.5rem;
+}
+
+.shops .box-container .box{
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+    outline:var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+
+.shops .box-container .box:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.shops .box-container .box img{
+    margin:1rem 0;
+    height:15rem;
+}
+
+.shops .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   line-height: 1.8;
+}
+
+.shops .box-container .box p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding:1rem 0;
 }
 /*all products starts*/
 .all-products{
@@ -691,6 +730,7 @@ section{
    font-size: 2rem;
    color:var(--black);
    line-height: 1.8;
+   margin-top:-2rem;
 }
 
 .categories .box-container .box p{
@@ -698,6 +738,7 @@ section{
     color:var(--light-color);
     line-height: 1.8;
     padding:1rem 0;
+    margin-top:-1rem;
 }
 .developers{
     margin-top: 5%;
@@ -877,9 +918,9 @@ section{
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
-    border-radius: 2.5rem;
+    border-radius: 2%;
     box-shadow: 15px 15px;
-    border:1px solid black;
+    border:2px solid black;
 }
 .profile.active{
     right:2rem;
@@ -927,12 +968,7 @@ section{
     padding: 10px
 }
 
-.profile h5{
-    font-size: 2rem;
-    color: var(--black);
-    text-align: left;
-    margin-top: 30px;
-}
+
 
 .profile .profilebox .box{
     width: 35%;
@@ -957,6 +993,7 @@ section{
     margin-top:50px;
     margin-left: 50px;
 }
+
 .profilebox input[type="text"]{
     border-bottom: 3px solid #3D0C02;
     border-bottom-right-radius: 10px;
@@ -1052,8 +1089,8 @@ section{
 /*edit profile box starts*/
 .editprofilebox{
     margin-top: 7%;
-    width: 820px;
-    height: 420px;
+    width: 990px;
+    height: 470px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
@@ -1240,38 +1277,50 @@ section{
 .shop-profile{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     background: url("./images/shop\ cover.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    margin-left:10px;
+    margin-right :7px;
     margin-top: 9%;
     margin-bottom: 2%;
 }
 .shop-profile .avatar{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-style: solid;
     border-radius: 50%;
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 30%;
+    left: 41%;
 }
 .shop-name {
     font-size: 2.5rem;
     margin-top: 5rem;
     margin-left: 43rem;
 }
+.shop-name .stars{
+    align-items:center;
+}
 .shop-name .stars i{
     color:var(--orange);
     font-size: 1.7rem;
     margin-left: 5px;
 }
+.shop-name h3{
+    margin-top: 10px;
+    align-items:center;
+   
+
+}
 .shop-content {
     font-size: 2rem;
     text-align: center;
 }
+
 .shop-content h3 {
     margin-top: 10px;
     font-size: 1.5rem;
@@ -1356,8 +1405,8 @@ section{
 .popup h2 {
     margin-top: 50px;
     text-align: right;
-    margin-right: 38rem;
-    font-size: 2rem;
+    margin-right: 35rem;
+    font-size: 2.7rem;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
 }
@@ -1384,8 +1433,9 @@ section{
     width: 25rem;
     height: 30rem;
 }
+
 .popup .content h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 30rem;
 }
 .popup .content h1{
@@ -1413,7 +1463,10 @@ section{
     cursor: pointer;
     background: none;
 }
-
+.quantity input[type="text"]{
+height:4.3rem;
+margin-top:11px;
+}
 .quantity input {
     border: none;
     border-top: 1px solid #000;
@@ -1482,27 +1535,12 @@ section{
     background: var(--orange);
     color:#fff;
 }
-.pbtn1{
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    border:.2rem solid var(--black);
-    color:var(--black);
-    cursor: pointer;
-    background: none;
-}
-
-.pbtn1:hover{
-    background: var(--orange)!important;
-    color:#fff!important;
-}
 .productbox a{
     font-size: 1.5rem;
     color: var(--black);
     padding: 75px;
-    margin-left:5px;
-    margin-right:10px;
+    margin-left:-19px;
+    margin-right:-5px;
 }
 .productbox a.active,
 .productbox a:hover{
@@ -1581,14 +1619,13 @@ section{
     margin-top:2%;
     margin-bottom:-4%;
 }
-
 /*all purchases ends*/
 /*Seller profile*/
 
 .seller-profilebox{
     margin-top: 7%;
-    width: 820px;
-    height: 420px;
+    width: 990px;
+    height: 470px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;

@@ -19,14 +19,14 @@
 
     <div class="profile">   
             <h5>Settings</h5>
-            <a href="/Team-2/users/edituser">Edit Profile</a> <br>
-            <a class="active" href="/Team-2/users/changepass">Change<br>Password</a><br>
-            <a href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
+            <a href='<?php echo base_url()."users/edituser"?>'>Edit Profile </a> <br>
+            <a class="active"href='<?php echo base_url()."users/changepass"?>'>Change<br>Password</a><br>
+            <a href='<?php echo base_url()."users/userdelprofile"?>'>Delete Profile</a> <br>
 
-    <div class="profile">   
+    <!-- <div class="profile">   
             <h5>My Account</h5>
         <div class="profilebox">
-            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
+            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3>  -->
 
         <div class="cpassbox">
         <form method="POST">   
@@ -55,10 +55,54 @@
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
+<script>
+    /*script for nav bar */
+    let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let shoppingCart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+</script>
 
 </body>
 </html>
 
 </form>     
-    <a href="/Team-2/users/viewuser">Back to the View Profile</a> </br>  </br> 
-    <a href="/Team-2/Homepage">Back to the Homepage</a>
