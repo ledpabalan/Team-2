@@ -113,7 +113,8 @@ class Userssellerside extends CI_Controller {
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
-			redirect('/logout'); //dapat dito is destroy session or logout
+			redirect('/Userssellerside/viewUser'); 
+													// binalik ko sa view user lang para after mag changepass don lang sya pupunta
 		
 		}
 

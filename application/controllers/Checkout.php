@@ -25,4 +25,18 @@ class Checkout extends CI_Controller {
 		//$data['product'] = $this->ProductModel-> GetProduct($product_id);
 		$this->load->view('Checkout/check.php', $output);
 	}
+
+	public function checkoutproduct(){
+		$this-> load -> model ('ProductModel');
+
+		$user = $this -> user_model ->UpdateProduct($_SESSION['product_id']);
+
+
+		$data = array();
+		$data = $this->input->post();
+		if(isset($data) && $data != null) {											
+			$this -> load -> model('ProductModel');
+			redirect('/checkout');
+		}
+}
 }
