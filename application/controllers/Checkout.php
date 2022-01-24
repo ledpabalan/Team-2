@@ -38,5 +38,5 @@ class Checkout extends CI_Controller {
 			$this -> load -> model('ProductModel');
 			redirect('/checkout');
 		}
-}
+	}
 }
