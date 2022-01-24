@@ -45,6 +45,7 @@
 </section>
     
 <div id="popup1" class="overlay">
+<form method="POST" action="/Team-2/checkout">
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
@@ -61,6 +62,10 @@
                 </div> 
                 <div class="atc-btn">
                     <div class="fas fa-shopping-cart addToCart"> Add To Cart</div>
+                </div>
+                <br> <br> <br> <br>
+                <div class="atc-btn">
+                  <p>  <input type="submit" value="BUY NOW"> </p>
                 </div>
             </div>
         </div>

@@ -15,10 +15,11 @@
     <h1 class="heading"> our <span>shops</span> </h1>
     <h1 class="heading"> Buyer-Side </h1>
 
-    <div class="box-container">
+    <div class="swiper shop-slider">
 
+        <div class="swiper-wrapper">
 
-            <div class="box">
+            <div class="swiper-slide box">
                 <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
@@ -32,7 +33,7 @@
                 <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
-            <div class="box">
+            <div class="swiper-slide box">
                 <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
@@ -46,7 +47,7 @@
                 <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
-            <div class="box">
+            <div class="swiper-slide box">
                 <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
@@ -60,63 +61,7 @@
                 <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
             </div>
 
-            <div class="box">
-                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
-                <h3>Shop Name</h3>
-                <div class="price"> Starts at ₱4.99- </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
-            </div>
-
-            <div class="box">
-                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
-                <h3>Shop Name</h3>
-                <div class="price"> Starts at ₱4.99- </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
-            </div>
-
-            <div class="box">
-                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
-                <h3>Shop Name</h3>
-                <div class="price"> Starts at ₱4.99- </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
-            </div>
-
-            <div class="box">
-                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
-                <h3>Shop Name</h3>
-                <div class="price"> Starts at ₱4.99- </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
-            </div>
-
-            <div class="box">
+            <div class="swiper-slide box">
                 <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
                 <h3>Shop Name</h3>
                 <div class="price"> Starts at ₱4.99- </div>
@@ -132,7 +77,71 @@
 
         </div>
 
+    </div>
 
+    <div class="swiper shop-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
+                <h3>Shop Name</h3>
+                <div class="price"> Starts at ₱4.99- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
+                <h3>Shop Name</h3>
+                <div class="price"> Starts at ₱4.99- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
+                <h3>Shop Name</h3>
+                <div class="price"> Starts at ₱4.99- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">
+                <h3>Shop Name</h3>
+                <div class="price"> Starts at ₱4.99- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+            </div>
+
+        </div>
+
+    </div>
 
 
 </section>

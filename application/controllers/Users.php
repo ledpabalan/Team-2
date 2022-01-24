@@ -3,8 +3,6 @@
 
 class Users extends CI_Controller {
 
-
-
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function admin()
@@ -39,7 +37,6 @@ class Users extends CI_Controller {
 			redirect('/users/register2/'.$data['user_type']); //passing data into another function
 			
 		}
-
 		$this->load->view('users/signup');
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -64,7 +61,6 @@ if($return[0]['user_type'] == 'Buyer'){
 	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
 	 }
 	else{
-
 		$this->session->set_userdata($return[0]);
 		redirect('/Homepage/sellerside');
 	}
@@ -138,6 +134,8 @@ if($return[0]['user_type'] == 'Buyer'){
 		$this->load->view('users/profile', $output);
 		//redirect('/Homepage');
 	}
+  
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function editUser(){
 		$this-> load -> model ('user_model');
@@ -268,5 +266,15 @@ if($return[0]['user_type'] == 'Buyer'){
 
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function sent()
+	{
+		$this -> load -> model('user_model');
+
+		$this -> user_model -> send_validation_email ();
+
+      $this->load->view('EmailVer/sent');
+	}
+
 }
 
