@@ -11,8 +11,7 @@ class Checkout extends CI_Controller {
 	}
 
     public function index(){
-        $this-> load -> model ('user_model');
-        $this-> load -> model ('ProductModel');
+		$data['product'] = $this->ProductModel->GetAllProduct_a("Active");
 
 		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
         
