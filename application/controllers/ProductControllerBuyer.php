@@ -5,20 +5,19 @@ class ProductControllerBuyer extends CI_Controller {
  
 	function __construct(){
 		parent::__construct();
-		
 		$this->load->helper('url');
 		$this->load->model('ProductModel');
 	}
-
+ 
 	public function index(){
 		$data['product'] = $this->ProductModel->GetAllProduct_a("Active");
 		$this->load->view('users/buyerside/productsec.php', $data);
 	}
-
+ 
 	public function addnew(){
 		$this->load->view('ProductViews/ProductAdd.php');
 	}
-
+ 
 	public function insert(){
 		
 		$product['product_name'] = $this->input->post('product_name');
