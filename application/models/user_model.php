@@ -4,12 +4,30 @@
 class user_model extends CI_Model {
 
     private $table = "users";
+    private $table1 = "shop";
 
     public function __construct()
     {
         parent::__construct();
     }
 
+    public function createVendor($data)
+    {
+       
+       $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
+            // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
+             
+            $this -> db -> insert($this -> table1, $data);
+
+            $id = $this->db->insert_id();
+
+            if(isset($id) && $id != null)
+            {
+                return $id;
+            }
+
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
     public function createUser($data,$user_type){
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
@@ -22,8 +40,11 @@ class user_model extends CI_Model {
 
             $id = $this->db->insert_id();
 
-            if (isset($id) && $id != null)
+            if(isset($id) && $id != null)
+            {
                 return $id;
+            }
+               
             
         }
             

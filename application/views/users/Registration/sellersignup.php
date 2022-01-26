@@ -21,7 +21,7 @@
             <img src="<?php echo base_url(); ?>assets/images/loginpic.png">
         </div>
         <div class="signup-content">
-            <form method="POST">
+            <form method="POST" action="<?= base_url('users/vendorvalidation') ?>" autocomplete="off">
                 <h2 class="signup-title">Sign up</h2>      
                 <h5 class="create">Create an account for free!</h5>
 
@@ -35,6 +35,17 @@
                     </div>
                 </div>
 
+                <!-- Shop Name -->
+                <div class="sign-up-input name">
+                    <div class="sign-up-icons">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <input type="text" name="shop_username" placeholder="Shop Username">
+                    </div>
+                </div>
+
+
                 <!-- Shop's Email -->
                 <div class="sign-up-input email">
                     <div class="sign-up-icons">
@@ -45,15 +56,6 @@
                     </div>
                 </div>
                 
-                <!-- Shop's Username -->
-                <div class="sign-up-input username">
-                    <div class="sign-up-icons">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="div">
-                        <input type="text" name="shop_username" placeholder="Username">
-                    </div>
-                </div>
 
                 <!-- Shop's Password -->
                 <div class="sign-up-input password">

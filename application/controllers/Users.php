@@ -335,7 +335,7 @@ class Users extends CI_Controller {
 				$validkey = random_string('numeric', 6);
 			
 			}
-            
+            $this->load->view('users/registration/sellersignup');
         }
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
