@@ -1,9 +1,13 @@
 <?=isset($message) ? $message : "";?>
-<script src="<?php echo base_url('/assets/jquery-3.6.0.min.js'); ?>"></script>
-<form method="POST" action="/Team-2/users/updateUser/">
-
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form method="POST" action="<?php echo base_url(); ?>ProductControllerBuyer/checkout3/">
+				<h2>Your Information:</h2>
+				
                 <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
-
+                
                 <p>Full Name:
                 <?php echo $user['user_name']?> 
                 </p>        
@@ -14,37 +18,20 @@
 
                 <p>Contact Number:
                 <?php echo $user['user_contact_no']?>
-                </p>       
+                </p>        
 
-             <h3><?php echo $product_a->product_name; ?></h3>
-                 <p><?php echo $product_a->product_description; ?></p>
-                <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
+				<p><b>Note: Please check your information before proceeding to checkout</b></p>
+				<br>
+				<h2> Mode of Payment </h2>
+				<input type="radio" id="Payment-Type1" name="mop" value="Cash on Delivery"> Cash on Delivery
+                <input type="radio" id="Payment-Type2" name="mop" value="Online Payment"> Online Payment
 
-	
-                
+				<br> <br> 
+				
+				<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Submit</button>
 
-                <script type="text/javascript">
-     var products = <?php echo json_encode($product); ?>;
-
-    $(document).ready( function() {
-        $('.readMore').click( function(event) {
-       
-            var productId = event.target.id;
-            for(var i = 0; i < products.length; i++) {
-               if(products[i].product_id == productId) {
-                $('.itemName').text(products[i].product_name);
-                $('.itemPrice').text('₱ '+products[i].product_price);
-                $('.itemDescription').text(products[i].product_description);
-               }
-            }
-         }
-        );
-
-        $('.addToCart').click( function () {
-
-        });
-
-    });
+</body>
+</html>
    
     
-    </script>
+
