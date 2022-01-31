@@ -26,12 +26,15 @@
 						<tr>
 
 <div class="box">
+
     <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
     <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
 
     <br>
+    <td><a href="<?php echo base_url();?>ProductControllerBuyer/checkout/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Buy Now</a>
+    
     <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>
 
@@ -45,6 +48,7 @@
 </section>
     
 <div id="popup1" class="overlay">
+<!-- <form method="POST" action="/Team-2/checkout"> -->
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
@@ -62,6 +66,9 @@
                 <div class="atc-btn">
                     <div class="fas fa-shopping-cart addToCart"> Add To Cart</div>
                 </div>
+                <!-- <div class="atc-btn">
+                  <p>  <input type="submit" value="BUY NOW" > </p>
+                </div> -->
             </div>
         </div>
     </div>

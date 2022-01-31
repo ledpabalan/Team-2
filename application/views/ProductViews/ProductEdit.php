@@ -32,7 +32,7 @@
 					<input type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
 				</div>	
 				<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Update</button>
-			</form>
+			</form> 
 		</div>
 	</div>
 </div>

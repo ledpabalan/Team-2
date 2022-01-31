@@ -7,6 +7,7 @@ class ProductControllerBuyer extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->model('ProductModel');
+		$this->load->model('user_model');
 	}
  
 	public function index(){
@@ -30,9 +31,10 @@ class ProductControllerBuyer extends CI_Controller {
  
 	}
  
-	public function edit($product_id){
+	public function checkout($product_id){
 		$data['product'] = $this->ProductModel-> GetProduct($product_id);
-		$this->load->view('ProductViews/ProductEdit', $data);
+
+		$this->load->view('Checkout/check2', $data);		// for checkout purposes 
 	}
  
 	public function update($product_id){
@@ -54,6 +56,19 @@ class ProductControllerBuyer extends CI_Controller {
 		// 	header('location:'.base_url().$this->index());
 		// }
 	}
+	public function checkout2(){
+		
+		$user = $this -> user_model ->getUsers($_SESSION['user_id']);
+    
+		$output['user'] = $user[0];
+		$this->load->view('Checkout/check.php', $output);
+	}
+
+	public function checkout3($length = 25){
+		$this->load->view('Checkout/check3.php');
+	}
+
+
 }
  
  
