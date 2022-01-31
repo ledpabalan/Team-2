@@ -6,7 +6,6 @@
 
     <nav class="navbar">
         <a href='<?php echo base_url()."Homepage"?>'>Home</a>       
-        <a href='<?php echo base_url()."users/featuresec"?>'>features</a>
         <a href='<?php echo base_url()."users/shopsec"?>'>shops</a>
         <a href='<?php echo base_url()."users/productsec"?>'>products</a>
         <a href='<?php echo base_url()."users/catsec"?>'>categories</a>

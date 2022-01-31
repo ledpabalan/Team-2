@@ -50,8 +50,24 @@ section{
     padding:.5rem 3rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
-
 .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.btn1{
     margin-top: 1rem;
     display: inline-block;
     padding:.8rem 3rem;
@@ -330,7 +346,7 @@ section{
     padding-top: 17rem;
     padding-bottom: 10rem;
     margin-top: 9%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .home .content{
@@ -354,7 +370,7 @@ section{
     line-height: 1.8;
 }
 .features{
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 .features .box-container{
@@ -422,30 +438,76 @@ section{
     outline: var(--outline-hover);
 }
 
-.shops .shop-slider .box img{
+.shops .box img{
     height:20rem;
+    margin-top:-5rem;
 }
 
-.shops .shop-slider .box h3{
+.shops .box h3{
     font-size: 2.5rem;
     color:var(--black);
+    margin-top:-2rem;
 }
 
-.shops .shop-slider .box .price{
-    font-size: 2rem;
+.shops .box .price{
+    font-size: 1.5rem;
     color:var(--light-color);
     padding:.5rem 0;
 }
 
-.shops .shop-slider .box .stars i{
+.shops .box .stars i{
     font-size: 1.7rem;
     color:var(--orange);
     padding:.5rem 0;
 }
+<<<<<<< HEAD
+=======
+.shops .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap:1.5rem;
+}
+
+.shops .box-container .box{
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+    outline:var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+
+.shops .box-container .box:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.shops .box-container .box img{
+    margin:1rem 0;
+    height:15rem;
+}
+
+.shops .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   line-height: 1.8;
+}
+
+.shops .box-container .box p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+>>>>>>> origin/FoehnNew
 /*all products starts*/
 .all-products{
     margin-bottom: 2%;
     margin-top: 5%;
+}
+.all-products h1.heading{
+    margin-bottom:-2%;
 }
 .all-products .box-container{
     display: grid;
@@ -501,113 +563,6 @@ section{
     opacity: 1;
 }
   
-.popup {
-    width: 80rem;
-    height: 40rem;
-    margin-top: 12.5rem;
-    margin-left: 25rem;
-    background: #f6cfb2;
-    border: 3px solid #3D0C02;
-    border-radius: 5px;
-    position: relative;
-    transition: all 5s ease-in-out;
-}
-.popup h2 {
-    margin-top: 50px;
-    text-align: right;
-    margin-right: 38rem;
-    font-size: 2rem;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-}
-.popup1 {
-    width: 60rem;
-    height: 40rem;
-    margin-top: 12.5rem;
-    margin-left: 40rem;
-    background: #f6cfb2;
-    border: 3px solid #3D0C02;
-    border-radius: 5px;
-    position: relative;
-    transition: all 5s ease-in-out;
-}
-.popup1 h3{
-    font-size: 2rem;
-    text-transform:uppercase;
-    color:var(--black);
-    margin-left:30px;
-    margin-top:35px;
-    }
-.popup1 input[type="text"]{
-    border-bottom: 3px solid #3D0C02;
-    border-bottom-right-radius: 10px;
-    outline: none;
-    height: 20px;
-    width: 40rem;
-    background: #f6cfb2;
-    color: black;
-    font-size: 1.5rem;
-    margin-left: 8%;
-}
-.popup1 textarea{
-    margin-left:8%;
-    width:40rem;
-    margin-bottom:-15px;
-}
-.popup1 input[type="submit"]{
-    margin-left:30px;
-    font-size: 1.5rem;
-    
-}
-.popup1 .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-.popup1 .close:hover {
-    color: var(--orange);
-}
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-.popup .close:hover {
-    color: var(--orange);
-}
-.popup .content {
-    background-color: #f6cfb2;
-}
-.popup .content img{
-    position: absolute;
-    margin-left: 20px;
-    border: 3px solid #3D0C02;
-    width: 25rem;
-    height: 30rem;
-}
-.popup .content h3{
-    font-size: 3rem;
-    margin-left: 30rem;
-}
-.popup .content h1{
-    font-size: 1.5rem;
-    margin-left: 30rem;
-}
-.popup .content h4{
-    margin-top: 5%;
-    font-size: 2rem;
-    margin-left: 34.5rem;
-}
 
 .quantity {
     display: flex;
@@ -690,6 +645,7 @@ section{
    font-size: 2rem;
    color:var(--black);
    line-height: 1.8;
+   margin-top:-2rem;
 }
 
 .categories .box-container .box p{
@@ -697,6 +653,7 @@ section{
     color:var(--light-color);
     line-height: 1.8;
     padding:1rem 0;
+    margin-top:-1rem;
 }
 .developers{
     margin-top: 5%;
@@ -847,28 +804,44 @@ section{
     margin-bottom: 20px;
 }
 .profile a{
-    font-size: 1.5rem;
+    font-size: 2.0rem;
+    color: var(--black);
+}
+.profile h5{
+    font-size:2.5rem !important;
     color: var(--black);
 }
 .profile a.active,
 .profile a:hover{
     font-weight: bold;
     color: #E64A4A;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 .profile .lobtn{
     position: absolute;
     top: 400px;
     left: 5rem;
 }
+.profile a.aprodbtn{
+    margin-left:5px;
+    
+    border-radius:5px;
+    border:2px solid black;
+    padding:5px;
+}
 .profilebox{
     margin-top: 7%;
+<<<<<<< HEAD
     width: 820px;
     height: 450px;
+=======
+    width: 990px;
+    height: 470px;
+>>>>>>> origin/FoehnNew
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
-    left: 25%;
+    left: 18%;
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
@@ -882,18 +855,35 @@ section{
 }
 
 .profile .profilebox h3{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--black);
     margin-left:2%;
+    margin-top:2%;
 }
-
+.indent{
+    margin-left:2%;
+}
+.indent1{
+    margin-left:4%;
+}
+.indent2{
+    margin-left:3%;
+}
+.indent3{
+    margin-left:6%;
+}
+.indent4{
+    margin-left:1%;
+    
+}
 .profile .profilebox h4{
-    font-size: 1.4rem;
+    font-size: 2.0rem;
     color: var(--black);
     text-align: left;
     padding: 10px;
     margin-top: 10px;
+    margin-bottom:-5px;
     margin-left:2%;
 }
 .profile .profilebox h6{
@@ -905,12 +895,7 @@ section{
     padding: 10px
 }
 
-.profile h5{
-    font-size: 2rem;
-    color: var(--black);
-    text-align: left;
-    margin-top: 30px;
-}
+
 
 .profile .profilebox .box{
     width: 35%;
@@ -924,17 +909,18 @@ section{
 }
 
 .profile .profilebox .avatar{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     position: absolute;
-    top: 75px;
+    top: 100px;
     left: 70%;
 }
 .profile .btn{
     margin-top:50px;
     margin-left: 50px;
 }
+
 .profilebox input[type="text"]{
     border-bottom: 3px solid #3D0C02;
     border-bottom-right-radius: 10px;
@@ -945,6 +931,61 @@ section{
     color: black;
     font-size: 1.5rem;
     margin-left: 2%;
+}
+.profilebox input[type="date"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 20px;
+    width: 35rem;
+    background: #f6cfb2;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 3%;
+}
+.profilebox input[type="textedit"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 20px;
+    width: 35rem;
+    background: #f6cfb2;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 2%;
+}
+.profilebox input[type="textedit1"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 20px;
+    width: 35rem;
+    background: #f6cfb2;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 4%;
+}
+.profilebox input[type="textedit2"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 20px;
+    width: 35rem;
+    background: #f6cfb2;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 6%;
+}
+.profilebox input[type="textedit3"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 20px;
+    width: 35rem;
+    background: #f6cfb2;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 1%;
 }
 .profilebox input[type="text2"]{
     border-bottom: 3px solid #3D0C02;
@@ -976,7 +1017,7 @@ section{
 .editprofilebox{
     margin-top: 7%;
     width: 820px;
-    height: 420px;
+    height: 450px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
@@ -986,13 +1027,26 @@ section{
     padding: 30px;
     border-radius: 2%;
     box-shadow: 15px 15px;
+<<<<<<< HEAD
     
+=======
+    border:2px solid black;
+}
+.editprofile{
+    margin-top: 5%;
+    height:55rem;
+    padding:5rem;
+    background: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+>>>>>>> origin/FoehnNew
 }
 
 .editprofile a{
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     color: var(--black);
-}
+    color:#f39191;
+  }
 .editprofile a.active,
 .editprofile a:hover{
     font-weight: bold;
@@ -1000,27 +1054,30 @@ section{
 	border-radius: 2px;
 }
 
-.profile .editprofilebox h3{
+.editprofile .editprofilebox h3{
     font-size: 2.2rem;
     text-transform: uppercase;
     color: var(--black);
-    margin-left:2%;
+    margin-left:10%;
 }
 
-.profile .editprofilebox h4{
+.editprofile .editprofilebox h4{
     font-size: 1.5rem;
     color: var(--black);
     text-align: left;
     padding: 10px;
 }
-.profile .editprofilebox h6{
-    font-size: 1.7rem;
+.editprofile .editprofilebox h5{
+    font-size: 3rem!important;
     color: var(--black);
-    text-align: right;
-    margin-right: 25px;
+    text-align: left;
+    margin-left:5%;
     padding: 10px;
+    margin-top:4%;
 }
-
+.editprofile .editprofilebox button{
+    margin-left:8%;
+}
 .profile .editprofilebox .box{
     width: 35%;
     margin:.7rem 0;
@@ -1045,11 +1102,11 @@ section{
     border-bottom-right-radius: 10px;
     outline: none;
     height: 20px;
-    width: 35rem;
+    width: 55rem;
     background: #f6cfb2;
     color: black;
-    font-size: 1.5rem;
-    margin-left: 2%;
+    font-size: 2.0rem;
+    margin-left: 15%;
 }
 .editprofilebox input[type="text1"]{
     border-bottom: 3px solid #3D0C02;
@@ -1062,6 +1119,7 @@ section{
     font-size: 1.5rem;
     margin-left: 2%;
 }
+
 /*editprofilebox ends */
 /*cpass start*/
 .cpassbox{
@@ -1163,38 +1221,50 @@ section{
 .shop-profile{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     background: url("./images/shop\ cover.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    margin-left:10px;
+    margin-right :7px;
     margin-top: 9%;
     margin-bottom: 2%;
 }
 .shop-profile .avatar{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-style: solid;
     border-radius: 50%;
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 30%;
+    left: 41%;
 }
 .shop-name {
     font-size: 2.5rem;
     margin-top: 5rem;
     margin-left: 43rem;
 }
+.shop-name .stars{
+    align-items:center;
+}
 .shop-name .stars i{
     color:var(--orange);
     font-size: 1.7rem;
     margin-left: 5px;
 }
+.shop-name h3{
+    margin-top: 10px;
+    align-items:center;
+   
+
+}
 .shop-content {
     font-size: 2rem;
     text-align: center;
 }
+
 .shop-content h3 {
     margin-top: 10px;
     font-size: 1.5rem;
@@ -1265,6 +1335,70 @@ section{
     opacity: 1;
 }
   
+.popup1 {
+    width: 70rem;
+    height: 45rem;
+    margin-top: 14rem;
+    margin-left: 35rem;
+    background: #f6cfb2;
+    border: 3px solid #3D0C02;
+    border-radius: 10px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    
+}
+
+.popup1 .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup1 .close:hover {
+    color: var(--orange);
+}
+.popup1 h3{
+    font-size: 2rem;
+    margin-left: 6rem!important;
+    margin-top:3rem;
+    
+}
+.popup1  h1{
+    font-size: 2rem;
+    margin-left: 6rem;
+}
+.popup1 input[type="text"]{
+    margin-left:9rem!important;
+    font-size:2rem;
+    width:80%;
+    padding:1rem;
+    border-radius:5px;
+}
+.popup1 textarea{
+    margin-left: 9rem!important;
+    padding:1rem;
+    font-size:2rem;
+    width:50%;
+    margin-bottom:1%!important;
+    border-radius:5px;
+}
+.popup1 button[type="submit"]{
+    margin-top:1rem;
+    margin-left:8rem!important;
+    font-size:2rem;
+    border:1px solid black;
+    padding:.5rem;
+    width:70%;
+    border-radius:5px;
+}
+.poup1 button[type="submit"].hover{
+    color:white;
+    background-color:#E64A4A
+}
 .popup {
     width: 80rem;
     height: 40rem;
@@ -1280,9 +1414,61 @@ section{
     margin-top: 50px;
     text-align: right;
     margin-right: 38rem;
-    font-size: 2rem;
-    color: #333;
+    font-size: 3rem!important;
+    color: var(--black);
     font-family: Tahoma, Arial, sans-serif;
+}
+.popup1 {
+    width: 60rem;
+    height: 40rem;
+    margin-top: 12.5rem;
+    margin-left: 40rem;
+    background: #f6cfb2;
+    border: 3px solid #3D0C02;
+    border-radius: 5px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup1 h3{
+    font-size: 2rem!important;
+    text-transform:uppercase;
+    color:var(--black);
+    margin-left:30px;
+    margin-top:35px;
+    }
+.popup1 input[type="text"]{
+    border-bottom: 3px solid #3D0C02;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 20px;
+    width: 40rem;
+    background: #f6cfb2;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 8%;
+}
+.popup1 textarea{
+    margin-left:8%;
+    width:40rem;
+    margin-bottom:-15px;
+}
+.popup1 input[type="submit"]{
+    margin-left:30px;
+    font-size: 1.5rem;
+    
+}
+.popup1 .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup1 .close:hover {
+    color: var(--orange);
 }
 .popup .close {
     position: absolute;
@@ -1336,7 +1522,10 @@ section{
     cursor: pointer;
     background: none;
 }
-
+.quantity input[type="text"]{
+height:4.3rem;
+margin-top:11px;
+}
 .quantity input {
     border: none;
     border-top: 1px solid #000;
@@ -1372,18 +1561,18 @@ section{
 /*purchases all starts*/
 .productbox{
     margin-top: 7%;
-    width: 820px;
-    height: 420px;
+    width: 990px;
+    height: 470px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
-    left: 25%;
+    left: 18%;
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
-    border-radius: 2%;
+    border-radius: 2.5rem;
     box-shadow: 15px 15px;
-    border:2px solid black;
+    border:1px solid black;
     overflow-y:scroll; 
 }
 .productbox::-webkit-scrollbar {
@@ -1435,7 +1624,7 @@ section{
     outline-offset: -1rem;
     box-shadow: var(--box-shadow);
     height: 15rem;
-    width: 79rem;
+    width: 92rem;
 }
 
 .products-buy.box-container .box:hover{
@@ -1445,8 +1634,8 @@ section{
 
 .products-buy .box-container .box img{
     padding: 10px;
-    height: 1rem;
-    margin-left:8px;
+    height: 13rem!important;
+    margin-left:15px;
     position: absolute;
 }
 .products-buy .box-container .box h2{
@@ -1456,27 +1645,37 @@ section{
 }
 .products-buy .box-container .box h3{
     position: absolute;
-    margin-left: 15%;
+    margin-left: 25%;
     margin-top: -4%;
     font-size: 1.5rem;
 }
 .products-buy .box-container .box h1{
     text-align: right;
     margin-right: 8%;
+    margin-bottom:-5%;
+    margin-top:-2.5%;
 }
 .products-buy .box-container .box p{
     text-align: right;
-    margin-right: 40%;
+    margin-right: 35%;
     font-size: 1.5rem;
     margin-top:-5%;
-    margin-bottom:5%;
+    margin-bottom:4.5%;
 }
 .products-buy .box-container .box .pbtn{
     font-size: 10px;
     height: 20px;
     width: 80px;
-    margin-left: 640px;
-    margin-top:1%;
+    margin-left: 84%;
+    margin-top:7%;
+    margin-bottom:-4%;
+}
+.products-buy .box-container .box .pbtn1{
+    font-size: 10px;
+    height: 20px;
+    width: 80px;
+    margin-left: 84%;
+    margin-top:2%;
     margin-bottom:-4%;
 }
 /*all purchases ends*/
@@ -1484,8 +1683,8 @@ section{
 
 .seller-profilebox{
     margin-top: 7%;
-    width: 820px;
-    height: 420px;
+    width: 990px;
+    height: 470px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
@@ -1700,6 +1899,14 @@ section{
     background: none;
     text-align: center;
 }
+<<<<<<< HEAD
+
+.abtn{
+=======
+.ibtn:hover{
+    background-color: var(--orange);
+    color:#fff !important;
+}
 
 .abtn{
     margin-top: 1rem;
@@ -1712,8 +1919,26 @@ section{
     background: none;
     text-align: center;
 }
-.ibtn:hover{
-    background-color: var(--orange);
+.abtn:hover{
+    background: var(--orange);
+    color:#fff !important;
+}
+.prodbtn{
+>>>>>>> origin/FoehnNew
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 2rem !important;
+    border-radius: 1rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.prodbtn:hover{
+    background: var(--orange);
     color:#fff !important;
 }
 .items-items .box-container .box .ibtn{
@@ -1725,10 +1950,7 @@ section{
     margin-left: 660px;
     
 }
-.abtn:hover{
-    background: var(--orange);
-    color:#fff !important;
-}
+
 .items-items .box-container .box .abtn{
     font-size: 10px;
     position: absolute;
