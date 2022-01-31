@@ -6,7 +6,8 @@
 
 </head>
 <body>
-    <?php include 'header2.php'; ?>  
+    <?php include 'header2.php'; ?> 
+     
 <!-- usershop section starts  -->
 
 <section class="shop-profile" id="shop-profile">
