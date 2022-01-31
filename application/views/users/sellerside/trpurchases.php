@@ -29,7 +29,7 @@
 
             <div class="box">
                      <h2>Shop Name</h2>
-                     <img src="./images/cheesebread.jpg" alt="">
+                     <img src="<?php echo base_url(); ?>assets/images/cheesebread.jpg" alt="">
                      <h1>To Rate</h1>
                      <input type="submit" value="BUY AGAIN" class="pbtn">
                      <input type="submit" value="DETAILS" class="pbtn1">
@@ -41,7 +41,7 @@
 
                  <div class="box">
                      <h2>Shop Name</h2>
-                     <img src="./images/cheesebread.jpg" alt="">
+                     <img src="<?php echo base_url(); ?>assets/images/cheesebread.jpg" alt="">
                      <h1>To Rate</h1>
                      <input type="submit" value="BUY AGAIN" class="pbtn">
                      <input type="submit" value="DETAILS" class="pbtn1">
@@ -53,7 +53,7 @@
 
                  <div class="box">
                      <h2>Shop Name</h2>
-                     <img src="./images/cheesebread.jpg" alt="">
+                     <img src="<?php echo base_url(); ?>assets/images/cheesebread.jpg" alt="">
                      <h1>To Rate</h1>
                      <input type="submit" value="BUY AGAIN" class="pbtn">
                      <input type="submit" value="DETAILS" class="pbtn1">

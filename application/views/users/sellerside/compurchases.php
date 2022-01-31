@@ -30,7 +30,7 @@
 
                 <div class="box">
                     <h2>Shop Name</h2>
-                    <img src="./images/coffeebryant.png" alt="">
+                    <img src="<?php echo base_url(); ?>assets/images/coffeebryant.png" alt="">
                     <h1>Completed</h1>
                     <input type="submit" value="BUY AGAIN" class="pbtn">
                     <input type="submit" value="DETAILS" class="pbtn1">
