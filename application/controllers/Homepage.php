@@ -15,9 +15,22 @@ class Homepage extends CI_Controller {
         }
     }
 
-	public function index()
+    public function index()
 	{
-      $this->load->view('index');
+        redirect('/logout');
+    // $this->load->view('homepage_index');
 	}
+
+
+	public function buyerside()
+	{
+      $this->load->view('homepage_buyer');
+	}
+
+    public function sellerside()
+	{
+      $this->load->view('homepage_seller');
+	}
+
 
 }
