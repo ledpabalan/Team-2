@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'assets/head.php'; ?>
+    <?php include 'assets/headbuyerside.php'; ?>
 </head>
 <body>
-    <?php include 'assets/header2.php'; ?>  
+    <?php include 'assets/header2buyerside.php'; ?>  
 
 <!-- profile section starts  -->
     
@@ -14,7 +14,7 @@
             <h5>My Account</h5>
             <a class="active "href='<?php echo base_url()."Usersbuyerside/viewUser"?>'>Profile</a> <br>
             <a href='<?php echo base_url()."Usersbuyerside/allpurchases"?>'>Purchases</a> <br>
-            <a href='<?php echo base_url()."users/edituser"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."usersbuyerside/edituser"?>'>Settings</a><br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 

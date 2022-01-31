@@ -6,19 +6,19 @@
 <html lang="en">
 <head>
 
-    <?php include 'assets/head.php'; ?>
+    <?php include 'assets/headsellerside.php'; ?>
 
 </head>
 <body>
-<?php include 'assets/header2.php'; ?>  
+<?php include 'assets/header2sellerside.php'; ?>  
 <!-- profile section starts  -->
 
     <div class="profile">   
             <h5>My Account</h5>
             
-            <a class="active" href="/Team-2/users/edituser">Edit Profile</a> <br>
-            <a href="/Team-2/users/changepass">Change<br>Password</a><br>
-            <a href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
+            <a class="active" href="/Team-2/userssellerside/edituser">Edit Profile</a> <br>
+            <a href="/Team-2/userssellerside/changepassword">Change<br>Password</a><br>
+            <a href="/Team-2/userssellerside/userdelprofile">Delete Profile</a> <br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 

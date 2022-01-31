@@ -20,8 +20,8 @@
     <div class="profile">   
             <h5>Settings</h5>
             <a href='<?php echo base_url()."Usersbuyerside/edituser"?>'>Edit Profile </a> <br>
-            <a href='<?php echo base_url()."Usersbuyerside/changepassword"?>'>Change<br>Password</a><br>
-            <a class="active"href='<?php echo base_url()."Usersbuyerside/userdelprofile"?>'>Delete Profile</a> <br>
+            <a class="active"href='<?php echo base_url()."Usersbuyerside/changepassword"?>'>Change<br>Password</a><br>
+            <a href='<?php echo base_url()."Usersbuyerside/userdelprofile"?>'>Delete Profile</a> <br>
 
     <!-- <div class="profile">   
             <h5>My Account</h5>

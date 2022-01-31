@@ -1,47 +1,51 @@
-<?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->           
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <?php include 'assets/headsellerside.php'; ?>
+
 </head>
 <body>
-    <?php include 'assets/header2sellerside.php'; ?>  
+<?php include 'assets/header2sellerside.php'; ?>  
 
 <!-- profile section starts  -->
-    
-    <div class="profile">   
+
+        <div class="profile">   
             <h5>My Account</h5>
-            <a class="active "href='<?php echo base_url()."userssellerside/viewUser"?>'>Profile</a> <br>
-            <a href='<?php echo base_url()."userssellerside/allpurchases"?>'>Purchases</a> <br>
+            <a href='<?php echo base_url()."userssellerside/viewUser"?>'>Profile</a> <br>
+            <a class="active" href='<?php echo base_url()."userssellerside/allpurchases"?>'>Purchases</a> <br>
             <a href='<?php echo base_url()."userssellerside/edituser"?>'>Settings</a><br>
-
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
+   
+        <div class="productbox">
+            <a href='<?php echo base_url()."userssellerside/allpurchases"?>'>All</a> 
+            <a href='<?php echo base_url()."userssellerside/recpurchases"?>'>To Receive</a> 
+            <a class="active" href='<?php echo base_url()."userssellerside/compurchases"?>'>Completed</a> 
+            <a href='<?php echo base_url()."userssellerside/trpurchases"?>'>To Rate</a> 
 
-        <div class="profilebox">
-            
-            <h3>My Profile </h3> 
 
-            <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
+        <section class="products-buy" id="products-buy">
 
-            <h4>Username:<span class="indent"><?php echo $user['user_username']?></span> </h4>
-            
-            <h4>Full Name: <span class="indent"><?php echo $user['user_name']?></span></h4>
-            
-            <h4>Address: <span class="indent1"><?php echo $user['user_address']?></span></h4>
-    
-            <h4>Birthdate: <span class="indent2"><?php echo $user['user_birthday']?></span></h4>
-            
-            <h4>Gender:<span class="indent3"><?php echo $user['user_gender']?></span></h4>
-            <h4>Contact No: <span class="indent4"><?php echo $user['user_contact_no']?></h4>
-            <img class="avatar"  src="<?php echo base_url(); ?>assets/images/profilepic.png">
+            <div class="box-container">
 
+                <div class="box">
+                    <h2>Shop Name</h2>
+                    <img src="./images/coffeebryant.png" alt="">
+                    <h1>Completed</h1>
+                    <input type="submit" value="BUY AGAIN" class="pbtn">
+                    <input type="submit" value="DETAILS" class="pbtn1">
+                    <h3>Coffee Bryant</h3>
+                    <p>Price : ₱ 20.00</p>
+                     <p>Quantity : x1</p>
+                    
+                </div><br>
+            </div>
+
+        </section>
             
-        </div>  
+        </div>
 
     </div>
-    </form>     
-
 
 <!-- profile section ends  -->
 
@@ -99,6 +103,6 @@ window.onscroll = () =>{
 
 </script>
 
+
 </body>
 </html>
-

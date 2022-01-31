@@ -6,9 +6,10 @@
 
 </head>
 <body>
-    <?php include 'assets/header2buyerside.php'; ?>  
+     
 <!-- usershop section starts  -->
 
+<?php include 'assets/header2buyerside.php'; ?>  
 
 <section class="all-products" id="all-products">
 
@@ -50,7 +51,7 @@
             <div class="content">
                 <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
                 <input type="hidden" name="" value="0">
-                <h2 class= 'itemName'>ITEM NAME</h2>
+                <h2 class='itemName'>ITEM</h2>
                 <h3 class= 'itemPrice'>₱ 00.00</h3>
                 <h1 class= 'itemDescription'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
                 <h4>QUANTITY :</h4>
