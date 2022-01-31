@@ -84,11 +84,6 @@ class user_model extends CI_Model {
 
         unset($data['user_id']);
         //unset($data['user_pwdRepeat']);
-
-        $data['user_password'] = md5($data['user_password']); //md5
-        $data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
-    
-
         $this->db->update($this->table, $data);                     
         return;                                                              
 

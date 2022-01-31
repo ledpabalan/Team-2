@@ -50,6 +50,22 @@ section{
     padding:.5rem 3rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--orange);
+    color:#fff;
+}
 
 .btn1{
     margin-top: 1rem;
@@ -1606,7 +1622,7 @@ margin-top:11px;
 
 .products-buy .box-container .box img{
     padding: 10px;
-    height: 12rem!important;
+    height: 13rem!important;
     margin-left:15px;
     position: absolute;
 }

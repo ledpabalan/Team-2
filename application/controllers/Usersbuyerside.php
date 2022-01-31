@@ -113,6 +113,8 @@ class Usersbuyerside extends CI_Controller {
 		$data = $this->input->post();
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
+			$data['user_password'] = md5($data['user_password']); //md5
+			$data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
 			$this -> user_model->updateUser($data);
 			redirect('/logout'); //dapat dito is destroy session or logout
 		
