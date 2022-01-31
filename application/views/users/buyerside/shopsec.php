@@ -29,7 +29,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="box">
@@ -43,7 +43,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="box">
@@ -57,7 +57,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="box">
@@ -71,7 +71,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="box">
@@ -85,7 +85,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="box">
@@ -99,7 +99,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="box">
@@ -113,7 +113,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
             <div class="box">
@@ -127,7 +127,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href='<?php echo base_url()."users/usershop"?>' class="btn">Check now</a>
+                <a href='<?php echo base_url()."usersbuyerside/usershop"?>' class="btn">Check now</a>
             </div>
 
         </div>
@@ -138,7 +138,6 @@
 </section>
 
 <!-- shops section ends -->
-
 
 
 <?php include 'assets/footer.php'; ?>  

@@ -44,23 +44,11 @@ class Userssellerside extends CI_Controller {
       $this->load->view('users/sellerside/usershop');
 	}
 	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
-	public function allpurchases()
+	public function shopprofile()
 	{
-      $this->load->view('users/sellerside/allpurchases');
+      $this->load->view('users/sellerside/shopprofile');
 	}
-	public function recpurchases()
-	{
-      $this->load->view('users/sellerside/recpurchases');
-	}
-	public function compurchases()
-	{
-      $this->load->view('users/sellerside/compurchases');
-	}
-	public function trpurchases()
-	{
-      $this->load->view('users/sellerside/trpurchases');
-	}
-
+	
 	public function viewUser(){
 		$this-> load -> model ('user_model');
 

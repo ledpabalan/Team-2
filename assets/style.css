@@ -1676,13 +1676,12 @@ margin-top:11px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
-    left: 25%;
+    left: 18%;
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
     border-radius: 2%;
     box-shadow: 15px 15px;
-    overflow-y: scroll;
     border:2px solid black;
 }
 .seller-itembox::-webkit-scrollbar{
@@ -1694,6 +1693,7 @@ margin-top:11px;
     margin-left: 22rem;
     color: var(--black);
 }
+
 .seller-profilebox a.active,
 .seller-profilebox a:hover{
     font-weight: bold;
@@ -1771,12 +1771,12 @@ margin-top:11px;
 /* shop profile starts*/
 .shop-profilebox{
     margin-top: 7%;
-    width: 820px;
-    height: 452px;
+    width: 990px;
+    height: 470px;
     background: #f6cfb2;
     color: #3D0C02;
     top: 20px;
-    left: 25%;
+    left: 18%;
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
@@ -1808,17 +1808,17 @@ margin-top:11px;
     color:var(--black);
     text-transform: none;
 }
-.shop-profilebox .avatar{
+.shop-profilebox .image-avatar .avatar{
     width: 115px;
     height: 115px;
     border-radius: 50%;
     position: absolute;
-    top: 160px;
+    top: 130px;
     left: 43.5%;
 }
 .shop-profilebox .background-avatar{
     margin-top: 10px;
-    width: 760px;
+    width: 930px;
     height: 150px;
 }
 

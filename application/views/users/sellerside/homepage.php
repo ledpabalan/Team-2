@@ -23,7 +23,7 @@
 <section class="features" id="features">
 
     <h1 class="heading"> our <span>features</span> </h1>
-    <h1 class="heading"> Buyer-Side </h1>
+    <h1 class="heading"> Seller-Side </h1>
 
     <div class="box-container">
 
