@@ -52,7 +52,7 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div class="div">
-                        <input type="text" name="shop_email" placeholder="E-mail">
+                        <input type="email" name="shop_email" placeholder="E-mail">
                     </div>
                 </div>
                 

@@ -3,6 +3,13 @@
 
 class Users extends CI_Controller {
 
+	public function __construct()
+        {
+            parent::__construct();
+            $this->load->library('form_validation');    #preload form_validation library
+            $this->load->model('user_model');       #preload Registration_model for registration
+            // $this->load->model('UpdateProfile_model');    
+        }
 
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -285,36 +292,82 @@ class Users extends CI_Controller {
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Form Validation
-	public function customervalidation($data)
+	public function customervalidation()
         {   
             #Form Validation for customer's first name (matches required length and no other characters are used aside from the alphabet)
-            $this->form_validation->set_rules('customer_firstname', 'First Name', 'required|trim|min_length[3]|max_length[15]|alpha');
-           
+            $this->form_validation->set_rules('user_firstname', 'First Name', 'required|trim|min_length[2]|max_length[15]|alpha', 
+			array('less_than[2]'=> 'Name should be at least 2 letters')); #Error message when first name is less than 2
+			
             #Form Validation for customer's last name (matches required length and no other characters are used aside from the alphabet)
-            $this->form_validation->set_rules('customer_lastname', 'Last Name', 'required|trim|min_length[2]|max_length[15]|alpha');
-
-            #Form Validation for customer's username (matches required length, no special characters, is unique)
-            $this->form_validation->set_rules('customer_username', 'Username', 'required|trim|min_length[4]|max_length[15]|alpha_dash|is_unique[customer.customer_username]',
-                array('is_unique'     => 'This %s already exists.')); #Error message when username already exists 
-
+            $this->form_validation->set_rules('user_lastname', 'Last Name', 'required|trim|min_length[2]|max_length[15]|alpha', 
+			array('less_than[2]'=> 'Name should be at least 2 letters')); #Error message when first name is less than 2);
+            
             #Form Validation for customer's email (entered email is unique)
-            $this->form_validation->set_rules('customer_email', 'E-mail Address', 'required|trim|valid_email|is_unique[customer_email]',
-                array('is_unique'     => 'This %s already exists.')); #Error message when username already exists
-             
+            $this->form_validation->set_rules('user_email', 'E-mail Address', 'required|trim|valid_email|is_unique[users.user_email]',
+                array('is_unique' => 'This %s already exists.')); #Error message when email already exists
+
+         	#Form Validation for customer's username (matches required length, no special characters, is unique)
+            $this->form_validation->set_rules('user_username', 'Username', 'required|trim|min_length[4]|max_length[15]|alpha_dash|is_unique[users.user_username]',
+				array('is_unique', 'less_than[4]'=> 'This %s already exists.')); #Error message when username already exists 
+
             #Form Validation for customer's password
-            $this->form_validation->set_rules('customer_password', 'Password', 'required|min_length[8]|max_length[32]');
+            $this->form_validation->set_rules('user_password', 'Password', 'required|min_length[8]|max_length[32]');
 
             #Form Validation for customer's password confirmation (matches first password)
-            $this->form_validation->set_rules('customer_passwordconfirmation', 'Confirm Password', 'required|matches[password]|min_length[8]|max_length[32]');    
+            $this->form_validation->set_rules('user_pwdRepeat', 'Confirm Password', 'required|matches[password]|min_length[8]|max_length[32]');    
 
-            
+            if($this->form_validation->run())   #If no error,
+            {
+                $verification_key = random_string('numeric', 6);                #create random string for verification,
+                $encrypted_password = md5($this->input->post('user_password'));      #create hash value for password,
+                $this->createUser($verification_key, $encrypted_password);         #then proceed to addUser function.
+            }
+            else    #If there is error,
+            {
+				$data = 'signdown';
+				$this -> load-> view('users/registration/signdown', $data);        #load registration page again with error messages.
+            }
+
         }
+        
+		//////////////////////////////////////////////////////////////////////////////
+		public function createUser($verification_key, $encrypted_password)
+        {          
+            // $data['navbar'] = 'registration';
+            // $this->sitelayout->loadTemplate('pages/registration/verification', $data); 
+            // $var = $this->input->post();
 
+            if(isset($var) && $var != null)
+            {
+                #create $data variable for array containing keys(userName, displayName, etc.) with assigned values
+                $userdata = array(
+					'user_firstname' => $this->input->post('user_firstname'),
+                    'user_lastname' => $this->input->post('user_lastname'),
+                    'user_email' => $this->input->post('user_email'),
+                    'user_username' => $this->input->post('user_username'),
+                    'password' => $encrypted_password,
+                    'user_acc_status'   => 'Pending',
+                    'verification_Key' => $verification_key
+                );
+                
+                #get a response from Registration_model if insert to database is succesful
+                #pass $data array to model
+                $response = $this->Registration_model->addNewUser($userdata);
+
+                
+            }
+            //$data['navbar'] = 'registration';
+            //$this->sitelayout->loadTemplate('pages/registration/registration', $data);
+			$this->load->view('users/homepage_buyer');
+		}
 	
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Form Validation
-	public function vendorvalidation($data)
+	public function vendorvalidation()
         {   
+
+			$action = $this->input->post('action');
+
             #Form Validation for Shop's first name (matches required length and no other characters are used aside from the alphabet)
             $this->form_validation->set_rules('shop_name', 'Shop Name', 'required|trim|min_length[4]|max_length[15]|alpha');
            
@@ -323,7 +376,7 @@ class Users extends CI_Controller {
                 array('is_unique'     => 'This %s already exists.')); #Error message when username already exists 
 
             #Form Validation for shop's email (entered email is unique)
-            $this->form_validation->set_rules('shop_email', 'E-mail Address', 'required|trim|valid_email|is_unique[customer_email]',
+            $this->form_validation->set_rules('shop_email', 'E-mail Address', 'required|trim|valid_email|is_unique[shop_email]',
                 array('is_unique'     => 'This %s already exists.')); #Error message when username already exists
              
             #Form Validation for customer's password

@@ -4,7 +4,7 @@
 class user_model extends CI_Model {
 
     private $table = "users";
-    private $table1 = "shop";
+    public $table1 = "shop";
 
     public function __construct()
     {

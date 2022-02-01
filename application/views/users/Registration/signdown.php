@@ -21,7 +21,7 @@
             <img src="<?php echo base_url(); ?>assets/images/loginpic.png">
         </div>
         <div class="signup-content">
-            <form method="POST">
+            <form method="post" action="<?= base_url('users/customervalidation') ?>">
                 <h2 class="signup-title">Sign up</h2>      
                 <h5 class="create">Create an account for free!</h5>
                 <div class="sign-up-input name">
@@ -29,7 +29,15 @@
                         <i class="fas fa-id-card"></i>
                     </div>
                     <div class="div">
-                        <input type="text" name="user_name" placeholder="Full Name">
+                        <input type="text" name="user_firstname" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="sign-up-input name">
+                    <div class="sign-up-icons">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="div">
+                        <input type="text" name="user_lastname" placeholder="Last Name">
                     </div>
                 </div>
                 <div class="sign-up-input email">
@@ -37,7 +45,7 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div class="div">
-                        <input type="text" name="user_email" placeholder="E-mail">
+                        <input type="email" name="user_email" placeholder="E-mail">
                     </div>
                 </div>
                 <div class="sign-up-input username">
