@@ -23,10 +23,6 @@
             <a class="active" href="/Team-2/users/changepass">Change<br>Password</a><br>
             <a href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
 
-    <div class="profile">   
-            <h5>My Account</h5>
-        <div class="profilebox">
-            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3> 
 
         <div class="cpassbox">
         <form method="POST">   
