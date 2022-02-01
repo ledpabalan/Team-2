@@ -17,6 +17,8 @@
 			<hr>
 			<form method="POST" action="<?php echo base_url(); ?>ProductController/insert">
 				<div class="form-group">
+
+				
 				<br><label>Product Name:</label><br>
 					<input type="text" class="form-control" name="product_name" required>
 				</div>
