@@ -10,12 +10,27 @@ class CategoryController extends CI_Controller {
 	}
  
 	public function TopFood(){
-		$data['product'] = $this->CategoryModel->GetAllProduct_a("Top Food");
+		$data['product'] = $this->CategoryModel->GetAllProduct_a("Top Food", "Active");
 		$this->load->view('users/category/category.php', $data);
 	}
 
-	public function index(){
-		$data['product'] = $this->CategoryModel->GetAllProduct_a("Top Food");
+	public function Classics(){
+		$data['product'] = $this->CategoryModel->GetAllProduct_a("Classics", "Active");
+		$this->load->view('users/category/category.php', $data);
+	}
+
+	public function BudgetMeal(){
+		$data['product'] = $this->CategoryModel->GetAllProduct_a("Budget Meal", "Active");
+		$this->load->view('users/category/category.php', $data);
+	}
+
+	public function Refreshers(){
+		$data['product'] = $this->CategoryModel->GetAllProduct_a("Refreshers", "Active");
+		$this->load->view('users/category/category.php', $data);
+	}
+
+	public function SweetandDesserts(){
+		$data['product'] = $this->CategoryModel->GetAllProduct_a("Sweet & Dessert", "Active");
 		$this->load->view('users/category/category.php', $data);
 	}
  
