@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 
-<?php include 'assets/head.php'; ?>
+<?php include 'assets/headbuyerside.php'; ?>
 
 </head>
 <body>
-<?php include 'assets/header2.php'; ?> 
+<?php include 'assets/header2buyerside.php'; ?>  
 <!-- developers section starts  -->
 
 <section class="developers" id="developers">

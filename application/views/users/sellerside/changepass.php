@@ -4,13 +4,13 @@
 <html lang="en">
 <head>
 
-    <?php include 'head.php'; ?>
+<?php include 'assets/headsellerside.php'; ?>
 
 
 
 </head>
 <body>
-<?php include 'header2.php'; ?>  
+<?php include 'assets/header2sellerside.php'; ?>  
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
@@ -19,10 +19,14 @@
 
     <div class="profile">   
             <h5>Settings</h5>
-            <a href="/Team-2/users/edituser">Edit Profile</a> <br>
-            <a class="active" href="/Team-2/users/changepass">Change<br>Password</a><br>
-            <a href="/Team-2/users/userdelprofile">Delete Profile</a> <br>
+            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Edit Profile </a> <br>
+            <a href='<?php echo base_url()."Userssellerside/changepassword"?>'>Change<br>Password</a><br>
+            <a class="active"href='<?php echo base_url()."Userssellerside/userdelprofile"?>'>Delete Profile</a> <br>
 
+    <!-- <div class="profile">   
+            <h5>My Account</h5>
+        <div class="profilebox">
+            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3>  -->
 
         <div class="cpassbox">
         <form method="POST">   
