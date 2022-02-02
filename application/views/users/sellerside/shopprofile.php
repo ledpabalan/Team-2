@@ -2,64 +2,48 @@
 <html lang="en">
 <head>
 
-    <?php include 'assets/headsellerside.php'; ?>
-
+<?php include 'assets/headsellerside.php'; ?>
 </head>
 <body>
     <?php include 'assets/header2sellerside.php'; ?>  
-    
-<!-- home section starts  -->
 
-<section class="home" id="home">
+<!-- shop profile section starts  -->
 
-    <div class="content">
-       <h3><span>Seller</span></h3>
-        <h3>fresh and <span>classic</span> products for you</h3>
-        <p>brought to you by The New Tayuman</p>
-        <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
-    </div>
+    <div class="profile">   
+            <h5>My Account</h5>
+            <a href='<?php echo base_url()."userssellerside/viewUser"?>'>Seller Profile</a> <br>
+            <a class="active " href='<?php echo base_url()."userssellerside/shopprofile"?>'>Shop Profile</a> <br>
+            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Settings</a><br>
 
-</section>
-<section class="features" id="features">
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
-    <h1 class="heading"> our <span>features</span> </h1>
-    <h1 class="heading"> Seller-Side </h1>
+        <div class="shop-profilebox">
 
-    <div class="box-container">
-
-        <div class="box">
-            <img  src="<?php echo base_url(); ?>assets/images/fea food 1.jpg">
-            <h3>Tayuman Classics</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/fea motor 2.jpg" alt="">
-            <h3>free delivery</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/fea payment 3.png " alt="">
-            <h3>easy payments</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a>
+            <div class="image-avatar">
+                <img class="avatar" src="<?php echo base_url(); ?>assets/images/profilepic.png">
+            </div>
+            <div class="background-content">
+                <img class="background-avatar" src="<?php echo base_url(); ?>assets/images/shop cover.jpg">
+            </div>
+            
+            <h1>SHOP NAME : SHOP'S NAME</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+            <h3>Open Hours: 7:00 - 17:00</h3><h2>Email : Shopname@gmail.com</h2>
+            <h3>Contact us: 09999999999</h3></h4>
+            
         </div>
 
     </div>
 
-</section>
-
-<!-- home section ends -->
+<!-- shop profile section ends  -->
 
 <?php include 'assets/sellerfooter.php'; ?>  
+
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="assets/script.js"></script>
+<script src="script.js"></script>
 
 <script>
     /*script for nav bar */
@@ -107,6 +91,7 @@ window.onscroll = () =>{
 }
 
 </script>
+
 
 </body>
 </html>

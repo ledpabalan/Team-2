@@ -114,7 +114,7 @@
 
 <!-- usershop section ends -->
 
-<?php include 'assets/footer.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
@@ -197,24 +197,7 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
 })
 </script>
 
-<script>
-    /*showmore */
-  function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Show less";
-    moreText.style.display = "inline";
-  }
-}
-</script>
 
 </body>
 </html>
