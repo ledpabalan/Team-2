@@ -3,23 +3,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'assets/headsellerside.php'; ?>
+    <?php include 'assets/head.php'; ?>
 </head>
 <body>
-<?php include 'assets/header2sellerside.php'; ?>  
+    <?php include 'assets/header2.php'; ?>  
 
 <!-- profile section starts  -->
     
     <div class="profile">   
-            <h5>My Account </h5>
-            <a class="active "href='<?php echo base_url()."Userssellerside/viewUser"?>'>Profile</a> <br>
-          
+            <h5>My Account</h5>
+            <a class="active "href='<?php echo base_url()."users/viewUser"?>'>Profile</a> <br>
+            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchases</a> <br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
         <div class="profilebox">
             
-            <h3>My Profile <a href='<?php echo base_url()."Userssellerside/edituser"?>'><i class="fas fa-edit"></a></i></h3> 
+            <h3>My Profile <a href="/Team-2/users/edituser"><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 
@@ -59,23 +59,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'assets/headsellerside.php'; ?>
+    <?php include 'assets/head.php'; ?>
 </head>
 <body>
-<?php include 'assets/header2sellerside.php'; ?>  
+    <?php include 'assets/header2.php'; ?>  
 
 <!-- profile section starts  -->
     
     <div class="profile">   
             <h5>My Account</h5>
             <a class="active "href='<?php echo base_url()."users/viewUser"?>'>Profile</a> <br>
-            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchase</a> <br>
+            <a href='<?php echo base_url()."users/allpurchases"?>'>Purchases</a> <br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
         <div class="profilebox">
             
-            <h3>My Profile <a href='<?php echo base_url()."Userssellerside/edituser"?>'><i class="fas fa-edit"></a></i></h3> 
+            <h3>My Profile <a href="/Team-2/users/edituser"><i class="fas fa-edit"></a></i></h3> 
 
             <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
 

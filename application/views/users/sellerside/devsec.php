@@ -116,7 +116,7 @@
 
 <!-- developers section ends -->
 
-<?php include 'assets/sellerfooter.php'; ?>  
+<?php include 'assets/footer.php'; ?>  
 
 <script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
@@ -168,29 +168,6 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-</script>
-
-<script>
-    var swiper = new Swiper(".review-slider", {
-    loop:true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-    },
-    centeredSlides: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1020: {
-        slidesPerView: 3,
-      },
-    },
-});
 </script>
 
 </body>

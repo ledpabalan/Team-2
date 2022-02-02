@@ -2,14 +2,14 @@
 
 <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman- Buyer Side </a>
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
     <nav class="navbar">
-        <a href='<?php echo base_url()."usersbuyerside/homepage"?>'>Home</a>       
-        <a href='<?php echo base_url()."usersbuyerside/featuresec"?>'>features</a>
-        <a href='<?php echo base_url()."usersbuyerside/shopsec"?>'>shops</a>
-        <a href='<?php echo base_url()."ProductControllerBuyer/index"?>'>products</a>
-        <a href='<?php echo base_url()."usersbuyerside/catsec"?>'>categories</a>
+        <a href='<?php echo base_url()."Homepage"?>'>Home</a>
+        <a href='<?php echo base_url()."users/featuresec"?>'>features</a>
+        <a href='<?php echo base_url()."users/shopsec"?>'>shops</a>
+        <a href='<?php echo base_url()."users/productsec"?>'>products</a>
+        <a href='<?php echo base_url()."users/catsec"?>'>categories</a>
     </nav>
 
     <div class="icons">
@@ -27,7 +27,7 @@
     <div class="shopping-cart">
         <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="<?php echo base_url(); ?>assets//images/coffeebryant.png" alt="">
+            <img src="./images/coffeebryant.png" alt="">
             <div class="content">
                 <h3>Coffee Bryant</h3>
                 <span class="price">₱20.00/-</span>
@@ -36,7 +36,7 @@
         </div>
         <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="<?php echo base_url(); ?>assets//images/carbonara.jpg" alt="">
+            <img src="./images/carbonara.jpg" alt="">
             <div class="content">
                 <h3>Carbonara</h3>
                 <span class="price">₱20.00/-</span>
@@ -45,7 +45,7 @@
         </div>
         <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="<?php echo base_url(); ?>assets//images/cheesebread.jpg" alt="">
+            <img src="./images/cheesebread.jpg" alt="">
             <div class="content">
                 <h3>Cheese Bread</h3>
                 <span class="price">₱10.00/-</span>
@@ -58,10 +58,10 @@
 
     <form action="" class="login-form">
 
-            <a href='<?php echo base_url()."Usersbuyerside/viewUser"?>'>Profile</a>
+            <a href='<?php echo base_url()."users/viewUser"?>'>Profile</a>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
-            <a href='<?php echo base_url()."Usersbuyerside/edituser"?>'>Settings</a><br>
-            <a href='<?php echo base_url()."Usersbuyerside/devsec"?>'>Developers</a>
+            <a href='<?php echo base_url()."users/edituser"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."users/devsec"?>'>Developers</a>
 
     </form>
 
