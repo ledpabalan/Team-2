@@ -6,6 +6,7 @@
 
     <nav class="navbar">
         <a href='<?php echo base_url()."usersbuyerside/homepage"?>'>Home</a>       
+        <a href='<?php echo base_url()."usersbuyerside/featuresec"?>'>features</a>
         <a href='<?php echo base_url()."usersbuyerside/shopsec"?>'>shops</a>
         <a href='<?php echo base_url()."ProductControllerBuyer/index"?>'>products</a>
         <a href='<?php echo base_url()."usersbuyerside/catsec"?>'>categories</a>
@@ -59,6 +60,7 @@
 
             <a href='<?php echo base_url()."Usersbuyerside/viewUser"?>'>Profile</a>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
+            <a href='<?php echo base_url()."Usersbuyerside/edituser"?>'>Settings</a><br>
             <a href='<?php echo base_url()."Usersbuyerside/devsec"?>'>Developers</a>
 
     </form>

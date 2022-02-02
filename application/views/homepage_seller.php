@@ -2,48 +2,34 @@
 <html lang="en">
 <head>
 
-<?php include 'assets/headsellerside.php'; ?>
+    <?php include 'assets/headsellerside.php'; ?>
+
 </head>
 <body>
     <?php include 'assets/header2sellerside.php'; ?>  
+    
+<!-- home section starts  -->
 
-<!-- shop profile section starts  -->
+<section class="home" id="home">
 
-    <div class="profile">   
-            <h5>My Account</h5>
-            <a href='<?php echo base_url()."userssellerside/viewUser"?>'>Seller Profile</a> <br>
-            <a class="active " href='<?php echo base_url()."userssellerside/shopprofile"?>'>Shop Profile</a> <br>
-            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Settings</a><br>
-
-            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
-
-        <div class="shop-profilebox">
-
-            <div class="image-avatar">
-                <img class="avatar" src="<?php echo base_url(); ?>assets/images/profilepic.png">
-            </div>
-            <div class="background-content">
-                <img class="background-avatar" src="<?php echo base_url(); ?>assets/images/shop cover.jpg">
-            </div>
-            
-            <h1>SHOP NAME : SHOP'S NAME</h1>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
-            <h3>Open Hours: 7:00 - 17:00</h3><h2>Email : Shopname@gmail.com</h2>
-            <h3>Contact us: 09999999999</h3></h4>
-            
-        </div>
-
+    <div class="content">
+       <h3><span>SELLER</span></h3>
+        <h3>fresh and <span>classic</span> products for you</h3>
+        <p>brought to you by The New Tayuman</p>
+        <!-- <a href='<?php echo base_url()."Productcontroller/index"?>'>[  Products ]<i  id="vendoritem"></i></a> -->
+        <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
     </div>
 
-<!-- shop profile section ends  -->
+</section>
 
-<?php include 'assets/sellerfooter.php'; ?>  
+<!-- home section ends -->
 
+<?php include 'assets/footer.php'; ?>  
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 <script>
     /*script for nav bar */
@@ -91,7 +77,6 @@ window.onscroll = () =>{
 }
 
 </script>
-
 
 </body>
 </html>
