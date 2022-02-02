@@ -31,7 +31,7 @@ class user_model extends CI_Model {
     public function createUser($data,$verifcode,$user_type){
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
-            // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
+            $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
              $data['verifcode'] = $verifcode;
              $data['user_type'] = $user_type;
@@ -40,8 +40,13 @@ class user_model extends CI_Model {
 
             $id = $this->db->insert_id();
 
+<<<<<<< HEAD
             if(isset($id) && $id != null)
             {
+=======
+            if (isset($id) && $id != null)
+            
+>>>>>>> 6e41ef92bae3263b688abdf1f41286b0adf93671
                 return $id;
             }
                
@@ -106,16 +111,12 @@ class user_model extends CI_Model {
         unset($data['user_id']);
         //unset($data['user_pwdRepeat']);
 
-        $data['user_password'] = md5($data['user_password']); //md5
-        $data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
-    
-
         $this->db->update($this->table, $data);                     
         return;                                                              
 
     }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////
     
     public function updateUserStatus($user_id, $user_acc_status){
         $this->db->where('user_id', $user_id);
@@ -126,5 +127,8 @@ class user_model extends CI_Model {
         return;
 
     }
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 
 }
 

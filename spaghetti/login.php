@@ -22,6 +22,7 @@
                 
                 <h5>Don't have any account?</h5>
                 <a id="SignUp" href="signup.php">Sign up</a>
+                <a id="SignUp" href="seller-profile.php">sellerprofile</a>
 
             </form>
     </div>

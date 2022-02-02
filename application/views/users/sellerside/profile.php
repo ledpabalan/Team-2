@@ -54,6 +54,7 @@
 </body>
 </html>
 
+<<<<<<< HEAD
 <?=isset($message) ? $message : "";?>
 <!-- <?php $id = $this->session->userdata('user_id'); ?> -->           
 <!DOCTYPE html>
@@ -110,3 +111,5 @@
 </body>
 </html>
 
+=======
+>>>>>>> 6e41ef92bae3263b688abdf1f41286b0adf93671

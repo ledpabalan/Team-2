@@ -31,11 +31,12 @@
                     <h2>Shop Name</h2>
                     <img src="./images/coffeebryant.png" alt="">
                     <h1>Completed</h1>
+                    <input type="submit" value="BUY AGAIN" class="pbtn">
+                    <input type="submit" value="DETAILS" class="pbtn">
                     <h3>Coffee Bryant</h3>
                     <p>Price : ₱ 20.00</p>
                      <p>Quantity : x1</p>
-                    <input type="submit" value="BUY AGAIN" class="pbtn">
-                    <input type="submit" value="DETAILS" class="pbtn">
+                    
                 </div><br>
             </div>
 

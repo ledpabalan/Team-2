@@ -65,16 +65,11 @@ public function viewprod()
 
          $this->load->model('vendor_model');  
 		 $item=$this->vendor_model->Getitem(14); //dito ipapasa yung target item
-=======
-
-		 $item=$this->vendor_model->Getitem(14); //dito ipapasa yung target ite
-
->>>>>>> 4cd78d1f5f45e7ae9e83a93296f418035fa5374c
 		 print_r($item);
 		 $this->load->view('vendor/editprod1', $item);
 		 }
-	}
 }
+
 
 
 

@@ -39,18 +39,14 @@ class Users extends CI_Controller {
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function register() 
-    {
-
-        $data = array();
-        $data = $this -> input ->  post();
-        if(isset($data) && $data != null){
-            redirect('/users/register2/'.$data['user_type']); //passing data into another function
-            echo " 1.) data = ".print_r($data, true);//
-        }
-
-		$this->load->view('users/Registration/signup');
-
-
+	{
+		$data = array();
+		$data = $this -> input ->  post();
+		if(isset($data) && $data != null){
+			redirect('/users/register2/'.$data['user_type']); //passing data into another function
+			
+		}
+		$this->load->view('users/signup');
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -73,15 +69,14 @@ class Users extends CI_Controller {
 				$this->session->set_userdata($data);
 ///
 
-			if($return[0]['user_type'] == 'Buyer'){
-				$this->session->set_userdata($return[0]);
-				redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
-	 			}
-			else{
-
-				$this->session->set_userdata($return[0]);
-				redirect('/Homepage/sellerside');
-				}
+if($return[0]['user_type'] == 'Buyer'){
+	$this->session->set_userdata($return[0]);
+	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
+	 }
+	else{
+		$this->session->set_userdata($return[0]);
+		redirect('/Homepage/sellerside');
+	}
 
 ///
 			} else{ 
@@ -161,6 +156,8 @@ class Users extends CI_Controller {
 		$this->load->view('users/profile', $output);
 		//redirect('/Homepage');
 	}
+  
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function editUser(){
 		$this-> load -> model ('user_model');
@@ -439,6 +436,15 @@ class Users extends CI_Controller {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	
+
+	public function sent()
+	{
+		$this -> load -> model('user_model');
+
+		$this -> user_model -> send_validation_email ();
+
+      $this->load->view('EmailVer/sent');
+	}
 
 }
 

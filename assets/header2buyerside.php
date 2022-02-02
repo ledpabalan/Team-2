@@ -59,10 +59,10 @@
 
     <form action="" class="login-form">
 
-            <a href='<?php echo base_url()."users/viewUser"?>'>Profile</a>
+            <a href='<?php echo base_url()."Usersbuyerside/viewUser"?>'>Profile</a>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
-            <a href='<?php echo base_url()."users/edituser"?>'>Settings</a><br>
-            <a href='<?php echo base_url()."users/devsec"?>'>Developers</a>
+            <a href='<?php echo base_url()."Usersbuyerside/edituser"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."Usersbuyerside/devsec"?>'>Developers</a>
 
     </form>
 

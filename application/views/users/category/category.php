@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
 <script src="<?php echo base_url('/assets/jquery-3.6.0.min.js'); ?>"></script>
-    <?php include 'assets/headsellerside.php'; ?>
+    <?php include 'assets/headbuyerside.php'; ?>
 
 </head>
 <body>
-    <?php include 'assets/header2sellerside.php'; ?>  
+    <?php include 'assets/header2buyerside.php'; ?>  
 <!-- usershop section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+    <h1 class="heading"> Buyer-Side</h1>
 
 
 <section class="all-products" id="all-products">
+<h1 class="heading">Top<span>Foods</span> </h1>
 
-<h1 class="heading">all<span>products</span> </h1>
-<h1 class="heading">Seller-Side</h1>
 
-<a href="<?php echo base_url(); ?>ProductController/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
-<!-- -->
 
 					
 <div class="box-container">
@@ -31,8 +33,6 @@
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
     <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
-
-    <td><a href="<?php echo base_url();?>ProductController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductController/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
     <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>
@@ -45,7 +45,8 @@
 <!-- -->
 
 </section>
-    
+
+</section>
     <div id="popup1" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>

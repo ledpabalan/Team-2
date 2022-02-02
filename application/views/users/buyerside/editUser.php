@@ -43,7 +43,11 @@
 
            
             
+<<<<<<< HEAD
             <input type="submit" value="Update Profile">
+=======
+            <input type="submit" value="Update Profile" class="pbtn">
+>>>>>>> 6e41ef92bae3263b688abdf1f41286b0adf93671
             <!-- <a class="active "href="profile.php">Profile</a> <br>
             <a href="allpurchases.php">Purchases</a> <br> -->
 

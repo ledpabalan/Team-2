@@ -29,7 +29,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -43,7 +43,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -57,7 +57,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -71,7 +71,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
         </div>
@@ -93,7 +93,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -107,7 +107,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -121,7 +121,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
             <div class="swiper-slide box">
@@ -135,7 +135,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">Check now</a>
+                <a href="shop.php" class="btn">Check now</a>
             </div>
 
         </div>
