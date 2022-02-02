@@ -17,7 +17,7 @@
         <h3>fresh and <span>classic</span> products for you</h3>
         <p>brought to you by The New Tayuman</p>
         <!-- <a href='<?php echo base_url()."Product/index"?>'>[  Products ]<i  id="vendoritem"></i></a> -->
-        <a href='<?php echo site_url()."buyerside/productsec"?>' class="btn">shop now</a>
+        <a href='<?php echo base_url()."buyerside/shopsec"?>' class="btn">shop now</a>
     </div>
 
 </section>

@@ -30,7 +30,7 @@
     <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
-    <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
+    <h3>Php <?php echo $product_a->product_price; ?></h3>
 
     <br>
     <td><a href="<?php echo base_url();?>ProductControllerBuyer/checkout/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Buy Now</a>

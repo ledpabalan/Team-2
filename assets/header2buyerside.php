@@ -2,7 +2,7 @@
 
 <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman- Buyer Side </a>
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman</a>
 
     <nav class="navbar">
         <a href='<?php echo base_url()."usersbuyerside/homepage"?>'>Home</a>       
