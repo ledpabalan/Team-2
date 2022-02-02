@@ -20,35 +20,35 @@
             <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>top food</h3>
             <p>upto 45% off</p>
-            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
+            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>classics</h3>
             <p>upto 45% off</p>
-            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
+            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>budget meal</h3>
             <p>upto 45% off</p>
-            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
+            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>refreshers</h3>
             <p>upto 45% off</p>
-            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
+            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>sweets & dessert</h3>
             <p>upto 45% off</p>
-            <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
+            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
         </div>
 
     </div>
@@ -57,7 +57,7 @@
 
 <!-- categories section ends -->
 
-<?php include 'assets/footer.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 <script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 

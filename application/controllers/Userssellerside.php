@@ -41,26 +41,14 @@ class Userssellerside extends CI_Controller {
 	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 	public function usershop()
 	{
-      $this->load->view('users/usershop');
+      $this->load->view('users/sellerside/usershop');
 	}
 	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
-	public function allpurchases()
+	public function shopprofile()
 	{
-      $this->load->view('users/allpurchases');
+      $this->load->view('users/sellerside/shopprofile');
 	}
-	public function recpurchases()
-	{
-      $this->load->view('users/recpurchases');
-	}
-	public function compurchases()
-	{
-      $this->load->view('users/compurchases');
-	}
-	public function trpurchases()
-	{
-      $this->load->view('users/trpurchases');
-	}
-
+	
 	public function viewUser(){
 		$this-> load -> model ('user_model');
 
@@ -92,6 +80,7 @@ class Userssellerside extends CI_Controller {
 		//$data['user_id'] = $_SESSION['user_id'];                       	edit user controller
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
+			
 			$this -> user_model->updateUser($data);
 			redirect('/userssellerside/viewUser');
 		}
@@ -112,6 +101,8 @@ class Userssellerside extends CI_Controller {
 		$data = $this->input->post();
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
+			$data['user_password'] = md5($data['user_password']); //md5
+			$data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
 			$this -> user_model->updateUser($data);
 			redirect('/logout'); //dapat dito is destroy session or logout
 		
@@ -120,6 +111,7 @@ class Userssellerside extends CI_Controller {
 		$this->load->view('users/sellerside/changepass', $output);
 		
 	}
+	
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
