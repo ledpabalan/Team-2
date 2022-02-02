@@ -28,14 +28,14 @@ class user_model extends CI_Model {
 
     }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-    public function createUser($data,$user_type){
+    public function createUser($data,$verifcode,$user_type){
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
             // $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
              $data['user_acc_status'] = "Active";
+             $data['verifcode'] = $verifcode;
              $data['user_type'] = $user_type;
              
-            
             $this -> db -> insert($this -> table, $data);
 
             $id = $this->db->insert_id();
