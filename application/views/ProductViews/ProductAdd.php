@@ -11,12 +11,12 @@
 <body>
 	<?php include 'assets/header2sellerside.php'; ?>
 	
-	<div class="profile">
+	<div class="editprofile">
 
-		<h5>Add Product</h5>
-			
-		<a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"> Back</a>
-		<div class="profilebox">
+	
+		<a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
+	<div class="addproductbox">
+	<h5>Add Product</h5>
 			<form method="POST" action="<?php echo base_url(); ?>ProductController/insert">
 
 				<h3>Product Name:</h3><br>

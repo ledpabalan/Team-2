@@ -15,7 +15,7 @@
 <h1 class="heading">all<span>products</span> </h1>
 <h1 class="heading">Seller-Side</h1>
 
-<a href="#popup" class="prodbtn"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
+<a href="<?php echo base_url();?>ProductController/addnew/" class="prodbtn"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
 <!-- -->
 
 					
