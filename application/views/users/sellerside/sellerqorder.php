@@ -8,16 +8,15 @@
 <body>
 <?php include 'assets/header2sellerside.php'; ?>   
 
-<!-- pending order section starts  -->
+<!-- queue order section starts  -->
 
     <div class="profile">   
         <h5>My Orders</h5>
-            <a class="active" href='<?php echo base_url()."Userssellerside/sellerpenorder"?>'>Pending</a><br>
-            <a href='<?php echo base_url()."Userssellerside/sellerqorder"?>'>Queue</a><br>
+            <a href='<?php echo base_url()."Userssellerside/sellerpenorder"?>'>Pending</a><br>
+            <a class="active" href='<?php echo base_url()."Userssellerside/sellerqorder"?>'>Queue</a><br>
             <a href='<?php echo base_url()."Userssellerside/sellercomorder"?>'>Completed</a><br>
 
         <div class="seller-orderbox">
-            
 
         <section class="pending-order" id="pending-order">
 
@@ -35,10 +34,11 @@
                      <h3>Cheese bread</h3>
                      <h4>x2</h4>
                      <h5>P30</h5>
-                     <input type="submit" value="ACCEPT" class="pbtn">
-                     <input type="submit1" value="DECLINE" class="pbtn">
+                     <input type="submit" value="FINISH ORDER" class="pbtn">
+                     <input type="submit1" value="CANCEL ORDER" class="pbtn">
                  </div><br>
 
+                 
                  <div class="box">
                      <div class="ordernum"><h2>Order No.</h2></div>
                      <div class="username"><h2>Username</h2></div>
@@ -51,9 +51,12 @@
                      <h3>Cheese bread</h3>
                      <h4>x1</h4>
                      <h5>P15</h5>
-                     <input type="submit" value="ACCEPT" class="pbtn">
-                     <input type="submit1" value="DECLINE" class="pbtn">
+                     <input type="submit" value="FINISH ORDER" class="pbtn">
+                     <input type="submit1" value="CANCEL ORDER" class="pbtn">
                  </div><br>
+
+
+
 
         </section>
             
@@ -61,7 +64,7 @@
 
     </div>
 
-<!-- pending order section ends  -->
+<!-- queue order section ends  -->
 
 <?php include 'assets/footer.php'; ?>  
 
