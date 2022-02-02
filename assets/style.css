@@ -1452,7 +1452,7 @@ section{
     visibility: visible;
     opacity: 1;
 }
-  
+
 .popup1 {
     width: 70rem;
     height: 45rem;
@@ -1483,7 +1483,14 @@ section{
     font-size: 2rem;
     margin-left: 6rem!important;
     margin-top:3rem;
-    
+}
+.popup1 h2 {
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 38rem;
+    font-size: 2rem;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
 }
 .popup1  h1{
     font-size: 2rem;
