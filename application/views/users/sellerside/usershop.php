@@ -94,12 +94,8 @@
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
-<<<<<<< HEAD:application/views/vendor/shop.php
-                <img src="./images/foodlogo.png" alt="">
-=======
                 <img  src="<?php echo base_url(); ?>assets/images/foodlogo.png">
                 
->>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717:application/views/users/usershop.php
                 <h2>ITEM NAME</h2>
                 <h3>₱ 00.00</h3>
                 <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
@@ -118,14 +114,11 @@
 
 <!-- usershop section ends -->
 
-<?php include 'footer.php'; ?>  
+<?php include 'assets/footer.php'; ?>  
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<<<<<<< HEAD:application/views/vendor/shop.php
-<script src="script.js"></script>
-=======
 <script src="assets/script.js"></script>
 <script>
     /*script for nav bar */
@@ -204,25 +197,7 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
 })
 </script>
 
-<script>
-    /*showmore */
-  function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Show less";
-    moreText.style.display = "inline";
-  }
-}
-</script>
->>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717:application/views/users/usershop.php
 
 </body>
 </html>

@@ -23,9 +23,12 @@ class ProductController extends CI_Controller {
 		$product['product_name'] = $this->input->post('product_name');
 		$product['product_description'] = $this->input->post('product_description');
 		$product['product_price'] = $this->input->post('product_price');
+<<<<<<< HEAD
 		$product['product_category'] = $this->input->post('product_category');
 		
 	
+=======
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
  
 		$query = $this->ProductModel->InsertProduct($product);
         redirect("ProductController/index");
@@ -42,7 +45,10 @@ class ProductController extends CI_Controller {
 		$product['product_name'] = $this->input->post('product_name');
 		$product['product_description'] = $this->input->post('product_description');
 		$product['product_price'] = $this->input->post('product_price');
+<<<<<<< HEAD
 		$product['product_category'] = $this->input->post('product_category');
+=======
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
  
 		$query = $this->ProductModel->UpdateProduct($product, $product_id);
         redirect("ProductController/index");

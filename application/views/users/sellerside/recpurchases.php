@@ -2,68 +2,61 @@
 <html lang="en">
 <head>
 
-<?php include 'assets/headsellerside.php'; ?>
+    <?php include 'assets/headsellerside.php'; ?>
 
 </head>
 <body>
 <?php include 'assets/header2sellerside.php'; ?>  
-<!-- categories section starts  -->
 
-<section class="categories" id="categories">
+<!-- profile section starts  -->
 
-    <h1 class="heading"> product <span>categories</span> </h1>
-    <h1 class="heading"> Seller-Side</h1>
+        <div class="profile">   
+            <h5>My Account</h5>
+            <a href='<?php echo base_url()."userssellerside/viewUser"?>'>Profile</a> <br>
+            <a class="active" href='<?php echo base_url()."userssellerside/allpurchases"?>'>Purchases</a> <br>
+            <a href='<?php echo base_url()."userssellerside/edituser"?>'>Settings</a><br>
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
+   
+        <div class="productbox">
+            <a href='<?php echo base_url()."userssellerside/allpurchases"?>'>All</a> 
+            <a class="active" href='<?php echo base_url()."userssellerside/recpurchases"?>'>To Receive</a> 
+            <a href='<?php echo base_url()."userssellerside/compurchases"?>'>Completed</a> 
+            <a href='<?php echo base_url()."userssellerside/trpurchases"?>'>To Rate</a> 
 
-    <div class="box-container">
 
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
-            <h3>top food</h3>
-            <p>upto 45% off</p>
-            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
-        </div>
+        <section class="products-buy" id="products-buy">
 
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
-            <h3>classics</h3>
-            <p>upto 45% off</p>
-            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
-        </div>
+            <div class="box-container">
 
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
-            <h3>budget meal</h3>
-            <p>upto 45% off</p>
-            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
-        </div>
+                 <div class="box">
+                     <h2>Shop Name</h2>
+                     <img src="<?php echo base_url(); ?>assets/images/cheesebread.jpg" alt="">
+                     <h1>To Receive</h1>
+                     <input type="submit" value="BUY AGAIN" class="pbtn">
+                     <input type="submit" value="DETAILS" class="pbtn1">
+                     <h3>Cheese Bread</h3>
+                     <p>Price : ₱ 10.00</p>
+                     <p>Quantity : x1</p>
+                    
+                 </div><br>
 
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
-            <h3>refreshers</h3>
-            <p>upto 45% off</p>
-            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
-        </div>
+            </div>
 
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
-            <h3>sweets & dessert</h3>
-            <p>upto 45% off</p>
-            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
+        </section>
+            
         </div>
 
     </div>
 
-</section>
-
-<!-- categories section ends -->
+<!-- profile section ends  -->
 
 <?php include 'assets/footer.php'; ?>  
+
 
 <script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
-
 <script>
     /*script for nav bar */
     let searchForm = document.querySelector('.search-form');
@@ -110,6 +103,7 @@ window.onscroll = () =>{
 }
 
 </script>
+
 
 </body>
 </html>

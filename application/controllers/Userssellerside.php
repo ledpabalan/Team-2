@@ -41,6 +41,7 @@ class Userssellerside extends CI_Controller {
 	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 	public function usershop()
 	{
+<<<<<<< HEAD
       $this->load->view('users/usershop');
 	}
 	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
@@ -61,6 +62,16 @@ class Userssellerside extends CI_Controller {
       $this->load->view('users/trpurchases');
 	}
 
+=======
+      $this->load->view('users/sellerside/usershop');
+	}
+	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
+	public function shopprofile()
+	{
+      $this->load->view('users/sellerside/shopprofile');
+	}
+	
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 	public function viewUser(){
 		$this-> load -> model ('user_model');
 
@@ -92,6 +103,10 @@ class Userssellerside extends CI_Controller {
 		//$data['user_id'] = $_SESSION['user_id'];                       	edit user controller
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
+<<<<<<< HEAD
+=======
+			
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 			$this -> user_model->updateUser($data);
 			redirect('/userssellerside/viewUser');
 		}
@@ -115,14 +130,22 @@ class Userssellerside extends CI_Controller {
 			$data['user_password'] = md5($data['user_password']); //md5
 			$data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
 			$this -> user_model->updateUser($data);
+<<<<<<< HEAD
 			redirect('/Userssellerside/viewUser'); 
 													// binalik ko sa view user lang para after mag changepass don lang sya pupunta
+=======
+			redirect('/logout'); //dapat dito is destroy session or logout
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 		
 		}
 
 		$this->load->view('users/sellerside/changepass', $output);
 		
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

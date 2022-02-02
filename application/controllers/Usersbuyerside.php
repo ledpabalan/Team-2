@@ -33,6 +33,10 @@ class Usersbuyerside extends CI_Controller {
 	{
       $this->load->view('users/buyerside/devsec');
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
 	public function userdelprofile()
 	{
@@ -41,11 +45,16 @@ class Usersbuyerside extends CI_Controller {
 	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 	public function usershop()
 	{
+<<<<<<< HEAD
       $this->load->view('users/usershop');
+=======
+      $this->load->view('users/buyerside/usershop');
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 	}
 	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
 	public function allpurchases()
 	{
+<<<<<<< HEAD
       $this->load->view('users/allpurchases');
 	}
 	public function recpurchases()
@@ -59,6 +68,21 @@ class Usersbuyerside extends CI_Controller {
 	public function trpurchases()
 	{
       $this->load->view('users/trpurchases');
+=======
+      $this->load->view('users/buyerside/allpurchases');
+	}
+	public function recpurchases()
+	{
+      $this->load->view('users/buyerside/recpurchases');
+	}
+	public function compurchases()
+	{
+      $this->load->view('users/buyerside/compurchases');
+	}
+	public function trpurchases()
+	{
+      $this->load->view('users/buyerside/trpurchases');
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 	}
 
 	public function viewUser(){
@@ -115,8 +139,13 @@ class Usersbuyerside extends CI_Controller {
 			$data['user_password'] = md5($data['user_password']); //md5
 			$data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
 			$this -> user_model->updateUser($data);
+<<<<<<< HEAD
 			redirect('/Usersbuyerside/viewUser'); 
 														// binalik ko sa view user lang para after mag changepass don lang sya pupunta
+=======
+			redirect('/logout'); //dapat dito is destroy session or logout
+		
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 		}
 
 		$this->load->view('users/buyerside/changepass', $output);

@@ -6,11 +6,10 @@
 
     <nav class="navbar">
         <a href='<?php echo base_url()."userssellerside/homepage"?>'>Home</a>       
-        <!-- <a href='<?php echo base_url()."userssellerside/featuresec"?>'>features</a>  -->
-        <!-- Burahin na yung feautures di naman ata need to kasi common sense -->
-        <a href='<?php echo base_url()."userssellerside/shopsec"?>'>shops</a>
-        <a href='<?php echo base_url()."ProductControllerSeller/index"?>'>My Products</a>
-        <a href='<?php echo base_url()."userssellerside/catsec"?>'>categories</a>
+        <!-- <a href='<?php echo base_url()."userssellerside/shopsec"?>'>shops</a> -->
+        <a href='<?php echo base_url()."ProductControllerSeller/index"?>'> My products</a>
+        <a href='<?php echo base_url()."#"?>'>Orders</a>
+        <!-- <a href='<?php echo base_url()."userssellerside/catsec"?>'>categories</a> -->
     </nav>
 
     <div class="icons">
@@ -61,7 +60,6 @@
 
             <a href='<?php echo base_url()."Userssellerside/viewUser"?>'>Profile</a>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
-            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Settings</a><br>
             <a href='<?php echo base_url()."Userssellerside/devsec"?>'>Developers</a>
 
     </form>

@@ -40,13 +40,8 @@ class user_model extends CI_Model {
 
             $id = $this->db->insert_id();
 
-<<<<<<< HEAD
             if(isset($id) && $id != null)
             {
-=======
-            if (isset($id) && $id != null)
-            
->>>>>>> 6e41ef92bae3263b688abdf1f41286b0adf93671
                 return $id;
             }
                
@@ -110,7 +105,6 @@ class user_model extends CI_Model {
 
         unset($data['user_id']);
         //unset($data['user_pwdRepeat']);
-
         $this->db->update($this->table, $data);                     
         return;                                                              
 

@@ -34,7 +34,11 @@ class ProductControllerSeller extends CI_Controller {
  
 	public function edit($product_id){
 		$data['product'] = $this->ProductModel-> GetProduct($product_id);
+<<<<<<< HEAD
 		$this->load->view('ProductViews/ProductEdit', $data);
+=======
+		$this->load->view('users/sellerside/product.php', $data);
+>>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
 	}
  
 	public function update($product_id){

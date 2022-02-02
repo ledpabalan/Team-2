@@ -1,63 +1,61 @@
-<?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->    
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-<?php include 'assets/headbuyerside.php'; ?>
-
-
+    <?php include 'assets/headbuyerside.php'; ?>
 
 </head>
 <body>
 <?php include 'assets/header2buyerside.php'; ?>  
-<?=isset($message) ? $message : "";?>
-<!-- <?php $id = $this->session->userdata('user_id'); ?> -->
 
+<!-- profile section starts  -->
 
-<!-- change password section starts  -->
-
-    <div class="profile">   
-            <h5>Settings</h5>
-            <a href='<?php echo base_url()."Usersbuyerside/edituser"?>'>Edit Profile </a> <br>
-            <a href='<?php echo base_url()."Usersbuyerside/changepassword"?>'>Change<br>Password</a><br>
-            <a class="active"href='<?php echo base_url()."Usersbuyerside/userdelprofile"?>'>Delete Profile</a> <br>
-
-    <!-- <div class="profile">   
+        <div class="profile">   
             <h5>My Account</h5>
-        <div class="profilebox">
-            <h3>Change Password <a href="settings.php"><i class="fas fa-edit"></a></i></h3>  -->
+            <a href='<?php echo base_url()."usersbuyerside/viewUser"?>'>Profile</a> <br>
+            <a class="active" href='<?php echo base_url()."usersbuyerside/allpurchases"?>'>Purchases</a> <br>
+            <a href='<?php echo base_url()."usersbuyerside/edituser"?>'>Settings</a><br>
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
+   
+        <div class="productbox">
+            <a href='<?php echo base_url()."usersbuyerside/allpurchases"?>'>All</a> 
+            <a href='<?php echo base_url()."usersbuyerside/recpurchases"?>'>To Receive</a> 
+            <a class="active" href='<?php echo base_url()."usersbuyerside/compurchases"?>'>Completed</a> 
+            <a href='<?php echo base_url()."usersbuyerside/trpurchases"?>'>To Rate</a> 
 
-        <div class="cpassbox">
-        <form method="POST">   
-            <h3>Change Password</h3>
-            <h6>For your account's security, do not share your password with anyone else</h6>
 
-            <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
+        <section class="products-buy" id="products-buy">
 
-            <h4>Password: <input type="text1" name="user_password" value ="" required></h4>
-            <h4>Confirm Password: <input type="text" name="user_pwdRepeat" value ="" required></h4>
+            <div class="box-container">
 
-            <!-- <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
-        -->
+                <div class="box">
+                    <h2>Shop Name</h2>
+                    <img src="<?php echo base_url(); ?>assets/images/coffeebryant.png" alt="">
+                    <h1>Completed</h1>
+                    <input type="submit" value="BUY AGAIN" class="pbtn">
+                    <input type="submit" value="DETAILS" class="pbtn1">
+                    <h3>Coffee Bryant</h3>
+                    <p>Price : ₱ 20.00</p>
+                     <p>Quantity : x1</p>
+                    
+                </div><br>
+            </div>
 
-        <input type="submit" value="Change Password">
+        </section>
+            
         </div>
 
     </div>
 
 <!-- profile section ends  -->
 
-<?php include 'assets/footer.php'; ?>
+<?php include 'assets/footer.php'; ?>  
 
 
 <script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
-
-<<<<<<< HEAD
-=======
 <script>
     /*script for nav bar */
     let searchForm = document.querySelector('.search-form');
@@ -105,10 +103,6 @@ window.onscroll = () =>{
 
 </script>
 
->>>>>>> 3a949392535e7f78cb2a56a504019da7fcb6d717
+
 </body>
 </html>
-
-</form>     
-    <a href="/Team-2/users/viewuser">Back to the View Profile</a> </br>  </br> 
-    <a href="/Team-2/Homepage">Back to the Homepage</a>
