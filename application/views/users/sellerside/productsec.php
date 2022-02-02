@@ -30,11 +30,11 @@
     <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
-    <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
+    <p><h3>Php <?php echo $product_a->product_price; ?></h3></p>
 
     <td><a href="<?php echo base_url();?>ProductController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductController/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
-    <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
+    <!-- <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a> -->
 </div>
 
 						</tr>
