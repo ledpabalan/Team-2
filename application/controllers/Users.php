@@ -64,6 +64,12 @@ class Users extends CI_Controller {
 
 	public function login() {
 		$id = $this->session->userdata('user_id');
+
+		if($this->session->userdata('username') == 'admin')
+        {
+            redirect('/Homepage/sellerside');
+        }
+		
         if(isset($id) && $id != null) {
             redirect('/Homepage');
         }
