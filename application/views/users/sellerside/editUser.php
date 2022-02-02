@@ -17,8 +17,8 @@
             <h5>My Account</h5>
             
             <a class="active" href="/Team-2/userssellerside/edituser">Edit Profile</a> <br>
-            <a href="/Team-2/userssellerside/changepassword">Change<br>Password</a><br>
-            <a href="/Team-2/userssellerside/userdelprofile">Delete Profile</a> <br>
+            <a href="/Team-2/userssellerside/changepassword">Change Password</a><br>
+            <a href="/Team-2/userssellerside/userdelprofile">Deactivate Profile</a> <br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
