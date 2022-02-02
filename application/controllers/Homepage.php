@@ -20,11 +20,11 @@ class Homepage extends CI_Controller {
     
 	}
 
-
-	public function buyerside()
-	{
-      $this->load->view('homepage_buyer');
-	}
+    // Nilipat ko to sa Users.php
+	// public function buyerside()
+	// {
+    //   $this->load->view('homepage_buyer');
+	// }
 
     public function sellerside()
 	{

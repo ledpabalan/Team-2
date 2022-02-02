@@ -33,73 +33,86 @@ class Users extends CI_Controller {
 	{
 		$data = array();
 		$data = $this -> input ->  post();
-		if(isset($data) && $data != null)
-		{
-			// redirect('/users/register2/'.$data['user_type']); //passing data into another function
-			$this->load->model('user_model');
-			$id = $this->user_model->createUser($data);
-
-			if (!is_bool($id)) 
-			{
-				$data['user_id'] = $id;
-				$this->load->model('user_model');
-			    $return = $this->user_model->login($data['user_username'], $data['user_password']);
-
-				$this->session->set_userdata($data);
-
-				if($return[0]['user_acc_status'] == 'Active')
-				{
-					$this->session->set_userdata($return[0]);
-					redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
-				}
-			}
-			else
-			{ 
-				redirect('/users/login');
-			}	
+		if(isset($data) && $data != null){
+			redirect('/users/register2/'.$data['user_type']); //passing data into another function
+			
 		}
-		$this->load->view('users/signdown');
+		$this->load->view('users/signup');
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	public function register2 () 
+	{
+		$data = $this -> input ->  post();
+		if(isset($data) && $data != null){
+			$this->load->model('user_model');
+			$id = $this->user_model->createUser($data);
+
+			if (!is_bool($id)) {
+				$data['user_id'] = $id;
+				$this->load->model('user_model');
+			    $return = $this->user_model->login($data['user_username'], $data['user_password']);
+				$this->session->set_userdata($data);
+///
+
+if($return[0]['user_type'] == 'Buyer'){
+	$this->session->set_userdata($return[0]);
+	redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
+	 }
+	else{
+		$this->session->set_userdata($return[0]);
+		redirect('/Homepage/sellerside');
+	}
+
+///
+			} else{ 
+				redirect('/users/login');
+			}		
+		}
+
+		// echo $user_type;
+
+		$this->load->view('users/signdown'); //AddUser
+    }
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	public function login() {
+
 		$id = $this->session->userdata('user_id');
+
         if(isset($id) && $id != null) {
             redirect('/Homepage');
         }
+
 		$data = array();
 		$data = $this->input->post();
-		if(isset($data) && $data != null) 
-		{
+		
+		if(isset($data) && $data != null) {
 			$this->load->model('user_model');
 			$return = $this->user_model->login($data['user_username'], $data['user_password']);
 
-			if(is_bool($return)) 
-			{
+			if(is_bool($return)) {
 			   echo '<script>alert("Please type correct username or password")</script>';
-			} 
-			else 
-			{
-				if($return[0]['user_acc_status'] == 'Active')
-				{
-					$this->session->set_userdata($return[0]);
-					redirect('users/home'); //User Buyer LoggedIn Interface
-				}	
-				else
-				{
+			 } 
+			 else {
+				 if($return[0]['user_type'] == 'Buyer'){
+				$this->session->set_userdata($return[0]);
+              
+				redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
+				//$this->load->view('index');//UserLoggedIn Interface
+				 }
+				else{
+
 					$this->session->set_userdata($return[0]);
 					redirect('/Homepage/sellerside');
 				}
 			 }
 		
-		}
+			}
 		$this->load->view('users/login');
 	}
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public function home()
-	{
-		$this->load->view('homepage_buyer');
-	}
+    
 	///////////////////////////////////////////////////////////////////////////////////////////////////////UPDATEUSER
 
 	public function viewUser(){
@@ -207,7 +220,7 @@ class Users extends CI_Controller {
       $this->load->view('users/shopsec');
 	}
 
-	public function Products()
+	public function productsec()
 	{
       $this->load->view('users/productsec');
 	}
