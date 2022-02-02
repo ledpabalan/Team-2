@@ -28,6 +28,10 @@ class Usersbuyerside extends CI_Controller {
 	{
       $this->load->view('users/buyerside/catsec');
 	}
+	public function cart()
+	{
+      $this->load->view('users/buyerside/Cart');
+	}
 
 	public function devsec()
 	{
@@ -61,6 +65,7 @@ class Usersbuyerside extends CI_Controller {
       $this->load->view('users/trpurchases');
 	}
 
+	############################################################
 	public function viewUser(){
 		$this-> load -> model ('user_model');
 
@@ -70,15 +75,15 @@ class Usersbuyerside extends CI_Controller {
 
 		$data = array();
 		$data = $this->input->post();
-		//$data['user_id'] = $_SESSION['user_id'];
 		if(isset($data) && $data != null) {
 			$this -> load -> model('user_model');
 			$this -> user_model->updateUser($data);
 		}
 
 		$this->load->view('users/buyerside/profile', $output);
-		//redirect('/Homepage');
 	}
+	
+	############################################################
 
 	public function editUser(){
 		$this-> load -> model ('user_model');

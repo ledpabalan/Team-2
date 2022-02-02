@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
 <script src="<?php echo base_url('/assets/jquery-3.6.0.min.js'); ?>"></script>
-    <?php include 'assets/headbuyerside.php'; ?>
+    <?php include 'assets/headsellerside.php'; ?>
 
 </head>
 <body>
-    <?php include 'assets/header2buyerside.php'; ?>  
+    <?php include 'assets/header2sellerside.php'; ?>  
 <!-- usershop section starts  -->
 
 <section class="categories" id="categories">
 
     <h1 class="heading"> product <span>categories</span> </h1>
-    <h1 class="heading"> Buyer-Side</h1>
+    <h1 class="heading"> Seller-Side</h1>
 
 
 <section class="all-products" id="all-products">
-
-					
+		
 <div class="box-container">
 <?php
 					foreach($product as $product_a){
@@ -31,7 +30,7 @@
     <p><?php echo $product_a->product_description; ?></p>
     <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
     <br>
-    <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
+   
 </div>
 
 						</tr>

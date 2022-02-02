@@ -13,7 +13,7 @@
 <section class="all-products" id="all-products">
 
 <h1 class="heading">all<span>products</span> </h1>
-<h1 class="heading">Seller-Side</h1>
+<h1 class="heading">Seller-Side - My Products</h1>
 
 <a href="<?php echo base_url(); ?>ProductController/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
 <!-- -->

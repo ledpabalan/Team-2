@@ -10,7 +10,8 @@ class ProductController extends CI_Controller {
 	}
  
 	public function index(){
-		$data['product'] = $this->ProductModel->GetAllProduct_a("Active");
+		$UID = $_SESSION['user_id'];
+		$data['product'] = $this->ProductModel->GetAllProduct_a("Active",strval( $UID ) );
 		$this->load->view('users/sellerside/productsec.php', $data);
 	}
  
@@ -24,8 +25,7 @@ class ProductController extends CI_Controller {
 		$product['product_description'] = $this->input->post('product_description');
 		$product['product_price'] = $this->input->post('product_price');
 		$product['product_category'] = $this->input->post('product_category');
-		
-	
+		$product['product_sellerid']= $_SESSION['user_id'];
  
 		$query = $this->ProductModel->InsertProduct($product);
         redirect("ProductController/index");

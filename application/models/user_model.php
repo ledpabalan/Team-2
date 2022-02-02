@@ -81,7 +81,7 @@ class user_model extends CI_Model {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function updateUser($data){
-        $this->db->where('user_id', $data['user_id']);
+        $this->db->where('user_id', $data['user_id']); # ETO NA ATA
 
         unset($data['user_id']);
         //unset($data['user_pwdRepeat']);

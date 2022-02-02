@@ -15,6 +15,13 @@
 			$query = $this->db->get('product');
 			return $query->result(); 
 		}
+
+		public function GetAllProduct_aa($product_status, $UID){
+			$this->db->where('product_status', $product_status);
+			$this->db->where('product_sellerid', $UID);
+			$query = $this->db->get('product');
+			return $query->result(); 
+		}
  
 		public function InsertProduct($product){
 			return $this->db->insert('product', $product);
