@@ -14,6 +14,11 @@ class Userssellerside extends CI_Controller {
       $this->load->view('users/sellerside/featuresec');
 	}
 
+	public function sellerpenorder()
+	{
+      $this->load->view('users/sellerside/sellerpenorder');
+	}
+
 	public function shopsec()
 	{
       $this->load->view('users/sellerside/shopsec');

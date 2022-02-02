@@ -8,7 +8,7 @@
         <a href='<?php echo base_url()."userssellerside/homepage"?>'>Home</a>       
        
         <a href='<?php echo base_url()."ProductControllerSeller/index"?>'>products</a>
-        <a href='<?php echo base_url()."#"?>'>orders</a>
+        <a href='<?php echo base_url()."usersellerside/sellerpenorder"?>'>orders</a>
     </nav>
 
     <div class="icons">
