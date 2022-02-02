@@ -26,7 +26,6 @@
             <h3>quick links</h3>
    
             <a href='<?php echo base_url()."usersbuyerside/homepage"?>' class="links"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href='<?php echo base_url()."usersbuyerside/featuresec"?>' class="links"> <i class="fas fa-arrow-right"></i> features </a>
             <a href='<?php echo base_url()."usersbuyerside/shopsec"?>' class="links"> <i class="fas fa-arrow-right"></i> shops </a>
             <a href='<?php echo base_url()."usersbuyerside/catsec"?>' class="links"> <i class="fas fa-arrow-right"></i> categories </a>
             <a href='<?php echo base_url()."usersbuyerside/devsec"?>' class="links"> <i class="fas fa-arrow-right"></i> developers </a>

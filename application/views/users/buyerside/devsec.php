@@ -171,6 +171,7 @@ window.onscroll = () =>{
 </script>
 
 <script>
+    /*shop slider*/
     var swiper = new Swiper(".review-slider", {
     loop:true,
     spaceBetween: 20,
