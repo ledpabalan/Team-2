@@ -38,7 +38,7 @@
             
             <h4>Gender:<input type="textedit2" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
             <h4>Contact No: <input type="textedit3" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
-
+            <h6>"LETS GO TAYUMAN"</h6>
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
 
@@ -50,7 +50,7 @@
 
            
 
-            <h6>"LETS GO TAYUMAN"</h6>
+            
             
         </div>
 

@@ -22,7 +22,8 @@
 		
 					<h3>Product Price:</h3>
 					<input type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
-			<br>
+                    <img  class="avatar"src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
+            <br>
 			<br>
 				<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Update</button>
 			</form>

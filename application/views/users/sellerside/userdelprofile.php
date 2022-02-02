@@ -34,7 +34,7 @@
 
 <!-- delete profile section ends  -->
 
-<?php include 'assets/footer.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 
 <script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

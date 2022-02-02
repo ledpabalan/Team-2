@@ -37,7 +37,7 @@
 
 <!-- shop profile section ends  -->
 
-<?php include 'assets/assets/sellerfooter.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

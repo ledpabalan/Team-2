@@ -17,8 +17,8 @@
             <h5>My Account</h5>
             
             <a class="active" href="/Team-2/userssellerside/edituser">Edit Profile</a> <br>
-            <a href="/Team-2/userssellerside/changepassword">Change Password</a><br>
-            <a href="/Team-2/userssellerside/userdelprofile">Deactivate Profile</a> <br>
+            <a href="/Team-2/userssellerside/changepassword">Change<br>Password</a><br>
+            <a href="/Team-2/userssellerside/userdelprofile">Delete Profile</a> <br>
 
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
@@ -38,6 +38,8 @@
             
             <h4>Gender:<input type="textedit2" name="user_gender" value ="<?php echo $user['user_gender']?>" required></h4>
             <h4>Contact No: <input type="textedit3" name="user_contact_no" value ="<?php echo $user['user_contact_no']?>" required></h4>
+            <img class="avatar"  src="<?php echo base_url(); ?>assets/images/profilepic.png">
+            <h6>"LETS GO TAYUMAN"</h6>
 
 
             <!-- <img class="avatar" src="./images/profilepic.png"> -->
@@ -50,7 +52,7 @@
 
            
 
-            <h6>"LETS GO TAYUMAN"</h6>
+            
             
         </div>
 
@@ -58,7 +60,7 @@
 
 <!-- profile section ends  -->
 
-<!-- <?php include 'footer.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->

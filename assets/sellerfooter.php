@@ -18,7 +18,7 @@
             <h3>contact info</h3>
             <a href="#" class="links"> <i class="fas fa-phone"></i> +6399-9999-9999 </a>
             <a href="#" class="links"> <i class="fas fa-phone"></i> +6399-9999-9999 </a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> tuptayuman@gmail.com </a>
+            <a href="#" class="links linksemail"> <i class="fas fa-envelope"></i> thenewtayuman@gmail.com </a>
             <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Manila, Philippines </a>
         </div>
 
@@ -26,10 +26,10 @@
             <h3>quick links</h3>
    
             <a href='<?php echo base_url()."Homepage"?>' class="links"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href='<?php echo base_url()."usersellerside/featuresec"?>' class="links"> <i class="fas fa-arrow-right"></i> features </a>
-            <a href='<?php echo base_url()."usersellerside/shopsec"?>' class="links"> <i class="fas fa-arrow-right"></i> shops </a>
-            <a href='<?php echo base_url()."usersellerside/catsec"?>' class="links"> <i class="fas fa-arrow-right"></i> categories </a>
-            <a href='<?php echo base_url()."usersellerside/devsec"?>' class="links"> <i class="fas fa-arrow-right"></i> developers </a>
+            <a href='<?php echo base_url()."userssellerside/featuresec"?>' class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="links"> <i class="fas fa-arrow-right"></i> shops </a>
+            <a href='<?php echo base_url()."userssellerside/catsec"?>' class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href='<?php echo base_url()."userssellerside/devsec"?>' class="links"> <i class="fas fa-arrow-right"></i> developers </a>
         </div>
 
     </div>

@@ -66,6 +66,9 @@ section{
     background: var(--orange);
     color:#fff;
 }
+.footer .linksemail{
+    text-transform:lowercase;
+}
 
 .btn1{
     margin-top: 1rem;
@@ -96,8 +99,9 @@ section{
 }
 
 .lobtn:hover{
-    background: var(--orange);
-    color:#fff;
+    
+    color:#fff!important;
+    background-color:#E64A4A;
 }
 .pbtn{
     margin-top: 1rem;
@@ -851,7 +855,7 @@ section{
     text-transform: uppercase;
     color: var(--black);
     margin-left:2%;
-    margin-top:2%;
+    margin-top:-1%;
 }
 .indent{
     margin-left:2%;
@@ -882,8 +886,8 @@ section{
     font-size: 1.7rem;
     color: var(--black);
     text-align: right;
-    margin-top:-7%;
-    margin-right: 30px;
+    margin-top:-5%;
+    margin-right:10%;
     padding: 10px
 }
 
@@ -906,7 +910,7 @@ section{
     border-radius: 50%;
     position: absolute;
     top: 100px;
-    left: 70%;
+    left: 65%;
 }
 .profile .btn{
     margin-top:50px;
@@ -977,7 +981,7 @@ section{
     background: #f6cfb2;
     color: black;
     font-size: 1.5rem;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 .profilebox input[type="text2"]{
     border-bottom: 3px solid #3D0C02;
@@ -1003,6 +1007,22 @@ section{
 }
 .profilebox textarea{
     margin-left:20px;
+}
+.profilebox input[type="submit"]{
+    margin-left:8rem!important;
+    font-size:2rem;
+    border:1px solid black;
+    padding:.5rem;
+    background-color:none;
+    height:4rem;
+    margin-top:1rem;
+    width:82%;
+    border-radius:5px;
+    background-color:#f6cfb2;
+}
+.profilebox input[type="submit"]:hover{
+    color:white;
+    background-color:#E64A4A
 }
 /*profile yes?*/
 /*edit profile box starts*/
@@ -1047,6 +1067,7 @@ section{
     text-transform: uppercase;
     color: var(--black);
     margin-left:10%;
+    margin-top:1rem;
 }
 
 .editprofile .editprofilebox h4{
@@ -1064,7 +1085,21 @@ section{
     margin-top:4%;
 }
 .editprofile .editprofilebox button{
-    margin-left:8%;
+    margin-left:5rem!important;
+    font-size:2rem;
+    border:1px solid black;
+    padding:.5rem;
+    background-color:none;
+    height:4rem;
+    margin-top:2rem;
+    width:85%;
+    border-radius:5px;
+    background-color:#f6cfb2;
+}
+
+.editprofilebox button:hover{
+    color:white;
+    background-color:#E64A4A
 }
 .profile .editprofilebox .box{
     width: 35%;
@@ -1085,12 +1120,20 @@ section{
     top: 75px;
     left: 70%;
 }
+.editprofile .editprofilebox .avatar{
+    width: 200px;
+    height: 225px;
+    border:2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 68%;
+}
 .editprofilebox input[type="text"]{
     border-bottom: 3px solid #3D0C02;
     border-bottom-right-radius: 10px;
     outline: none;
     height: 20px;
-    width: 55rem;
+    width: 35rem;
     background: #f6cfb2;
     color: black;
     font-size: 2.0rem;
@@ -1182,6 +1225,22 @@ section{
     font-size: 1.6rem;
     color:var(--black);
     text-transform: none;
+}
+.cpassbox input[type="submit"]{
+    margin-left:8rem!important;
+    font-size:2rem;
+    border:1px solid black;
+    padding:.5rem;
+    background-color:none;
+    height:4rem;
+    margin-top:2rem;
+    width:82%;
+    border-radius:5px;
+    background-color:#f6cfb2;
+}
+.cpassbox input[type="submit"]:hover{
+    color:white;
+    background-color:#E64A4A
 }
 /*changepass end*/
 
@@ -1481,23 +1540,54 @@ section{
     width: 25rem;
     height: 30rem;
 }
-.popup .content h3{
-    font-size: 3rem;
-    margin-left: 30rem;
+
+
+.popup h2 {
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 38rem;
+    font-size: 3rem!important;
+    color: var(--black);
+    font-family: Tahoma, Arial, sans-serif;
 }
-.popup .content h1{
+.popup .content .contentbox h2 {
+    margin-top: 50px;
+    align-items: center;
+    text-align:left;
+    width:50%;
+    justify-content:left;
+    font-size: 3rem!important;
+    margin-left:0;
+    color: var(--black);
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .content .contentbox h1{
     font-size: 1.5rem;
-    margin-left: 30rem;
 }
-.popup .content h4{
+.popup .content .contentbox h3{
+    font-size: 3rem;
+    
+}
+.popup .content .contentbox h4{
     margin-top: 5%;
     font-size: 2rem;
-    margin-left: 34.5rem;
+    
 }
-
+.popup .content .contentbox .contentdescription {
+    width:45rem;
+    height:9rem;
+}
+.popup .content .content-img{
+    width:27rem;
+}
+.popup .content .contentbox{
+    margin-left:30rem;
+width:50rem;
+}
 .quantity {
     display: flex;
-    justify-content: center;
+    margin-left:0;
+    justify-content:left;
 }
 .quantity button {
     margin-top: 1rem;
@@ -1529,7 +1619,7 @@ margin-top:11px;
 .atc-btn{
     position: absolute;
     margin-top: -4.5rem;
-    margin-left: 55rem;
+    margin-left: 30rem;
     display: inline-block;
     padding:.8rem 1rem;
     font-size: 1.7rem;
@@ -1702,26 +1792,26 @@ margin-top:11px;
 }
 
 .profile .seller-profilebox h3{
-    font-size: 2.2rem;
+    font-size: 2.5rem!important;
     text-transform: uppercase;
     color: var(--black);
     margin-left:2%;
 }
 
 .profile .seller-profilebox h4{
-    font-size: 1.4rem;
+    font-size: 2.0rem!important;
     color: var(--black);
     text-align: left;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left:2%;
 }
 .profile .seller-profilebox h6{
     font-size: 1.7rem;
     color: var(--black);
     text-align: right;
-    margin-top:-7%;
-    margin-right: 45px;
+    margin-top:-5%;
+    margin-right: 10%;
     padding: 10px;
 }
 
@@ -1737,12 +1827,12 @@ margin-top:11px;
 }
 
 .profile .seller-profilebox .avatar{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     position: absolute;
-    top: 75px;
-    left: 70%;
+    top: 100px;
+    left: 65%;
 }
 .seller-profilebox input[type="text"]{
     border-bottom: 3px solid #3D0C02;
@@ -2319,6 +2409,21 @@ margin-top:11px;
     font-size: 1.6rem;
     color:var(--black);
     text-transform: none;
+}
+.deactbox input[type="submit"]{
+    margin-left:8rem!important;
+    font-size:2rem;
+    border:1px solid black;
+    padding:.5rem;
+    background-color:none;
+    height:4rem;
+    width:82%;
+    border-radius:5px;
+    background-color:#f6cfb2;
+}
+.deactbox input[type="submit"]:hover{
+    color:white;
+    background-color:#E64A4A
 }
 .dbtn{
     margin-top: 0rem;

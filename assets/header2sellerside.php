@@ -6,10 +6,9 @@
 
     <nav class="navbar">
         <a href='<?php echo base_url()."userssellerside/homepage"?>'>Home</a>       
-        <!-- <a href='<?php echo base_url()."userssellerside/shopsec"?>'>shops</a> -->
-        <a href='<?php echo base_url()."ProductControllerSeller/index"?>'> My products</a>
-        <a href='<?php echo base_url()."#"?>'>Orders</a>
-        <!-- <a href='<?php echo base_url()."userssellerside/catsec"?>'>categories</a> -->
+       
+        <a href='<?php echo base_url()."ProductControllerSeller/index"?>'>products</a>
+        <a href='<?php echo base_url()."#"?>'>orders</a>
     </nav>
 
     <div class="icons">
