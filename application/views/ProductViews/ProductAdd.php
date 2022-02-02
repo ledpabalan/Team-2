@@ -13,10 +13,10 @@
 		<div class="col-sm-4 col-sm-offset-4">
 			<h3>Add Form</h3>
 			<h4>
-				<span class="pull-right"><a href="<?php echo site_url('ProductController/index'); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+				<span class="pull-right"><a href="<?php echo site_url('ProductControllerSeller/index'); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
 		   </h4>
 			<hr>
-			<form method="POST" action="<?php echo base_url(); ?>ProductController/insert">
+			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/insert">
 				<div class="form-group">
 
 				

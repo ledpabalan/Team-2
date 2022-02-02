@@ -15,7 +15,7 @@
 <h1 class="heading">all<span>products</span> </h1>
 <h1 class="heading">Seller-Side - My Products</h1>
 
-<a href="<?php echo base_url(); ?>ProductController/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
+<a href="<?php echo base_url(); ?>ProductControllerSeller/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
 <!-- -->
 
 					
@@ -32,7 +32,7 @@
     <p><?php echo $product_a->product_description; ?></p>
     <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
 
-    <td><a href="<?php echo base_url();?>ProductController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductController/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
+    <td><a href="<?php echo base_url();?>ProductControllerSeller/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductControllerSeller/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
     <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>

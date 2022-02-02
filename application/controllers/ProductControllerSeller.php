@@ -24,9 +24,10 @@ class ProductControllerSeller extends CI_Controller {
 		$product['product_name'] = $this->input->post('product_name');
 		$product['product_description'] = $this->input->post('product_description');
 		$product['product_price'] = $this->input->post('product_price');
+		$product['product_sellerid']= $_SESSION['user_id'];
  
 		$query = $this->ProductModel->InsertProduct($product);
-        redirect("ProductController/index");
+        redirect("ProductControllerSeller/index");
 		
  
 	}
@@ -42,7 +43,7 @@ class ProductControllerSeller extends CI_Controller {
 		$product['product_price'] = $this->input->post('product_price');
  
 		$query = $this->ProductModel->UpdateProduct($product, $product_id);
-        redirect("ProductController/index");
+        redirect("ProductControllerSeller/index");
 		// if($query){
 		// 	header('location:'.base_url().$this->index());
 		// }
@@ -50,7 +51,7 @@ class ProductControllerSeller extends CI_Controller {
  
 	public function delete($product_id){
 		$query = $this->ProductModel->DeleteProduct($product_id);
-		redirect("ProductController/index");
+		redirect("ProductControllerSeller/index");
 		// if($query){
 		// 	header('location:'.base_url().$this->index());
 		// }
