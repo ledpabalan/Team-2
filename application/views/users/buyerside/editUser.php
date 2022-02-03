@@ -30,6 +30,8 @@
             <h4>Username: <input type="text" name="user_username" value ="<?php echo $user['user_username']?>"required > </h4>
             
             <h4>Full Name:  <input type="text" name="user_name" value ="<?php echo $user['user_name']?>"required ></h4>
+
+            <h4>Email:  <input type="text" name="user_email" value ="<?php echo $user['user_email']?>"required ></h4>
             
             <h4>Address:  <input type="text" name="user_address" value ="<?php echo $user['user_address']?>" required ></h4>
     

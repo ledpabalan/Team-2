@@ -26,6 +26,8 @@
             <h4>Username: <?php echo $user['user_username']?> </h4>
             
             <h4>Full Name: <?php echo $user['user_name']?></h4>
+
+            <h4>Email: <?php echo $user['user_email']?></h4>
             
             <h4>Address: <?php echo $user['user_address']?></h4>
     

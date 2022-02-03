@@ -48,6 +48,7 @@ class Users extends CI_Controller {
 			$this->load->model('user_model');
 			$_SESSION['info'] = $data;
 			$_SESSION['user_type'] = $user_type;
+			
 			//$id = $this->user_model->createUser($data,$user_type);
 
 			    /*$return = $this->user_model->login($data['user_username'], $data['user_password']);
@@ -414,4 +415,77 @@ class Users extends CI_Controller {
 		
 	}
 	
+	public function forgotpassword()
+	{
+		$this -> load -> model ('user_model');
+		if($_SERVER['REQUEST_METHOD']=='POST')
+		{
+			//$this -> form_validation -> set_rules('user_email', 'User_Email', 'required');
+			//if($this->form_validation->run()==TRUE)
+			
+				$user_email = $this -> input -> post ('user_email');
+				$validateEmail = $this->user_model->validateEmail($user_email);
+				if($validateEmail!=false)
+				{
+					$row = $validateEmail;
+					$user_id = $row -> user_id;
+
+					$string = time().$user_id.$user_email;
+					$hash_string = hash('sha256',$string);
+					$currentDate = date('Y-m-d H:i');
+					$hash_expiry = date('Y-m-d H:i', strtotime($currentDate. '1 days'));
+					$data = array(
+						'hash_key'=>$hash_string,
+						'hash_expiry'=>$hash_expiry,
+					);
+					
+					$resetLink = base_url().'reset/password?hash='.$hash_string;
+					$message = '<p> Your Reset Password link is here: </p>'.$resetLink;
+					$subject = "Password Reset Link";
+					$sentStatus = $this-> SendEmail($user_email,$subject,$message);
+					if($sentStatus==true)
+					{
+						$this -> user_model -> UpdatePasswordhash($data,$user_email);
+						$this -> session -> set_flashdata('Success', 'Reset password link successfully sent');
+						redirect(base_url('users/forgotpassword'));
+					}
+					else
+					{
+						$this -> session -> set_flashdata('Error', 'Email sending error');
+						$this->load->view('users/forgot');
+					}
+				}
+				else 
+				{
+					$this -> session -> set_flashdata('Error', 'Invalid Email');
+					$this->load->view('users/forgot');
+				}
+			}
+			else 
+			{
+				$this->load->view('users/forgot');
+			}
+		
+		// else 
+		// {
+		// 	$this->load->view('users/forgot');
+		// }
+		
+		
+	}
+
+	public function SendEmail($user_email,$subject,$message){
+		$config['protocol'] = 'smtp';
+		$config['smtp_host'] = 'smtp.gmail.com';
+		$config['smtp_user'] = 'thenewtayuman@gmail.com';
+		$config['smtp_pass'] = 'oehnodjuckbeoplu';
+		$config['smtp_port'] = '587';
+		$config['smtp_crypto'] = 'tls';
+		$config['starttls'] = true;
+		$config['newline'] = '\r\n';
+		$config['mailtype'] = 'html';
+
+	}
+
+
 }
