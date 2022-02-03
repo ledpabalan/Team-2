@@ -23,7 +23,7 @@
             <p>Email Verification Failed</p>
             <p>Code expired/Code Already Used</p>
             <div class="buttons">
-                <a href="<?=base_url()?>"><button>Home</button></a>
+            <a href='<?php echo base_url()."users/signup"?>' class="btn">Signup</a>
             </div>
         </div>
     </div>
