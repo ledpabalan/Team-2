@@ -10,7 +10,7 @@ class user_model extends CI_Model {
         parent::__construct();
     }
 
-    public function createUser($data,$user_type){
+    public function createUser($data, $user_type){
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
             $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
@@ -68,6 +68,7 @@ class user_model extends CI_Model {
     public function getUsers($user_id = null, $user_acc_status = null){
         if(isset($user_id) && $user_id != null){
             $this->db->where('user_id', $user_id);
+            
         }
 
         if (isset($user_acc_status) && $user_acc_status != null){
