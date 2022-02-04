@@ -619,4 +619,8 @@ class Users extends CI_Controller {
 		
 		
 	// }
+
+	public function forgotpassword(){
+		$this->load->view('users/forgot');
+	}
 }
