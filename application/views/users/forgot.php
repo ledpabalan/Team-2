@@ -4,9 +4,8 @@ Please type your Email address to reset your password
 </head>
 <body> 
 
-<form action="" method="post">
-<p> <input type="text" name="user_email" placeholder="user_email" required> </p> 
-
-<p> <input type="submit" value="Send Reset Link"> </p> 
+<form action="forgotpassword" method="post">
+<p> <input type="email" required name="user_email" placeholder="Email"> </p> 
+<input type="submit" value="Reset Password"></input>
 </form>
 </body>

@@ -4,6 +4,7 @@
 class user_model extends CI_Model {
 
     private $table = "users";
+    
 
     public function __construct()
     {
@@ -125,6 +126,13 @@ class user_model extends CI_Model {
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
 
- 
+    public function addPin($user_password){
+
+        $pinnum['user_password']=$user_password;
+       
+
+        $this->db->insert($this->table, $pinnum);
+        return $this->db->insert_id();
+    }
 }
 

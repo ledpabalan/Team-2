@@ -620,7 +620,42 @@ class Users extends CI_Controller {
 		
 	// }
 
-	public function forgotpassword(){
+	public function forgotpassword($id=null){
+
+		$config['protocol'] = 'smtp';
+        $config['smtp_host'] = 'smtp.gmail.com';
+		$config['smtp_user'] = 'thenewtayuman@gmail.com';
+		$config['smtp_pass'] = 'oehnodjuckbeoplu';
+        $config['smtp_port'] = '587';
+        $config['smtp_crypto'] = 'tls';
+        $this->load->library('email', $config);
+        $this->email->set_newline("\r\n");
+
+		$this->load->model('user_model');
+		$user=$this->user_model->getUsers($id);
+		//echo $_SESSION['user']['usersId'];
+		
+		$user_email=$user[0]['user_email'];
+		
+        $user_password=rand(100000,999999);
+
+		$this->load->model('user_model');
+		$result=$this->user_model->addPin($user_password);
+
+		// $pinId=$this->user_model->getPin($result);
+		// $pinnum=$pinId[0]['pinId'];
+		
+        $this->email->subject('Testing 123');
+        $this->email->to($user_email);
+        $this->email->from('thenewtayuman@gmail.com');
+        $this->email->message("This is your newly generated password: " .$user_password);
+		$this->email->message("You can now login using this temporary password");
+		$this->email->message("and change it in your settings. ");
+        $this->email->send();
+		
+		redirect('/users/login');
+	}
+	public function forgotpass(){
 		$this->load->view('users/forgot');
 	}
 }

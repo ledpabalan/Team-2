@@ -40,7 +40,7 @@
                 </div>
                 
                 <button type="submit">Login</button>
-                <a href="<?php echo base_url(); ?>users/forgotpassword">Forgot Password</a>
+                <a href="<?php echo base_url(); ?>users/forgotpass">Forgot Password</a>
                 <h5>Don't have an account?</h5>
                 <a href="<?php echo base_url(); ?>users/register">Sign up</a>
 
