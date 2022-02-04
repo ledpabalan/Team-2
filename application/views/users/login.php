@@ -39,7 +39,9 @@
                     </div>
                 </div>
                 <button type="submit">Login</button>
-                <a href="<?php echo base_url(); ?>users/forgotpassword">Forgot Password</a>
+                <!-- <div class="link">
+                    <a href="<?=base_url()?>user/reset_password?uid=<?=$_POST['user_uid']?>">Forget Password?</a>
+                </div> -->
                 <h5>Don't have an account?</h5>
                 <a href="<?php echo base_url(); ?>users/register">Sign up</a>
 

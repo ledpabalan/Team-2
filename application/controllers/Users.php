@@ -90,6 +90,7 @@ class Users extends CI_Controller {
 	public function login() {
 
 		$id = $this->session->userdata('user_id');
+		
 
         if(isset($id) && $id != null) {
             redirect('/Homepage');
@@ -409,83 +410,213 @@ class Users extends CI_Controller {
 				$this->load->view('users/verifyfail');
 			}
 		}else{
-			$this->load->view('start/verifyfail');
+			$this->load->view('users/verifyfail');
 		}
 		
 		
 	}
 	
-	public function forgotpassword()
-	{
-		$this -> load -> model ('user_model');
-		if($_SERVER['REQUEST_METHOD']=='POST')
-		{
-			//$this -> form_validation -> set_rules('user_email', 'User_Email', 'required');
-			//if($this->form_validation->run()==TRUE)
+	// public function forgotpassword()
+	// {
+	// 	$this -> load -> model ('user_model');
+	// 	if($_SERVER['REQUEST_METHOD']=='POST')
+	// 	{
+	// 		//$this -> form_validation -> set_rules('user_email', 'User_Email', 'required');
+	// 		//if($this->form_validation->run()==TRUE)
 			
-				$user_email = $this -> input -> post ('user_email');
-				$validateEmail = $this->user_model->validateEmail($user_email);
-				if($validateEmail!=false)
-				{
-					$row = $validateEmail;
-					$user_id = $row -> user_id;
+	// 			$user_email = $this -> input -> post ('user_email');
+	// 			$validateEmail = $this->user_model->validateEmail($user_email);
+	// 			if($validateEmail!=false)
+	// 			{
+	// 				$row = $validateEmail;
+	// 				$user_id = $row -> user_id;
 
-					$string = time().$user_id.$user_email;
-					$hash_string = hash('sha256',$string);
-					$currentDate = date('Y-m-d H:i');
-					$hash_expiry = date('Y-m-d H:i', strtotime($currentDate. '1 days'));
-					$data = array(
-						'hash_key'=>$hash_string,
-						'hash_expiry'=>$hash_expiry,
-					);
+	// 				$string = time().$user_id.$user_email;
+	// 				$hash_string = hash('sha256',$string);
+	// 				$currentDate = date('Y-m-d H:i');
+	// 				$hash_expiry = date('Y-m-d H:i', strtotime($currentDate. '1 days'));
+	// 				$data = array(
+	// 					'hash_key'=>$hash_string,
+	// 					'hash_expiry'=>$hash_expiry,
+	// 				);
 					
-					$resetLink = base_url().'reset/password?hash='.$hash_string;
-					$message = '<p> Your Reset Password link is here: </p>'.$resetLink;
-					$subject = "Password Reset Link";
-					$sentStatus = $this-> SendEmail($user_email,$subject,$message);
-					if($sentStatus==true)
-					{
-						$this -> user_model -> UpdatePasswordhash($data,$user_email);
-						$this -> session -> set_flashdata('Success', 'Reset password link successfully sent');
-						redirect(base_url('users/forgotpassword'));
-					}
-					else
-					{
-						$this -> session -> set_flashdata('Error', 'Email sending error');
-						$this->load->view('users/forgot');
-					}
-				}
-				else 
-				{
-					$this -> session -> set_flashdata('Error', 'Invalid Email');
-					$this->load->view('users/forgot');
-				}
-			}
-			else 
-			{
-				$this->load->view('users/forgot');
-			}
+	// 				$resetLink = base_url().'reset/password?hash='.$hash_string;
+	// 				$message = '<p> Your Reset Password link is here: </p>'.$resetLink;
+	// 				$subject = "Password Reset Link";
+	// 				$sentStatus = $this-> SendEmail($user_email,$subject,$message);
+	// 				if($sentStatus==true)
+	// 				{
+	// 					$this -> user_model -> UpdatePasswordhash($data,$user_email);
+	// 					$this -> session -> set_flashdata('Success', 'Reset password link successfully sent');
+	// 					redirect(base_url('users/forgotpassword'));
+	// 				}
+	// 				else
+	// 				{
+	// 					$this -> session -> set_flashdata('Error', 'Email sending error');
+	// 					$this->load->view('users/forgot');
+	// 				}
+	// 			}
+	// 			else 
+	// 			{
+	// 				$this -> session -> set_flashdata('Error', 'Invalid Email');
+	// 				$this->load->view('users/forgot');
+	// 			}
+	// 		}
+	// 		else 
+	// 		{
+	// 			$this->load->view('users/forgot');
+	// 		}
 		
-		// else 
-		// {
-		// 	$this->load->view('users/forgot');
-		// }
+	// 	// else 
+	// 	// {
+	// 	// 	$this->load->view('users/forgot');
+	// 	// }
 		
 		
-	}
+	// }
 
-	public function SendEmail($user_email,$subject,$message){
-		$config['protocol'] = 'smtp';
-		$config['smtp_host'] = 'smtp.gmail.com';
-		$config['smtp_user'] = 'thenewtayuman@gmail.com';
-		$config['smtp_pass'] = 'oehnodjuckbeoplu';
-		$config['smtp_port'] = '587';
-		$config['smtp_crypto'] = 'tls';
-		$config['starttls'] = true;
-		$config['newline'] = '\r\n';
-		$config['mailtype'] = 'html';
+	// public function SendEmail($user_email,$subject,$message){
+	// 	$config['protocol'] = 'smtp';
+	// 	$config['smtp_host'] = 'smtp.gmail.com';
+	// 	$config['smtp_user'] = 'thenewtayuman@gmail.com';
+	// 	$config['smtp_pass'] = 'oehnodjuckbeoplu';
+	// 	$config['smtp_port'] = '587';
+	// 	$config['smtp_crypto'] = 'tls';
+	// 	$config['starttls'] = true;
+	// 	$config['newline'] = '\r\n';
+	// 	$config['mailtype'] = 'html';
 
-	}
+	// }
 
+	// public function reset_password(){
+	// 	$data = array();
+	// 	$data = $this->input->get();
+	// 	//get user uid by GET method
+	// 	$uid = $data['uid'];
 
+	// 	//generate code
+	// 	$code = $this->uniqidReal(8);
+	// 	$code = strtoupper($code);
+	// 	$enc_code = $this->encryption->encrypt($code);
+	// 	//encrypt uid
+	// 	$enc_uid = $this->encryption->encrypt($uid);
+
+	// 	//check if may existing reset password case db
+	// 	$this->load->model('reset_user_model');
+	// 	$result = $this->reset_user_model->getUser($uid);
+
+	// 	if(count($result) != 0){
+	// 		//if may nagmatch, delete and create new
+	// 		$this->reset_user_model->deleteUser($result[0]['id'], $result[0]['user_uid']);
+	// 		$datas['user_uid'] = $uid;
+	// 		$datas['code_generated'] = $code;
+	// 		$datas['time_valid'] = strtotime('+1 day');
+	// 		$user = $this->reset_user_model->createUser($datas);
+	// 	}else{
+	// 		$datas['user_uid'] = $uid;
+	// 		$datas['code_generated'] = $code;
+	// 		$datas['time_valid'] = strtotime('+1 day');
+	// 		$user = $this->reset_user_model->createUser($datas);
+	// 	}
+	// 	//get user to user table to get the email
+	// 	$this->load->model('user_model');
+	// 	$result1 = $this->user_model->getUser(Null, $uid);
+
+	// 	//send email
+	// 		$config['protocol'] = 'smtp';
+	// 		$config['smtp_host'] = 'smtp.gmail.com';
+	//  		$config['smtp_user'] = 'thenewtayuman@gmail.com';
+	// 	 	$config['smtp_pass'] = 'oehnodjuckbeoplu';
+	// 		$config['smtp_port'] = '587';
+	// 		$config['smtp_crypto'] = 'tls';
+	// 		$config['starttls'] = true;
+	// 		$config['newline'] = '\r\n';
+	// 		$config['mailtype'] = 'html';
+
+	// 		$this->load->library('email', $config);
+	// 		$this->email->set_newline("\r\n");
+
+	// 		$subject = 'Reset Password';
+	// 		$header_message = "<html><head><title>".$subject."</title></head><body>";
+	// 		$footer_message = "</body></html>";
+	// 		$input_msg = '<center><h3>You have requested to reset your password. You may reset your password here:</h3></center>
+	// 		<div>
+	// 		<center><a href="'.base_url().'user/reset_pwd_form?code='.$enc_code.'&uid='.$enc_uid.'"><button>Confirm</button></a></center>
+	// 		</div>';
+	// 		$msg = $header_message.$input_msg.$footer_message;
+
+	// 		$this->email->subject('try');
+	// 		$this->email->to($result1[0]['user_email']);
+	// 		$this->email->from('no-reply@gmail.com');
+	// 		$this->email->message($msg);
+	// 		$this->email->send();
+	// 		echo $this->email->print_debugger();
+
+	// 		redirect(base_url()."user/login/$uid/true?code=$code");
+	// }
+
+	// public function reset_pwd_form(){
+	// 	$data = array();
+	// 	$data = $this->input->get();
+	// 	//replace spaces with +
+	// 	$data['enc_code'] = str_replace(' ', '+', $data['code']);
+	// 	$data['enc_uid'] = str_replace(' ', '+', $data['uid']);
+	// 	//decryption
+	// 	$dec_code = $this->encryption->decrypt($data['enc_code']);
+	// 	$dec_uid = $this->encryption->decrypt($data['enc_uid']);
+	// 	//guide
+	// 	echo "Dec_code: ".$dec_code."<br>";
+	// 	echo "Dec_UID: ".$dec_uid."<br>";
+		
+	// 	//load models
+	// 	$this->load->model('user_model');
+	// 	$this->load->model('reset_user_model');
+
+	// 	//check if data in vat data is in reset_user table
+	// 	//else failed reset
+	// 	$result = $this->reset_user_model->getUser(null, $dec_uid);
+	// 	if(count($result) != 0){
+	// 		if($result[0]['time_valid'] >= strtotime('now') && $dec_code == $result[0]['code_generated']){
+	// 			$output = array();
+	// 			//if may nagmatch sa uid
+	// 			$input = $this->input->post();
+	// 			print_r($input);
+	// 			echo "<br>";
+
+	// 			//trigger submit
+	// 			$trigger = false;
+	// 			if(isset($input['trigger'])){
+	// 				$trigger = $input['trigger'];
+	// 				unset($input['trigger']);
+	// 			}
+	// 			else{
+	// 				$trigger = false;
+	// 			}
+
+	// 			if(isset($input['user_password']) && isset($input['user_pwdRepeat'])){
+	// 				if($input['user_password'] == $input['user_pwdRepeat'] && $trigger = true){
+	// 					$this->load->model('user_model');
+	// 					//get and update user table
+	// 					$user = $this->user_model->getUSer(null, $dec_uid);
+	// 					$user[0]['user_password'] = $input['user_password'];
+	// 					$this->user_model->updateUser($user[0]);
+	// 					//delete reset user row
+	// 					$this->reset_user_model->deleteUser(null, $dec_uid);
+	// 					redirect(base_url());
+	// 				}else{
+	// 					$output['error'] = "Passwords do not match!";
+	// 				}
+	// 			}
+
+	// 			$this->load->view('users/reset_password-login', $output);
+	// 		}else{
+	// 			$this->load->view('users/resetpwd_failed');
+	// 		}
+	// 	}else{
+	// 		$this->load->view('users/resetpwd_failed');
+	// 	}
+
+		
+		
+	// }
 }

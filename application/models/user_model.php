@@ -105,23 +105,25 @@ class user_model extends CI_Model {
     }
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public function validateEmail($user_email){
+    // public function validateEmail($user_email){
 
-        $query = $this -> db -> query ("SELECT * FROM users WHERE user_email='$user_email'");
-        if($query -> num_rows() == 1)
-        {
-            return $query -> row();
-        }
-        else
-        {
-            return  false; 
-        }
-    }
+    //     $query = $this -> db -> query ("SELECT * FROM users WHERE user_email='$user_email'");
+    //     if($query -> num_rows() == 1)
+    //     {
+    //         return $query -> row();
+    //     }
+    //     else
+    //     {
+    //         return  false; 
+    //     }
+    // }
 
-    public function UpdatePasswordhash($data,$user_email){
-        $this -> db -> where ('user_email' , $user_email);
-        $this -> db -> update('users',$data);
-    }
+    // public function UpdatePasswordhash($data,$user_email){
+    //     $this -> db -> where ('user_email' , $user_email);
+    //     $this -> db -> update('users',$data);
+    // }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
 
  
 }
