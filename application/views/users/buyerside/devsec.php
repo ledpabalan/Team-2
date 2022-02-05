@@ -14,23 +14,6 @@
 
     <h1 class="heading"> The <span>developers</span> </h1>
 
-    <div class="box-container">
-
-            <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
-                <p>Team Leader, Backend-Member</p>
-                <h3>Louise D. Pabalan</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-
-    </div>
-
 </section>
 <section class="shops" id="shops">
 
@@ -85,6 +68,19 @@
     <h1 class="heading"> <span>Back-End</span> </h1>
 
     <div class="box-container">
+
+            <div class="box">
+            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+                <p>Team Leader, Backend-Member</p>
+                <h3>Louise D. Pabalan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
 
             <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
