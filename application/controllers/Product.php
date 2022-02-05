@@ -71,6 +71,7 @@ public function viewprod()
 		 $this->load->view('vendor/editprod1', $item);
 		 }
 	}
+}
 
 
 

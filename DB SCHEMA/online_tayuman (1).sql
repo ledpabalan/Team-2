@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2021 at 10:32 AM
+-- Generation Time: Dec 04, 2021 at 01:07 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -205,12 +205,17 @@ CREATE TABLE `users` (
   `user_type` enum('Buyer','Seller') NOT NULL,
   `user_name` varchar(100) NOT NULL,
   `user_email` varchar(200) NOT NULL,
+  `user_address` varchar(200) NOT NULL,
   `user_contact_no` varchar(50) NOT NULL,
   `user_birthday` date NOT NULL,
+  `user_gender` enum('male','female','other') NOT NULL,
+  `user_age` int(3) NOT NULL,
   `user_profpic_URL` varchar(255) NOT NULL,
-  `user_acc_createddate` date NOT NULL,
+  `user_acc_createddate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `user_username` varchar(15) NOT NULL,
   `user_password` varchar(255) NOT NULL,
+  `user_pwdRepeat` varchar(255) NOT NULL,
+  `user_previouslog` date NOT NULL,
   `user_acc_status` enum('Active','Inactive') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -218,8 +223,24 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `user_type`, `user_name`, `user_email`, `user_contact_no`, `user_birthday`, `user_profpic_URL`, `user_acc_createddate`, `user_username`, `user_password`, `user_acc_status`) VALUES
-(21, 'Seller', '343', '3434', '44343', '2021-12-13', 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2001-12-21', '43434', 'dd95b1ca8dca61e3ab7ca3f18bbdef78', 'Active');
+INSERT INTO `users` (`user_id`, `user_type`, `user_name`, `user_email`, `user_address`, `user_contact_no`, `user_birthday`, `user_gender`, `user_age`, `user_profpic_URL`, `user_acc_createddate`, `user_username`, `user_password`, `user_pwdRepeat`, `user_previouslog`, `user_acc_status`) VALUES
+(1, 'Buyer', 'chichi', 'ccccccc', '', 'cccccccccccc', '2021-12-07', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2021-12-04 07:46:22', 'ccccccccccccccc', '93c9597045e88366796c4af96ddd9b73', '', '0000-00-00', 'Active'),
+(2, 'Seller', 'trtrttr', 'trtrtr', '', 'trtrt', '2021-12-02', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2021-12-04 07:46:22', 'trtrt', '8098ab4af3b1af7d11da03db2a3efe82', '', '0000-00-00', 'Active'),
+(3, 'Buyer', 'bnbnbn', 'nbnbb', '', 'bnbn', '2021-12-01', 'female', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2021-12-04 07:46:22', 'nbnbnb', '4984aa7eeb8c7fa0709832e364e03989', '', '0000-00-00', 'Active'),
+(4, 'Seller', 'jujujuj', 'jujuuj', '', 'juuj', '2021-12-01', 'other', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'jujujuj', '843b776102262a1250f7d41b1b5472e0', '', '0000-00-00', 'Active'),
+(5, 'Buyer', 'tytytytytytyt', 'ytytyty', '', 'ytytytyty', '2021-12-10', 'female', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'tytytyt', 'f15541c3f3b9c84f16e405bca85b781b', '', '0000-00-00', 'Active'),
+(6, 'Buyer', 'dcdcdc', 'cdcdc', '', 'cdcdcd', '2021-12-17', 'female', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'dcdcdcdc', '0267b7178244d5ebe949b52a0066893f', '', '0000-00-00', 'Active'),
+(7, 'Buyer', 'oaoaoa', 'oaoaoaoa', '', 'asdasdsada', '2021-12-17', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'oaoaoaoa', '59baa56a6b636052d417fee183acac31', 'aoaoaoa', '0000-00-00', 'Active'),
+(8, 'Buyer', 'hi', 'hhhhhhhhhhh', '', 'hhhhhhhhhhhhhhh', '2021-12-22', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'hi', '49f68a5c8493ec2c0bf489821c21fc3b', 'hi', '0000-00-00', 'Active'),
+(9, 'Buyer', 'hi', 'hhhhhhhhhhh', '', 'hhhhhhhhhhhhhhh', '2021-12-22', 'male', 0, '', '0000-00-00 00:00:00', 'hi', '49f68a5c8493ec2c0bf489821c21fc3b', '', '0000-00-00', 'Active'),
+(10, 'Buyer', 'hello', 'eeeeeeeeeeeeee', '', 'eeeeeeeeeeeeeeeee', '2021-12-29', 'other', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'hello', '5d41402abc4b2a76b9719d911017c592', 'hello', '0000-00-00', 'Active'),
+(11, 'Buyer', 'eeeeeeeeeeeeeeeeeeeeee', 'ee', '', 'eeeee', '2021-12-29', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'ee', '08a4415e9d594ff960030b921d42b91e', 'ee', '0000-00-00', 'Active'),
+(12, 'Buyer', 'yu', 'yu', '', 'uuu', '2021-12-22', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'yu', '6277e2a7446059985dc9bcf0a4ac1a8f', 'uu', '0000-00-00', 'Active'),
+(13, 'Buyer', 'qq', 'qq', '', 'qq', '2021-12-16', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'qq', '006d2143154327a64d86a264aea225f3', 'qq', '0000-00-00', 'Active'),
+(14, 'Buyer', 'hee', 'hee', '', 'hee', '2021-12-29', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'hee', 'a6dcd6ccc8a3ca07da9f995919831631', 'hee', '0000-00-00', 'Active'),
+(15, 'Buyer', 'hee', 'hee', '', 'hee', '2021-12-22', 'male', 0, '', '0000-00-00 00:00:00', 'hee', 'a6dcd6ccc8a3ca07da9f995919831631', '', '0000-00-00', 'Active'),
+(16, 'Buyer', 'hee', 'hee', '', 'hee', '2021-12-22', 'male', 0, '', '0000-00-00 00:00:00', 'hee', 'a6dcd6ccc8a3ca07da9f995919831631', '', '0000-00-00', 'Active'),
+(17, 'Buyer', 'g', 'g', '', 'g', '2021-12-22', 'male', 0, 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '0000-00-00 00:00:00', 'g', 'b2f5ff47436671b6e533d8dc3614845d', 'dbd65784717c867e8993450bf915aa2f', '0000-00-00', 'Active');
 
 --
 -- Indexes for dumped tables
@@ -311,7 +332,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

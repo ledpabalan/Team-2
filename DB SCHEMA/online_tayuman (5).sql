@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2021 at 10:32 AM
+-- Generation Time: Nov 27, 2021 at 08:55 AM
 -- Server version: 10.4.21-MariaDB
--- PHP Version: 7.3.31
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -202,15 +202,19 @@ CREATE TABLE `transaction history` (
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `user_type` enum('Buyer','Seller') NOT NULL,
+  `user_type` bit(1) NOT NULL,
   `user_name` varchar(100) NOT NULL,
   `user_email` varchar(200) NOT NULL,
-  `user_contact_no` varchar(50) NOT NULL,
+  `user_address` varchar(200) NOT NULL,
+  `user_contact.no` varchar(50) NOT NULL,
   `user_birthday` date NOT NULL,
+  `user_gender` enum('male','female','other') NOT NULL,
+  `user_age` int(3) NOT NULL,
   `user_profpic_URL` varchar(255) NOT NULL,
-  `user_acc_createddate` date NOT NULL,
+  `user_acc_createddate` int(11) NOT NULL,
   `user_username` varchar(15) NOT NULL,
   `user_password` varchar(255) NOT NULL,
+  `user_previouslog` date NOT NULL,
   `user_acc_status` enum('Active','Inactive') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -218,8 +222,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `user_type`, `user_name`, `user_email`, `user_contact_no`, `user_birthday`, `user_profpic_URL`, `user_acc_createddate`, `user_username`, `user_password`, `user_acc_status`) VALUES
-(21, 'Seller', '343', '3434', '44343', '2021-12-13', 'https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-20.jpg', '2001-12-21', '43434', 'dd95b1ca8dca61e3ab7ca3f18bbdef78', 'Active');
+INSERT INTO `users` (`user_id`, `user_type`, `user_name`, `user_email`, `user_address`, `user_contact.no`, `user_birthday`, `user_gender`, `user_age`, `user_profpic_URL`, `user_acc_createddate`, `user_username`, `user_password`, `user_previouslog`, `user_acc_status`) VALUES
+(14, b'0', 'John Edward Complido', '0311516846', 'bulacan', '', '0000-00-00', 'male', 0, '', 0, 'Drawde', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'Active');
 
 --
 -- Indexes for dumped tables
@@ -311,7 +315,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
