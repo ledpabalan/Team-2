@@ -159,7 +159,7 @@ $config['composer_autoload'] = FALSE;
 | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
 |
 */
-$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-@';
 
 /*
 |--------------------------------------------------------------------------
@@ -325,7 +325,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'e8c7225d5f7c3749822d4';
 
 /*
 |--------------------------------------------------------------------------
@@ -522,3 +522,8 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+$config['admin_email'] = 'johnedward1436@gmail.com';
+// PERSONAL MUNA GINAMIT KONG ADMIN EMAIL FOR TRIAL AND TESTING
+$config['bot_email'] = 'TheNewTayuman@gmail.com';
+// DITO DAW MANG GAGALING YUNG EMAIL NA SINESEND TO VERIFY SABI HAHAHAHA
