@@ -12,11 +12,8 @@
 
 <section class="shops" id="shops">
 
-    <h1 class="heading"> our <span>shops</span> </h1>
-    <h1 class="heading"> Buyer-Side </h1>
-
+    <h1 class="heading"> our <span>shops</span> </h1><br>
     <div class="box-container">
-
 
             <div class="box">
                 <img src="<?php echo base_url(); ?>assets/images/shop logo.png" alt="">

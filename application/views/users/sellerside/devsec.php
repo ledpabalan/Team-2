@@ -38,7 +38,7 @@
             <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
                 <p>Front-End Member</p>
-                <h3>Foehn R. Dela Cruz</h3>
+                <h3>Foehn Raja P. Dela Cruz</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -51,7 +51,7 @@
             <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
                 <p>Front-End Member</p>
-                <h3>Jheanne R. Aguilar</h3>
+                <h3>Jheanne Rona A. Aguilar</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -111,7 +111,7 @@
             <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
                 <p>Back-End Member</p>
-                <h3>Levi Tuya</h3>
+                <h3>Levi Mark Tuya</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>

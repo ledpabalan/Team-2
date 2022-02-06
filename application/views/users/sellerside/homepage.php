@@ -13,17 +13,15 @@
 <section class="home" id="home">
 
     <div class="content">
-       <h3><span>Seller</span></h3>
         <h3>fresh and <span>classic</span> products for you</h3>
         <p>brought to you by The New Tayuman</p>
-        <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a>
+        <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a><br><br><br>
     </div>
 
 </section>
 <section class="features" id="features">
-
+    <br>
     <h1 class="heading"> our <span>features</span> </h1>
-    <h1 class="heading"> Seller-Side </h1>
 
     <div class="box-container">
 

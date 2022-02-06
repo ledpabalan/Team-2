@@ -15,10 +15,7 @@
 
     <section class="all-products" id="all-products">
 
-        <h1 class="heading">all<span>products</span> </h1>
-        <h1 class="heading">Buyer-Side </h1>
-
-        <!-- -->
+        <h1 class="heading">all<span>products</span> </h1><br><br>
 
 
         <div class="box-container">

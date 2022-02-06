@@ -11,8 +11,7 @@
 
 <section class="categories" id="categories">
 
-    <h1 class="heading"> product <span>categories</span> </h1>
-    <h1 class="heading"> Buyer-Side</h1>
+    <h1 class="heading"> product <span>categories</span> </h1><br><br>
 
     <div class="box-container">
 
