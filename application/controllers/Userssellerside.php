@@ -48,6 +48,7 @@ class Userssellerside extends CI_Controller {
 	{
       $this->load->view('users/sellerside/shopprofile');
 	}
+
 	public function sellerpenorder()
 	{
       $this->load->view('users/sellerside/sellerpenorder');
@@ -62,7 +63,8 @@ class Userssellerside extends CI_Controller {
 	{
       $this->load->view('users/sellerside/sellercomorder');
 	}
-	
+
+
 	public function viewUser(){
 		$this-> load -> model ('user_model');
 

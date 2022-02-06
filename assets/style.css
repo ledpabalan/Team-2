@@ -687,50 +687,72 @@ section {
     margin-top: 5%;
     margin-bottom: 2%;
 }
-
-.developers .review-slider {
-    padding: 1rem;
+.developers .heading{
+    margin-top:-12rem;
+}
+.developers .box img {
+    height: 20rem;
+    margin-top:-5rem;
 }
 
-.developers .review-slider .box {
-    background: #fff;
-    border-radius: .5rem;
-    text-align: center;
-    padding: 3rem 2rem;
-    outline-offset: -1rem;
-    outline: var(--outline);
-    box-shadow: var(--box-shadow);
-    transition: .2s linear;
-}
-
-.developers .review-slider .box:hover {
-    outline: var(--outline-hover);
-    outline-offset: 0rem;
-}
-
-.developers .review-slider .box img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-}
-
-.developers .review-slider .box p {
+.developers .box p {
     padding: 1rem 0;
     line-height: 1.8;
     color: var(--light-color);
     font-size: 1.5rem;
 }
 
-.developers .review-slider .box h3 {
-    padding-bottom: .5rem;
+.developers .box h3 {
+    font-size: 2.5rem;
     color: var(--black);
-    font-size: 2.2rem;
+    margin-top:-2rem;
 }
 
-.developers .review-slider .box .stars i {
+
+.developers.box .stars i {
     color: var(--orange);
     font-size: 1.7rem;
+    padding: .5rem 0;
 }
+.developers .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+.developers .box-container .box {
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    margin-bottom:5rem;
+}
+
+.developers .box-container .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.developers .box-container .box img {
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+.developers .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    line-height: 1.8;
+}
+
+.developers .box-container .box p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
 
 .footer {
     background: #fff;

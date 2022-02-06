@@ -43,9 +43,9 @@
 
         <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/fea payment 3.png " alt="">
-            <h3>easy payments</h3>
+            <h3>about us</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a>
+            <a href='<?php echo base_url()."Userssellerside/devsec"?>' class="btn">read more</a>
         </div>
 
     </div>

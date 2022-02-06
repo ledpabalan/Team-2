@@ -3,6 +3,8 @@
 
 class Users extends CI_Controller {
 
+
+
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function admin()
@@ -37,6 +39,7 @@ class Users extends CI_Controller {
 			redirect('/users/register2/'.$data['user_type']); //passing data into another function
 			
 		}
+
 		$this->load->view('users/signup');
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -81,9 +84,6 @@ class Users extends CI_Controller {
 		$this->load->view('users/emailholder'); //AddUser
 		
 	}
-		
-	
-
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function login() {
@@ -142,8 +142,6 @@ class Users extends CI_Controller {
 		$this->load->view('users/profile', $output);
 		//redirect('/Homepage');
 	}
-  
-	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function editUser(){
 		$this-> load -> model ('user_model');
@@ -274,17 +272,6 @@ class Users extends CI_Controller {
 
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/* 	public function sent()
-	{
-		$this -> load -> model('user_model');
-
-		$this -> user_model -> send_validation_email ();
-
-      $this->load->view('EmailVer/sent');
-	} */
-
-
 	function uniqidReal($lenght = 13) 
 	{
 		// uniqid gives 13 chars, but you could adjust it to your needs.
@@ -344,7 +331,7 @@ class Users extends CI_Controller {
 			$footer_message = "</body></html>";
 			$input_msg = '<center><h3>To complete the registration, kindly confirm your email address below:</h3></center>
 			<div>
-			<center><a href="'.base_url().'users/verify?code='.$enc_code.'&id='.$enc_id.'&user_type='.$user_type.'"><button>Confirm</button></a></center>
+				<center><a href="'.base_url().'users/verify?code='.$enc_code.'&id='.$enc_id.'&user_type='.$user_type.'"><button>Confirm</button></a></center>
 			</div>';
 			$msg = $header_message.$input_msg.$footer_message;
 
@@ -413,5 +400,5 @@ class Users extends CI_Controller {
 		
 		
 	}
-	
 }
+

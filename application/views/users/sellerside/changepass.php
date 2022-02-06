@@ -23,6 +23,8 @@
             <a class="active"href='<?php echo base_url()."Userssellerside/changepassword"?>'>Change<br>Password</a><br>
             <a href='<?php echo base_url()."Userssellerside/userdelprofile"?>'>Delete Profile</a> <br>
 
+            <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
+
     <!-- <div class="profile">   
             <h5>My Account</h5>
         <div class="profilebox">
@@ -41,7 +43,7 @@
             <!-- <p> <input type="submit" value="Update User" onclick="alert('Are you sure you want to change your password?')"> </p>
         -->
 
-        <input type="submit" value="Change Password">
+        <input class="pbtn" type="submit" value="Change Password">
         </div>
 
     </div>
