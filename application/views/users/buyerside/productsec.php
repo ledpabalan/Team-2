@@ -37,10 +37,14 @@
     
     <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>
-</tr>
+
+            <!-- -->
+
+            </tr>
             <?php
             }
             ?>
+
 </section>
     
 <div id="popup1" class="overlay">
