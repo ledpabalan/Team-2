@@ -2874,7 +2874,7 @@ Fproduc .popup .content .contentbox h4 {
 
 .deactbox textarea[name="message"] {
     width: 500px;
-    background-color: #f8f9fa;
+    background-color: #fde1cc;
     color: black;
     margin-left: 5%;
 }
