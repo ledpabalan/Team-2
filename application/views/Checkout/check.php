@@ -23,7 +23,8 @@
 				<p><b>Note: Please check your information before proceeding to checkout</b></p>
 				<br>
 				<h2> Mode of Payment </h2>
-				<input type="radio" id="Payment-Type1" name="mop" value="Cash on Delivery" Required> Cash on Delivery
+				<input type="radio" id="Payment-Type1" name="mop" value="Cash on Delivery"> Cash on Delivery
+                <input type="radio" id="Payment-Type2" name="mop" value="Online Payment"> Online Payment
 
 				<br> <br> 
 				

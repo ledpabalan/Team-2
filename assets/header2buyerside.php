@@ -2,11 +2,12 @@
 
 <header class="header">
 
-    <a class="logo"> <i class="fas fa-utensils"></i> The New Tayuman | Buyer </a>
-    
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman- Buyer Side </a>
+
     <nav class="navbar">
         <a href='<?php echo base_url()."usersbuyerside/homepage"?>'>Home</a>       
-        <a href='<?php echo base_url()."usersbuyerside/shopsec"?>'>shops</a>
+        <a href='<?php echo base_url()."usersbuyerside/featuresec"?>'>features</a>
+        <a href='<?php echo base_url()."usersbuyerside/cart"?>'>Cart</a>
         <a href='<?php echo base_url()."ProductControllerBuyer/index"?>'>products</a>
         <a href='<?php echo base_url()."usersbuyerside/catsec"?>'>categories</a>
 
@@ -59,8 +60,9 @@
     <form action="" class="login-form">
 
             <a href='<?php echo base_url()."Usersbuyerside/viewUser"?>'>Profile</a>
-            <a href='<?php echo base_url()."usersbuyerside/edituser"?>'>Settings</a><br>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
+            <a href='<?php echo base_url()."Usersbuyerside/edituser"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."Usersbuyerside/devsec"?>'>Developers</a>
 
     </form>
 

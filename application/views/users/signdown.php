@@ -8,9 +8,6 @@
     <title>The New Tayuman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- ===== ICON ===== -->
-<link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/images/icon.png">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/signdown.css">
@@ -23,22 +20,14 @@
         <div class="img">
             <img src="<?php echo base_url(); ?>assets/images/loginpic.png">
         </div>
-           
         <div class="signup-content">
             <form method="POST">
                 <h2 class="signup-title">Sign up</h2>      
                 <h5 class="create">Create an account for free!</h5>
-                 <?php if(isset($error)){ ?>
-                <div class="alert alert-danger" role="alert">
-                    <?php echo $error ?>
-                </div>
-            <?php } ?>
-            <br>
                 <div class="sign-up-input name">
                     <div class="sign-up-icons">
                         <i class="fas fa-id-card"></i>
                     </div>
-                    <input type="hidden" name="trigger" value="true" >
                     <div class="div">
                         <input type="text" name="user_name" placeholder="Full Name">
                     </div>

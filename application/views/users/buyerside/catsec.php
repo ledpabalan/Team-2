@@ -11,7 +11,8 @@
 
 <section class="categories" id="categories">
 
-    <h1 class="heading"> product <span>categories</span> </h1><br><br>
+    <h1 class="heading"> product <span>categories</span> </h1>
+    <h1 class="heading"> Buyer-Side</h1>
 
     <div class="box-container">
 
@@ -21,7 +22,6 @@
             <p>upto 45% off</p>
             
             <a href='<?php echo base_url()."CategoryController/TopFood"?>' class="btn">shop now</a>
-            <!-- <a href='<?php echo base_url()."Usersbuyerside/shopsec"?>' class="btn">shop now</a> -->
         </div>
 
         <div class="box">
@@ -29,7 +29,6 @@
             <h3>classics</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/Classics"?>' class="btn">shop now</a>
-            <!-- <a href='<?php echo base_url()."Usersbuyerside/shopsec"?>' class="btn">shop now</a> -->
         </div>
 
         <div class="box">
@@ -37,7 +36,6 @@
             <h3>budget meal</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/BudgetMeal"?>' class="btn">shop now</a>
-            <!-- <a href='<?php echo base_url()."Usersbuyerside/shopsec"?>' class="btn">shop now</a> -->
         </div>
 
         <div class="box">
@@ -45,7 +43,6 @@
             <h3>refreshers</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/Refreshers"?>' class="btn">shop now</a>
-            <!-- <a href='<?php echo base_url()."Usersbuyerside/shopsec"?>' class="btn">shop now</a> -->
         </div>
 
         <div class="box">
@@ -53,7 +50,6 @@
             <h3>sweets & dessert</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/SweetandDesserts"?>' class="btn">shop now</a>
-            <!-- <a href='<?php echo base_url()."Usersbuyerside/shopsec"?>' class="btn">shop now</a> -->
         </div>
 
     </div>
