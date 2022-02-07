@@ -12,8 +12,8 @@
 
 <section class="all-products" id="all-products">
 
-<h1 class="heading">all<span>products</span> </h1>
-<h1 class="heading">Seller-Side - My Products</h1>
+<h1 class="heading">My<span>products</span> </h1>
+<!-- <h1 class="heading">Seller-Side - My Products</h1> -->
 
 <a href="<?php echo base_url(); ?>ProductControllerSeller/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
 <!-- -->
@@ -34,7 +34,7 @@
 
     <td><a href="<?php echo base_url();?>ProductController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductControllerSeller/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
-    <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
+    <!-- <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a> -->
 </div>
 
 						</tr>
@@ -46,7 +46,7 @@
 
 </section>
     
-    <div id="popup1" class="overlay">
+    <!-- <div id="popup1" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="popup" class="overlay">
       <div class="popup1">
             <a class="close" href="#">&times;</a>
