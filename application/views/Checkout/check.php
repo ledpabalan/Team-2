@@ -3,32 +3,38 @@
 <html>
 <head></head>
 <body>
-<form method="POST" action="<?php echo base_url(); ?>ProductControllerBuyer/checkout3/">
-				<h2>Your Information:</h2>
-				
-                <input type="hidden" name="user_id" value ="<?php echo $user['user_id']?>">
-                
-                <p>Full Name:
-                <?php echo $user['user_name']?> 
-                </p>        
+    <?php include 'assets/header2buyerside.php'; ?>
 
-                <p>Address:
-                <?php echo $user['user_address']?>
-                </p>       
+    <div class="editprofile">
 
-                <p>Contact Number:
-                <?php echo $user['user_contact_no']?>
-                </p>        
+        <a class="aprodbtn" href="<?php echo site_url('ProductControllerBuyer/checkout/2'); ?>"><strong>Back</strong> </a>
 
-				<p><b>Note: Please check your information before proceeding to checkout</b></p>
-				<br>
-				<h2> Mode of Payment </h2>
-				<input type="radio" id="Payment-Type1" name="mop" value="Cash on Delivery"> Cash on Delivery
-                <input type="radio" id="Payment-Type2" name="mop" value="Online Payment"> Online Payment
+        <div class="checkout2box">
 
-				<br> <br> 
-				
-				<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Submit</button>
+            <form method="POST" action="<?php echo base_url(); ?>ProductControllerBuyer/checkout3/">
+                <h5>Your Information:</h5>
+
+                <input type="hidden" name="user_id" value="<?php echo $user['user_id'] ?>">
+
+                <h3>Full Name:
+                    <label><?php echo $user['user_name'] ?></label>
+                </h3>
+
+                <h3>Address:
+                    <label><?php echo $user['user_address'] ?></label>
+                </h3>
+
+                <h3>Contact Number:
+                    <label><?php echo $user['user_contact_no'] ?></label>
+                </h3>
+
+                <h2><b>Note: Please check your information before proceeding to checkout</b></h2>
+
+                <h5> Mode of Payment </h5>
+                <input type="radio" id="Payment-Type1" name="mop" value="Cash on Delivery"> <span>Cash on Delivery</span>
+               
+
+                <br> <br>
 
 </body>
 </html>
