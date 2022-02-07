@@ -2,26 +2,21 @@
 <html lang="en">
 <head>
 
-    <?php include 'head.php'; ?>
+<?php include 'assets/headsellerside.php'; ?>
 
 </head>
 <body>
-<?php include 'header3.php'; ?>  
+<?php include 'assets/header2sellerside.php'; ?>   
 
 <!-- queue order section starts  -->
 
     <div class="profile">   
-            <h5>My Account</h5>
-            <a href="seller-profile.php">Profile</a> <br>
-            <a href="seller-items.php">Items</a> <br>
-            <a class="active" href="seller-orders.php">Orders</a> <br>
-
-            <input type="submit" value="LOG OUT" class="lobtn">
+        <h5>My Orders</h5>
+            <a href='<?php echo base_url()."Userssellerside/sellerpenorder"?>'>Pending</a><br>
+            <a class="active" href='<?php echo base_url()."Userssellerside/sellerqorder"?>'>Queue</a><br>
+            <a href='<?php echo base_url()."Userssellerside/sellercomorder"?>'>Completed</a><br>
 
         <div class="seller-orderbox">
-            <a href="seller-penorder.php">Pending</a> 
-            <a class="active" href="seller-qorder.php">Queue</a>
-            <a href="seller-comorder.php">Completed</a> 
 
         <section class="pending-order" id="pending-order">
 
@@ -71,13 +66,59 @@
 
 <!-- queue order section ends  -->
 
-<?php include 'seller-footer.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="script.js"></script>
+
+<script>
+    /*script for nav bar */
+    let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let shoppingCart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+</script>
 
 </body>
 </html>

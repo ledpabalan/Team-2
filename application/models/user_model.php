@@ -157,10 +157,9 @@ class user_model extends CI_Model {
 
         unset($data['user_id']);
         //unset($data['user_pwdRepeat']);
-
         $this->db->update($this->table, $data);                     
         return;                                                              
-
+        
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////

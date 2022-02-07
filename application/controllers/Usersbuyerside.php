@@ -37,6 +37,7 @@ class Usersbuyerside extends CI_Controller {
 	{
       $this->load->view('users/buyerside/devsec');
 	}
+	
 	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
 	public function userdelprofile()
 	{
@@ -45,24 +46,24 @@ class Usersbuyerside extends CI_Controller {
 	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 	public function usershop()
 	{
-      $this->load->view('users/usershop');
+      $this->load->view('users/buyerside/usershop');
 	}
 	/* si carlo naglagay dito hanggang trpurchases, para to maview yung sa purches, di ko alam saan lalagay hehe*/
 	public function allpurchases()
 	{
-      $this->load->view('users/allpurchases');
+      $this->load->view('users/buyerside/allpurchases');
 	}
 	public function recpurchases()
 	{
-      $this->load->view('users/recpurchases');
+      $this->load->view('users/buyerside/recpurchases');
 	}
 	public function compurchases()
 	{
-      $this->load->view('users/compurchases');
+      $this->load->view('users/buyerside/compurchases');
 	}
 	public function trpurchases()
 	{
-      $this->load->view('users/trpurchases');
+      $this->load->view('users/buyerside/trpurchases');
 	}
 
 	############################################################

@@ -522,8 +522,5 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-
-$config['admin_email'] = 'johnedward1436@gmail.com';
-// PERSONAL MUNA GINAMIT KONG ADMIN EMAIL FOR TRIAL AND TESTING
 $config['bot_email'] = 'TheNewTayuman@gmail.com';
-// DITO DAW MANG GAGALING YUNG EMAIL NA SINESEND TO VERIFY SABI HAHAHAHA
+

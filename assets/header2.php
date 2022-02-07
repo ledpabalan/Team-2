@@ -2,12 +2,13 @@
 
 <header class="header">
 
-    <a class="logo"> <i class="fas fa-utensils"></i> The New Tayuman | Seller </a>
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> The New Tayuman </a>
 
     <nav class="navbar">
-        <a href='<?php echo base_url()."userssellerside/homepage"?>'>Home</a>       
-        <a href='<?php echo base_url()."ProductControllerSeller/index"?>'>products</a>
-        <a href='<?php echo base_url()."userssellerside/sellerpenorder"?>'>orders</a>
+        <a href='<?php echo base_url()."Homepage"?>'>Home</a>       
+        <a href='<?php echo base_url()."users/shopsec"?>'>shops</a>
+        <a href='<?php echo base_url()."users/productsec"?>'>products</a>
+        <a href='<?php echo base_url()."users/catsec"?>'>categories</a>
     </nav>
 
     <div class="icons">
@@ -56,9 +57,10 @@
 
     <form action="" class="login-form">
 
-            <a href='<?php echo base_url()."Userssellerside/viewUser"?>'>Profile</a>
-            <a href='<?php echo base_url()."Userssellerside/edituser"?>'>Settings</a>
+            <a href='<?php echo base_url()."users/viewUser"?>'>Profile</a>
             <a href='<?php echo base_url()."/logout"?>'>Logout</a>
+            <a href='<?php echo base_url()."users/edituser"?>'>Settings</a><br>
+            <a href='<?php echo base_url()."users/devsec"?>'>Developers</a>
 
     </form>
 

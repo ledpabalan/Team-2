@@ -30,7 +30,7 @@
     <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
-    <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
+    <h3>Php <?php echo $product_a->product_price; ?></h3>
 
     <td><a href="<?php echo base_url();?>ProductControllerSeller/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductControllerSeller/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
@@ -67,10 +67,31 @@
             </div>
         </div>
     </div>
+    <div id="popup" class="overlay">
+      <div class="popup1">
+            <a class="close" href="#">&times;</a>
+               <form method="POST" action="<?php echo base_url(); ?>ProductController/insert">
+                  <h3>Add Product:</h3>
+                  <input type="text" name="product_name" placeholder="Product Name" required>
+                  
 
+                  <h1>Add Product Description:</h1>
+                  <!--<input type="text" name="product_description" placeholder="Product Description">-->
+                  <textarea rows="4" cols="30" name="product_description" placeholer="Enter Description Here..." required></textarea>
+     
+                  <h1>Price:</h1>
+                  <input type="text" name="product_price" placeholder="P 0.00" required>
+
+               
+                  <br>
+         
+                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
+               </form> 
+      </div>
+</div>
 <!-- usershop section ends -->
 
-<?php include 'assets/footer.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 
 <script type="text/javascript">

@@ -8,6 +8,9 @@
     <title>The New Tayuman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ===== ICON ===== -->
+<link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/images/icon.png">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/signdown.css">
