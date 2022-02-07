@@ -37,14 +37,10 @@
     
     <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>
-
-            <!-- -->
-
-            </tr>
+</tr>
             <?php
             }
             ?>
-
 </section>
     
 <div id="popup1" class="overlay">
@@ -79,7 +75,7 @@
         </div>
     </div>
     <!-- usershop section ends -->
-
+            
     <?php include 'assets/footer.php'; ?>
 
     <script type="text/javascript">
@@ -213,7 +209,8 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
     if (valueCount == 0) {
         document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
     }
-})
+}
+
 </script>
 
 </body>
