@@ -389,12 +389,14 @@ section {
 .features {
     margin-top: 1%;
     margin-bottom: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 
 .features .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .features .box-container .box {
@@ -696,6 +698,7 @@ section {
 .developers .box img {
     height: 20rem;
     margin-top: -5rem;
+    border-radius: 10px;
 }
 
 .developers .box p {
@@ -2712,7 +2715,7 @@ Fproduc .popup .content .contentbox h4 {
 .profile .deactbox .box {
     width: 35%;
     margin: .7rem 0;
-    background: #eee;
+    background: rgb(250, 193, 193);
     border-radius: .5rem;
     padding: 1rem;
     font-size: 1.6rem;

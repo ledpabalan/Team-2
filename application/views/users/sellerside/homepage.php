@@ -19,36 +19,6 @@
     </div>
 
 </section>
-<section class="features" id="features">
-    <br>
-    <h1 class="heading"> our <span>features</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img  src="<?php echo base_url(); ?>assets/images/fea food 1.jpg">
-            <h3>Tayuman Classics</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/fea motor 2.jpg" alt="">
-            <h3>free delivery</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-
-        <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/fea payment 3.png " alt="">
-            <h3>about us</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href='<?php echo base_url()."Userssellerside/devsec"?>' class="btn">read more</a>
-        </div>
-
-    </div>
-
-</section>
 
 <!-- home section ends -->
 

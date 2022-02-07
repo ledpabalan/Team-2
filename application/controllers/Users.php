@@ -326,11 +326,7 @@ class Users extends CI_Controller {
 			$this->load->library('email', $config);
 			$this->email->set_newline("\r\n");
 
-<<<<<<< Updated upstream
-			$subject = 'tae';
-=======
 			$subject = 'Email Verification';
->>>>>>> Stashed changes
 			$header_message = "<html><head><title>".$subject."</title></head><body>";
 			$footer_message = "</body></html>";
 			$input_msg = '<center><h3>To complete the registration, kindly confirm your email address below:</h3></center>
@@ -338,12 +334,7 @@ class Users extends CI_Controller {
 				<center><a href="'.base_url().'users/verify?code='.$enc_code.'&id='.$enc_id.'&user_type='.$user_type.'"><button>Confirm</button></a></center>
 			</div>';
 			$msg = $header_message.$input_msg.$footer_message;
-<<<<<<< Updated upstream
-
-			$this->email->subject('try');
-=======
 			$this->email->subject($subject);
->>>>>>> Stashed changes
 			$this->email->to($data['user_email']);
 			$this->email->from('no-reply@gmail.com');
 			$this->email->message($msg);
