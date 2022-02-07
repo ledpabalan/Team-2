@@ -44,8 +44,7 @@ class UserModel extends CI_Model {
         
         $data ['user_acc_status'] = $user_acc_status;
 
-        $this->db->update($this->table, $data);
-        redirect('/users/logout');    
+        $this->db->update($this->table, $data);    
         return;
 
     }

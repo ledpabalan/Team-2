@@ -211,7 +211,20 @@ class Users extends CI_Controller {
 		$this->session->sess_destroy();				
 		redirect('/login');
 	}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	public function deactivate($user_id, $user_acc_status)
+	{
+		$this -> load -> model('DeactivateProfile');
+		
+		$data = $this->input->post();
+		 if(isset($data) && $data != null) {
+			$this->load->model('DeactivateProfile');
+			$this -> user_model -> deactivateprofile($data);
+			}
+
+
+	}
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// HEADER THINGS // 
