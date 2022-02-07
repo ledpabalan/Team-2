@@ -13,11 +13,11 @@
 			<h3>Edit Form
 			</h3>
 			<h4>
-				<span class="pull-right"><a href="<?php echo site_url('ProductController/index'); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
+				<span class="pull-right"><a href="<?php echo site_url('ProductControllerSeller/index'); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></span>
 		   </h4>
 			<hr>
 			<?php extract($product); ?>
-			<form method="POST" action="<?php echo base_url(); ?>ProductController/update/<?php echo $product_id; ?>">
+			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/update/<?php echo $product_id; ?>">
 				
 				<div class="form-group">
 					<label>Product Name:</label>
