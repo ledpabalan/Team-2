@@ -40,7 +40,10 @@
 
             <!-- -->
 
-    </section>
+            </tr>
+            <?php
+            }
+            ?>
 
 </section>
     
