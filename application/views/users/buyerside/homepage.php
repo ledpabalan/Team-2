@@ -29,21 +29,21 @@
         <div class="box">
             <img  src="<?php echo base_url(); ?>assets/images/fea food 1.jpg">
             <h3>Tayuman Classics</h3>
-            <p>Check out our unique classics</p>
-            <a href='<?php echo base_url()."usersbuyerside/shopsec"?>' class="btn">read more</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
         </div>
 
-        <!-- <div class="box">
+        <div class="box">
             <img src="<?php echo base_url(); ?>assets/images/fea motor 2.jpg" alt="">
             <h3>free delivery</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href="#" class="btn">read more</a>
-        </div> -->
+        </div>
 
         <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/fea about 3.jpg " alt="">
+            <img src="<?php echo base_url(); ?>assets/images/fea payment 3.png " alt="">
             <h3>about us</h3>
-            <p>Learn more about the developers</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
             <a href='<?php echo base_url()."Usersbuyerside/devsec"?>' class="btn">read more</a>
         </div>
 

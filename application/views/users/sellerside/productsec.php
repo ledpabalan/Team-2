@@ -32,7 +32,7 @@
     <p><?php echo $product_a->product_description; ?></p>
     <h3>Php <?php echo $product_a->product_price; ?></h3>
 
-    <td><a href="<?php echo base_url();?>ProductController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductControllerSeller/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
+    <td><a href="<?php echo base_url();?>ProductControllerSeller/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductControllerSeller/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
     <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>
