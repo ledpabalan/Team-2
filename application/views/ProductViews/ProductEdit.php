@@ -12,7 +12,7 @@
 <a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
 	<div class="editprofilebox">
 			<?php extract($product); ?>
-			<form method="POST" action="<?php echo base_url(); ?>ProductController/update/<?php echo $product_id; ?>">
+			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/update/<?php echo $product_id; ?>">
 			<h5>Product Edit</h5>
 					<h3>Product Name:</h3>
 					<input type="text" class="form-control" value="<?php echo $product_name; ?>" name="product_name">

@@ -12,7 +12,7 @@ class ProductControllerSeller extends CI_Controller {
 	public function index(){
 		$UID = $_SESSION['user_id'];
 		$data['product'] = $this->ProductModel->GetAllProduct_aa("Active", $UID);
-		$this->load->view('users/sellerside/productsec.php', $data);
+		$this->load->view('users/sellerside/productsec', $data);
 	}
  
 	public function addnew(){
