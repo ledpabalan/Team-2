@@ -38,6 +38,10 @@ class user_model extends CI_Model {
         
 			return "Passwords do not match";
 		}
+        else if(strlen($data['user_password']) < 8){
+        
+			return "Short Password. Atleast 8 characters";
+		}
 		else{
 			return false;
 		}
