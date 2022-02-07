@@ -31,6 +31,10 @@
 				<h3>Product Price:</h3>
 				<input type="text" class="form-control" placeholder="  P 0.00" name="product_price" required>
 				<br>
+
+                <h3>Product Image:</h3>
+				<input type="file" class="form-control"  name="product_pic" required>
+				<br>
 				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 			</form>
 		</div>

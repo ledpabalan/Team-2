@@ -13,7 +13,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div> -->
         <div class="fas fa-user" id="login-btn"></div>
     </div>
 
@@ -22,7 +22,7 @@
         <label for="search-box" class="fas fa-search"></label>
     </form>
 
-    <div class="shopping-cart">
+    <!-- <div class="shopping-cart">
         <div class="box">
             <i class="fas fa-trash"></i>
             <img src="<?php echo base_url(); ?>assets//images/coffeebryant.png" alt="">
@@ -52,7 +52,7 @@
         </div>
         <div class="total"> total : ₱50.00 </div>
         <a href="#" class="btn">checkout</a>
-    </div>
+    </div> -->
 
     <form action="" class="login-form">
 

@@ -22,6 +22,10 @@
 		
 					<h3>Product Price:</h3>
 					<input type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
+
+                    <h3>Product Image:</h3>
+					<input type="file" class="form-control" value="<?php echo $product_pic; ?>"name="product_price">
+
                     <img  class="avatar"src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
             <br>
 			<br>
