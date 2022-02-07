@@ -39,9 +39,6 @@
 					<input type="radio" class="form-control" name="product_category" value= "Classics" required>
 					<label>Classics</label>
 					<br> 
-					<input type="radio" class="form-control" name="product_category" value= "Top Food" required>
-					<label>Top Food</label>
-					<br> 
 					<input type="radio" class="form-control" name="product_category" value= "Budget Meal" required>
 					<label>Budget Meal</label>
 					<br> 
