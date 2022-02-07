@@ -24,7 +24,7 @@
 					<input type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
                     <img  class="avatar"src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
 
-					<br><label>Product Category:</label><br><br> 
+					<h3><label>Product Category:</h3>
 					<input type="radio" class="form-control" name="product_category" value= "Classics" required>
 					<label>Classics</label>
 					<br> 
