@@ -20,11 +20,11 @@ class user_model extends CI_Model {
 		}
 		else if(strlen($data['user_username']) > 30){
         
-			return "Long username. Atmost 30 characters";
+			return "Username is too long and should be atmost 30 characters";
 		}
 		else if(strlen($data['user_username']) < 6){
         
-			return "Short username. Atleast 6 characters";
+			return "Username should have atleast 6 characters";
 		}
 		else if(preg_match('/\s/',$data['user_username'])){
         
@@ -32,7 +32,7 @@ class user_model extends CI_Model {
 		}
 		else if($this->emailExist($data['user_email'])){
         
-			return "This email is already in used";
+			return "This email is already in use.";
 		}
 		else if($this->pwdMatch($data['user_password'], $data['user_pwdRepeat'])){
         
@@ -40,7 +40,7 @@ class user_model extends CI_Model {
 		}
         else if(strlen($data['user_password']) < 8){
         
-			return "Short Password. Atleast 8 characters";
+			return "Password is too short. Atleast 8 characters";
 		}
 		else{
 			return false;
