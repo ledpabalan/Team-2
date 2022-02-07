@@ -23,12 +23,12 @@ class Homepage extends CI_Controller {
 
 	public function buyerside()
 	{
-      $this->load->view('homepage_buyer');
+      $this->load->view('users/buyerside/homepage');
 	}
 
     public function sellerside()
 	{
-      $this->load->view('homepage_seller');
+      $this->load->view('users/sellerside/homepage');
 	}
 
 

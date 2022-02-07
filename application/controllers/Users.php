@@ -43,37 +43,37 @@ class Users extends CI_Controller {
 
 	public function register2 ($user_type) 
 	{
+		session_unset();
+		$data = array();
+		$output = array();
 		$data = $this -> input ->  post();
-		if(isset($data) && $data != null){
+		
+
+		//trigger submit
+		$trigger = false;
+		if(isset($data['trigger'])){
+			$trigger = $data['trigger'];
+			unset($data['trigger']);
+		}
+		else{
+			$trigger = false;
+		}
+
+		if($data != null && $trigger == true){
 			$this->load->model('user_model');
-			$_SESSION['info'] = $data;
-			$_SESSION['user_type'] = $user_type;
-			//$id = $this->user_model->createUser($data,$user_type);
-
-			    /*$return = $this->user_model->login($data['user_username'], $data['user_password']);
-
-				$this->session->set_userdata($data);
-
-
-				if($return[0]['user_type'] == 'Buyer')
-				{
-					$this->session->set_userdata($return[0]);
-
-					redirect('/Homepage/buyerside'); //User Buyer LoggedIn Interface
-		 		}
-					else
-				{
-					$this->session->set_userdata($return[0]);
-					redirect('/Homepage/sellerside');
-				}
-						*/
-				redirect('users/emailsent');
+			if($output['error'] = $this->user_model->checkCreateUser($data)){
+				$data['trigger'] = false;
+			}
+			else{
 	
-		} 
+				$_SESSION['info'] = $data;
+				$_SESSION['user_type'] = $user_type;
+	
+					redirect('users/emailsent');
+			}
+		}
 
-		// echo $user_type;
-
-		$this->load->view('users/signdown'); //AddUser
+		$this->load->view('users/signdown' , $output); //AddUser
 	}
 
 	public function emailholder()
@@ -81,9 +81,6 @@ class Users extends CI_Controller {
 		$this->load->view('users/emailholder'); //AddUser
 		
 	}
-		
-	
-
 	///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public function login() {
@@ -274,17 +271,6 @@ class Users extends CI_Controller {
 
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/* 	public function sent()
-	{
-		$this -> load -> model('user_model');
-
-		$this -> user_model -> send_validation_email ();
-
-      $this->load->view('EmailVer/sent');
-	} */
-
-
 	function uniqidReal($lenght = 13) 
 	{
 		// uniqid gives 13 chars, but you could adjust it to your needs.
@@ -339,16 +325,15 @@ class Users extends CI_Controller {
 			$this->load->library('email', $config);
 			$this->email->set_newline("\r\n");
 
-			$subject = 'tae';
+			$subject = 'Email Verification';
 			$header_message = "<html><head><title>".$subject."</title></head><body>";
 			$footer_message = "</body></html>";
 			$input_msg = '<center><h3>To complete the registration, kindly confirm your email address below:</h3></center>
 			<div>
-			<center><a href="'.base_url().'users/verify?code='.$enc_code.'&id='.$enc_id.'&user_type='.$user_type.'"><button>Confirm</button></a></center>
+				<center><a href="'.base_url().'users/verify?code='.$enc_code.'&id='.$enc_id.'&user_type='.$user_type.'"><button>Confirm</button></a></center>
 			</div>';
 			$msg = $header_message.$input_msg.$footer_message;
-
-			$this->email->subject('try');
+			$this->email->subject($subject);
 			$this->email->to($data['user_email']);
 			$this->email->from('no-reply@gmail.com');
 			$this->email->message($msg);
@@ -413,5 +398,9 @@ class Users extends CI_Controller {
 		
 		
 	}
-	
 }
+
+
+
+	
+

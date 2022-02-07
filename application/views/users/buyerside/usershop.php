@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 
-    <?php include 'assets/headsellerside.php'; ?>
+    <?php include 'assets/headbuyerside.php'; ?>
 
 </head>
 <body>
-    <?php include 'assets/header2sellerside.php'; ?>  
+    <?php include 'assets/header2buyerside.php'; ?>  
 <!-- usershop section starts  -->
 
 <section class="shop-profile" id="shop-profile">
@@ -198,8 +198,8 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
 </script>
 
 <script>
-    /*showmore */
-  function myFunction() {
+    /*shownmore */
+    function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -215,6 +215,8 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
   }
 }
 </script>
+
+
 
 </body>
 </html>

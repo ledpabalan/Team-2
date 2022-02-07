@@ -13,17 +13,46 @@
 <section class="home" id="home">
 
     <div class="content">
-       <h3><span>Seller</span></h3>
         <h3>fresh and <span>classic</span> products for you</h3>
         <p>brought to you by The New Tayuman</p>
-        <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a>
+        <a href='<?php echo base_url()."userssellerside/shopsec"?>' class="btn">shop now</a><br><br><br>
+    </div>
+
+</section>
+<section class="features" id="features">
+    <br>
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img  src="<?php echo base_url(); ?>assets/images/fea food 1.jpg">
+            <h3>Tayuman Classics</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="<?php echo base_url(); ?>assets/images/fea motor 2.jpg" alt="">
+            <h3>free delivery</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="<?php echo base_url(); ?>assets/images/fea payment 3.png " alt="">
+            <h3>about us</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href='<?php echo base_url()."Userssellerside/devsec"?>' class="btn">read more</a>
+        </div>
+
     </div>
 
 </section>
 
 <!-- home section ends -->
 
-<?php include 'assets/footer.php'; ?>  
+<?php include 'assets/sellerfooter.php'; ?>  
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
