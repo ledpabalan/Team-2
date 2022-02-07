@@ -16,7 +16,16 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/topfood.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
+            <h3>top food</h3>
+            <p>upto 45% off</p>
+            
+            <a href='<?php echo base_url()."CategoryController/TopFood"?>' class="btn">shop now</a>
+            <!-- <a href='<?php echo base_url()."Usersbuyerside/shopsec"?>' class="btn">shop now</a> -->
+        </div>
+
+        <div class="box">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>classics</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/Classics"?>' class="btn">shop now</a>
@@ -24,7 +33,7 @@
         </div>
 
         <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/budgetmeal.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>budget meal</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/BudgetMeal"?>' class="btn">shop now</a>
@@ -32,7 +41,7 @@
         </div>
 
         <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/refreshers.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>refreshers</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/Refreshers"?>' class="btn">shop now</a>
@@ -40,7 +49,7 @@
         </div>
 
         <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/sweets.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/categories.jpg" alt="">
             <h3>sweets & dessert</h3>
             <p>upto 45% off</p>
             <a href='<?php echo base_url()."CategoryController/SweetandDesserts"?>' class="btn">shop now</a>
