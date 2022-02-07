@@ -34,7 +34,7 @@ class ProductControllerSeller extends CI_Controller {
  
 	public function edit($product_id){
 		$data['product'] = $this->ProductModel-> GetProduct($product_id);
-		$this->load->view('users/sellerside/product.php', $data);
+		$this->load->view('ProductViews/ProductEdit', $data);
 	}
  
 	public function update($product_id){
@@ -48,7 +48,6 @@ class ProductControllerSeller extends CI_Controller {
 		// 	header('location:'.base_url().$this->index());
 		// }
 	}
- 
 	public function delete($product_id){
 		$query = $this->ProductModel->DeleteProduct($product_id);
 		redirect("ProductControllerSeller/index");

@@ -33,7 +33,26 @@
 				<br>
 				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 			</form>
+
+			<div class="form-group">
+				<br><label>Product Category:</label><br><br> 
+					<input type="radio" class="form-control" name="product_category" value= "Classics" required>
+					<label>Classics</label>
+					<br> 
+					<input type="radio" class="form-control" name="product_category" value= "Top Food" required>
+					<label>Top Food</label>
+					<br> 
+					<input type="radio" class="form-control" name="product_category" value= "Budget Meal" required>
+					<label>Budget Meal</label>
+					<br> 
+					<input type="radio" class="form-control" name="product_category" value= "Refreshers" required>
+					<label>Refreshers</label>
+					<br> 
+					<input type="radio" class="form-control" name="product_category" value= "Sweet & Dessert" required>
+					<label>Sweet & Dessert</label>
+				</div>
 		</div>
+
 	</div>
 </body>
 
