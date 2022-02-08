@@ -9,7 +9,7 @@
 <body>
 <?php include 'assets/header2sellerside.php'; ?>
 <div class="editprofile">
-<a class="aprodbtn" href="<?php echo site_url('ProductControllerSeller/index'); ?>"><strong>Back</strong> </a>
+<a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
 	<div class="editprofilebox">
 			<?php extract($product); ?>
 			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/update/<?php echo $product_id; ?>">
@@ -27,13 +27,13 @@
 					<h3><label>Product Category:</h3>
 					<input type="radio" class="form-control" name="product_category" value= "Classics" required>
 					<label>Classics</label>
-					<br> 
+				
 					<input type="radio" class="form-control" name="product_category" value= "Budget Meal" required>
 					<label>Budget Meal</label>
-					<br> 
+				
 					<input type="radio" class="form-control" name="product_category" value= "Refreshers" required>
 					<label>Refreshers</label>
-					<br> 
+					
 					<input type="radio" class="form-control" name="product_category" value= "Sweet & Dessert" required>
 					<label>Sweet & Dessert</label>s
 				</div>

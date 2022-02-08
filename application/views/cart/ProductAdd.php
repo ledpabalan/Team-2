@@ -17,10 +17,6 @@
 	
 		<a class="aprodbtn" href="<?php echo site_url('ProductControllerSeller/index'); ?>"><strong>Back</strong> </a>
 	<div class="addproductbox">
-		<br>
-		<br>
-		<br>
-		<br>
 	<h5>Add Product</h5>
 			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/insert">
 

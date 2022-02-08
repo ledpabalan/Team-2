@@ -10,7 +10,7 @@
 <?php include 'assets/header2buyerside.php'; ?>
 <div class="editprofile">
 <a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
-	<div class="editprofilebox">
+	<div class="cartproductbox">
 			<?php extract($product); ?>
 			<form method="POST" action="<?php echo base_url(); ?>CartController/insert/<?php echo $product_id; ?>">
 			<h5>Product Edit</h5>
