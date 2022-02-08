@@ -27,7 +27,7 @@
             </div>
             
             <h1>SHOP NAME : SHOP'S NAME</h1>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+            <h4>Lets go NewTayuman!
             <h3>Open Hours: 7:00 - 17:00</h3><h2>Email : Shopname@gmail.com</h2>
             <h3>Contact us: 09999999999</h3></h4>
             

@@ -2355,7 +2355,7 @@ Fproduc .popup .content .contentbox h4 {
     font-size: 1.7rem;
     color: var(--black);
     position: absolute;
-    margin-left: 420px;
+    margin-left: 500px;
     margin-top: -20px;
 }
 
@@ -2363,7 +2363,7 @@ Fproduc .popup .content .contentbox h4 {
     font-size: 1.7rem;
     color: var(--black);
     text-align: left;
-    margin-left: 70px;
+    margin-left: 150px;
 }
 
 .shop-profilebox h4 {
