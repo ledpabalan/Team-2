@@ -2,40 +2,52 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Check out </title>
+	<title>CART</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css">
-	<?php include 'assets/headsellerside.php'; ?>
+	<?php include 'assets/headbuyerside.php'; ?>
 </head>
 <body>
-<?php include 'assets/header2sellerside.php'; ?>
-	
+<?php include 'assets/header2buyerside.php'; ?>
 <div class="editprofile">
-    <br><br><br><br> <br><br><br><br>
-<a class="aprodbtn" href="<?php echo site_url('ProductControllerBuyer/index'); ?>"><strong>Back</strong> </a>
-	<div class="checkoutbox">
-	<h5 class>CHECK OUT</h5>
-		
+<a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
+	<div class="editprofilebox">
 			<?php extract($product); ?>
-                    <h3>Your Order:</h3>
-				<div class="form-group">
-					<h3><label>Product: </label> 
-                    <?php echo $product_name; ?> 
-				</div>
-				<div class="form-group">
-                    <h3><label>Price: </label>
-                    ₱<?php echo $product_price; ?> 
-					</div>
+			<form method="POST" action="<?php echo base_url(); ?>CartController/insert/<?php echo $product_id; ?>">
+			<h5>Product Edit</h5>
+					<h3>Product Name:</h3>
+					<input type="text" class="form-control" value="<?php echo $product_name; ?>" name="product_name">
 
-                <br><h2> Please proceed to review the delivery address</h2>
-                <a href ="/Team-2/ProductControllerBuyer/checkout2/"> Next
-
-			</form> 
+					<h3>Product Seller ID:</h3>
+					<input type="text" class="form-control" value="<?php echo $product_sellerid; ?>"name="product_sellerid">
+			
+					<h3>Product Description:</h3>
+					<input type="text" class="form-control" value="<?php echo $product_description; ?>"name="product_description">
 		
+					<h3>Product Price:</h3>
+					<input type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
+                    <!--<img  class="avatar"src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">-->
+
+					<h3><label>Product Category:</h3>
+					<input type="text" class="form-control" value="<?php echo $product_category; ?>"name="product_category">
+					<br>
+					<br>
+					<br>
+					
+					<h3>Product Quantity:</h3>
+					<input type="text" class="form-control" value="<?php echo $product_quantity; ?>"name="product_quantity">
+					<br>
+					<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Add to Cart</button>
+			</form>
+		
+
+
+				</div>
+
+			</form>
+	
 	</div>
 </div>
-<?php include 'assets/footer.php'; ?>  
-
-<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
@@ -85,6 +97,6 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-</script>
+</script>	
 </body>
 </html>

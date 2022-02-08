@@ -15,7 +15,7 @@
 
     <section class="all-products" id="all-products">
 
-        <h1 class="heading">all<span>products</span> </h1><br><br>
+        <h1 class="heading">My<span>Cart</span> </h1><br><br>
 
 
         <div class="box-container">
@@ -30,13 +30,13 @@
     <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
-    <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
+    <p>Price per product<h3><?php echo $product_a->product_price; ?></h3></p>
+    <p>Quantity<h3><?php echo $product_a->product_quantity; ?></h3></p>
 
     <br>
-    <td><a href="<?php echo base_url();?>CartController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Add to Cart</a>
-    <td><a href="<?php echo base_url();?>ProductControllerBuyer/checkout/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Buy Now</a>
-    
-    <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
+    <td><a href="<?php echo base_url();?>CartController/delete/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Delete</a>
+
+
 </div>
 </tr>
             <?php

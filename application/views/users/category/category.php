@@ -31,7 +31,7 @@
     <p><?php echo $product_a->product_description; ?></p>
     <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
     <br>
-    <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
+    <td><a href="<?php echo base_url();?>CartController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Add to Cart</a>
 </div>
 
 						</tr>
