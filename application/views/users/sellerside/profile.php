@@ -34,7 +34,7 @@
             
             <h4>Gender:<span class="indent3"><?php echo $user['user_gender']?></span></h4>
             <h4>Contact No: <span class="indent4"><?php echo $user['user_contact_no']?></h4>
-            <img class="avatar"  src="<?php echo base_url(); ?>assets/images/profilepic.png">
+            <img class="avatar"  src="<?php echo base_url(); ?>assets/images/profilepicture.svg">
 
             
         </div>  
@@ -48,7 +48,7 @@
 <?php include 'assets/sellerfooter.php'; ?>  
 
 
-<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>

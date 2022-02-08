@@ -1081,6 +1081,7 @@ section {
 
 .profilebox textarea {
     margin-left: 20px;
+    background-color: #fde1cc
 }
 
 .profilebox input[type="submit"] {
@@ -1311,7 +1312,187 @@ section {
     font-size: 2rem;
     width: 75%;
     margin-bottom: 1%!important;
+    background-color: #fde1cc;
     border-radius: 5px;
+}
+
+.checkoutbox {
+    margin-top: 7%;
+    width: 820px;
+    height: 450px;
+    background: #f6cfb2;
+    color: #3D0C02;
+    top: 20px;
+    left: 25%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 2%;
+    box-shadow: 15px 15px;
+    border: 2px solid black;
+}
+
+.editprofile .checkoutbox h3 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-left: 30%;
+    margin-top: -1rem;
+}
+
+.editprofile .checkoutbox h4 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-left: 15%;
+    margin-top: 2rem;
+}
+
+.editprofile .checkoutbox h5 {
+    font-size: 3rem!important;
+    color: var(--black);
+    text-align: left;
+    margin-left: 10%;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.editprofile .checkoutbox h6 {
+    font-size: 3rem!important;
+    color: var(--black);
+    text-align: left;
+    margin-left: 20%;
+    padding: 10px;
+    margin-top: 8%;
+}
+
+.editprofile .checkoutbox h2 {
+    font-size: 1.7rem!important;
+    color: var(--black);
+    text-align: left;
+    margin-left: 22%;
+    padding: 10px;
+    margin-top: 1%;
+}
+
+.editprofile .checkoutbox h1 {
+    font-size: 1.7rem!important;
+    color: var(--black);
+    text-align: left;
+    margin-left: 20%;
+    padding: 10px;
+    margin-top: 1%;
+}
+
+.editprofile .checkoutbox a {
+    margin-left: 60rem!important;
+    font-size: 2.2rem;
+    border: 1px solid black;
+    padding: .5rem;
+    padding-right: .7rem;
+    background-color: none;
+    color: black;
+    height: 4rem;
+    margin-top: 1rem;
+    width: 85%;
+    border-radius: 5px;
+    background-color: #f6cfb2;
+}
+
+.editprofile .checkoutbox a.check3 {
+    margin-left: 15rem!important;
+    margin-right: -5rem!important;
+    font-size: 2.2rem;
+    border: 1px solid black;
+    padding: .5rem;
+    background-color: none;
+    color: black;
+    height: 4rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: #f6cfb2;
+}
+
+.editprofile .checkoutbox a.check3:hover {
+    color: white;
+    background-color: #E64A4A!important;
+}
+
+.checkout2box {
+    margin-top: 7%;
+    width: 820px;
+    height: 450px;
+    background: #f6cfb2;
+    color: #3D0C02;
+    top: 20px;
+    left: 25%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 2%;
+    box-shadow: 15px 15px;
+    border: 2px solid black;
+}
+
+.editprofile .checkout2box h3 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-left: 15%;
+    margin-top: -1rem;
+    width: 80%;
+}
+
+.editprofile .checkout2box label {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.editprofile .checkout2box h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-left: 10%;
+    margin-top: 2rem;
+}
+
+.editprofile .checkout2box h5 {
+    font-size: 3rem!important;
+    color: var(--black);
+    text-align: left;
+    margin-left: 5%;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.editprofile .checkout2box input[type="radio"] {
+    margin-left: 12rem;
+}
+
+.editprofile .checkout2box span {
+    font-size: 2.2rem;
+}
+
+.editprofile .checkout2box button {
+    margin-left: 5rem!important;
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: .5rem;
+    padding-bottom: 4rem!important;
+    background-color: none;
+    height: 4rem;
+    margin-top: 1rem;
+    width: 85%;
+    border-radius: 5px;
+    background-color: #f6cfb2;
+}
+
+.editprofile .checkout2box button:hover {
+    color: white;
+    background-color: #E64A4A!important;
 }
 
 
@@ -1448,7 +1629,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("./images/shop\ cover.jpg") no-repeat;
+    background: url("./images/shopcover.png") no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 10rem;
@@ -1465,8 +1646,8 @@ section {
     border-style: solid;
     border-radius: 50%;
     position: absolute;
-    top: 30%;
-    left: 41%;
+    top: 35%;
+    left: 42.5%;
 }
 
 .shop-name {
@@ -1477,6 +1658,8 @@ section {
 
 .shop-name .stars {
     align-items: center;
+    margin-left: 1rem;
+    margin-top: -1rem;
 }
 
 .shop-name .stars i {
@@ -1486,20 +1669,22 @@ section {
 }
 
 .shop-name h3 {
-    margin-top: 10px;
+    margin-top: 40px;
     align-items: center;
+    margin-left: .8rem;
 }
 
 .shop-content {
     font-size: 2rem;
     text-align: center;
+    margin-top: -2rem;
 }
 
 .shop-content h3 {
     margin-top: 10px;
     font-size: 1.5rem;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 16%;
 }
 
 .shop-content h2 {
@@ -2152,7 +2337,7 @@ Fproduc .popup .content .contentbox h4 {
 .shop-profilebox .background-avatar {
     margin-top: 10px;
     width: 930px;
-    height: 150px;
+    height: 100%;
 }
 
 .shop-profilebox h1 {
@@ -2167,7 +2352,7 @@ Fproduc .popup .content .contentbox h4 {
     font-size: 1.7rem;
     color: var(--black);
     position: absolute;
-    margin-left: 420px;
+    margin-left: 500px;
     margin-top: -20px;
 }
 
@@ -2175,7 +2360,7 @@ Fproduc .popup .content .contentbox h4 {
     font-size: 1.7rem;
     color: var(--black);
     text-align: left;
-    margin-left: 70px;
+    margin-left: 150px;
 }
 
 .shop-profilebox h4 {

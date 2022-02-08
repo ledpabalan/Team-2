@@ -13,7 +13,6 @@
 <section class="all-products" id="all-products">
 
 <h1 class="heading">all<span>products</span> </h1>
-<h1 class="heading">Seller-Side - My Products</h1>
 
 <a href="<?php echo base_url(); ?>ProductControllerSeller/addnew" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New Product</a><br><br>
 <!-- -->
@@ -34,7 +33,6 @@
 
     <td><a href="<?php echo base_url();?>ProductControllerSeller/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>ProductControllerSeller/delete/<?php echo $product_a->product_id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
     <br>
-    <!--     -->
 </div>
 
 						</tr>
@@ -120,7 +118,7 @@
     
     </script>
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>

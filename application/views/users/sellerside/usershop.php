@@ -13,7 +13,7 @@
 
     <div class="content">
 
-        <img class="avatar" src="<?php echo base_url(); ?>assets/images/profilepic.png">
+        <img class="avatar" src="<?php echo base_url(); ?>assets/images/shoppicture.svg">
     </div>
 
 </section>
@@ -116,7 +116,7 @@
 
 <?php include 'assets/sellerfooter.php'; ?>  
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 <!-- custom js file link  -->
 <script src="assets/script.js"></script>

@@ -4,10 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Check out </title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css">
-	<?php include 'assets/headsellerside.php'; ?>
+	<?php include 'assets/headbuyerside.php'; ?>
 </head>
 <body>
-<?php include 'assets/header2sellerside.php'; ?>
+<?php include 'assets/header2buyerside.php'; ?>
 	
 <div class="editprofile">
     <br><br><br><br> <br><br><br><br>

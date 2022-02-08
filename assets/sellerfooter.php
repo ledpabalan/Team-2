@@ -6,12 +6,9 @@
 
         <div class="box">
             <h3><i class="fas fa-utensils"></i> TheNewTayuman </h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-            </div>
+            <a class="links linksemail"> <i class="fab fa-facebook"></i> facebook.com/thenewtayuman </a>
+            <a class="links linksemail"> <i class="fab fa-twitter"></i> twitter.com/thenewtayuman </a>
+            <a class="links linksemail"> <i class="fab fa-instagram"></i> instagram.com/thenewtayuman </a>
         </div>
 
         <div class="box">

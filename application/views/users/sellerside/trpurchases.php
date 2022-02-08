@@ -76,7 +76,7 @@
 <?php include 'assets/sellerfooter.php'; ?>  
 
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 <!-- custom js file link  -->
 <script src="assets/script.js"></script>

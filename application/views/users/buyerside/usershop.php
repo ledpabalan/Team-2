@@ -13,7 +13,7 @@
 
     <div class="content">
 
-        <img class="avatar" src="<?php echo base_url(); ?>assets/images/profilepic.png">
+        <img class="avatar" src="<?php echo base_url(); ?>assets/images/shoppicture.svg">
     </div>
 
 </section>
@@ -37,7 +37,7 @@
 <section class="shop-content" id="shop-content">
 
     <div class="content">
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more"><h3>Open Hours: 7:00 - 17:00</h3><h2>Email : Shopname@gmail.com</h2>
+        <h4>Let's Go NewTayuman<span id="dots">...</span><span id="more"><h3>Open Hours: 7:00 - 17:00</h3><h2>Email : thenewtayuman@gmail.com</h2>
         <h3>Contact us: 09999999999</h3><h2>Seller : Seller Name</h2> </span></h4>
 
         <button onclick="myFunction()" id="myBtn">Show more</button>
@@ -89,25 +89,34 @@
     </div>
 
 </section>
-    
-    <div id="popup1" class="overlay">
+<div id="popup1" class="overlay">
+<!-- <form method="POST" action="/Team-2/checkout"> -->
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
-                <img  src="<?php echo base_url(); ?>assets/images/foodlogo.png">
-                
-                <h2>ITEM NAME</h2>
-                <h3>₱ 00.00</h3>
-                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
-                <h4>QUANTITY :</h4>
-                <div class="quantity">
-                    <button class="btn minus-btn disabled" type="button">-</button>
-                    <input type="text" id="quantity" value="0">
-                    <button class="btn plus-btn" type="button">+</button>
-                </div> 
-                <div class="atc-btn">
-                    <div class="fas fa-shopping-cart"> Add To Cart</div>
+                <div class="content-img">
+                    <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
                 </div>
+                <div class="contentbox">
+                    <input type="hidden" name="" value="0">
+                    <h2 class='itemName'>ITEM</h2>
+                    <h3 class='itemPrice'>₱ 00.00</h3>
+                    <div class="contentdescription">
+                    <h1 class='itemDescription'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
+                    </div>
+                    <h4>QUANTITY :</h4>
+                    <div class="quantity">
+                        <button class="btn minus-btn disabled" type="button">-</button>
+                        <input type="text" id="quantity" value="0">
+                        <button class="btn plus-btn" type="button">+</button>
+                    </div>
+                    <div class="atc-btn">
+                        <div class="fas fa-shopping-cart addToCart"> Add To Cart</div>
+                    </div>
+                </div>
+                <!-- <div class="atc-btn">
+                  <p>  <input type="submit" value="BUY NOW" > </p>
+                </div> -->
             </div>
         </div>
     </div>
@@ -116,7 +125,7 @@
 
 <?php include 'assets/footer.php'; ?>  
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 <!-- custom js file link  -->
 <script src="assets/script.js"></script>

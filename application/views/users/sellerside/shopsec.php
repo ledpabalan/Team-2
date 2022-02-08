@@ -13,7 +13,6 @@
 <<section class="shops" id="shops">
 
 <h1 class="heading"> our <span>shops</span> </h1>
-<h1 class="heading"> Seller-Side </h1>
 
 <div class="box-container">
 
@@ -143,7 +142,7 @@
 
 <?php include 'assets/sellerfooter.php'; ?>  
 
-<script src="<?php echo base_url(); ?>  https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 <!-- custom js file link  -->
 <script src="<?php echo base_url(); ?>assets/script.js"></script>
