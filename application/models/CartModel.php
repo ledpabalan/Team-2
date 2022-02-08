@@ -40,7 +40,7 @@
 		public function DeleteProduct($product_id){
 			$this->db->where('product_id', $product_id);
 			$product['product_status'] = "Inactive";
-			return $this->db->update('product', $product);
+			return $this->db->update('cart', $product);
 			// return $this->db->delete('product');
 		}
  

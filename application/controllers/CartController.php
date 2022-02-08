@@ -32,7 +32,7 @@ class CartController extends CI_Controller {
 		$product['product_quantity'] = $this->input->post('product_quantity');
 		$query = $this->CartModel->InsertProduct($product);
 
-        redirect("CartControllerSeller/index");
+        redirect("CartController/index");
 		
  
 	}
@@ -58,9 +58,9 @@ class CartController extends CI_Controller {
 		// }
 	}
 	public function delete($product_id){
-		$query = $this->ProductModel->DeleteProduct($product_id);
+		$query = $this->CartModel->DeleteProduct($product_id);
 		//$query = $this->CartModel->DeleteProduct($product_id);
-		redirect("ProductControllerSeller/index");
+		redirect("CartController/index");
 		// if($query){
 		// 	header('location:'.base_url().$this->index());
 		// }
