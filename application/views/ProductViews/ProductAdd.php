@@ -17,6 +17,10 @@
 	
 		<a class="aprodbtn" href="<?php echo site_url('ProductControllerSeller/index'); ?>"><strong>Back</strong> </a>
 	<div class="addproductbox">
+		<br>
+		<br>
+		<br>
+		<br>
 	<h5>Add Product</h5>
 			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/insert">
 
@@ -31,10 +35,7 @@
 				<h3>Product Price:</h3>
 				<input type="text" class="form-control" name="product_price" required>
 				<br>
-				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
-			</form>
 
-			<div class="form-group">
 				<br><label>Product Category:</label><br><br> 
 					<input type="radio" class="form-control" name="product_category" value= "Classics" required>
 					<label>Classics</label>
@@ -44,10 +45,15 @@
 					<br> 
 					<input type="radio" class="form-control" name="product_category" value= "Refreshers" required>
 					<label>Refreshers</label>
-					<br> 
+					<br>
 					<input type="radio" class="form-control" name="product_category" value= "Sweet & Dessert" required>
 					<label>Sweet & Dessert</label>
-				</div>
+					<br>
+				
+					<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
+				
+			</form>
+
 		</div>
 
 	</div>
