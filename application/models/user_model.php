@@ -168,10 +168,10 @@ class user_model extends CI_Model {
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
     
-    public function updateUserStatus($user_id, $user_acc_status){
+    public function updateUserStatus($user_id, $status){
         $this->db->where('user_id', $user_id);
         
-        $data ['user_acc_status'] = $user_acc_status;
+        $data ['user_acc_status'] = $status;
 
         $this->db->update($this->table, $data);    
         return;

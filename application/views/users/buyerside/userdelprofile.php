@@ -24,8 +24,8 @@
 
             <h4>Confirm Password: <input type="text" name="confirmpassword" placeholder=" Confirm Password"></h4>
             <h4>Reasons for deactivating: <br> <textarea name="message" rows="10" placeholder="Your Reason for deactivating" required></textarea></h4>
-            <form method="POST" >
-                
+           
+            <form method="POST" action="/Team-2/Usersbuyerside/updatestatus">      
             <input type="submit" value="DEACTIVATE" class="dbtn">
 
         

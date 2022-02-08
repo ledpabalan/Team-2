@@ -44,10 +44,10 @@ class Usersbuyerside extends CI_Controller {
       $this->load->view('users/buyerside/userdelprofile');
 	}
 
-	public function updatestatus ($user_id, $user_acc_status){
+	public function updatestatus($user_id, $status){
 		$this -> load -> model('user_model');
-
-		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
+		$status = 'Inactive';
+		$this -> user_model -> updateUserStatus ($user_id, $status);
 
 		redirect('/usersbuyerside/logout');
 	}
