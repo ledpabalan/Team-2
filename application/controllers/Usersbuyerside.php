@@ -4,6 +4,15 @@
 class Usersbuyerside extends CI_Controller {
 // HEADER THINGS FOTR BUYER SIDE // 
 
+public function __construct()
+{
+	parent::__construct();
+
+	$id = $this->session->userdata('user_id');
+	if(!isset($id) && $id == null) {
+		redirect('/login');
+	}
+}
     public function homepage()
     {
      $this->load->view('users/buyerside/homepage');
@@ -38,25 +47,31 @@ class Usersbuyerside extends CI_Controller {
       $this->load->view('users/buyerside/devsec');
 	}
 	
-	/* si carlo naglagay dito, para to sa delete profile, di ko alam saan lalagay hehe*/
+	
 	public function userdelprofile()
 	{
       $this->load->view('users/buyerside/userdelprofile');
 	}
 
-	public function updatestatus($user_id, $status){
-		$this -> load -> model('user_model');
-		$status = 'Inactive';
-		$this -> user_model -> updateUserStatus ($user_id, $status);
 
-		redirect('/usersbuyerside/logout');
+	public function updatestatus($user_id = 'user_id'){
+		// $user_pwdRepeat = $this->input->post('user_pwdRepeat');
+		$this -> load -> model('user_model');
+		$user_id = $_SESSION['user_id'];
+		// if($user_password != $user_pwdRepeat){
+		// 	$output['error'] = "Passwords do not match";
+		$this -> user_model -> updateUserStatus ($user_id, 'Inactive');
+
+		
+		redirect('/logout');
+		
 	}
-	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 
 	public function logout(){
 		$this->session->sess_destroy();				
 		redirect('/login');
 	}
+
 	public function usershop()
 	{
       $this->load->view('users/buyerside/usershop');
@@ -135,9 +150,7 @@ class Usersbuyerside extends CI_Controller {
 			$data['user_pwdRepeat'] = sha1($data['user_pwdRepeat']);
 			$this -> user_model->updateUser($data);
 			redirect('/Usersbuyerside/viewUser'); 
-														// binalik ko sa view user lang para after mag changepass don lang sya pupunta
 		}
-
 		$this->load->view('users/buyerside/changepass', $output);
 		
 	}
