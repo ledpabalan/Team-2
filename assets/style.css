@@ -1541,18 +1541,11 @@ section {
     margin-left: 5rem;
 }
 
-.cpassbox input[type="text1"] {
-    border-bottom: 3px solid #3D0C02;
-    border-bottom-right-radius: 10px;
-    outline: none;
-    height: 40px;
-    background: #f6cfb2;
-    color: black;
-    font-size: 2rem;
+.cpassbox input[type="password"].password1 {
     margin-left: 20%;
 }
 
-.cpassbox input[type="text"] {
+.cpassbox input[type="password"] {
     border-bottom: 3px solid #3D0C02;
     border-bottom-right-radius: 10px;
     outline: none;
