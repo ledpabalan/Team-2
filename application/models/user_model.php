@@ -85,6 +85,23 @@ class user_model extends CI_Model {
 		}
 	}
 
+    public function deactpass($user_password, $user_pwdRepeat){
+		if($user_password !== $user_pwdRepeat){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+
+    public function checkPassDeact($data){
+		
+		if($this->pwdMatch($data['user_password'], $data['user_pwdRepeat'])){
+        
+			return "Password do not match";
+		}
+    }
+
     public function createUser($data, $user_type){
         if(!$this -> checkUsernameIfExists($data['user_username'])){
             $data['user_password'] = sha1($data['user_password']); //hashing password using sha1
@@ -168,44 +185,13 @@ class user_model extends CI_Model {
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
     
-    public function updateUserStatus($user_id, $status){
+    public function updateUserStatus($user_id, $user_acc_status){
         $this->db->where('user_id', $user_id);
-        
-        $data ['user_acc_status'] = $status;
+        $data ['user_acc_status'] = 'Inactive';
 
         $this->db->update($this->table, $data);    
         return;
 
-    }
-    /////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // public function validateEmail($user_email){
-
-    //     $query = $this -> db -> query ("SELECT * FROM users WHERE user_email='$user_email'");
-    //     if($query -> num_rows() == 1)
-    //     {
-    //         return $query -> row();
-    //     }
-    //     else
-    //     {
-    //         return  false; 
-    //     }
-    // }
-
-    // public function UpdatePasswordhash($data,$user_email){
-    //     $this -> db -> where ('user_email' , $user_email);
-    //     $this -> db -> update('users',$data);
-    // }
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    public function addPin($user_password){
-
-        $pinnum['user_password']=$user_password;
-       
-
-        $this->db->insert($this->table, $pinnum);
-        return $this->db->insert_id();
     }
 }
 

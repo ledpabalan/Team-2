@@ -39,14 +39,18 @@ class Userssellerside extends CI_Controller {
       $this->load->view('users/sellerside/userdelprofile');
 	}
 
-	public function updatestatus ($user_id, $user_acc_status){
+	public function updatestatus($user_id = 'user_id'){
+		// $user_pwdRepeat = $this->input->post('user_pwdRepeat');
 		$this -> load -> model('user_model');
+		$user_id = $_SESSION['user_id'];
+		// if($user_password != $user_pwdRepeat){
+		// 	$output['error'] = "Passwords do not match";
+		$this -> user_model -> updateUserStatus ($user_id, 'Inactive');
 
-		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
-
-		redirect('/userssellerside/logout');
+		
+		redirect('/logout');
+		
 	}
-	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
 
 	public function logout(){
 		$this->session->sess_destroy();				
@@ -141,6 +145,7 @@ class Userssellerside extends CI_Controller {
 		$this->load->view('users/sellerside/changepass', $output);
 		
 	}
+	
 	
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
