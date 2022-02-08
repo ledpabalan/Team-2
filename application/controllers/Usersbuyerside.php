@@ -67,25 +67,6 @@ public function __construct()
 		
 	}
 
-	public function updatestatusssss($user_id ='user_id', $user_acc_status = 'Active'){
-		$this-> load -> model ('user_model');
-
-		$user = $this -> user_model ->getUsers($_SESSION['user_acc_status']);
-		
-
-		$output['user'] = $user[0];
-
-		$data = array();
-		$data = $this->input->post();
-		if(isset($data) && $data != null) {											
-			$this -> load -> model('user_model');
-			$data['user_acc_status'] = 'Inactive';
-			$this -> user_model->updateUser($data);
-			redirect('/logout'); 
-		}
-	}
-	
-
 	public function logout(){
 		$this->session->sess_destroy();				
 		redirect('/login');

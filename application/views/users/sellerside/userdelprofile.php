@@ -20,12 +20,14 @@
             <a class="lobtn" href= '<?php echo base_url()."/logout"?>'>LOG OUT</a>
 
         <div class="deactbox">
+        <form method="POST" action="/Team-2/Usersbuyerside/updatestatus" >  
             <h3>Deactivate Account?</h3>
-
-            <h4>Confirm Password: <input type="text" name="confirmpassword" placeholder=" Confirm Password"></h4>
             <h4>Reasons for deactivating: <br> <textarea name="message" rows="10" placeholder="Your Reason for deactivating" required></textarea></h4>
-            
-            <input type="submit" value="DEACTIVATE" class="dbtn">
+           
+
+                
+            <input type="submit" value="DEACTIVATE" class="dbtn" >
+        </div>
 
         
         </div>
