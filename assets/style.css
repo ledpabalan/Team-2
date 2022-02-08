@@ -1649,8 +1649,8 @@ section {
     border-style: solid;
     border-radius: 50%;
     position: absolute;
-    top: 30%;
-    left: 44.5%;
+    top: 35%;
+    left: 42.5%;
 }
 
 .shop-name {
@@ -1661,7 +1661,7 @@ section {
 
 .shop-name .stars {
     align-items: center;
-    margin-left: 17rem;
+    margin-left: 1rem;
     margin-top: -1rem;
 }
 
@@ -1674,7 +1674,7 @@ section {
 .shop-name h3 {
     margin-top: 40px;
     align-items: center;
-    margin-left: 16rem;
+    margin-left: .8rem;
 }
 
 .shop-content {
@@ -1832,8 +1832,8 @@ section {
 .popup {
     width: 80rem;
     height: 40rem;
-    margin-top: 20rem;
-    margin-left: 40rem;
+    margin-top: 12.5rem;
+    margin-left: 25rem;
     background: #f6cfb2;
     border: 3px solid #3D0C02;
     border-radius: 5px;
