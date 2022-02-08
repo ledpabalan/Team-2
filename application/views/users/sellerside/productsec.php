@@ -26,7 +26,7 @@
 						<tr>
 
 <div class="box">
-    <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
+    <!-- <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt=""> -->
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
     <h3>Php <?php echo $product_a->product_price; ?></h3>

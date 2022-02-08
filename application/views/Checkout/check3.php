@@ -16,10 +16,10 @@
 		<div class="checkoutbox">
 			<h6>Your Order has been placed</h6>
 
-			<h4>Please prepare exact money for the delivery</h4>
+			<h4>Please prepare exact amount for the delivery</h4>
 
-			<h1> We're glad you order from us and hope you love it </h1>
-
+			<h1> We're glad you ordered from us! Happy Lamon! </h1>
+			<br><br>	
 			<br>
 			<a class="check3" href="/Team-2/ProductControllerBuyer/index/"> Order Again</a>
 

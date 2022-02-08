@@ -39,7 +39,6 @@
 
                 <h5> Mode of Payment </h5>
                 <input type="radio" id="Payment-Type1" name="mop" value="Cash on Delivery"> <span>Cash on Delivery</span>
-                <input type="radio" id="Payment-Type2" name="mop" value="Online Payment"> <span>Online Payment</span>
 
                 <br> <br>
 

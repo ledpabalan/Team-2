@@ -27,7 +27,7 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star">5.0</i>
+            <i class="fas fa-star"></i>
         </div>
         
     </div>

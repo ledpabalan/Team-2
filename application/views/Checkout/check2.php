@@ -25,7 +25,7 @@
                     ₱<?php echo $product_price; ?> 
 					</div>
 
-                <br><h2> Please proceed to review the delivery address</h2>
+                <br><h2> Please proceed to review the delivery details</h2>
                 <a href ="/Team-2/ProductControllerBuyer/checkout2/"> Next
 
 			</form> 
