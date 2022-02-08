@@ -16,7 +16,7 @@
         <h3>fresh and <span>classic</span> products for you</h3>
         <p>brought to yours by The New Tayuman</p>
         <!-- <a href='<?php echo base_url()."Product/index"?>'>[  Products ]<i  id="vendoritem"></i></a> -->
-        <a href='<?php echo base_url()."users/shopsec"?>' class="btn">shop now</a><br><br><br>
+        <a href='<?php echo base_url()."usersbuyerside/shopsec"?>' class="btn">shop now</a><br><br><br>
     </div>
 
 </section>
@@ -27,21 +27,14 @@
     <div class="box-container">
 
         <div class="box">
-            <img  src="<?php echo base_url(); ?>assets/images/fea food 1.jpg">
+            <img  src="<?php echo base_url(); ?>assets/images/classics.svg">
             <h3>Tayuman Classics</h3>
             <p>Check out our unique classics</p>
-            <a href='<?php echo base_url()."usersbuyerside/shopsec"?>' class="btn">read more</a>
+            <a href='<?php echo base_url()."usersbuyerside/shopsec"?>' class="btn">shop now</a>
         </div>
 
-        <!-- <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/fea motor 2.jpg" alt="">
-            <h3>free delivery</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">read more</a>
-        </div> -->
-
         <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/fea about 3.jpg " alt="">
+            <img src="<?php echo base_url(); ?>assets/images/developers.svg " alt="">
             <h3>about us</h3>
             <p>Learn more about the developers</p>
             <a href='<?php echo base_url()."Usersbuyerside/devsec"?>' class="btn">read more</a>

@@ -13,7 +13,7 @@
 
     <div class="content">
 
-        <img class="avatar" src="<?php echo base_url(); ?>assets/images/profilepic.png">
+        <img class="avatar" src="<?php echo base_url(); ?>assets/images/shoppicture.svg">
     </div>
 
 </section>

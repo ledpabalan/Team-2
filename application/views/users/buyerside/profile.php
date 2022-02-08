@@ -34,7 +34,7 @@
             
             <h4>Gender:<span class="indent3"><?php echo $user['user_gender']?></span></h4>
             <h4>Contact No: <span class="indent4"><?php echo $user['user_contact_no']?></h4>
-            <img class="avatar"  src="<?php echo base_url(); ?>assets/images/profilepic.png">
+            <img class="avatar"  src="<?php echo base_url(); ?>assets/images/profilepicture.svg">
 
             
         </div>  

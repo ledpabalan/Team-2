@@ -13,7 +13,6 @@
 <<section class="shops" id="shops">
 
 <h1 class="heading"> our <span>shops</span> </h1>
-<h1 class="heading"> Seller-Side </h1>
 
 <div class="box-container">
 

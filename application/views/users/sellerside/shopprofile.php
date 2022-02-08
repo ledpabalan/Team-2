@@ -20,10 +20,10 @@
         <div class="shop-profilebox">
 
             <div class="image-avatar">
-                <img class="avatar" src="<?php echo base_url(); ?>assets/images/profilepic.png">
+                <img class="avatar" src="<?php echo base_url(); ?>assets/images/shoppicture.svg">
             </div>
             <div class="background-content">
-                <img class="background-avatar" src="<?php echo base_url(); ?>assets/images/shop cover.jpg">
+                <img class="background-avatar" src="<?php echo base_url(); ?>assets/images/shopcover.png">
             </div>
             
             <h1>SHOP NAME : SHOP'S NAME</h1>

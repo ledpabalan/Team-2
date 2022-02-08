@@ -507,7 +507,6 @@ section {
 .shops .box-container .box img {
     margin: 1rem 0;
     height: 15rem;
-    margin-left:20rem!important;
 }
 
 .shops .box-container .box h3 {
@@ -1085,7 +1084,7 @@ section {
 
 .profilebox textarea {
     margin-left: 20px;
-    background-color:#fde1cc
+    background-color: #fde1cc
 }
 
 .profilebox input[type="submit"] {
@@ -1316,9 +1315,10 @@ section {
     font-size: 2rem;
     width: 75%;
     margin-bottom: 1%!important;
-    background-color:#fde1cc;
+    background-color: #fde1cc;
     border-radius: 5px;
 }
+
 .checkoutbox {
     margin-top: 7%;
     width: 820px;
@@ -1342,6 +1342,7 @@ section {
     margin-left: 30%;
     margin-top: -1rem;
 }
+
 .editprofile .checkoutbox h4 {
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -1358,6 +1359,7 @@ section {
     padding: 10px;
     margin-top: 10%;
 }
+
 .editprofile .checkoutbox h6 {
     font-size: 3rem!important;
     color: var(--black);
@@ -1366,6 +1368,7 @@ section {
     padding: 10px;
     margin-top: 8%;
 }
+
 .editprofile .checkoutbox h2 {
     font-size: 1.7rem!important;
     color: var(--black);
@@ -1374,6 +1377,7 @@ section {
     padding: 10px;
     margin-top: 1%;
 }
+
 .editprofile .checkoutbox h1 {
     font-size: 1.7rem!important;
     color: var(--black);
@@ -1383,32 +1387,31 @@ section {
     margin-top: 1%;
 }
 
-
-.editprofile .checkoutbox a{
+.editprofile .checkoutbox a {
     margin-left: 60rem!important;
     font-size: 2.2rem;
     border: 1px solid black;
     padding: .5rem;
-    padding-right:.7rem;
+    padding-right: .7rem;
     background-color: none;
-    color:black;
+    color: black;
     height: 4rem;
     margin-top: 1rem;
     width: 85%;
     border-radius: 5px;
     background-color: #f6cfb2;
 }
-.editprofile .checkoutbox a.check3{
+
+.editprofile .checkoutbox a.check3 {
     margin-left: 15rem!important;
-    margin-right:-5rem!important;
+    margin-right: -5rem!important;
     font-size: 2.2rem;
     border: 1px solid black;
     padding: .5rem;
     background-color: none;
-    color:black;
+    color: black;
     height: 4rem;
     margin-top: 2rem;
-
     border-radius: 5px;
     background-color: #f6cfb2;
 }
@@ -1440,23 +1443,25 @@ section {
     color: var(--black);
     margin-left: 15%;
     margin-top: -1rem;
-    width:80%;
+    width: 80%;
 }
+
 .editprofile .checkout2box label {
     font-size: 2.2rem;
     text-transform: uppercase;
     color: var(--black);
     font-weight: 400;
-    margin-left:1rem;
+    margin-left: 1rem;
 }
+
 .editprofile .checkout2box h2 {
     font-size: 1.7rem;
     text-transform: uppercase;
     color: var(--black);
     margin-left: 10%;
     margin-top: 2rem;
-
 }
+
 .editprofile .checkout2box h5 {
     font-size: 3rem!important;
     color: var(--black);
@@ -1465,10 +1470,12 @@ section {
     padding: 10px;
     margin-top: 2%;
 }
-.editprofile .checkout2box input[type="radio"]{
-    margin-left:12rem;
+
+.editprofile .checkout2box input[type="radio"] {
+    margin-left: 12rem;
 }
-.editprofile .checkout2box span{
+
+.editprofile .checkout2box span {
     font-size: 2.2rem;
 }
 
@@ -1477,7 +1484,7 @@ section {
     font-size: 2rem;
     border: 1px solid black;
     padding: .5rem;
-    padding-bottom:4rem!important;
+    padding-bottom: 4rem!important;
     background-color: none;
     height: 4rem;
     margin-top: 1rem;
@@ -1625,7 +1632,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("./images/shop\ cover.jpg") no-repeat;
+    background: url("./images/shopcover.png") no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 10rem;
@@ -1654,8 +1661,8 @@ section {
 
 .shop-name .stars {
     align-items: center;
-    margin-left:17rem;
-    margin-top:-1rem;
+    margin-left: 17rem;
+    margin-top: -1rem;
 }
 
 .shop-name .stars i {
@@ -1665,15 +1672,15 @@ section {
 }
 
 .shop-name h3 {
-    margin-top:40px;
+    margin-top: 40px;
     align-items: center;
-    margin-left:16rem;
+    margin-left: 16rem;
 }
 
 .shop-content {
     font-size: 2rem;
     text-align: center;
-    margin-top:-2rem;
+    margin-top: -2rem;
 }
 
 .shop-content h3 {
@@ -2333,7 +2340,7 @@ Fproduc .popup .content .contentbox h4 {
 .shop-profilebox .background-avatar {
     margin-top: 10px;
     width: 930px;
-    height: 150px;
+    height: 100%;
 }
 
 .shop-profilebox h1 {
