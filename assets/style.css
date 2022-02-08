@@ -507,6 +507,7 @@ section {
 .shops .box-container .box img {
     margin: 1rem 0;
     height: 15rem;
+    margin-left:20rem!important;
 }
 
 .shops .box-container .box h3 {
@@ -1084,6 +1085,7 @@ section {
 
 .profilebox textarea {
     margin-left: 20px;
+    background-color:#fde1cc
 }
 
 .profilebox input[type="submit"] {
@@ -1314,6 +1316,7 @@ section {
     font-size: 2rem;
     width: 75%;
     margin-bottom: 1%!important;
+    background-color:#fde1cc;
     border-radius: 5px;
 }
 .checkoutbox {
@@ -1640,7 +1643,7 @@ section {
     border-radius: 50%;
     position: absolute;
     top: 30%;
-    left: 41%;
+    left: 44.5%;
 }
 
 .shop-name {
@@ -1651,6 +1654,8 @@ section {
 
 .shop-name .stars {
     align-items: center;
+    margin-left:17rem;
+    margin-top:-1rem;
 }
 
 .shop-name .stars i {
@@ -1660,20 +1665,22 @@ section {
 }
 
 .shop-name h3 {
-    margin-top: 10px;
+    margin-top:40px;
     align-items: center;
+    margin-left:16rem;
 }
 
 .shop-content {
     font-size: 2rem;
     text-align: center;
+    margin-top:-2rem;
 }
 
 .shop-content h3 {
     margin-top: 10px;
     font-size: 1.5rem;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 16%;
 }
 
 .shop-content h2 {
@@ -1818,8 +1825,8 @@ section {
 .popup {
     width: 80rem;
     height: 40rem;
-    margin-top: 12.5rem;
-    margin-left: 25rem;
+    margin-top: 20rem;
+    margin-left: 40rem;
     background: #f6cfb2;
     border: 3px solid #3D0C02;
     border-radius: 5px;
