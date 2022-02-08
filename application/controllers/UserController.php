@@ -58,8 +58,8 @@ public function GetId(){
 		$data = $this->input->post();
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
-			$data['user_password'] = md5($data['user_password']); //md5
-			$data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
+			$data['user_password'] = sha1($data['user_password']); //sha1
+			$data['user_pwdRepeat'] = sha1($data['user_pwdRepeat']);
 			$this -> user_model->updateUser($data);
 			redirect('/Usersbuyerside/viewUser'); 
 														// binalik ko sa view user lang para after mag changepass don lang sya pupunta
