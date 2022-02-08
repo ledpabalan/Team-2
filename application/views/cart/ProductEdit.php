@@ -15,20 +15,20 @@
 			<form method="POST" action="<?php echo base_url(); ?>CartController/insert/<?php echo $product_id; ?>">
 			<h5>Product Edit</h5>
 					<h3>Product Name:</h3>
-					<input type="text" class="form-control" value="<?php echo $product_name; ?>" name="product_name">
+					<input readonly type="text" class="form-control" value="<?php echo $product_name; ?>" name="product_name">
 
 					<h3>Product Seller ID:</h3>
-					<input type="text" class="form-control" value="<?php echo $product_sellerid; ?>"name="product_sellerid">
+					<input type="hidden" class="form-control" value="<?php echo $product_sellerid; ?>"name="product_sellerid">
 			
 					<h3>Product Description:</h3>
-					<input type="text" class="form-control" value="<?php echo $product_description; ?>"name="product_description">
+					<input readonly type="text" class="form-control" value="<?php echo $product_description; ?>"name="product_description">
 		
 					<h3>Product Price:</h3>
-					<input type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
+					<input readonly type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
                     <!--<img  class="avatar"src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">-->
 
 					<h3><label>Product Category:</h3>
-					<input type="text" class="form-control" value="<?php echo $product_category; ?>"name="product_category">
+					<input readonly type="text" class="form-control" value="<?php echo $product_category; ?>"name="product_category">
 					<br>
 					<br>
 					<br>
