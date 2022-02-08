@@ -28,15 +28,15 @@
                 <h5 class="create">Create an account for free!</h5>
                 <div class="box">
                     <input type="radio" id="Account-Type1" name="user_type" value="Buyer">
-                    <!-- <input type="radio" id="Account-Type2" name="user_type" value="Seller"> -->
+                    <input type="radio" id="Account-Type2" name="user_type" value="Seller">
                     <label for="Account-Type1" class="Account-Type1">
                         <div class="dot"></div>
                         <div class="text">Customer</div>
                     </label>
-                    <!-- <label for="Account-Type2" class="Account-Type2">
+                    <label for="Account-Type2" class="Account-Type2">
                         <div class="dot"></div>
                         <div class="text">Vendor</div>
-                    </label> -->
+                    </label>
                     <button type="submit" value="submit">Next</button>
                     <a href="#modal" class="modal-open">Terms of Services</a> &
                     <a href="#modal2" class="modal-open">Privacy Policy</a>
