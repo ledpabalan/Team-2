@@ -12,7 +12,7 @@
 <a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
 	<div class="editprofilebox">
 			<?php extract($product); ?>
-			<form method="POST" action="<?php echo base_url(); ?>ProductController/update/<?php echo $product_id; ?>">
+			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/update/<?php echo $product_id; ?>">
 			<h5>Product Edit</h5>
 					<h3>Product Name:</h3>
 					<input type="text" class="form-control" value="<?php echo $product_name; ?>" name="product_name">
@@ -23,7 +23,22 @@
 					<h3>Product Price:</h3>
 					<input type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
                     <img  class="avatar"src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
+
+					<h3><label>Product Category:</h3>
+					<input type="radio" class="form-control" name="product_category" value= "Classics" required>
+					<label>Classics</label>
+					<br> 
+					<input type="radio" class="form-control" name="product_category" value= "Budget Meal" required>
+					<label>Budget Meal</label>
+					<br> 
+					<input type="radio" class="form-control" name="product_category" value= "Refreshers" required>
+					<label>Refreshers</label>
+					<br> 
+					<input type="radio" class="form-control" name="product_category" value= "Sweet & Dessert" required>
+					<label>Sweet & Dessert</label>s
+				</div>
             <br>
+
 			<br>
 				<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Update</button>
 			</form>

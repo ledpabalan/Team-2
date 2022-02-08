@@ -4,15 +4,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Check out </title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css">
+	<?php include 'assets/headsellerside.php'; ?>
 </head>
 <body>
-<div class="container">
-	<h1 class="page-header text-center">CHECK OUT</h1>
-	<div class="row">
-		<div class="col-sm-4 col-sm-offset-4">
-			<hr>
+<?php include 'assets/header2sellerside.php'; ?>
+	
+<div class="editprofile">
+<a class="aprodbtn" href="<?php echo site_url('ProductControllerBuyer/index'); ?>"><strong>Back</strong> </a>
+	<div class="checkoutbox">
+	<h5 class>CHECK OUT</h5>
+		
 			<?php extract($product); ?>
-                    <h2>Your Order:</h2>
+                    <h3>Your Order:</h3>
 				<div class="form-group">
 					<h3><label>Product: </label> 
                     <?php echo $product_name; ?> 
@@ -20,14 +23,67 @@
 				<div class="form-group">
                     <h3><label>Price: </label>
                     ₱<?php echo $product_price; ?> 
-				</div>	
+					</div>
 
-                <br><p> Please proceed to review the delivery address</p>
+                <br><h2> Please proceed to review the delivery address</h2>
                 <a href ="/Team-2/ProductControllerBuyer/checkout2/"> Next
 
 			</form> 
-		</div>
+		
 	</div>
 </div>
+<?php include 'assets/footer.php'; ?>  
+
+<script src="<?php echo base_url(); ?>https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="<?php echo base_url(); ?>assets/script.js"></script>
+
+<script>
+    /*script for nav bar */
+    let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let shoppingCart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+</script>
 </body>
 </html>

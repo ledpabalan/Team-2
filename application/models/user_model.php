@@ -87,8 +87,8 @@ class user_model extends CI_Model {
 
     public function createUser($data, $user_type){
         if(!$this -> checkUsernameIfExists($data['user_username'])){
-            $data['user_password'] = md5($data['user_password']); //hashing password using m5 algo
-            $data['user_pwdRepeat'] = md5($data['user_password']); //hashing password using m5 algo
+            $data['user_password'] = sha1($data['user_password']); //hashing password using sha1
+            $data['user_pwdRepeat'] = sha1($data['user_password']); //hashing password using sha1
              $data['user_acc_status'] = "Active";
              $data['user_type'] = $user_type;
              
@@ -128,7 +128,7 @@ class user_model extends CI_Model {
 
     public function login($user_username, $user_password) {
         $this->db->where( 'user_username', $user_username);
-        $this->db->where( 'user_password', md5($user_password));
+        $this->db->where( 'user_password', sha1($user_password));
         
         $query = $this->db->get ($this->table);
         $return = $query->result_array();
@@ -168,10 +168,10 @@ class user_model extends CI_Model {
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
     
-    public function updateUserStatus($user_id, $user_acc_status){
+    public function updateUserStatus($user_id, $status){
         $this->db->where('user_id', $user_id);
         
-        $data ['user_acc_status'] = $user_acc_status;
+        $data ['user_acc_status'] = $status;
 
         $this->db->update($this->table, $data);    
         return;
