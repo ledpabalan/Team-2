@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class ProductControllerSeller extends CI_Controller {
+class CartController extends CI_Controller {
  
 	function __construct(){
 		parent::__construct();
@@ -12,8 +12,8 @@ class ProductControllerSeller extends CI_Controller {
  
 	public function index(){
 		$UID = $_SESSION['user_id'];
-		$data['product'] = $this->ProductModel->GetAllProduct_aa("Active", $UID);
-		$this->load->view('users/sellerside/productsec', $data);
+		$data['product'] = $this->CartModel->GetAllProduct_aa("Active", $UID);
+		$this->load->view('users/buyerside/cartsec', $data);
 	}
  
 	public function addnew(){
@@ -21,24 +21,27 @@ class ProductControllerSeller extends CI_Controller {
 	}
  
 	public function insert(){
-		
 		$product['product_name'] = $this->input->post('product_name');
 		$product['product_description'] = $this->input->post('product_description');
 		$product['product_price'] = $this->input->post('product_price');
 		$product['product_category'] = $this->input->post('product_category');
-		$product['product_sellerid']= $_SESSION['user_id'];
- 
-		$query = $this->ProductModel->InsertProduct($product);
-		//$query = $this->CartModel->InsertProduct($product);
-        redirect("ProductControllerSeller/index");
+		$product['product_sellerid'] = $this->input->post('product_sellerid');
+
+		$UID = $_SESSION['user_id'];
+		$product['product_buyerid']= $_SESSION['user_id'];
+		$product['product_quantity'] = $this->input->post('product_quantity');
+		$query = $this->CartModel->InsertProduct($product);
+
+        redirect("CartControllerSeller/index");
 		
  
 	}
  
 	public function edit($product_id){
 		$data['product'] = $this->ProductModel-> GetProduct($product_id);
+		$UID = $_SESSION['user_id'];
 		//$data['product'] = $this->CartModel-> GetProduct($product_id);
-		$this->load->view('ProductViews/ProductEdit', $data);
+		$this->load->view('cart/ProductEdit', $data);
 	}
  
 	public function update($product_id){
@@ -47,7 +50,7 @@ class ProductControllerSeller extends CI_Controller {
 		$product['product_price'] = $this->input->post('product_price');
 		$product['product_category'] = $this->input->post('product_category');
  
-		$query = $this->ProductModel->UpdateProduct($product, $product_id);
+		$query = $this->CartModel->UpdateProduct($product, $product_id);
 		//$query = $this->ProductModel->CartProduct($product, $product_id);
         redirect("ProductControllerSeller/index");
 		// if($query){

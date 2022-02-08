@@ -6,19 +6,19 @@
 		}
  
 		public function GetAllProduct(){
-			$query = $this->db->get('cart');
+			$query = $this->db->get('product');
 			return $query->result(); 
 		}
 
 		public function GetAllProduct_a($product_status){
 			$this->db->where('product_status', $product_status);
-			$query = $this->db->get('cart');
+			$query = $this->db->get('product');
 			return $query->result(); 
 		}
 
 		public function GetAllProduct_aa($product_status, $UID){
 			$this->db->where('product_status', $product_status);
-			$this->db->where('product_sellerid', $UID);
+			$this->db->where('product_buyerid', $UID);
 			$query = $this->db->get('cart');
 			return $query->result(); 
 		}
@@ -28,7 +28,7 @@
 		}
  
 		public function GetProduct($product_id){
-			$query = $this->db->get_where('cart',array('product_id'=>$product_id));
+			$query = $this->db->get_where('product',array('product_id'=>$product_id));
 			return $query->row_array();
 		}
  
@@ -40,7 +40,7 @@
 		public function DeleteProduct($product_id){
 			$this->db->where('product_id', $product_id);
 			$product['product_status'] = "Inactive";
-			return $this->db->update('cart', $product);
+			return $this->db->update('product', $product);
 			// return $this->db->delete('product');
 		}
  
