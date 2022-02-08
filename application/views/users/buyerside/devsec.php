@@ -23,7 +23,7 @@
 
 
             <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/Pictures/carlo.jpg" alt="">
                 <p>Front-End Member</p>
                 <h3>Carlo M. Salva</h3>
                 <div class="stars">
@@ -36,7 +36,7 @@
             </div>
 
             <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/Pictures/foehn.jpg" alt="">
                 <p>Front-End Member</p>
                 <h3>Foehn Raja P. Dela Cruz</h3>
                 <div class="stars">
@@ -49,7 +49,7 @@
             </div>
 
             <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/Pictures/jheanne.jpg" alt="">
                 <p>Front-End Member</p>
                 <h3>Jheanne Rona A. Aguilar</h3>
                 <div class="stars">
@@ -70,7 +70,7 @@
     <div class="box-container">
 
             <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/Pictures/chyna.jpg" alt="">
                 <p>Team Leader, Backend-Member</p>
                 <h3>Louise D. Pabalan</h3>
                 <div class="stars">
@@ -83,7 +83,7 @@
             </div>
 
             <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/Pictures/edward.jpg" alt="">
                 <p>Back-End Member</p>
                 <h3>John Edward Complido</h3>
                 <div class="stars">
@@ -96,7 +96,7 @@
             </div>
 
             <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/Pictures/jairus.jpg" alt="">
                 <p>Back-End Member</p>
                 <h3>Jairus Ivan Iscala</h3>
                 <div class="stars">
@@ -109,7 +109,7 @@
             </div>
 
             <div class="box">
-            <img src="<?php echo base_url(); ?>assets/images/profile.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/images/Pictures/levi.webp" alt="">
                 <p>Back-End Member</p>
                 <h3>Levi Tuya</h3>
                 <div class="stars">

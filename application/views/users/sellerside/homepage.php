@@ -36,7 +36,7 @@
     <img src="<?php echo base_url(); ?>assets/images/developers.svg " alt="">
     <h3>about us</h3>
     <br> 
-    <a href='<?php echo base_url()."Usersbuyerside/devsec"?>' class="btn">read more</a>
+    <a href='<?php echo base_url()."Userssellerside/devsec"?>' class="btn">read more</a>
 </div>
 
 </div>
