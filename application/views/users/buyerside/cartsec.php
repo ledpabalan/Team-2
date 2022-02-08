@@ -30,7 +30,7 @@
     <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
     <h3><?php echo $product_a->product_name; ?></h3>
     <p><?php echo $product_a->product_description; ?></p>
-    <p>Php<h3><?php echo $product_a->product_price; ?></h3></p>
+    <p>Price per product<h3><?php echo $product_a->product_price; ?></h3></p>
     <p>Quantity<h3><?php echo $product_a->product_quantity; ?></h3></p>
 
     <br>
