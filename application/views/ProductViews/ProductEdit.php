@@ -9,7 +9,7 @@
 <body>
 <?php include 'assets/header2sellerside.php'; ?>
 <div class="editprofile">
-<a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
+<a class="aprodbtn" href="<?php echo site_url('ProductControllerSeller/index'); ?>"><strong>Back</strong> </a>
 	<div class="editprofilebox">
 			<?php extract($product); ?>
 			<form method="POST" action="<?php echo base_url(); ?>ProductControllerSeller/update/<?php echo $product_id; ?>">

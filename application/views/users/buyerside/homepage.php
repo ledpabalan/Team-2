@@ -30,7 +30,7 @@
             <img  src="<?php echo base_url(); ?>assets/images/classics.svg">
             <h3>Tayuman Classics</h3>
             <p>Check out our unique classics</p>
-            <a href='<?php echo base_url()."usersbuyerside/shopsec"?>' class="btn">shop now</a>
+            <a href='<?php echo base_url()."ProductControllerBuyer/index"?>' class="btn">shop now</a>
         </div>
 
         <div class="box">

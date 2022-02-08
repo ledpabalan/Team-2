@@ -35,7 +35,6 @@
     <br>
     <td><a href="<?php echo base_url();?>CartController/edit/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Add to Cart</a>
     <td><a href="<?php echo base_url();?>ProductControllerBuyer/checkout/<?php echo $product_a->product_id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Buy Now</a>
-    <a href="#popup1" class="rbtn readMore" id="<?php echo $product_a->product_id;?>">read more</a>
 </div>
 
             <!-- -->
@@ -46,39 +45,6 @@
             ?>
 
 </section>
-    
-<div id="popup1" class="overlay">
-<!-- <form method="POST" action="/Team-2/checkout"> -->
-        <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-                <div class="content-img">
-                    <img src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">
-                </div>
-                <div class="contentbox">
-                    <input type="hidden" name="" value="0">
-                    <h2 class='itemName'>ITEM</h2>
-                    <h3 class='itemPrice'>₱ 00.00</h3>
-                    <div class="contentdescription">
-                    <h1 class='itemDescription'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</h1>
-                    </div>
-                    <h4>QUANTITY :</h4>
-                    <div class="quantity">
-                        <button class="btn minus-btn disabled" type="button">-</button>
-                        <input type="text" id="quantity" value="0">
-                        <button class="btn plus-btn" type="button">+</button>
-                    </div>
-                    <div class="atc-btn">
-                        <div class="fas fa-shopping-cart addToCart"> Add To Cart</div>
-                    </div>
-                </div>
-                <!-- <div class="atc-btn">
-                  <p>  <input type="submit" value="BUY NOW" > </p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- usershop section ends -->
 
     <?php include 'assets/footer.php'; ?>
 
