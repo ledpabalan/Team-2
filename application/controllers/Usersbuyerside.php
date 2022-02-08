@@ -43,7 +43,20 @@ class Usersbuyerside extends CI_Controller {
 	{
       $this->load->view('users/buyerside/userdelprofile');
 	}
+
+	public function updatestatus ($user_id, $user_acc_status){
+		$this -> load -> model('user_model');
+
+		$this -> user_model -> updateUserStatus ($user_id, $user_acc_status);
+
+		redirect('/usersbuyerside/logout');
+	}
 	/* si carlo naglagay dito, para to maview yung shop sa shop section, di ko alam saan lalagay hehe*/
+
+	public function logout(){
+		$this->session->sess_destroy();				
+		redirect('/login');
+	}
 	public function usershop()
 	{
       $this->load->view('users/buyerside/usershop');
@@ -118,8 +131,8 @@ class Usersbuyerside extends CI_Controller {
 		$data = $this->input->post();
 		if(isset($data) && $data != null) {											
 			$this -> load -> model('user_model');
-			$data['user_password'] = md5($data['user_password']); //md5
-			$data['user_pwdRepeat'] = md5($data['user_pwdRepeat']);
+			$data['user_password'] = sha1($data['user_password']); //sha1 na to
+			$data['user_pwdRepeat'] = sha1($data['user_pwdRepeat']);
 			$this -> user_model->updateUser($data);
 			redirect('/Usersbuyerside/viewUser'); 
 														// binalik ko sa view user lang para after mag changepass don lang sya pupunta
