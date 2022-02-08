@@ -9,17 +9,30 @@
 <body>
 <?php include 'assets/header2buyerside.php'; ?>
 <div class="editprofile">
-<a class="aprodbtn" href="<?php echo site_url('ProductControllerBuyer/index'); ?>"><strong>Back</strong> </a>
+<a class="aprodbtn" href="<?php echo site_url('ProductController/index'); ?>"><strong>Back</strong> </a>
 	<div class="cartproductbox">
 			<?php extract($product); ?>
 			<form method="POST" action="<?php echo base_url(); ?>CartController/insert/<?php echo $product_id; ?>">
 			<h5>Product Edit</h5>
-					<h3>Product Name: <?php echo $product_name; ?></h3>	<br><br>	
-					<h3>Product Description: <?php echo $product_description; ?></h3><br><br>
-					<h3>Product Price: <?php echo $product_price; ?></h3><br><br>
-					<h3><label>Product Category: <?php echo $product_category; ?></h3><br><br>
+					<h3>Product Name:</h3>
+					<input readonly type="text" class="form-control" value="<?php echo $product_name; ?>" name="product_name">
+
+					<h3>Product Seller ID:</h3>
+					<input type="hidden" class="form-control" value="<?php echo $product_sellerid; ?>"name="product_sellerid">
+			
+					<h3>Product Description:</h3>
+					<input readonly type="text" class="form-control" value="<?php echo $product_description; ?>"name="product_description">
+		
+					<h3>Product Price:</h3>
+					<input readonly type="text" class="form-control" value="<?php echo $product_price; ?>"name="product_price">
+                    <!--<img  class="avatar"src="<?php echo base_url(); ?>assets/images/foodlogo.png" alt="">-->
+
+					<h3><label>Product Category:</h3>
+					<input readonly type="text" class="form-control" value="<?php echo $product_category; ?>"name="product_category">
 					<br>
-					<br>			
+					<br>
+					<br>
+					
 					<h3>Product Quantity:</h3>
 					<input type="text" class="form-control" value="<?php echo $product_quantity; ?>"name="product_quantity">
 					<br>
